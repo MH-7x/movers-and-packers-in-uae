@@ -14,6 +14,14 @@ export const HomePageFAQs: FAQData[] = [
           We provide a detailed quote after you describe your move. The quoted
           price is the final price — no hidden charges added at the end.
         </p>
+        <h3>Average Moving Costs (Local)</h3>
+        <ul>
+          <li>Studio Apartment: 800 – 1,300 AED</li>
+          <li>1-Bedroom Apartment: 1,100 – 1,800 AED</li>
+          <li>2-Bedroom Apartment: 1,800 – 3,200 AED</li>
+          <li>3-Bedroom Villa: 3,500 – 5,500 AED</li>
+          <li>Large Villa (4+ Bed): 6,000+ AED</li>
+        </ul>
       </>
     ),
   },

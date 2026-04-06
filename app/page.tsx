@@ -137,7 +137,14 @@ export default function Home() {
             </span>{" "}
             Moving Companies in UAE
           </h2>
-          <div className="bg-muted aspect-video mt-8"></div>
+          <div className="bg-muted aspect-video mt-8 relative overflow-hidden">
+            <Image
+              src={"/moving-company-uae-truck-in-dubai-road.jpg"}
+              alt="Moving Company in UAE truck in Dubai Road"
+              fill
+              className="object-cover"
+            />
+          </div>
         </div>
         <div className="md:pt-10 text-muted-foreground md:text-lg">
           <p className="font-medium ">
@@ -204,7 +211,15 @@ export default function Home() {
                   id={item.name.toLowerCase().replace(/\s+/g, "-")}
                   className="rounded-2xl p-5 bg-muted"
                 >
-                  <div className="relative aspect-video bg-white rounded-xl"></div>
+                  <div className="relative aspect-video bg-white rounded-xl overflow-hidden">
+                    <Image
+                      src={item.img.src}
+                      alt={item.img.alt}
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    />
+                  </div>
                   <h3 className="mt-5 text-xl font-medium">{item.name}</h3>
                   <p className="mt-3 text-muted-foreground">
                     {item.description}
@@ -578,7 +593,14 @@ export default function Home() {
             <span className="md:block font-normal">Industries We</span> Work
             With in The UAE
           </h2>
-          <div className="bg-muted aspect-video mt-8"></div>
+          <div className="bg-muted aspect-video mt-8 overflow-hidden relative">
+            <Image
+              src={"/Moving-Company-Based-in-Dubai.jpg"}
+              alt="Best Moving Company Based in Dubai UAE"
+              fill
+              className="object-cover"
+            />
+          </div>
         </div>
       </section>
 
