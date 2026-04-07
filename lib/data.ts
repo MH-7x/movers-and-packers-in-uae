@@ -216,7 +216,6 @@ export const movingProcess = [
       "Our carpenters take apart beds, wardrobes, shelving units, and anything else that needs disassembly before it can be safely moved.",
     icon: Wrench,
     arrow: true,
-    ivert: true,
   },
   {
     step: 3,
@@ -248,7 +247,6 @@ export const movingProcess = [
       "We use fully enclosed box trucks to protect everything during the journey. No exposure to the UAE heat, dust, or sandstorms on route.",
     icon: ShieldCheck,
     arrow: true,
-    ivert: true,
   },
   {
     step: 7,
@@ -381,128 +379,176 @@ export const locations = [
 
 export const AllServices = [
   {
-    category: "Residential Moving Services",
-    items: [
-      {
-        name: "House Moving",
-        description:
-          "Full home relocations across any emirate. We pack, load, transport, and set up at the other end.",
-        href: "#",
-      },
-      {
-        name: "Villa Moving",
-        description:
-          "Large-scale moves with full furniture dismantling and reassembly. We handle the size, you handle the keys.",
-        href: "#",
-      },
-      {
-        name: "Apartment & Flat Shifting",
-        description:
-          "Studio to 5-bedroom moves with same-day service available. We work around your schedule and handle every floor.",
-        href: "#",
-      },
-      {
-        name: "Home Shifting Services",
-        description:
-          "Door-to-door household relocation with packing materials included. Everything placed in the right room.",
-        href: "#",
-      },
-    ],
+    name: "House Moving",
+    description:
+      "Full home relocations across any emirate. We pack, load, transport, and set up at the other end.",
+    href: "#",
+    img: {
+      src: "/ser/house-moving-dubai-uae-branded-service.jpg",
+      alt: "Branded house moving service in Dubai with movers packing and loading home furniture into a truck",
+    },
+  },
+  {
+    name: "Villa Moving",
+    description:
+      "Large-scale moves with full furniture dismantling and reassembly. We handle the size, you handle the keys.",
+    href: "#",
+    img: {
+      src: "/ser/villa-moving-dubai-luxury-relocation-service.jpg",
+      alt: "Luxury villa moving service in Dubai with professional movers dismantling and transporting furniture",
+    },
+  },
+  {
+    name: "Apartment & Flat Shifting",
+    description:
+      "Studio to 5-bedroom moves with same-day service available. We work around your schedule and handle every floor.",
+    href: "#",
+    img: {
+      src: "/ser/apartment-flat-shifting-dubai-uae.jpg",
+      alt: "Apartment and flat shifting service in Dubai with movers carrying boxes in a high-rise building",
+    },
+  },
+  {
+    name: "Home Shifting Services",
+    description:
+      "Door-to-door household relocation with packing materials included. Everything placed in the right room.",
+    href: "#",
+    img: {
+      src: "/ser/home-shifting-services-dubai-uae.jpg",
+      alt: "Home shifting service in Dubai with movers placing furniture and boxes in the correct rooms",
+    },
   },
 
   {
-    category: "Commercial & Office Moving Services",
-    items: [
-      {
-        name: "Office Relocation",
-        description:
-          "Minimal downtime. IT equipment handled carefully, workstations labelled, and everything set up correctly from day one.",
-        href: "#",
-      },
-      {
-        name: "Warehouse Moving",
-        description:
-          "Heavy goods, industrial shelving, and bulk storage handled with the right team and trucks for large-scale jobs.",
-        href: "#",
-      },
-      {
-        name: "Restaurant Furniture Moving",
-        description:
-          "Kitchen equipment, counters, chairs, and fixtures moved safely without disrupting your operations.",
-        href: "#",
-      },
-      {
-        name: "Bank & Hospital Furniture Moving",
-        description:
-          "Heavy safes, medical equipment, and sensitive assets moved securely with full care.",
-        href: "#",
-      },
-      {
-        name: "School Furniture Moving",
-        description:
-          "Classrooms, science labs, and libraries moved efficiently with zero damage and proper organization.",
-        href: "#",
-      },
-    ],
+    name: "Office Relocation",
+    description:
+      "Minimal downtime. IT equipment handled carefully, workstations labelled, and everything set up correctly from day one.",
+    href: "#",
+    img: {
+      src: "/ser/office-relocation-dubai-it-moving.jpg",
+      alt: "Office relocation service in Dubai with movers handling IT equipment and workstations carefully",
+    },
+  },
+  {
+    name: "Warehouse Moving",
+    description:
+      "Heavy goods, industrial shelving, and bulk storage handled with the right team and trucks for large-scale jobs.",
+    href: "#",
+    img: {
+      src: "/ser/warehouse-moving-dubai-industrial-service.jpg",
+      alt: "Warehouse moving service in Dubai with movers handling heavy goods and industrial shelving",
+    },
+  },
+  {
+    name: "Restaurant Furniture Moving",
+    description:
+      "Kitchen equipment, counters, chairs, and fixtures moved safely without disrupting your operations.",
+    href: "#",
+    img: {
+      src: "/ser/restaurant-furniture-moving-dubai.jpg",
+      alt: "Restaurant furniture moving service in Dubai with safe transport of chairs and kitchen equipment",
+    },
+  },
+  {
+    name: "Bank & Hospital Furniture Moving",
+    description:
+      "Heavy safes, medical equipment, and sensitive assets moved securely with full care.",
+    href: "#",
+    img: {
+      src: "/ser/bank-hospital-furniture-moving-dubai.jpg",
+      alt: "Bank and hospital furniture moving in Dubai with secure handling of safes and medical equipment",
+    },
+  },
+  {
+    name: "School Furniture Moving",
+    description:
+      "Classrooms, science labs, and libraries moved efficiently with zero damage and proper organization.",
+    href: "#",
+    img: {
+      src: "/ser/school-furniture-moving-services-in-uae.jpg",
+      alt: "School furniture moving service in UAE with efficient relocation and organization",
+    },
   },
 
   {
-    category: "Furniture & Specialty Moving",
-    items: [
-      {
-        name: "All Kinds of Furniture Moving",
-        description:
-          "Single items or full loads including sofas, beds, wardrobes, and dining sets — packed properly and delivered safely.",
-        href: "#",
-      },
-      {
-        name: "Single Furniture Delivery Service",
-        description:
-          "Need just one item moved? We provide fast and reliable single-item delivery anywhere in the UAE.",
-        href: "#",
-      },
-      {
-        name: "Industrial Machinery & Heavy Safes",
-        description:
-          "Specialist rigging team for heavy, awkward, or fragile industrial items. Done safely and professionally.",
-        href: "#",
-      },
-      {
-        name: "Packing Services",
-        description:
-          "Complete packing solutions including bubble wrap, stretch film, blankets, and labeled boxes — no effort required from you.",
-        href: "#",
-      },
-    ],
+    name: "All Kinds of Furniture Moving",
+    description:
+      "Single items or full loads including sofas, beds, wardrobes, and dining sets — packed properly and delivered safely.",
+    href: "#",
+    img: {
+      src: "/ser/furniture-moving-dubai-uae-service.jpg",
+      alt: "Furniture moving service in Dubai with safe packing and transport of sofas beds and wardrobes",
+    },
+  },
+  {
+    name: "Single Furniture Delivery Service",
+    description:
+      "Need just one item moved? We provide fast and reliable single-item delivery anywhere in the UAE.",
+    href: "#",
+    img: {
+      src: "/ser/single-furniture-delivery-dubai.jpg",
+      alt: "Single furniture delivery service in Dubai with movers transporting one item safely",
+    },
+  },
+  {
+    name: "Industrial Machinery & Heavy Safes",
+    description:
+      "Specialist rigging team for heavy, awkward, or fragile industrial items. Done safely and professionally.",
+    href: "#",
+    img: {
+      src: "/ser/industrial-machinery-heavy-safe-moving-dubai.jpg",
+      alt: "Industrial machinery and heavy safe moving service in Dubai with specialist rigging team",
+    },
+  },
+  {
+    name: "Packing Services",
+    description:
+      "Complete packing solutions including bubble wrap, stretch film, blankets, and labeled boxes — no effort required from you.",
+    href: "#",
+    img: {
+      src: "/ser/packing-services-dubai-bubble-wrap.jpg",
+      alt: "Packing services in Dubai with movers using bubble wrap boxes and protective materials",
+    },
   },
 
   {
-    category: "Storage & Add-On Services",
-    items: [
-      {
-        name: "Storage Services",
-        description:
-          "Short-term and long-term storage in secure facilities, ideal when your new space is not ready.",
-        href: "#",
-      },
-      {
-        name: "Self Storage",
-        description:
-          "Flexible and accessible storage for items you want nearby but do not have space for.",
-        href: "#",
-      },
-      {
-        name: "Furniture Storage",
-        description:
-          "Climate-aware warehousing to protect furniture from heat and dust until you need it again.",
-        href: "#",
-      },
-      {
-        name: "Curtain Fixing & Installation",
-        description:
-          "Post-move setup services including curtain installation to help you settle in quickly.",
-        href: "#",
-      },
-    ],
+    name: "Storage Services",
+    description:
+      "Short-term and long-term storage in secure facilities, ideal when your new space is not ready.",
+    href: "#",
+    img: {
+      src: "/ser/storage-services-in-uae.jpg",
+      alt: "Storage services in UAE with secure facilities for short-term and long-term storage needs",
+    },
+  },
+  {
+    name: "Self Storage",
+    description:
+      "Flexible and accessible storage for items you want nearby but do not have space for.",
+    href: "#",
+    img: {
+      src: "/ser/self-storage-services-in-uae.jpg",
+      alt: "Self storage service in UAE with flexible and accessible storage solutions",
+    },
+  },
+  {
+    name: "Furniture Storage",
+    description:
+      "Climate-aware warehousing to protect furniture from heat and dust until you need it again.",
+    href: "#",
+    img: {
+      src: "/ser/funriture-storage-services-uae.jpg",
+      alt: "Furniture storage service in UAE with climate-aware warehousing to protect from heat and dust",
+    },
+  },
+  {
+    name: "Curtain Fixing & Installation",
+    description:
+      "Post-move setup services including curtain installation to help you settle in quickly.",
+    href: "#",
+    img: {
+      src: "/ser/Curtain-Fixing-Installation-uae.jpg",
+      alt: "Curtain fixing and installation service in UAE with professional setup",
+    },
   },
 ];

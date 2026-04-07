@@ -116,6 +116,16 @@
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.556 0 0);
 }
+#service-content section h2 {
+  @apply md:text-3xl text-2xl! font-bold mb-5;
+}
+
+#service-content section h3 {
+  @apply md:text-xl text-lg font-bold mb-5;
+}
+#service-content section p {
+  @apply text-muted-foreground;
+}
 
 @layer base {
   * {

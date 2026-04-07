@@ -1,7 +1,18 @@
+import { JSX } from "react";
 import { Button } from "./ui/button";
 import { MailCheck, MessageCircleCheck, PhoneCall, Send } from "lucide-react";
 
-const QuotationSection = ({ invert = false }: { invert?: boolean }) => {
+const QuotationSection = ({
+  invert = false,
+  title,
+  desc,
+  btnText,
+}: {
+  invert?: boolean;
+  title?: JSX.Element;
+  desc?: string;
+  btnText?: string;
+}) => {
   return (
     <section
       id="moving-quote-form-section"
@@ -9,14 +20,28 @@ const QuotationSection = ({ invert = false }: { invert?: boolean }) => {
     >
       <div className={invert ? "md:order-2 order-1" : ""}>
         <h2 className="md:text-4xl text-3xl">
-          <span className="font-bold md:block">Get a Free Moving Quote — </span>
-          From Movers and Packers in UAE
+          {title ? (
+            title
+          ) : (
+            <>
+              <span className="font-bold md:block">
+                Get a Free Moving Quote —{" "}
+              </span>{" "}
+              From Movers and Packers in UAE
+            </>
+          )}
         </h2>
         <p className="mt-5 leading-tight text-muted-foreground">
-          Tell us what you need to move, where from, and where to. We at movers
-          and packers in uae will send back a clear, itemized quote on WhatsApp
-          or by email. No unclear estimates. The number we give you is the
-          number on the invoice.
+          {desc ? (
+            desc
+          ) : (
+            <>
+              Tell us what you need to move, where from, and where to. We at
+              movers and packers in uae will send back a clear, itemized quote
+              on WhatsApp or by email. No unclear estimates. The number we give
+              you is the number on the invoice.
+            </>
+          )}
         </p>
         <p className="mt-2 leading-tight text-muted-foreground">
           We usually respond within an hour.
@@ -97,7 +122,7 @@ const QuotationSection = ({ invert = false }: { invert?: boolean }) => {
             className="py-3 px-2 border-b border-b-white focus:border-b-primary outline-none col-span-full min-h-28"
           ></textarea>
           <Button size={"lg"} className="mt-5">
-            Get A Quote <Send strokeWidth={1} />
+            {btnText || "Get A Quote"} <Send strokeWidth={1} />
           </Button>
         </form>
       </div>

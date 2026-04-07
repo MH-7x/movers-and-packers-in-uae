@@ -163,3 +163,130 @@ export const HomePageFAQs: FAQData[] = [
     ),
   },
 ];
+
+export const HouseShiftingDubaiFaqs = [
+  {
+    question: "How much does house shifting cost in Dubai?",
+    answer: (
+      <>
+        <p>
+          House shifting in Dubai typically ranges from AED 650 for a studio
+          apartment to AED 4,500+ for a large villa. The exact cost depends on
+          your property size, floor level, distance, and any extra services.
+        </p>
+        <p>
+          The quote we provide is fixed — no hidden charges added at the end.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "How do I find reliable house movers near me in Dubai?",
+    answer: (
+      <>
+        <p>
+          Look for a company with a valid trade licence, a verified Google
+          Business Profile, real customer reviews, and several years of
+          experience.
+        </p>
+        <p>
+          Avoid freelance movers working only through WhatsApp, as they usually
+          offer no insurance or accountability. We meet all professional
+          standards and have been registered since 1998.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "What is included in your house shifting service?",
+    answer: (
+      <>
+        <p>
+          Our standard house shifting service includes professional packing,
+          furniture dismantling, item labelling, transport in enclosed box
+          trucks, unloading, furniture reassembly, and placement in your new
+          home.
+        </p>
+        <p>
+          We also offer optional unpacking, curtain fixing, and installation as
+          add-on services.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "Do you offer same-day house shifting in Dubai?",
+    answer: (
+      <>
+        <p>
+          Yes, we offer same-day house shifting in Dubai for urgent moves,
+          subject to crew availability.
+        </p>
+        <p>
+          For fastest response, call us directly instead of relying on the
+          contact form for time-sensitive moves.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "How long does a house move in Dubai take?",
+    answer: (
+      <>
+        <p>
+          A studio apartment typically takes 3 to 5 hours. A 2-bedroom apartment
+          usually takes 5 to 8 hours.
+        </p>
+        <p>
+          A full villa move can take a full day or more depending on size,
+          number of floors, and access. We provide an estimated timeframe when
+          you book.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "What type of trucks do you use for house moving?",
+    answer: (
+      <>
+        <p>We use RTA-approved, fully enclosed 3-ton and 4-ton box trucks.</p>
+        <p>
+          Enclosed trucks are essential in Dubai, where extreme heat and
+          sandstorms can damage furniture. Our trucks ensure safe and
+          climate-protected transport.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "Can you move heavy items like safes and industrial equipment?",
+    answer: (
+      <>
+        <p>
+          Yes. We handle heavy safes, industrial machinery, and hospital
+          equipment.
+        </p>
+        <p>
+          These jobs require a custom plan and specialized equipment. Contact us
+          directly so we can arrange the right team and provide an accurate
+          quote.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "Do you charge extra for packing materials?",
+    answer: (
+      <>
+        <p>
+          No. Packing materials such as bubble wrap, boxes, stretch plastic, and
+          fabric blankets are included in your quote.
+        </p>
+        <p>
+          What we quote is exactly what you pay — no additional or hidden
+          charges.
+        </p>
+      </>
+    ),
+  },
+];
