@@ -6,7 +6,7 @@ export const services = [
         name: "House Moving",
         description:
           "Full home relocations across any emirate. We pack, load, transport, and set up at the other end.",
-        href: "#",
+        href: "/house-shifting-dubai",
         img: {
           src: "/ser/house-moving-dubai-uae-branded-service.jpg",
           alt: "Branded house moving service in Dubai with movers packing and loading home furniture into a truck",
@@ -16,7 +16,7 @@ export const services = [
         name: "Villa Moving",
         description:
           "Large-scale moves with full furniture dismantling and reassembly. We handle the size, you handle the keys.",
-        href: "#",
+        href: "/villa-movers-in-dubai",
         img: {
           src: "/ser/villa-moving-dubai-luxury-relocation-service.jpg",
           alt: "Luxury villa moving service in Dubai with professional movers dismantling and transporting furniture",
@@ -36,7 +36,7 @@ export const services = [
         name: "Home Shifting Services",
         description:
           "Door-to-door household relocation with packing materials included. Everything placed in the right room.",
-        href: "#",
+        href: "/house-shifting-dubai",
         img: {
           src: "/ser/home-shifting-services-dubai-uae.jpg",
           alt: "Home shifting service in Dubai with movers placing furniture and boxes in the correct rooms",
@@ -382,7 +382,7 @@ export const AllServices = [
     name: "House Moving",
     description:
       "Full home relocations across any emirate. We pack, load, transport, and set up at the other end.",
-    href: "#",
+    href: "/house-shifting-dubai",
     img: {
       src: "/ser/house-moving-dubai-uae-branded-service.jpg",
       alt: "Branded house moving service in Dubai with movers packing and loading home furniture into a truck",
@@ -392,7 +392,7 @@ export const AllServices = [
     name: "Villa Moving",
     description:
       "Large-scale moves with full furniture dismantling and reassembly. We handle the size, you handle the keys.",
-    href: "#",
+    href: "/villa-movers-in-dubai",
     img: {
       src: "/ser/villa-moving-dubai-luxury-relocation-service.jpg",
       alt: "Luxury villa moving service in Dubai with professional movers dismantling and transporting furniture",
@@ -412,7 +412,7 @@ export const AllServices = [
     name: "Home Shifting Services",
     description:
       "Door-to-door household relocation with packing materials included. Everything placed in the right room.",
-    href: "#",
+    href: "/house-shifting-dubai",
     img: {
       src: "/ser/home-shifting-services-dubai-uae.jpg",
       alt: "Home shifting service in Dubai with movers placing furniture and boxes in the correct rooms",

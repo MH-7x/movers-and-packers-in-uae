@@ -20,8 +20,8 @@ const mainMenuItems = [
 ];
 
 const servicesMenuItems = [
-  { label: "House moving", href: "#" },
-  { label: "Villa moving", href: "#" },
+  { label: "House moving", href: "/house-shifting-dubai" },
+  { label: "Villa moving", href: "/villa-movers-in-dubai" },
   { label: "Apartment Moving", href: "#" },
   { label: "Flats shifting", href: "#" },
   { label: "Office relocation", href: "#" },

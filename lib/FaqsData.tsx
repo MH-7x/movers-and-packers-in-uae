@@ -164,7 +164,7 @@ export const HomePageFAQs: FAQData[] = [
   },
 ];
 
-export const HouseShiftingDubaiFaqs = [
+export const HouseShiftingDubaiFaqs: FAQData[] = [
   {
     question: "How much does house shifting cost in Dubai?",
     answer: (
@@ -285,6 +285,117 @@ export const HouseShiftingDubaiFaqs = [
         <p>
           What we quote is exactly what you pay — no additional or hidden
           charges.
+        </p>
+      </>
+    ),
+  },
+];
+
+export const VillaMovingDubaiFaqs: FAQData[] = [
+  {
+    question: "How much does it cost to move a villa in Dubai?",
+    answer: (
+      <>
+        <p>
+          The cost depends on the villa size, number of floors, distance between
+          locations, and how much packing is required.
+        </p>
+        <p>
+          As a general guide, a 2-bedroom villa starts from around AED 800,
+          while a 5+ bedroom villa can range from AED 3,500 to AED 6,000+.
+        </p>
+        <p>
+          Contact us for a free custom quote — we will provide an exact,
+          itemised price based on your specific move.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "How long does a villa move in Dubai take?",
+    answer: (
+      <>
+        <p>
+          A 2-bedroom villa typically takes 4 to 5 hours, while a 4-bedroom
+          villa usually requires a full day.
+        </p>
+        <p>
+          For 5-bedroom villas and larger compounds, the move may take 1 to 2
+          days depending on complexity, packing requirements, and distance.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "Do villa movers in Dubai provide packing materials?",
+    answer: (
+      <>
+        <p>
+          Yes. All packing materials are included in our service, including
+          fabric blankets, bubble wrap, stretch film, hanger boxes, moving
+          boxes, and kitchen paper wrap.
+        </p>
+        <p>
+          Everything is itemised in your quote, ensuring there are no surprise
+          charges on moving day.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "Do you offer same-day villa moving in Dubai?",
+    answer: (
+      <>
+        <p>
+          Yes, we offer same-day villa moving in Dubai for urgent situations.
+        </p>
+        <p>
+          Call or WhatsApp us directly to check availability and receive a
+          same-day quote. We understand that some moves cannot wait.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "Is my furniture insured during the villa move?",
+    answer: (
+      <>
+        <p>Yes. All items are fully insured during transit at no extra cost.</p>
+        <p>
+          In the unlikely event of damage, our team will guide you through the
+          claim process. Protecting your belongings is a standard part of our
+          service.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "Do I need a move-out permit from my building to move a villa?",
+    answer: (
+      <>
+        <p>
+          Yes. For gated communities and managed buildings, a move-out permit
+          from the landlord or building management is typically required before
+          moving day.
+        </p>
+        <p>
+          Our team will guide you on what documents are needed and when to
+          request them to avoid any delays.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "Can you move villa furniture to Abu Dhabi or other emirates?",
+    answer: (
+      <>
+        <p>
+          Yes. We provide moving services across all UAE emirates, including Abu
+          Dhabi, Sharjah, Ajman, Ras Al Khaimah, Fujairah, and Umm Al Quwain.
+        </p>
+        <p>
+          Whether you are relocating within Dubai or moving to another emirate,
+          we can handle the entire process under a single quote.
         </p>
       </>
     ),
