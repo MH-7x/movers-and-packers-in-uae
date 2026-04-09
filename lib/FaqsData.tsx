@@ -312,7 +312,7 @@ export const VillaMovingDubaiFaqs: FAQData[] = [
     ),
   },
   {
-    question: "How long does a villa move in Dubai take?",
+    question: "How long does a villa moving in Dubai take?",
     answer: (
       <>
         <p>
@@ -357,7 +357,7 @@ export const VillaMovingDubaiFaqs: FAQData[] = [
     ),
   },
   {
-    question: "Is my furniture insured during the villa move?",
+    question: "Is my furniture insured during the villa moving in dubai?",
     answer: (
       <>
         <p>Yes. All items are fully insured during transit at no extra cost.</p>
@@ -370,7 +370,8 @@ export const VillaMovingDubaiFaqs: FAQData[] = [
     ),
   },
   {
-    question: "Do I need a move-out permit from my building to move a villa?",
+    question:
+      "Do I need a move-out permit from my building to move a villa in dubai?",
     answer: (
       <>
         <p>
@@ -396,6 +397,100 @@ export const VillaMovingDubaiFaqs: FAQData[] = [
         <p>
           Whether you are relocating within Dubai or moving to another emirate,
           we can handle the entire process under a single quote.
+        </p>
+      </>
+    ),
+  },
+];
+
+export const ApartmentMovingDubaiFaqs: FAQData[] = [
+  {
+    question: "How much do apartment movers in Dubai cost?",
+    answer: (
+      <>
+        <p>
+          The cost depends on your apartment size, the distance of the move, and
+          the services you need such as packing, full relocation, or storage.
+        </p>
+        <p>
+          We do not provide vague estimates. Contact us with your details and we
+          will give you an exact quote with no hidden charges.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "Do you offer same-day apartment moving in Dubai?",
+    answer: (
+      <>
+        <p>
+          Yes. If you have an urgent relocation such as an expired lease or a
+          sudden move-in date, contact us via call or WhatsApp.
+        </p>
+        <p>
+          We will check same-day availability and dispatch the fastest available
+          team and truck to your location.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "Are you a licensed apartment moving company in Dubai?",
+    answer: (
+      <>
+        <p>
+          Yes. We are an officially registered moving company operating legally
+          in the UAE since 1998.
+        </p>
+        <p>
+          You can verify this through UAE trade registration records. This
+          ensures accountability, insurance, and professional service — unlike
+          unlicensed freelance movers.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "Do you provide packing materials for apartment moves?",
+    answer: (
+      <>
+        <p>Yes. All packing materials are included as part of the service.</p>
+        <p>
+          We bring double-walled cardboard boxes, bubble wrap, stretch plastic,
+          and fabric blankets, so you do not need to arrange anything
+          beforehand.
+        </p>
+      </>
+    ),
+  },
+  {
+    question:
+      "Can you move apartments to other emirates like Sharjah or Abu Dhabi?",
+    answer: (
+      <>
+        <p>
+          Absolutely. We handle inter-emirate apartment moves across all seven
+          UAE emirates including Abu Dhabi, Sharjah, Ajman, Ras Al Khaimah,
+          Fujairah, Umm Al Quwain, and Al Ain.
+        </p>
+        <p>
+          Simply provide your destination when requesting a quote and we will
+          handle the rest.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "When do I pay for the apartment moving service?",
+    answer: (
+      <>
+        <p>
+          Payment is made after the job is completed and you are fully satisfied
+          — not before.
+        </p>
+        <p>
+          We accept cash, online bank transfer, and bank cheque. There is no
+          requirement for any upfront deposit.
         </p>
       </>
     ),

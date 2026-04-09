@@ -21,8 +21,8 @@ const VillaMoversInDubai = () => {
         desc="Looking for villa movers in Dubai? At Movers and Packers UAE — registered and operating since 1998 — we handle every part of your villa relocation: from the pre-move assessment and professional packing to transport, assembly, and optional unpacking. "
         btnText="Get A Quote For Villa Moving"
       />
-      <p className="max-w-4xl mx-auto mt-16 text-lg">
-        With 25+ years of experience, 8 RTA-approved enclosed box trucks, and a
+      <p className="max-w-4xl mx-auto mt-16 md:text-lg md:px-0 px-4">
+        With 25+ years of experience, RTA-approved enclosed box trucks, and a
         fully trained team available around the clock, we make sure your move
         goes smoothly, your items arrive in perfect condition, and the price you
         agreed on is the price you pay.
@@ -34,7 +34,7 @@ const VillaMoversInDubai = () => {
             <span className="font-bold md:block">
               Get Free Online Estimates
             </span>{" "}
-            For Your Villa Moving in Dubai
+            From Villa Movers in Dubai
           </>
         }
         btnText="Get My Villa Moving Quote"
@@ -79,7 +79,7 @@ const VillaMoversInDubai = () => {
               responsible for.
             </p>
             <h3 className="mt-5 mb-3!">
-              What Sets a Registered Villa Moving Company Apart
+              What Sets a Registered Villa Movers in Dubai Apart
             </h3>
             <p>
               Here is the practical difference between hiring a registered mover
@@ -363,7 +363,7 @@ const VillaMoversInDubai = () => {
             </p>
           </section>
           <section>
-            <h2>Villa Moving Prices in Dubai — What to Expect</h2>
+            <h2>Villa Movers in Dubai Prices — How Much Does It Cost?</h2>
             <p>
               Most moving companies avoid talking about prices online. We do
               not. Transparent pricing is part of how we operate, and it makes
@@ -457,7 +457,7 @@ const VillaMoversInDubai = () => {
           </div>
           <section>
             <h2>
-              Why Movers and Packers UAE Are the{" "}
+              Why Movers and Packers in UAE Are the{" "}
               <br className="md:block hidden" /> Best Villa Movers in Dubai
             </h2>
             <p>

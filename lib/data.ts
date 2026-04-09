@@ -26,7 +26,7 @@ export const services = [
         name: "Apartment & Flat Shifting",
         description:
           "Studio to 5-bedroom moves with same-day service available. We work around your schedule and handle every floor.",
-        href: "#",
+        href: "/apartment-movers-dubai",
         img: {
           src: "/ser/apartment-flat-shifting-dubai-uae.jpg",
           alt: "Apartment and flat shifting service in Dubai with movers carrying boxes in a high-rise building",
@@ -402,7 +402,7 @@ export const AllServices = [
     name: "Apartment & Flat Shifting",
     description:
       "Studio to 5-bedroom moves with same-day service available. We work around your schedule and handle every floor.",
-    href: "#",
+    href: "/apartment-movers-dubai",
     img: {
       src: "/ser/apartment-flat-shifting-dubai-uae.jpg",
       alt: "Apartment and flat shifting service in Dubai with movers carrying boxes in a high-rise building",
