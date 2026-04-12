@@ -359,8 +359,8 @@ const OfficeMoversInDubai = () => {
           <section>
             <h2>Office Moving Coverage Across Dubai & the UAE</h2>
             <p>
-              We serve businesses across all of Dubai's major commercial
-              districts and across all nine UAE emirates. No matter where you're
+              We serve businesses across all of Dubai&apos;s major commercial
+              districts and across all nine UAE emirates. No matter where you&apos;re
               moving from or to — we cover it.
             </p>
             <div className="mt-10 grid md:grid-cols-2 grid-cols-1 gap-5">
