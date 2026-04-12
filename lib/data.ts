@@ -52,7 +52,7 @@ export const services = [
         name: "Office Relocation",
         description:
           "Minimal downtime. IT equipment handled carefully, workstations labelled, and everything set up correctly from day one.",
-        href: "#",
+        href: "/office-movers-in-dubai",
         img: {
           src: "/ser/office-relocation-dubai-it-moving.jpg",
           alt: "Office relocation service in Dubai with movers handling IT equipment and workstations carefully",
@@ -423,7 +423,7 @@ export const AllServices = [
     name: "Office Relocation",
     description:
       "Minimal downtime. IT equipment handled carefully, workstations labelled, and everything set up correctly from day one.",
-    href: "#",
+    href: "/office-movers-in-dubai",
     img: {
       src: "/ser/office-relocation-dubai-it-moving.jpg",
       alt: "Office relocation service in Dubai with movers handling IT equipment and workstations carefully",

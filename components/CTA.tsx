@@ -4,7 +4,7 @@ import { PhoneCall } from "lucide-react";
 
 const CTA = ({ title, desc }: { title: string; desc: string }) => {
   return (
-    <section className="mt-32 bg-foreground md:px-20 px-3 md:py-0 pt-16 items-center md:gap-0 gap-y-10 min-h-96 grid md:grid-cols-2 relative overflow-hidden ">
+    <section className="mt-20 bg-foreground md:px-20 px-3 md:py-0 pt-16 items-center md:gap-0 gap-y-10 min-h-96 grid md:grid-cols-2 relative overflow-hidden ">
       <div>
         <h2 className="md:text-4xl text-3xl font-bold text-white">{title}</h2>
         <p className=" mt-4 text-white/80">{desc}</p>

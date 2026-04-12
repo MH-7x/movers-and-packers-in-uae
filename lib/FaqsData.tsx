@@ -496,3 +496,132 @@ export const ApartmentMovingDubaiFaqs: FAQData[] = [
     ),
   },
 ];
+
+export const OfficeMovingDubaiFaqs = [
+  {
+    question: "How much notice do I need to book office movers in Dubai?",
+    answer: (
+      <>
+        <p>
+          For small offices, we can often arrange a move within 24 to 48 hours.
+        </p>
+        <p>
+          Larger commercial relocations benefit from 1 to 2 weeks of planning so
+          we can coordinate access permits, elevator bookings, and proper
+          scheduling.
+        </p>
+        <p>
+          If your situation is urgent, contact us directly — we will clearly
+          tell you what is possible.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "Do you handle office relocation across different UAE emirates?",
+    answer: (
+      <>
+        <p>
+          Yes. We handle office relocation across all UAE emirates including
+          Dubai, Abu Dhabi, Sharjah, Ajman, Ras Al Khaimah, Al Ain, Umm Al
+          Quwain, and Fujairah.
+        </p>
+        <p>
+          Inter-emirate moves are quoted transparently with no hidden surcharges
+          based on distance.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "Can you safely move IT equipment and servers?",
+    answer: (
+      <>
+        <p>
+          Yes. We use anti-static packing materials and proper handling
+          protocols for all office electronics including computers, servers,
+          printers, and networking hardware.
+        </p>
+        <p>
+          Every cable is labeled before unplugging, and all items are documented
+          to ensure your IT team can reconnect everything quickly at the new
+          location.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "Do you offer after-hours or weekend office moves?",
+    answer: (
+      <>
+        <p>
+          Yes. We operate during evenings, overnight hours, and weekends to suit
+          your business schedule.
+        </p>
+        <p>
+          Many clients prefer Thursday evening or Friday night moves so their
+          office is ready before the working week begins.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "Is my office move insured?",
+    answer: (
+      <>
+        <p>Yes. 100% insurance coverage is included in every office move.</p>
+        <p>
+          Your furniture, IT equipment, documents, and all other assets are
+          protected from packing at the old location to setup at the new one.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "How is the quote calculated?",
+    answer: (
+      <>
+        <p>
+          The quote is based on your office size, volume and type of items,
+          distance, timing, and any additional services required.
+        </p>
+        <p>
+          We provide a fixed, itemized quote — not a range. The price you see is
+          the final price with no extra charges added after completion.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "Do you provide storage during the office relocation?",
+    answer: (
+      <>
+        <p>
+          Yes. We offer both short-term and long-term storage solutions in
+          secure facilities.
+        </p>
+        <p>
+          Your office items remain safe until your new space is ready for
+          delivery and setup.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "Are you a licensed moving company in Dubai?",
+    answer: (
+      <>
+        <p>
+          Yes. We are an officially registered moving company operating since
+          1998 with a verified Google Business Profile and a physical office in
+          Dubai.
+        </p>
+        <p>
+          You can verify our registration and credentials before booking, so you
+          know you are working with a professional and legally compliant service
+          provider.
+        </p>
+      </>
+    ),
+  },
+];

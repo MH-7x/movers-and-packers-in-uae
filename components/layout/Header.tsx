@@ -24,7 +24,7 @@ const servicesMenuItems = [
   { label: "Villa moving", href: "/villa-movers-in-dubai" },
   { label: "Apartment Moving", href: "/apartment-movers-dubai" },
   { label: "Flats shifting", href: "/apartment-movers-dubai" },
-  { label: "Office relocation", href: "#" },
+  { label: "Office relocation", href: "/office-movers-in-dubai" },
   { label: "Packing Services (cargo, storage)", href: "#" },
   {
     label: "All kinds of furniture moving",
