@@ -31,7 +31,7 @@ const servicesMenuItems = [
   },
   {
     label: "All kinds of furniture moving",
-    href: "#",
+    href: "/furniture-moving-services-uae",
     submenu: [
       { label: "Single furniture moving", href: "#" },
       { label: "Bank's furniture moving", href: "#" },

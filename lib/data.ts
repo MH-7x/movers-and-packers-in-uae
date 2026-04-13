@@ -98,7 +98,7 @@ export const services = [
         name: "All Kinds of Furniture Moving",
         description:
           "Single items or full loads including sofas, beds, wardrobes, and dining sets — packed properly and delivered safely.",
-        href: "#",
+        href: "/furniture-moving-services-uae",
         img: {
           src: "/ser/furniture-moving-dubai-uae-service.jpg",
           alt: "Furniture moving service in Dubai with safe packing and transport of sofas beds and wardrobes",
@@ -474,7 +474,7 @@ export const AllServices = [
     name: "All Kinds of Furniture Moving",
     description:
       "Single items or full loads including sofas, beds, wardrobes, and dining sets — packed properly and delivered safely.",
-    href: "#",
+    href: "/furniture-moving-services-uae",
     img: {
       src: "/ser/furniture-moving-dubai-uae-service.jpg",
       alt: "Furniture moving service in Dubai with safe packing and transport of sofas beds and wardrobes",

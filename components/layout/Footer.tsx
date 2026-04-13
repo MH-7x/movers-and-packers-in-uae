@@ -252,7 +252,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <a
-                    href="#"
+                    href="/furniture-moving-services-uae"
                     className="text-[#a5abb1] hover:text-white text-[13.5px] transition-colors"
                   >
                     Furniture Moving

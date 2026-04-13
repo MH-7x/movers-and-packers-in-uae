@@ -736,3 +736,114 @@ export const PackingServicesDubaiFaqs: FAQData[] = [
     ),
   },
 ];
+
+export const FurnitureMovingUaeFaqs: FAQData[] = [
+  {
+    question: "How much does furniture transport cost in the UAE?",
+    answer: (
+      <>
+        <p>
+          The cost of furniture moving in the UAE depends on the number of
+          items, distance, floor level, and whether packing or disassembly is
+          needed.
+        </p>
+        <p>
+          For a single-item furniture move, starting prices can be from AED
+          300–500 within the same emirate. Full household furniture moves vary
+          widely.
+        </p>
+        <p>Contact us for a free, itemized quote.</p>
+      </>
+    ),
+  },
+  {
+    question: "Can you move a single piece of furniture only?",
+    answer: (
+      <>
+        <p>
+          Yes. We offer a dedicated single furniture moving service for
+          customers who need to move just one item — a sofa, dining table,
+          wardrobe, or any other piece — without paying for a full truck.
+        </p>
+        <p>Contact us to discuss pick-up and delivery options.</p>
+      </>
+    ),
+  },
+  {
+    question: "Do you disassemble and reassemble furniture?",
+    answer: (
+      <>
+        <p>
+          Yes. Our trained movers handle complete furniture disassembly before
+          the move and full reassembly at your new location. This is included in
+          our quoted price.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "Is furniture moving available same-day in UAE?",
+    answer: (
+      <>
+        <p>
+          Yes. We offer same-day furniture moving service for urgent situations.
+          Contact us by phone or WhatsApp and we will arrange the fastest
+          available slot.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "Are you a legally registered furniture moving company in UAE?",
+    answer: (
+      <>
+        <p>
+          Yes. We have been officially registered since 1998 and operate fully
+          legally. You can verify our Google Business Profile on Maps and meet
+          with our owner before booking.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "What payment methods do you accept?",
+    answer: (
+      <>
+        <p>
+          We accept cash (after job completion), online bank transfer, and bank
+          cheque. We never ask for full payment upfront — you pay only after you
+          are satisfied with the completed move.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "Do you provide furniture storage services?",
+    answer: (
+      <>
+        <p>
+          Yes. We offer secure short-term and long-term storage for furniture
+          and household items. Storage is useful when your new location is not
+          ready at the time of the move.
+        </p>
+        <p>All items are fully insured throughout the storage period.</p>
+      </>
+    ),
+  },
+  {
+    question: "Can you move furniture across different UAE emirates?",
+    answer: (
+      <>
+        <p>
+          Absolutely. We handle furniture moving across all UAE emirates
+          including Dubai, Abu Dhabi, Sharjah, Ajman, Ras Al Khaimah, Al Ain,
+          Umm Al Quwain, and Fujairah.
+        </p>
+        <p>
+          Simply provide your destination when requesting a quote and we will
+          handle the rest with the same fixed-price transparency.
+        </p>
+      </>
+    ),
+  },
+];
