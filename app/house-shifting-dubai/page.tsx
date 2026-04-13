@@ -406,7 +406,7 @@ const HouseShiftingServices = () => {
             </ul>
           </section>
         </div>
-        <aside className="lg:col-span-2 border ">
+        <aside className="lg:col-span-2 border self-start sticky top-24 ">
           <h3 className="uppercase text-xl font-bold text-center px-5 pt-5">
             Our Services
           </h3>

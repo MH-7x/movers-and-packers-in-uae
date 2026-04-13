@@ -360,8 +360,8 @@ const OfficeMoversInDubai = () => {
             <h2>Office Moving Coverage Across Dubai & the UAE</h2>
             <p>
               We serve businesses across all of Dubai&apos;s major commercial
-              districts and across all nine UAE emirates. No matter where you&apos;re
-              moving from or to — we cover it.
+              districts and across all nine UAE emirates. No matter where
+              you&apos;re moving from or to — we cover it.
             </p>
             <div className="mt-10 grid md:grid-cols-2 grid-cols-1 gap-5">
               <div>
@@ -563,7 +563,7 @@ const OfficeMoversInDubai = () => {
           </section>
         </div>
 
-        <aside className="lg:col-span-2 border ">
+        <aside className="lg:col-span-2 border self-start sticky top-24 ">
           <h3 className="uppercase text-xl font-bold text-center px-5 pt-5">
             Our Services
           </h3>

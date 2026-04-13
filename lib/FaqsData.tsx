@@ -847,3 +847,208 @@ export const FurnitureMovingUaeFaqs: FAQData[] = [
     ),
   },
 ];
+
+export const SingleFurnitureMovingUaeFaqs: FAQData[] = [
+  {
+    question: "Can you move just one piece of furniture between emirates?",
+    answer: (
+      <>
+        <p>
+          Yes. We provide inter-emirate single furniture moving between all UAE
+          emirates, including Dubai to Abu Dhabi, Sharjah to Dubai, and any
+          other combination. The price depends on the distance.
+        </p>
+      </>
+    ),
+  },
+  {
+    question:
+      "Do you offer furniture pick up and delivery for marketplace purchases?",
+    answer: (
+      <>
+        <p>
+          Absolutely. If you have bought furniture from a seller on a
+          marketplace like Dubizzle or Facebook Marketplace and need it
+          delivered to your home, we offer a dedicated furniture pick up and
+          delivery service at a competitive price.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "How quickly can you arrange single furniture moving?",
+    answer: (
+      <>
+        <p>
+          For same-day service, contact us early in the day. We can usually
+          arrange single-item moves within a few hours depending on our current
+          schedule and your location.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "What is the cost of moving a sofa in Dubai?",
+    answer: (
+      <>
+        <p>
+          Moving a sofa within Dubai depends on the size of the sofa and the
+          pickup/delivery distance. Contact us for a free, exact quote — we will
+          give you a fixed price with no surprises.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "Do you disassemble furniture for single-item moves?",
+    answer: (
+      <>
+        <p>
+          Yes. If the furniture piece needs to be disassembled to exit the
+          building or fit through doorways, our team handles full disassembly
+          and reassembly as part of the service.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "What types of furniture can you move as a single item?",
+    answer: (
+      <>
+        <p>
+          We can move virtually any furniture piece including sofas, beds,
+          wardrobes, dining tables, TV units, bookshelves, appliances, office
+          desks, safes, and outdoor furniture. Contact us with your specific
+          item and we will provide a quote.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "Is my single furniture move insured?",
+    answer: (
+      <>
+        <p>
+          Yes. Every single furniture move is covered by 100% insurance from
+          pickup to delivery at no extra cost. Your item is fully protected.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "Can I get a quote for single furniture moving today?",
+    answer: (
+      <>
+        <p>
+          Yes. Contact us by phone, WhatsApp, or our website form with details
+          of your furniture item, pickup location, and delivery address. We will
+          provide a free, fixed-price quote directly to your WhatsApp.
+        </p>
+      </>
+    ),
+  },
+];
+
+export const BankFurnitureMovingUaeFaqs: FAQData[] = [
+  {
+    question: "Can you move a bank safe or vault-room furniture?",
+    answer: (
+      <>
+        <p>
+          Yes. We have the equipment and experience to handle heavy safes and
+          vault-area furniture. Contact us to describe the safe&apos;s size and
+          weight for an accurate quote.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "Can the bank move happen on weekends or after hours?",
+    answer: (
+      <>
+        <p>
+          Yes. We understand that bank relocations cannot disrupt business
+          hours. We offer flexible scheduling including nights and weekends to
+          ensure your branch remains operational.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "How do you ensure privacy and security during the move?",
+    answer: (
+      <>
+        <p>
+          Our team operates under strict confidentiality protocols. Only
+          authorized, vetted team members are assigned to bank moves. We work
+          entirely under your facilities team&apos;s supervision and follow your
+          security access guidelines throughout.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "Do you provide a written quote and invoice for bank moves?",
+    answer: (
+      <>
+        <p>
+          Yes. We provide a detailed written quote and a full invoice for all
+          commercial moves. Our pricing is transparent with no hidden charges,
+          suitable for institutional procurement processes.
+        </p>
+      </>
+    ),
+  },
+  {
+    question:
+      "What makes your bank moving service different from regular movers?",
+    answer: (
+      <>
+        <p>
+          We have 25+ years of experience in commercial and sensitive
+          environments. Our team is vetted and trained specifically for handling
+          financial institutions. We operate under strict Protection and Privacy
+          principles, offer after-hours services, and provide
+          institutional-grade processes and documentation.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "Do you serve all UAE emirates for bank relocations?",
+    answer: (
+      <>
+        <p>
+          Yes. We provide bank furniture moving services across all UAE emirates
+          including Dubai, Abu Dhabi, Sharjah, Ajman, Ras Al Khaimah, Al Ain,
+          Fujairah, and Umm Al Quwain.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "How do I start the bank relocation planning process?",
+    answer: (
+      <>
+        <p>
+          Contact us to schedule a confidential pre-move consultation. Our
+          supervisor will meet with your facilities team to assess the scope of
+          the move, discuss security requirements, and develop a customized
+          moving plan that works for your institution.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "Is my bank relocation covered by insurance?",
+    answer: (
+      <>
+        <p>
+          Yes. 100% insurance coverage is included in all our bank furniture
+          moving services. All items are protected from the moment we pack them
+          until they are placed in your new location.
+        </p>
+      </>
+    ),
+  },
+];

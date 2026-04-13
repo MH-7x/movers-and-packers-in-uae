@@ -271,46 +271,47 @@ const ApartmentMovers = () => {
             <p>
               A lot of people in Dubai have been burned by freelance movers —
               hidden fees after the job, furniture scratched on an open truck,
-              no insurance and nowhere to complain. That is not what we are.{" "}
-              <p className="mt-2">
-                Here is a straightforward comparison so you can decide for
-                yourself.
-              </p>
-              <div className="mt-10 grid md:grid-cols-2 grid-cols-1 gap-5">
-                <div>
-                  <h3 className="text-foreground">
-                    ⓧ Freelance / Unregistered Movers
-                  </h3>
-                  <ul className="list-inside list-disc mt-3 text-muted-foreground leading-tight">
-                    <li>No legal license or trade registration</li>
-                    <li>Hidden charges appear after the job</li>
-                    <li>Open trucks — furniture damaged by heat and dust</li>
-                    <li>No insurance — any loss is your problem</li>
-                    <li>Payment demanded upfront, no recourse</li>
-                  </ul>
-                </div>
-                <div>
-                  <h3 className="text-foreground">
-                    ✔ Freelance / Unregistered Movers
-                  </h3>
-                  <ul className="list-inside list-disc mt-3 text-muted-foreground leading-tight">
-                    <li>Officially registered since 1998 — verifiable</li>
-                    <li>Quoted price = final price, no extras</li>
-                    <li>RTA-approved enclosed box trucks always</li>
-                    <li>100% insurance on all your belongings</li>
-                    <li>Pay only after you are fully satisfied</li>
-                  </ul>
-                </div>
+              no insurance and nowhere to complain. That is not what we
+              are.{" "}
+            </p>
+            <p className="mt-2">
+              Here is a straightforward comparison so you can decide for
+              yourself.
+            </p>
+            <div className="mt-10 grid md:grid-cols-2 grid-cols-1 gap-5">
+              <div>
+                <h3 className="text-foreground">
+                  ⓧ Freelance / Unregistered Movers
+                </h3>
+                <ul className="list-inside list-disc mt-3 text-muted-foreground leading-tight">
+                  <li>No legal license or trade registration</li>
+                  <li>Hidden charges appear after the job</li>
+                  <li>Open trucks — furniture damaged by heat and dust</li>
+                  <li>No insurance — any loss is your problem</li>
+                  <li>Payment demanded upfront, no recourse</li>
+                </ul>
               </div>
-              <p className="mt-5 ">
-                The difference is not just convenience — it is protection. With
-                a registered company, you have a legal paper trail, a direct
-                point of contact, and actual recourse if something goes wrong.
-              </p>
-              <p>
-                With an unregistered operator, you have nothing in writing and
-                no way to hold anyone accountable.
-              </p>
+              <div>
+                <h3 className="text-foreground">
+                  ✔ Freelance / Unregistered Movers
+                </h3>
+                <ul className="list-inside list-disc mt-3 text-muted-foreground leading-tight">
+                  <li>Officially registered since 1998 — verifiable</li>
+                  <li>Quoted price = final price, no extras</li>
+                  <li>RTA-approved enclosed box trucks always</li>
+                  <li>100% insurance on all your belongings</li>
+                  <li>Pay only after you are fully satisfied</li>
+                </ul>
+              </div>
+            </div>
+            <p className="mt-5 ">
+              The difference is not just convenience — it is protection. With a
+              registered company, you have a legal paper trail, a direct point
+              of contact, and actual recourse if something goes wrong.
+            </p>
+            <p>
+              With an unregistered operator, you have nothing in writing and no
+              way to hold anyone accountable.
             </p>
           </section>
           <section className="grid md:grid-cols-2 grid-cols-1 gap-10">
@@ -519,7 +520,7 @@ const ApartmentMovers = () => {
           </section>
         </div>
 
-        <aside className="lg:col-span-2 border ">
+        <aside className="lg:col-span-2 border self-start sticky top-24 ">
           <h3 className="uppercase text-xl font-bold text-center px-5 pt-5">
             Our Services
           </h3>

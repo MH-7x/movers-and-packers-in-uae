@@ -121,7 +121,7 @@ const QuotationSection = ({
             placeholder="More Details About Your Move.."
             className="py-3 px-2 border-b border-b-white focus:border-b-primary outline-none col-span-full min-h-28"
           ></textarea>
-          <Button size={"lg"} className="mt-5">
+          <Button size={"lg"} className="mt-5 col-span-full">
             {btnText || "Get A Quote"} <Send strokeWidth={1} />
           </Button>
         </form>
