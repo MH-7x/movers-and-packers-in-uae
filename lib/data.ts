@@ -128,7 +128,7 @@ export const services = [
         name: "Packing Services",
         description:
           "Complete packing solutions including bubble wrap, stretch film, blankets, and labeled boxes — no effort required from you.",
-        href: "#",
+        href: "/packing-services-in-dubai",
         img: {
           src: "/ser/packing-services-dubai-bubble-wrap.jpg",
           alt: "Packing services in Dubai with movers using bubble wrap boxes and protective materials",
@@ -504,7 +504,7 @@ export const AllServices = [
     name: "Packing Services",
     description:
       "Complete packing solutions including bubble wrap, stretch film, blankets, and labeled boxes — no effort required from you.",
-    href: "#",
+    href: "/packing-services-in-dubai",
     img: {
       src: "/ser/packing-services-dubai-bubble-wrap.jpg",
       alt: "Packing services in Dubai with movers using bubble wrap boxes and protective materials",

@@ -497,7 +497,7 @@ export const ApartmentMovingDubaiFaqs: FAQData[] = [
   },
 ];
 
-export const OfficeMovingDubaiFaqs = [
+export const OfficeMovingDubaiFaqs: FAQData[] = [
   {
     question: "How much notice do I need to book office movers in Dubai?",
     answer: (
@@ -620,6 +620,117 @@ export const OfficeMovingDubaiFaqs = [
           You can verify our registration and credentials before booking, so you
           know you are working with a professional and legally compliant service
           provider.
+        </p>
+      </>
+    ),
+  },
+];
+
+export const PackingServicesDubaiFaqs: FAQData[] = [
+  {
+    question: "What is included in your packing services in Dubai?",
+    answer: (
+      <>
+        <p>
+          Our packing services cover everything. We supply all materials,
+          including carton boxes, bubble wrap, stretch film, foam sheets, and
+          furniture blankets.
+        </p>
+        <p>
+          Our team packs your belongings professionally, labels every box by
+          room and fragility, and can also include furniture dismantling and
+          optional unpacking at your new location.
+        </p>
+        <p>Every move comes with 100% insurance coverage at no added cost.</p>
+      </>
+    ),
+  },
+  {
+    question: "Do you provide packing materials, or do I need to buy them?",
+    answer: (
+      <>
+        <p>
+          We bring everything. You do not need to purchase or arrange any
+          materials before we arrive.
+        </p>
+        <p>
+          All supplies, from standard carton boxes to custom wooden crates for
+          fragile items, are included as part of the service.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "How much do packing services cost in Dubai?",
+    answer: (
+      <>
+        <p>
+          Costs vary based on the volume of items, the type of packing required,
+          distance, and any additional services like unpacking or storage.
+        </p>
+        <p>
+          We provide a fully itemized quote with no hidden charges. The price in
+          the quote is the price you pay. Contact us on WhatsApp or by phone and
+          we will send you a clear quote based on your specific situation.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "Can I book just packing without the full moving service?",
+    answer: (
+      <>
+        <p>
+          Yes. You can book packing only, unpacking only, or both, depending on
+          what you need.
+        </p>
+        <p>
+          Our services are flexible and built around your requirements. Just
+          tell us what you need and we will put together the right arrangement.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "Do you offer same-day or urgent packing services in Dubai?",
+    answer: (
+      <>
+        <p>
+          Yes. If you have an urgent move, contact us directly and we will
+          arrange a team as quickly as possible based on availability.
+        </p>
+        <p>
+          Same-day service is offered for situations where waiting is not an
+          option, such as last-minute relocations or sudden timeline changes.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "Is my move insured?",
+    answer: (
+      <>
+        <p>
+          Every move with us is covered by 100% insurance from the moment our
+          team starts packing until your belongings are delivered and you are
+          satisfied.
+        </p>
+        <p>If something goes wrong, it is covered.</p>
+      </>
+    ),
+  },
+  {
+    question: "Do you pack for cargo and international shipping?",
+    answer: (
+      <>
+        <p>
+          Yes. We provide export-grade cargo packing services for items being
+          shipped by sea freight or air cargo.
+        </p>
+        <p>
+          This includes moisture-resistant wrapping, vacuum sealing,
+          heat-treated custom wooden crates, and labeling that meets
+          international shipping requirements.
         </p>
       </>
     ),
