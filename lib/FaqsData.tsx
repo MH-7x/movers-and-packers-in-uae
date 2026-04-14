@@ -1052,3 +1052,113 @@ export const BankFurnitureMovingUaeFaqs: FAQData[] = [
     ),
   },
 ];
+
+export const HospitalFurnitureMovingFaqs: FAQData[] = [
+  {
+    question: "Can you move hospital beds and bariatric furniture safely?",
+    answer: (
+      <>
+        <p>
+          Yes. We have experience moving all types of hospital beds including
+          standard, adjustable, bariatric, and ICU beds. Our team uses proper
+          lifting techniques and equipment to ensure safe handling.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "How do you ensure hygiene compliance during hospital moves?",
+    answer: (
+      <>
+        <p>
+          We use clean, unused packing materials and ensure all items are
+          properly covered and sealed during transport. We follow the
+          instructions of the hospital&apos;s infection control team regarding
+          any special requirements.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "Can hospital moves be scheduled outside working hours?",
+    answer: (
+      <>
+        <p>
+          Yes. We understand that hospital operations cannot be disrupted. We
+          offer night-time and weekend scheduling to minimize impact on patient
+          care and hospital services.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "Do you move whole departments or just individual items?",
+    answer: (
+      <>
+        <p>
+          We handle moves of all scales — from a single department relocation to
+          a complete hospital branch move. Contact us to describe your scope and
+          we will plan accordingly.
+        </p>
+      </>
+    ),
+  },
+  {
+    question:
+      "Are you experienced with moving medical office equipment and IT setup?",
+    answer: (
+      <>
+        <p>
+          Yes. Beyond furniture, we handle sensitive medical office equipment,
+          communication systems, and IT infrastructure with the same care and
+          precision as physical furniture. Our team is trained in careful
+          unpacking and reconnection procedures.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "How far in advance should we book a hospital furniture move?",
+    answer: (
+      <>
+        <p>
+          For planned relocations, booking 2 to 4 weeks in advance is ideal to
+          ensure coordination with your facility team and availability of our
+          specialized crew.
+        </p>
+        <p>
+          For urgent situations, contact us directly and we will assess if
+          same-day or emergency scheduling is possible.
+        </p>
+      </>
+    ),
+  },
+  {
+    question:
+      "What is your experience with multi-floor hospital and clinic moves?",
+    answer: (
+      <>
+        <p>
+          We have extensive experience coordinating multi-floor moves across
+          hospitals and medical facilities. We work systematically with your
+          facilities team, coordinate elevator access, manage multiple teams if
+          needed, and maintain detailed labels and inventory tracking to ensure
+          seamless placement.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "Do you provide written quotes and documentation for hospitals?",
+    answer: (
+      <>
+        <p>
+          Yes. We provide detailed written quotes, itemized inventories, and
+          full invoices suitable for institutional procurement and budget
+          approval processes. All our quotes are transparent with no hidden
+          charges.
+        </p>
+      </>
+    ),
+  },
+];

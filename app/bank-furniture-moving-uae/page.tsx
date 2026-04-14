@@ -304,7 +304,7 @@ const BankFurnitureMovers = () => {
               </div>
             </div>
           </section>
-
+ 
           <section>
             <h2>Trust & Professionalism for Your Bank Relocation</h2>
             <div className="flex flex-col gap-y-3 text-muted-foreground">
