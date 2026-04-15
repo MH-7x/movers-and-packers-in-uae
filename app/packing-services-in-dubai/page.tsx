@@ -4,10 +4,10 @@ import QuotationSection from "@/components/QuotationSection";
 import { ReviewSection } from "@/components/ReviewSection";
 import ServiceHero from "@/components/ServiceHero";
 import { Button } from "@/components/ui/button";
-import { AllServices } from "@/lib/data";
+import { AllServices, locations } from "@/lib/data";
 import { PackingServicesDubaiFaqs } from "@/lib/FaqsData";
 import HeroImage from "@/public/ser/packing-services-in-dubai.jpg";
-import { Headset, MapPinCheck, PhoneCall } from "lucide-react";
+import { Headset, MapPinCheck, MessageCircle, PhoneCall } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -711,39 +711,47 @@ const PackingServicesInDubai = () => {
           </section>
         </div>
 
-        <aside className="lg:col-span-2 border self-start sticky top-24 ">
-          <h3 className="uppercase text-xl font-bold text-center px-5 pt-5">
-            Our Services
-          </h3>
-          <ul className="mt-5 text-muted-foreground flex flex-col gap-y-3 p-5">
-            {AllServices.map((ser, i) => (
-              <li
-                key={i}
-                className="border-b last:border-0 pb-2 hover:text-foreground cursor-pointer transition"
-              >
-                {ser.name}
-              </li>
-            ))}
-          </ul>
-          <div className="w-full mt-5 relative overflow-hidden aspect-square">
-            <Image
-              src={"/movers-and-packer-in-uae-team-member.jpg"}
-              alt="movers and packers in uae team member"
-              fill
-              className="object-cover"
-            />
-            <div className="absolute inset-0 w-full h-full bg-primary/75 flex items-center justify-center flex-col gap-y-3 p-5">
-              <Headset size={60} className="text-white" strokeWidth={1.5} />
-              <h3 className="mt-5 text-2xl uppercase font-bold text-white text-shadow-2xs text-center">
-                How We Can Help You With Your Move?
-              </h3>
-              <div className="flex items-center gap-x-2 mt-2 text-white">
-                <PhoneCall /> (050) 445-2808
-              </div>
-              <div className="flex items-center gap-x-2 text-white">
-                <MapPinCheck /> 12 29th St - Al Mankhool – Dubai
-              </div>
+        <aside className="lg:col-span-2 flex flex-col gap-y-5 self-start sticky top-24 md:px-0 px-4">
+          <div className="rounded-2xl bg-muted p-6 space-y-3">
+            <h3 className="font-bold text-lg">Need Hospital Moving Help?</h3>
+            <p className="text-sm text-muted-foreground">
+              Contact our commercial team today for a free consultation and
+              quote. We specialize in healthcare facility relocations.
+            </p>
+            <div className="flex flex-col gap-2 pt-3">
+              <Button className="bg-primary hover:bg-primary/90 w-full gap-2">
+                <PhoneCall size={18} />
+                Call Now
+              </Button>
+              <Button variant="secondary" className="w-full gap-2">
+                <MessageCircle size={18} />
+                WhatsApp
+              </Button>
             </div>
+          </div>
+          <div className="rounded-2xl bg-secondary/50 p-6">
+            <h4 className="font-semibold mb-3 text-lg">OUR MOVING SERVICES</h4>
+            <ul className="text-sm space-y-2 text-muted-foreground">
+              {AllServices.map((ser, i) => (
+                <li key={i} className="flex items-center gap-2">
+                  <span className="text-primary"> ✔ </span>
+                  {ser.name}
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div className="rounded-2xl bg-secondary/50 p-6">
+            <h4 className="font-semibold mb-3 text-lg">AREAS WE SERVES</h4>
+            <ul className="text-sm space-y-2 text-muted-foreground">
+              {locations.map((loc, i) => (
+                <li key={i}>
+                  <Link href={loc.href} className="flex items-center gap-2">
+                    <span className="text-primary"> 🏳 </span>
+                    {loc.title}
+                  </Link>
+                </li>
+              ))}
+            </ul>
           </div>
         </aside>
       </div>

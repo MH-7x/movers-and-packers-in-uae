@@ -33,11 +33,23 @@ const servicesMenuItems = [
     label: "All kinds of furniture moving",
     href: "/furniture-moving-services-uae",
     submenu: [
-      { label: "Single furniture moving", href: "#" },
-      { label: "Bank's furniture moving", href: "#" },
-      { label: "Hospital furniture moving", href: "#" },
-      { label: "Schools' furniture moving", href: "#" },
-      { label: "Restaurant furniture moving", href: "#" },
+      {
+        label: "Single furniture moving",
+        href: "/single-furniture-moving-uae",
+      },
+      { label: "Bank's furniture moving", href: "/bank-furniture-moving-uae" },
+      {
+        label: "Hospital furniture moving",
+        href: "/hospital-furniture-moving-uae",
+      },
+      {
+        label: "Schools' furniture moving",
+        href: "/school-furniture-moving-uae",
+      },
+      {
+        label: "Restaurant furniture moving",
+        href: "/restaurant-furniture-moving-uae",
+      },
     ],
   },
   { label: "Warehouse Moving", href: "#" },

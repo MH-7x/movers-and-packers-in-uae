@@ -72,7 +72,7 @@ export const services = [
         name: "Restaurant Furniture Moving",
         description:
           "Kitchen equipment, counters, chairs, and fixtures moved safely without disrupting your operations.",
-        href: "#",
+        href: "/restaurant-furniture-moving-uae",
         img: {
           src: "/ser/restaurant-furniture-moving-dubai.jpg",
           alt: "Restaurant furniture moving service in Dubai with safe transport of chairs and kitchen equipment",
@@ -82,7 +82,7 @@ export const services = [
         name: "Bank & Hospital Furniture Moving",
         description:
           "Heavy safes, medical equipment, and sensitive assets moved securely with full care.",
-        href: "#",
+        href: "/bank-furniture-moving-uae",
         img: {
           src: "/ser/bank-hospital-furniture-moving-dubai.jpg",
           alt: "Bank and hospital furniture moving in Dubai with secure handling of safes and medical equipment",
@@ -108,7 +108,7 @@ export const services = [
         name: "Single Furniture Delivery Service",
         description:
           "Need just one item moved? We provide fast and reliable single-item delivery anywhere in the UAE.",
-        href: "#",
+        href: "/single-furniture-moving-uae",
         img: {
           src: "/ser/single-furniture-delivery-dubai.jpg",
           alt: "Single furniture delivery service in Dubai with movers transporting one item safely",
@@ -118,7 +118,7 @@ export const services = [
         name: "Industrial Machinery & Heavy Safes",
         description:
           "Specialist rigging team for heavy, awkward, or fragile industrial items. Done safely and professionally.",
-        href: "#",
+        href: "/",
         img: {
           src: "/ser/industrial-machinery-heavy-safe-moving-dubai.jpg",
           alt: "Industrial machinery and heavy safe moving service in Dubai with specialist rigging team",
@@ -443,7 +443,7 @@ export const AllServices = [
     name: "Restaurant Furniture Moving",
     description:
       "Kitchen equipment, counters, chairs, and fixtures moved safely without disrupting your operations.",
-    href: "#",
+    href: "/restaurant-furniture-moving-uae",
     img: {
       src: "/ser/restaurant-furniture-moving-dubai.jpg",
       alt: "Restaurant furniture moving service in Dubai with safe transport of chairs and kitchen equipment",
@@ -453,7 +453,7 @@ export const AllServices = [
     name: "Bank & Hospital Furniture Moving",
     description:
       "Heavy safes, medical equipment, and sensitive assets moved securely with full care.",
-    href: "#",
+    href: "/bank-furniture-moving-uae",
     img: {
       src: "/ser/bank-hospital-furniture-moving-dubai.jpg",
       alt: "Bank and hospital furniture moving in Dubai with secure handling of safes and medical equipment",
@@ -463,7 +463,7 @@ export const AllServices = [
     name: "School Furniture Moving",
     description:
       "Classrooms, science labs, and libraries moved efficiently with zero damage and proper organization.",
-    href: "#",
+    href: "/school-furniture-moving-uae",
     img: {
       src: "/ser/school-furniture-moving-services-in-uae.jpg",
       alt: "School furniture moving service in UAE with efficient relocation and organization",
@@ -484,7 +484,7 @@ export const AllServices = [
     name: "Single Furniture Delivery Service",
     description:
       "Need just one item moved? We provide fast and reliable single-item delivery anywhere in the UAE.",
-    href: "#",
+    href: "/single-furniture-moving-uae",
     img: {
       src: "/ser/single-furniture-delivery-dubai.jpg",
       alt: "Single furniture delivery service in Dubai with movers transporting one item safely",

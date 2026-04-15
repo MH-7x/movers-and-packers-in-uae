@@ -1162,3 +1162,332 @@ export const HospitalFurnitureMovingFaqs: FAQData[] = [
     ),
   },
 ];
+
+export const SchoolFurnitureMovingFaqs: FAQData[] = [
+  {
+    question: "Can you move a whole school campus in phases?",
+    answer: (
+      <>
+        <p>
+          Yes. For large campuses with multiple buildings, we plan and execute
+          phased moves, working section by section to keep the process
+          manageable and organized.
+        </p>
+        <p>
+          This allows the school to continue operating in some areas while the
+          move happens in others, minimizing disruption to students and staff.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "Can moves be scheduled during school holidays?",
+    answer: (
+      <>
+        <p>
+          Yes. We encourage schools to plan moves during term breaks. We offer
+          flexible scheduling to align with your academic calendar, including
+          summer holidays, Eid breaks, winter breaks, and spring holidays.
+        </p>
+        <p>
+          This ensures moves happen when students are not present and classroom
+          disruption is eliminated.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "How do you keep track of which furniture goes in which room?",
+    answer: (
+      <>
+        <p>
+          We use a systematic labelling and inventory process. Each piece of
+          furniture is tagged with its destination room number before moving,
+          ensuring everything ends up in the right place.
+        </p>
+        <p>
+          This detailed tracking prevents confusion, speeds up setup at the new
+          location, and ensures classrooms are ready for the next term.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "Do you move science lab furniture and equipment stands?",
+    answer: (
+      <>
+        <p>
+          Yes. We handle lab benches, storage cabinets, and equipment stands
+          carefully. For specialist scientific equipment, we recommend
+          discussing requirements with our commercial team in advance.
+        </p>
+        <p>
+          We follow proper handling procedures to ensure lab safety and
+          functionality after the move.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "Is a formal invoice available for school procurement?",
+    answer: (
+      <>
+        <p>
+          Yes. We provide a formal written quote and invoice suitable for
+          school, college, or university procurement requirements. We accept
+          bank transfer and cheque in addition to cash.
+        </p>
+        <p>
+          All our quotes are transparent and itemized, making the procurement
+          process straightforward for educational institutions.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "How much does school furniture moving cost in UAE?",
+    answer: (
+      <>
+        <p>
+          The cost depends on the size of the school, the volume of furniture,
+          the distance between locations, and the complexity of the move.
+        </p>
+        <p>
+          A small school relocation might start from AED 2,500, while a large
+          multi-building campus move can range from AED 8,000 to AED 20,000+.
+        </p>
+        <p>Contact us for a free custom quote based on your specific needs.</p>
+      </>
+    ),
+  },
+  {
+    question:
+      "What faculty areas can you handle in an educational institution?",
+    answer: (
+      <>
+        <p>
+          We handle moves for all areas: classrooms, libraries, science labs, IT
+          suites, administration offices, staff rooms, sports facilities, dining
+          halls, nurseries, and lecture halls.
+        </p>
+        <p>
+          Each area has unique requirements, and our team is experienced in
+          managing all of them systematically.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "How long does a school furniture move typically take?",
+    answer: (
+      <>
+        <p>
+          A small school with 10-15 classrooms typically takes 2-3 days. A
+          medium-sized school may take 5-7 days, while a large multi-building
+          campus could take 2-3 weeks depending on the phased approach we use.
+        </p>
+        <p>
+          We assess your specific needs and provide a detailed timeline estimate
+          before the move begins.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "Do you handle library shelving and book relocations?",
+    answer: (
+      <>
+        <p>
+          Yes. We have special expertise in moving library systems, including
+          shelving units, reading tables, and study carrels. Books can be packed
+          in specialized boxes to protect them during transport.
+        </p>
+        <p>
+          We work systematically to maintain the organization of library
+          collections and reconstruct the layout at the new location.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "Can you serve multiple UAE emirates for school relocations?",
+    answer: (
+      <>
+        <p>
+          Yes. We provide school furniture moving services across all UAE
+          emirates including Dubai, Abu Dhabi, Sharjah, Ajman, Ras Al Khaimah,
+          Al Ain, Fujairah, and Umm Al Quwain.
+        </p>
+        <p>
+          Our pricing is transparent whether the move is within an emirate or
+          across multiple emirates.
+        </p>
+      </>
+    ),
+  },
+];
+
+export const RestaurantFurnitureMovingFaqs: FAQData[] = [
+  {
+    question: "Can you move our restaurant overnight to minimize closure time?",
+    answer: (
+      <>
+        <p>
+          Yes. We frequently schedule restaurant furniture moves overnight or
+          across a single day off. Contact us to plan a schedule that minimizes
+          your restaurant's operational downtime.
+        </p>
+        <p>
+          After-hours moves allow your business to be fully operational the next
+          day with minimal revenue loss.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "Can you move commercial kitchen equipment?",
+    answer: (
+      <>
+        <p>
+          Yes. We move commercial kitchen furniture and equipment including prep
+          tables, commercial refrigerators, kitchen storage units, and service
+          counters. For gas or electrical equipment that requires disconnection
+          and reconnection, we advise you to arrange a specialist technician
+          alongside our move.
+        </p>
+        <p>
+          Our team takes care of the furniture and equipment moving —
+          technicians handle the utility connections.
+        </p>
+      </>
+    ),
+  },
+  {
+    question:
+      "How do you protect fragile decorative furniture during the move?",
+    answer: (
+      <>
+        <p>
+          Every decorative and fragile item receives individual wrapping with
+          bubble wrap, moving blankets, and stretch film. We use Fully Enclosed
+          Box Trucks to prevent any exposure to dust, heat, or weather.
+        </p>
+        <p>
+          Your restaurant's décor is handled with the same care as fine art —
+          nothing gets damaged on our watch.
+        </p>
+      </>
+    ),
+  },
+  {
+    question:
+      "Do you provide a written quote and invoice for the restaurant move?",
+    answer: (
+      <>
+        <p>
+          Yes. We provide a fully itemized written quote before the move and a
+          formal invoice on completion. Our pricing is transparent with no
+          hidden charges — suitable for your business accounting records.
+        </p>
+        <p>
+          All quotes are fixed prices. What we quote is exactly what you pay.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "Can you move multiple restaurant locations in one go?",
+    answer: (
+      <>
+        <p>
+          Yes. If you are consolidating, relocating a chain, or opening a new
+          branch, we can coordinate multi-location restaurant furniture moves.
+          Contact us to discuss your specific requirements.
+        </p>
+        <p>
+          We can organize multiple teams and trucks to handle several locations
+          simultaneously if needed.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "How much does restaurant furniture moving cost in UAE?",
+    answer: (
+      <>
+        <p>
+          The cost depends on the size of your restaurant, the volume of
+          furniture, the distance between locations, and the complexity of the
+          move.
+        </p>
+        <p>
+          A small café move might start from AED 3,000, while a large restaurant
+          relocation can range from AED 8,000 to AED 20,000+.
+        </p>
+        <p>Contact us for a free custom quote based on your specific needs.</p>
+      </>
+    ),
+  },
+  {
+    question: "Can you handle booth seating and fixed furniture installations?",
+    answer: (
+      <>
+        <p>
+          Yes. We have experience with booth seating, banquette installations,
+          and other semi-permanent furniture. Our team carefully disassembles
+          these items and reassembles them correctly at your new location.
+        </p>
+        <p>
+          We ensure the fit and finish match your restaurant's design standards.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "Can you move outdoor terrace and garden furniture?",
+    answer: (
+      <>
+        <p>
+          Absolutely. We handle outdoor dining furniture, sun umbrellas, parasol
+          bases, shade structures, planters, and decorative dividers.
+        </p>
+        <p>
+          Everything is transported safely and set up according to your new
+          outdoor layout.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "How do you ensure restaurant downtime is minimized?",
+    answer: (
+      <>
+        <p>
+          We plan the move systematically: pre-assessment of your current space,
+          after-hours scheduling, efficient loading in reverse layout order, and
+          quick unloading and setup at the new location.
+        </p>
+        <p>
+          Our experienced team works fast without compromising on care. Most
+          restaurant moves are completed within 1-2 nights.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "Do you serve all UAE emirates for restaurant relocations?",
+    answer: (
+      <>
+        <p>
+          Yes. We provide restaurant furniture moving services across all UAE
+          emirates including Dubai, Abu Dhabi, Sharjah, Ajman, Ras Al Khaimah,
+          Al Ain, Fujairah, and Umm Al Quwain.
+        </p>
+        <p>
+          Whether you're relocating within an emirate or moving across the UAE,
+          we handle it with the same professionalism and speed.
+        </p>
+      </>
+    ),
+  },
+];

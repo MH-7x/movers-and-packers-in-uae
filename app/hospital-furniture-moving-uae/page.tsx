@@ -4,11 +4,12 @@ import QuotationSection from "@/components/QuotationSection";
 import { ReviewSection } from "@/components/ReviewSection";
 import ServiceHero from "@/components/ServiceHero";
 import { Button } from "@/components/ui/button";
-import { AllServices } from "@/lib/data";
+import { AllServices, locations } from "@/lib/data";
 import { HospitalFurnitureMovingFaqs } from "@/lib/FaqsData";
 import HeroImage from "@/public/ser/hospital-furniture-moving-uae-professional-movers-medical-equipment.jpg";
 import { PhoneCall, MessageCircle } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 export const metadata = {
   title: "Hospital Furniture Moving in UAE | Medical Equipment Movers",
@@ -322,22 +323,14 @@ const HospitalFurnitureMoving = () => {
           <div className="rounded-2xl bg-secondary/50 p-6">
             <h4 className="font-semibold mb-3 text-lg">AREAS WE SERVES</h4>
             <ul className="text-sm space-y-2 text-muted-foreground">
-              <li className="flex items-center gap-2">
-                <span className="text-primary"> 🏳 </span>
-                Movers in Abu Dhabi
-              </li>
-              <li className="flex items-center gap-2">
-                <span className="text-primary"> 🏳 </span>
-                Movers in Abu Dhabi
-              </li>
-              <li className="flex items-center gap-2">
-                <span className="text-primary"> 🏳 </span>
-                Movers in Abu Dhabi
-              </li>
-              <li className="flex items-center gap-2">
-                <span className="text-primary"> 🏳 </span>
-                Movers in Abu Dhabi
-              </li>
+              {locations.map((loc, i) => (
+                <li key={i}>
+                  <Link href={loc.href} className="flex items-center gap-2">
+                    <span className="text-primary"> 🏳 </span>
+                    {loc.title}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
         </aside>
