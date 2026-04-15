@@ -468,9 +468,11 @@ const FurnitureMovers = () => {
             <h4 className="font-semibold mb-3 text-lg">OUR MOVING SERVICES</h4>
             <ul className="text-sm space-y-2 text-muted-foreground">
               {AllServices.map((ser, i) => (
-                <li key={i} className="flex items-center gap-2">
-                  <span className="text-primary"> ✔ </span>
-                  {ser.name}
+                <li key={i}>
+                  <Link href={ser.href} className="flex items-center gap-2">
+                    <span className="text-primary"> ✔ </span>
+                    {ser.name}
+                  </Link>
                 </li>
               ))}
             </ul>

@@ -6,7 +6,7 @@ import ServiceHero from "@/components/ServiceHero";
 import { Button } from "@/components/ui/button";
 import { AllServices, locations } from "@/lib/data";
 import { RestaurantFurnitureMovingFaqs } from "@/lib/FaqsData";
-import HeroImage from "@/public/ser/office-movers-in-dubai.jpg";
+import HeroImage from "@/public/ser/restaurant-furniture-moving-uae-professional-dining-relocation-dubai.jpg";
 import { MessageCircle, PhoneCall } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -19,16 +19,16 @@ const RestaurantFurnitureMoving = () => {
         desc="Professional restaurant furniture movers in UAE. We relocate dining furniture, bar setups, kitchen equipment & complete F&B fit-outs across Dubai, Abu Dhabi, Sharjah & all UAE. Trusted since 1998. Free quote."
         image={{
           src: HeroImage,
-          alt: "Restaurant furniture moving service with movers handling dining tables and bar equipment",
+          alt: "Movers & Packers professional team carefully relocating a marble dining table and chairs inside a modern upscale Dubai restaurant",
         }}
         btnText="Plan Your Restaurant Furniture Move"
       />
       <section className="mt-16 max-w-4xl mx-auto md:px-0 px-4">
-        <h3 className="md:text-2xl text-lg font-bold text-center">
+        <p className="md:text-2xl text-lg font-bold text-center">
           Relocating a restaurant, café, or food and beverage establishment in
           the UAE requires speed, precision, and the understanding that every
           hour your business is not operational costs money.
-        </h3>
+        </p>
         <div className="md:text-lg text-muted-foreground text-center mt-10 md:px-20">
           <p>
             At Movers and Packers in UAE, we provide a specialist restaurant
@@ -48,7 +48,6 @@ const RestaurantFurnitureMoving = () => {
         </div>
         <div className="flex flex-wrap items-center justify-center gap-5 mt-5">
           {[
-            "25+ Years Experience",
             "100% Insured",
             "After-Hours Moves",
             "Fast & Efficient",
@@ -84,10 +83,8 @@ const RestaurantFurnitureMoving = () => {
       <QuotationSection
         title={
           <>
-            <span className="font-bold md:block">
-              Plan Your Restaurant Furniture Move
-            </span>{" "}
-            — Fast, Efficient & No Business Disruption
+            <span className="font-bold md:block">Get A Free Quote For</span> —
+            Restaurant Furniture Moving
           </>
         }
         btnText="Get Restaurant Furniture Moving Plan"
@@ -272,8 +269,8 @@ const RestaurantFurnitureMoving = () => {
 
           <div className="bg-secondary rounded-3xl aspect-video relative overflow-hidden">
             <Image
-              src={"/ser/office-movers-in-dubai.jpg"}
-              alt="Restaurant furniture moving team handling commercial furniture and equipment"
+              src={"/ser/moving-truck-on-road-abu-dhabi.jpg"}
+              alt="Restaurant furniture moving truck on abu dhabi road"
               fill
               className="object-cover"
             />
@@ -340,10 +337,12 @@ const RestaurantFurnitureMoving = () => {
 
         <aside className="lg:col-span-2 flex flex-col gap-y-5 self-start sticky top-24 md:px-0 px-4">
           <div className="rounded-2xl bg-muted p-6 space-y-3">
-            <h3 className="font-bold text-lg">Need Hospital Moving Help?</h3>
+            <h3 className="font-bold text-lg">
+              Need Help in Restaurant Furniture Moving?
+            </h3>
             <p className="text-sm text-muted-foreground">
-              Contact our commercial team today for a free consultation and
-              quote. We specialize in healthcare facility relocations.
+              We are available 24/7 to help you with your relocation needs in
+              the UAE.
             </p>
             <div className="flex flex-col gap-2 pt-3">
               <Button className="bg-primary hover:bg-primary/90 w-full gap-2">
@@ -360,9 +359,11 @@ const RestaurantFurnitureMoving = () => {
             <h4 className="font-semibold mb-3 text-lg">OUR MOVING SERVICES</h4>
             <ul className="text-sm space-y-2 text-muted-foreground">
               {AllServices.map((ser, i) => (
-                <li key={i} className="flex items-center gap-2">
-                  <span className="text-primary"> ✔ </span>
-                  {ser.name}
+                <li key={i}>
+                  <Link href={ser.href} className="flex items-center gap-2">
+                    <span className="text-primary"> ✔ </span>
+                    {ser.name}
+                  </Link>
                 </li>
               ))}
             </ul>
