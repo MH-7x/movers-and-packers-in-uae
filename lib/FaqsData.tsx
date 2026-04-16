@@ -1665,3 +1665,89 @@ export const MovingQuoteFAQs: FAQData[] = [
     ),
   },
 ];
+
+export const AboutUSFaqs = [
+  {
+    question: "How long has Movers and Packers in UAE been operating?",
+    answer: (
+      <>
+        <p>
+          The company has been operating since 1998, with over 25 years of
+          continuous experience in the moving industry.
+        </p>
+        <p>
+          It is legally registered and has been running consistently since that
+          time.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "Do you charge hidden fees?",
+    answer: (
+      <>
+        <p>No. The quote you receive is exactly what you pay — nothing more.</p>
+        <p>
+          If your quote says AED 800, you pay AED 800. All costs are clearly
+          outlined before the job begins.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "Can you do same-day moves?",
+    answer: (
+      <>
+        <p>
+          Yes. If you need to move urgently, contact us and we will check
+          availability and arrange the best possible option.
+        </p>
+        <p>
+          Same-day service is available depending on your location and team
+          schedule.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "When do I pay?",
+    answer: (
+      <>
+        <p>
+          Payment is made after the job is completed and you are fully
+          satisfied.
+        </p>
+        <p>
+          We accept cash, bank transfer, and bank cheque. Full details are
+          shared during the booking process.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "Do you move commercial and industrial items?",
+    answer: (
+      <>
+        <p>
+          Yes. We handle office relocations, restaurant furniture, hospital
+          equipment, industrial machinery, heavy safes, and warehouse moves.
+        </p>
+        <p>
+          Commercial moves require proper authorization, which we have in place.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "Which areas do you cover in the UAE?",
+    answer: (
+      <>
+        <p>
+          We cover all UAE emirates including Dubai, Abu Dhabi, Sharjah, Ajman,
+          Ras Al Khaimah, Al Ain, Umm Al Quwain, Fujairah, Khor Fakkan, and Al
+          Ruwais.
+        </p>
+      </>
+    ),
+  },
+];

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Button } from "./ui/button";
-import { PhoneCall } from "lucide-react";
+import { ListTodoIcon, PhoneCall } from "lucide-react";
 
 const CTA = ({ title, desc }: { title: string; desc: string }) => {
   return (
@@ -8,10 +8,16 @@ const CTA = ({ title, desc }: { title: string; desc: string }) => {
       <div>
         <h2 className="md:text-4xl text-3xl font-bold text-white">{title}</h2>
         <p className=" mt-4 text-white/80">{desc}</p>
-        <Button size={"lg"} className="mt-6">
-          <PhoneCall />
-          Call Us Now
-        </Button>
+        <div className="mt-6 flex gap-x-3">
+          <Button quoteBtn size={"lg"}>
+            <ListTodoIcon />
+            Get A Quote
+          </Button>
+          <Button size={"lg"} variant={"secondary"}>
+            <PhoneCall />
+            Call Us Now
+          </Button>
+        </div>
       </div>
       <div className="z-20 relative md:h-[420px] h-96">
         <Image

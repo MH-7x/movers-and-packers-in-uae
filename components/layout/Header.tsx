@@ -15,7 +15,7 @@ import { Button } from "../ui/button";
 // Menu Data
 const mainMenuItems = [
   { label: "Home", href: "#" },
-  { label: "About Us", href: "#" },
+  { label: "About Us", href: "/about-us" },
   { label: "Get Quote", href: "/get-quote" },
 ];
 
