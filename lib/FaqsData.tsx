@@ -1335,7 +1335,7 @@ export const RestaurantFurnitureMovingFaqs: FAQData[] = [
         <p>
           Yes. We frequently schedule restaurant furniture moves overnight or
           across a single day off. Contact us to plan a schedule that minimizes
-          your restaurant's operational downtime.
+          your restaurant&apos;s operational downtime.
         </p>
         <p>
           After-hours moves allow your business to be fully operational the next
@@ -1373,8 +1373,8 @@ export const RestaurantFurnitureMovingFaqs: FAQData[] = [
           Box Trucks to prevent any exposure to dust, heat, or weather.
         </p>
         <p>
-          Your restaurant's décor is handled with the same care as fine art —
-          nothing gets damaged on our watch.
+          Your restaurant&apos;s décor is handled with the same care as fine art
+          — nothing gets damaged on our watch.
         </p>
       </>
     ),
@@ -1438,7 +1438,8 @@ export const RestaurantFurnitureMovingFaqs: FAQData[] = [
           these items and reassembles them correctly at your new location.
         </p>
         <p>
-          We ensure the fit and finish match your restaurant's design standards.
+          We ensure the fit and finish match your restaurant&apos;s design
+          standards.
         </p>
       </>
     ),
@@ -1484,8 +1485,181 @@ export const RestaurantFurnitureMovingFaqs: FAQData[] = [
           Al Ain, Fujairah, and Umm Al Quwain.
         </p>
         <p>
-          Whether you're relocating within an emirate or moving across the UAE,
-          we handle it with the same professionalism and speed.
+          Whether you&apos;re relocating within an emirate or moving across the
+          UAE, we handle it with the same professionalism and speed.
+        </p>
+      </>
+    ),
+  },
+];
+
+export const MovingQuoteFAQs: FAQData[] = [
+  {
+    question: "Is the moving quote completely free?",
+    answer: (
+      <>
+        <p>
+          Yes, getting a quote from us costs absolutely nothing. Simply fill in
+          the form above — or call or WhatsApp us directly — and we will send a
+          fully detailed, no-obligation quote straight to your WhatsApp or email
+          within a very short time.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "Are there any hidden charges in the quote?",
+    answer: (
+      <>
+        <p>
+          Never. We follow a 100% transparent pricing policy. If your quote says
+          AED 1,000, that is exactly what you pay — not a dirham more.
+        </p>
+        <p>All costs are clearly listed before we begin any work.</p>
+      </>
+    ),
+  },
+  {
+    question: "How quickly will I receive my quote after submitting the form?",
+    answer: (
+      <>
+        <p>We respond very quickly after receiving your request.</p>
+        <p>
+          For urgent moves, we recommend calling or messaging us directly on
+          WhatsApp so we can arrange your quote instantly.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "Do you provide moving quotes across all UAE emirates?",
+    answer: (
+      <>
+        <p>
+          Yes. We provide moving quotes and services across all UAE emirates,
+          including Dubai, Abu Dhabi, Sharjah, Ajman, Ras Al Khaimah, Al Ain,
+          Umm Al Quwain, Fujairah, Khor Fakkan, and Al Ruwais.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "Can I get a same-day moving quote if my move is urgent?",
+    answer: (
+      <>
+        <p>
+          Absolutely. We offer same-day service capability for urgent situations
+          — whether you just arrived in the UAE or need to move tomorrow.
+        </p>
+        <p>
+          Contact us directly and we will put together the best available offer
+          for your timeline.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "What information should I include when requesting a quote?",
+    answer: (
+      <>
+        <p>
+          To get the most accurate quote, try to share your current and
+          destination location, the type of move, a rough list of furniture or
+          items, and your preferred moving date.
+        </p>
+        <p>
+          The more detail you provide, the more precise and fair your quote will
+          be.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "When do I pay — before or after the move?",
+    answer: (
+      <>
+        <p>You pay only after your job is completed and you are satisfied.</p>
+        <p>
+          We do not take advance payments and disappear. We accept cash, online
+          bank transfer, and bank cheque, all explained clearly during your
+          consultation.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "Does the quote cover packing materials and labor?",
+    answer: (
+      <>
+        <p>
+          Your quote will be customized based on the services you need. If you
+          require full packing, our professional packing team and all necessary
+          materials will be included.
+        </p>
+        <p>
+          Just mention this when submitting the form and we will tailor the
+          quote accordingly.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "Do you move items other than household furniture?",
+    answer: (
+      <>
+        <p>
+          Yes. Beyond home and office moves, we handle industrial machinery,
+          hospital equipment, heavy safes, restaurant furniture, school
+          furniture, and warehouse goods.
+        </p>
+        <p>
+          Whatever your moving need, simply describe it in the form and we will
+          quote accordingly.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "Is your company legally registered to operate in the UAE?",
+    answer: (
+      <>
+        <p>
+          Yes. We have been a legally registered moving company since 1998, with
+          over 25 years of experience and thousands of completed moves across
+          the UAE.
+        </p>
+        <p>
+          We also have a verified Google Business Profile you can check for
+          added assurance.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "What type of trucks do you use for moving?",
+    answer: (
+      <>
+        <p>We operate both open trucks and fully enclosed box trucks.</p>
+        <p>
+          For protecting furniture and electronics, especially during the
+          UAE&apos;s extreme summer heat or sandstorms, we recommend our fully
+          enclosed trucks. The right option will be discussed and included in
+          your quote.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "Can I get a quote for a premium or large-scale move?",
+    answer: (
+      <>
+        <p>
+          Yes. For premium, commercial, or large-scale moves that require site
+          surveys and advance scheduling, we offer dedicated planning support.
+        </p>
+        <p>
+          Simply fill in the form with your details and our team will reach out
+          to arrange a proper consultation.
         </p>
       </>
     ),

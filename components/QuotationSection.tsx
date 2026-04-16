@@ -7,30 +7,47 @@ const QuotationSection = ({
   title,
   desc,
   btnText,
+  h1,
 }: {
   invert?: boolean;
   title?: JSX.Element;
   desc?: string;
   btnText?: string;
+  h1?: boolean;
 }) => {
   return (
     <section
       id="moving-quote-form-section"
-      className="mt-32 w-full relative overflow-hidden md:px-20 px-4 grid lg:grid-cols-2 grid-cols-1 gap-16 items-center"
+      className={`${h1 ? "mt-16" : "mt-32"} w-full relative overflow-hidden md:px-20 px-4 grid lg:grid-cols-2 grid-cols-1 gap-16 items-center`}
     >
       <div className={invert ? "md:order-2 order-1" : ""}>
-        <h2 className="md:text-4xl text-3xl">
-          {title ? (
-            title
-          ) : (
-            <>
-              <span className="font-bold md:block">
-                Get a Free Moving Quote —{" "}
-              </span>{" "}
-              From Movers and Packers in UAE
-            </>
-          )}
-        </h2>
+        {h1 ? (
+          <h1 className="md:text-4xl text-3xl">
+            {title ? (
+              title
+            ) : (
+              <>
+                <span className="font-bold md:block">
+                  Get a Free Moving Quote —{" "}
+                </span>{" "}
+                From Movers and Packers in UAE
+              </>
+            )}
+          </h1>
+        ) : (
+          <h2 className="md:text-4xl text-3xl">
+            {title ? (
+              title
+            ) : (
+              <>
+                <span className="font-bold md:block">
+                  Get a Free Moving Quote —{" "}
+                </span>{" "}
+                From Movers and Packers in UAE
+              </>
+            )}
+          </h2>
+        )}
         <p className="mt-5 leading-tight text-muted-foreground">
           {desc ? (
             desc

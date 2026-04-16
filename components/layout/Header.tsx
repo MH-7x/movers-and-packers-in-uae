@@ -16,7 +16,7 @@ import { Button } from "../ui/button";
 const mainMenuItems = [
   { label: "Home", href: "#" },
   { label: "About Us", href: "#" },
-  { label: "Quote", href: "#" },
+  { label: "Get Quote", href: "/get-quote" },
 ];
 
 const servicesMenuItems = [
@@ -356,7 +356,9 @@ export default function Navbar() {
               </div>
 
               {/* CTA Button */}
-              <Button size={"lg"}>Request a Quote</Button>
+              <Button quoteBtn size={"lg"}>
+                Request a Quote
+              </Button>
             </div>
           </div>
         </div>
