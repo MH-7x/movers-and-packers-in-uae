@@ -1666,7 +1666,7 @@ export const MovingQuoteFAQs: FAQData[] = [
   },
 ];
 
-export const AboutUSFaqs = [
+export const AboutUSFaqs: FAQData[] = [
   {
     question: "How long has Movers and Packers in UAE been operating?",
     answer: (
@@ -1746,6 +1746,105 @@ export const AboutUSFaqs = [
           We cover all UAE emirates including Dubai, Abu Dhabi, Sharjah, Ajman,
           Ras Al Khaimah, Al Ain, Umm Al Quwain, Fujairah, Khor Fakkan, and Al
           Ruwais.
+        </p>
+      </>
+    ),
+  },
+];
+
+export const SharjahMovingFAQs: FAQData[] = [
+  {
+    question: "How much do movers and packers in Sharjah charge?",
+    answer: (
+      <>
+        <p>
+          It depends on the size of your move, the distance, truck size, and
+          whether you need packing.
+        </p>
+        <p>
+          We provide a free quote via WhatsApp or email with a fixed price and
+          no hidden charges. The number you agree to is the number you pay.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "Are you a licensed moving company in Sharjah?",
+    answer: (
+      <>
+        <p>
+          Yes. We have been a registered and legally operating moving company in
+          the UAE since 1998.
+        </p>
+        <p>
+          You can verify this through our Google Business Profile on Google Maps
+          before you hire us.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "Do you offer same-day moving in Sharjah?",
+    answer: (
+      <>
+        <p>
+          Yes, subject to team availability. If you need an urgent move, contact
+          us immediately via call or WhatsApp.
+        </p>
+        <p>We will tell you honestly what we can arrange.</p>
+      </>
+    ),
+  },
+  {
+    question: "What areas in Sharjah do you cover?",
+    answer: (
+      <>
+        <p>
+          We cover all of Sharjah, including Al Nahda, Al Taawun, Muwaileh, Al
+          Majaz, Al Khan, Industrial Area, Al Qasimia, Al Yarmook, and more.
+        </p>
+        <p>
+          We also handle moves from Sharjah to Dubai, Abu Dhabi, Ajman, and
+          other emirates.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "Do you offer furniture storage in Sharjah?",
+    answer: (
+      <>
+        <p>Yes. We offer short-term and long-term storage options.</p>
+        <p>
+          All stored items are insured, labelled, and kept in secure facilities.
+          Contact us for availability and pricing.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "Can I pay after the move is completed?",
+    answer: (
+      <>
+        <p>
+          Yes. We operate on a Pay Upon Satisfaction basis — you pay only after
+          the job is done and you are happy with it.
+        </p>
+        <p>We accept cash, bank transfer, and bank cheque.</p>
+      </>
+    ),
+  },
+  {
+    question: "Do you move offices and commercial spaces in Sharjah?",
+    answer: (
+      <>
+        <p>
+          Yes. We handle offices, banks, restaurants, hospitals, schools, and
+          warehouses.
+        </p>
+        <p>
+          We understand the need for discretion and minimal downtime in
+          commercial moves, and we plan accordingly.
         </p>
       </>
     ),

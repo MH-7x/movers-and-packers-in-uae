@@ -63,7 +63,7 @@ const QuotationSection = ({
         <p className="mt-2 leading-tight text-muted-foreground">
           We usually respond within an hour.
         </p>
-        <h3 className="mt-5 text-xl font-medium text-white">
+        <h3 className="mt-5 text-xl font-medium text-foreground">
           Ways to Contact Us
         </h3>
         <ul className="mt-5 grid md:grid-cols-3 grid-cols-2 gap-5">

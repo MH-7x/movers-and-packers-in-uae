@@ -323,7 +323,7 @@ export const locations = [
     title: "Movers and Packers Sharjah",
     description:
       "House moving, flat shifting, and cross-emirate relocations between Sharjah and Dubai. Packing services and storage available for Sharjah moves.",
-    href: "#",
+    href: "/movers-and-packers-in-sharjah",
     icon: "ArrowLeftRight",
   },
   {

@@ -52,7 +52,7 @@ export const FAQSection: React.FC<FAQProps> = ({
   faqs,
 }) => {
   return (
-    <section className="bg-white py-20 px-4 sm:px-6 lg:px-8 min-h-screen selection:bg-slate-200">
+    <section className="py-20 px-4 sm:px-6 lg:px-8 min-h-screen selection:bg-slate-200">
       <div className="mx-auto max-w-3xl">
         {/* Header */}
         <div className="mb-14">

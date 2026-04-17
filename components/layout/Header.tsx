@@ -65,7 +65,7 @@ const servicesMenuItems = [
 ];
 
 const locationsMenuItems = [
-  { label: "Sharjah", href: "#" },
+  { label: "Sharjah", href: "/movers-and-packers-in-sharjah" },
   { label: "Ajman", href: "#" },
   { label: "Al Ain", href: "#" },
   { label: "Ras Al Khaimah", href: "#" },
@@ -334,10 +334,10 @@ export default function Navbar() {
                     Telephone
                   </span>
                   <a
-                    href="tel:+123456789"
+                    href="tel:0507745691"
                     className="text-gray-800 font-bold text-base hover:text-primary transition-colors"
                   >
-                    +123456789
+                    (050) 7745691
                   </a>
                 </div>
               </div>
@@ -349,9 +349,14 @@ export default function Navbar() {
                   <span className="text-gray-500 text-[11px] font-bold uppercase tracking-widest mb-0.5">
                     Address
                   </span>
-                  <span className="text-gray-800 font-bold text-base">
-                    12 29th St - Al Mankhool – Dubai
-                  </span>
+                  <address
+                    style={{
+                      fontStyle: "normal",
+                    }}
+                    className="text-gray-800 font-bold text-base"
+                  >
+                    16 13 St, Ras Al Khor Industrial Area 1 - Dubai
+                  </address>
                 </div>
               </div>
 
