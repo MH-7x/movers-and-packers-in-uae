@@ -3,7 +3,7 @@ import { MailCheck, HeadphonesIcon, MapPinCheck } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 const locationsMenuItems = [
-  { label: "Sharjah", href: "#" },
+  { label: "Sharjah", href: "/movers-and-packers-in-sharjah" },
   { label: "Ajman", href: "#" },
   { label: "Al Ain", href: "#" },
   { label: "Ras Al Khaimah", href: "#" },
