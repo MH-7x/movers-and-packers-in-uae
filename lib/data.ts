@@ -337,7 +337,7 @@ export const locations = [
     title: "Movers and Packers Ras Al Khaimah",
     description:
       "Full home moving, villa relocation, and furniture transport in Ras Al Khaimah. Enclosed trucks used for the journey to protect belongings on longer routes.",
-    href: "#",
+    href: "/movers-in-ras-al-khaimah",
     icon: "Shield",
   },
   {

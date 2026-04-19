@@ -2001,3 +2001,131 @@ export const AjmanMovingFAQs = [
     ),
   },
 ];
+
+export const RasAlKhaimahMovingFAQs = [
+  {
+    question: "How much do movers in Ras Al Khaimah charge?",
+    answer: (
+      <>
+        <p>
+          There is no fixed rate because every move is different. The cost
+          depends on the size of the move, distance, access conditions, and
+          services required such as packing, storage, or installations.
+        </p>
+        <p>
+          Contact us on WhatsApp with your move details and we will send an
+          itemised quote within the hour. What we quote is exactly what you pay
+          — no additions on the day.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "Are your trucks enclosed or open flatbeds?",
+    answer: (
+      <>
+        <p>
+          We primarily use fully enclosed box trucks to protect your furniture
+          and electronics from heat and dust.
+        </p>
+        <p>
+          In Ras Al Khaimah, high temperatures and sandstorms can damage items
+          during transport, so enclosed trucks are recommended for full moves.
+        </p>
+        <p>
+          Open trucks are available for simple, short-distance furniture moves
+          if preferred.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "Do you offer same-day moving in Ras Al Khaimah?",
+    answer: (
+      <>
+        <p>
+          Yes. Same-day service is available depending on crew availability.
+        </p>
+        <p>
+          For urgent moves, contact us as early as possible and we will arrange
+          the best available option for you.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "Can you move from Ras Al Khaimah to Dubai or other emirates?",
+    answer: (
+      <>
+        <p>
+          Yes. We handle intercity moves from Ras Al Khaimah to Dubai, Abu
+          Dhabi, Sharjah, Ajman, Al Ain, Umm Al Quwain, and Fujairah.
+        </p>
+        <p>
+          Pricing is based on distance, volume, and required services. Contact
+          us for a route-specific quote.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "Do I need a move-out permit for my building in RAK?",
+    answer: (
+      <>
+        <p>
+          Some buildings and gated communities require move-out and move-in
+          permits before a moving company can access the property.
+        </p>
+        <p>
+          Our team is familiar with these requirements and will guide you
+          through the process to avoid delays on moving day.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "When do I pay for the move?",
+    answer: (
+      <>
+        <p>
+          Payment is made after the move is completed and you are satisfied.
+        </p>
+        <p>
+          We do not require deposits or upfront payments. Payment methods
+          include cash, bank transfer, and cheque.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "Do you provide packing materials and services?",
+    answer: (
+      <>
+        <p>
+          Yes. We supply all packing materials including labelled cartons,
+          bubble wrap, stretch film, protective blankets, clothing boxes, and
+          specialized packaging for fragile items.
+        </p>
+        <p>
+          You can choose full packing or partial packing depending on your
+          needs.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "Can you also fix curtains after the move?",
+    answer: (
+      <>
+        <p>
+          Yes. Curtain and curtain-rod installation can be added as a same-day
+          service after your move is completed.
+        </p>
+        <p>
+          This saves you from hiring a separate handyman and can be included
+          directly in your moving quote.
+        </p>
+      </>
+    ),
+  },
+];

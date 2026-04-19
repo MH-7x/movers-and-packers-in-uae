@@ -110,7 +110,7 @@ const MoversInAjman = () => {
         </div>
       </section>
       <section
-        id="movers-and-packers-in-uae-services"
+        id="movers-and-packers-in-ajman-services"
         className="mt-20 max-w-7xl md:px-10 px-4 mx-auto"
       >
         <div className="bg-foreground rounded-2xl md:p-10 px-4 py-10 grid md:grid-cols-2 grid-cols-1 md:gap-10 gap-8">
