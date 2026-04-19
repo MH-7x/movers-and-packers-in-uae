@@ -1850,3 +1850,154 @@ export const SharjahMovingFAQs: FAQData[] = [
     ),
   },
 ];
+
+export const AjmanMovingFAQs = [
+  {
+    question: "How much do movers in Ajman cost?",
+    answer: (
+      <>
+        <p>
+          The cost depends on the size of your move, number of items, distance,
+          and services required.
+        </p>
+        <p>
+          As a general guide, a studio apartment move starts from around AED
+          800, while a 3-bedroom villa typically ranges between AED 2,000 and
+          AED 2,500.
+        </p>
+        <p>
+          Share your move details with us and we will send a written quote at no
+          cost.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "How do I hire movers and packers in Ajman?",
+    answer: (
+      <>
+        <p>
+          Simply call us or send your move details via WhatsApp — what needs to
+          be moved, your current and destination locations, and your preferred
+          date.
+        </p>
+        <p>
+          We will send you a clear quote. Once confirmed, we schedule the move
+          and dispatch the team. Payment is made only after the job is completed
+          and you are satisfied.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "Are your movers in Ajman licensed and insured?",
+    answer: (
+      <>
+        <p>
+          Yes. We have been officially registered and legally operating since
+          1998.
+        </p>
+        <p>
+          Every move includes 100% insurance coverage, ensuring your belongings
+          are fully protected from packing through to delivery.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "Do you offer same-day moving in Ajman?",
+    answer: (
+      <>
+        <p>
+          Yes. For urgent moves, contact us as early as possible and we will
+          arrange the best available team and vehicle for your situation.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "Do you handle packing and unpacking?",
+    answer: (
+      <>
+        <p>
+          Yes. We provide full packing using high-quality materials including
+          carton boxes, bubble wrap, stretch film, and fabric blankets.
+        </p>
+        <p>
+          Optional unpacking and room setup services are also available at your
+          destination.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "Do you move from Ajman to other emirates?",
+    answer: (
+      <>
+        <p>
+          Yes. We handle inter-emirate relocations from Ajman to Dubai, Sharjah,
+          Abu Dhabi, Ras Al Khaimah, Al Ain, Fujairah, and Umm Al Quwain.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "What trucks do you use?",
+    answer: (
+      <>
+        <p>
+          We use RTA-approved enclosed box trucks in 3-ton and 4-ton capacities
+          to protect furniture from heat and sandstorms.
+        </p>
+        <p>
+          For simple furniture-only moves, open trucks are also available for
+          faster loading and unloading.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "Do you offer storage in Ajman?",
+    answer: (
+      <>
+        <p>
+          Yes. We offer both short-term and long-term storage in secure
+          facilities.
+        </p>
+        <p>
+          This is ideal for renovations, delayed move-in dates, or phased
+          relocations. Both self-storage and managed furniture storage options
+          are available.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "Do you move commercial and specialized equipment?",
+    answer: (
+      <>
+        <p>
+          Yes. We are licensed to relocate office furniture, restaurant
+          fit-outs, hospital and school furniture, bank furniture, industrial
+          machinery, and heavy safes.
+        </p>
+        <p>We handle commercial relocations across Ajman and the UAE.</p>
+      </>
+    ),
+  },
+  {
+    question: "Do you dismantle and reassemble furniture?",
+    answer: (
+      <>
+        <p>
+          Yes. Our skilled carpenters dismantle and reassemble all types of
+          furniture.
+        </p>
+        <p>
+          We also reinstall curtains and reconnect appliances at your new
+          location.
+        </p>
+      </>
+    ),
+  },
+];

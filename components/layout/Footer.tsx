@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 const locationsMenuItems = [
   { label: "Sharjah", href: "/movers-and-packers-in-sharjah" },
-  { label: "Ajman", href: "#" },
+  { label: "Ajman", href: "/movers-in-ajman" },
   { label: "Al Ain", href: "#" },
   { label: "Ras Al Khaimah", href: "#" },
   { label: "Fujairah", href: "#" },

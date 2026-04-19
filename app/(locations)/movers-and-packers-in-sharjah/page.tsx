@@ -1,5 +1,6 @@
 import CTA from "@/components/CTA";
 import { FAQSection } from "@/components/FaqsSection";
+import { LocHeroSection } from "@/components/LocHeroSection";
 import MovingProcess from "@/components/MovingProcess";
 import QuotationSection from "@/components/QuotationSection";
 import { Button } from "@/components/ui/button";
@@ -12,61 +13,36 @@ import Link from "next/link";
 const MoversInSharjahPage = () => {
   return (
     <main>
-      <section
-        id="movers-and-packers-in-sharjah"
-        className="relative flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8 overflow-hidden"
-      >
-        {/* Subtle Background Gradients */}
-
-        {/* Main Content Container */}
-        <div className="relative z-10 flex flex-col items-center text-center max-w-6xl mx-auto mt-16 sm:mt-20">
-          <p className="bg-red-50 border text-primary text-sm px-4 py-1 rounded-3xl">
-            5 Stars Reviews on Google
-          </p>
-          {/* Heading */}
-          <h1 className="text-4xl sm:text-5xl mt-2 font-bold  tracking-[-0.03em] leading-[1.05] mb-6">
+      <LocHeroSection
+        h1={
+          <>
             Movers and Packers in Sharjah <br className="hidden sm:block" />
             <span className="font-normal">
               Professional, Licensed & Affordable
             </span>
-          </h1>
-
-          {/* Subheading */}
-          <p className="max-w-4xl  text-muted-foreground leading-relaxed mb-2 font-medium px-4">
-            If you’re looking for movers and packers in Sharjah you can actually
-            trust, we’ve been doing this since 1998. That’s over 25 years of
-            moving homes, villas, offices, and everything in between — across
-            Sharjah and the rest of the UAE.
-          </p>
-          <p className="max-w-4xl  text-muted-foreground leading-relaxed mb-10 font-medium px-4">
-            Our movers in Sharjah are trained, insured, and ready to handle your
-            move from start to finish. No hidden charges. No disappearing after
-            the job. You pay only when you’re satisfied.
-          </p>
-
-          {/* Call to Actions */}
-          <div className="flex flex-col sm:flex-row items-center gap-6">
-            <Button quoteBtn size={"lg"}>
-              Get A Free Moving Quote
-            </Button>
-
-            <button className="group flex items-center gap-2.5 text-[#374151] hover:text-[#111827] transition-colors duration-200">
-              <PhoneCall className="w-7 h-7 text-[#4B5563] group-hover:text-[#111827] transition-colors stroke-[1.5]" />
-              <span className="text-sm font-medium">Call Now</span>
-            </button>
-          </div>
-        </div>
-        <div className="mt-16 lg:w-4xl w-full rounded-4xl aspect-video relative overflow-hidden">
-          <Image
-            src={heroImage}
-            fill
-            alt="Movers & Packers professional team loading furniture into a branded moving truck on the Sharjah corniche with Al Noor Mosque visible in the background"
-            placeholder="blur"
-            loading="eager"
-            className="object-cover"
-          />
-        </div>
-      </section>
+          </>
+        }
+        desc={
+          <>
+            <p>
+              If you’re looking for movers and packers in Sharjah you can
+              actually trust, we’ve been doing this since 1998. That’s over 25
+              years of moving homes, villas, offices, and everything in between
+              — across Sharjah and the rest of the UAE.
+            </p>
+            <p>
+              Our movers in Sharjah are trained, insured, and ready to handle
+              your move from start to finish. No hidden charges. No disappearing
+              after the job. You pay only when you’re satisfied.
+            </p>
+          </>
+        }
+        id="movers-and-packers-in-sharjah"
+        img={{
+          src: heroImage,
+          alt: "Movers & Packers professional team loading furniture into a branded moving truck on the Sharjah corniche with Al Noor Mosque visible in the background",
+        }}
+      />
       <QuotationSection
         title={
           <>

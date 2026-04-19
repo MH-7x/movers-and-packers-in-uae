@@ -66,7 +66,7 @@ const servicesMenuItems = [
 
 const locationsMenuItems = [
   { label: "Sharjah", href: "/movers-and-packers-in-sharjah" },
-  { label: "Ajman", href: "#" },
+  { label: "Ajman", href: "/movers-in-ajman" },
   { label: "Al Ain", href: "#" },
   { label: "Ras Al Khaimah", href: "#" },
   { label: "Fujairah", href: "#" },

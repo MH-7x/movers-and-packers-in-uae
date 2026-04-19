@@ -29,9 +29,9 @@ export default function RootLayout({
       className={`${familjenGrotesk.className} h-full antialiased`}
     >
       <body className="max-w-[1400px] mx-auto relative overflow-hidden">
-        <div className="-z-10 fixed top-[-10%] left-1/2 -translate-x-1/2 w-[800px] h-[600px] bg-purple-50/70 rounded-full blur-[120px] pointer-events-none" />
-        <div className="-z-10 fixed top-[20%] left-[-10%] w-[500px] h-[500px] bg-red-100/50 rounded-full blur-[100px] pointer-events-none" />
-        <div className="-z-10 fixed top-[20%] right-[-10%] w-[500px] h-[500px] bg-red-100/50 rounded-full blur-[100px] pointer-events-none" />
+        <div className="-z-10 fixed top-[-10%] left-1/2 -translate-x-1/2 w-[800px] h-[600px] bg-purple-50/50 rounded-full blur-[120px] pointer-events-none" />
+        <div className="-z-10 fixed top-[20%] left-[-10%] w-[500px] h-[500px] bg-red-50/50 rounded-full blur-[100px] pointer-events-none" />
+        <div className="-z-10 fixed top-[20%] right-[-10%] w-[500px] h-[500px] bg-red-50/50 rounded-full blur-[100px] pointer-events-none" />
 
         <Navbar />
         {children}

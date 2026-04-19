@@ -330,7 +330,7 @@ export const locations = [
     title: "Movers and Packers Ajman",
     description:
       "Apartment moves, flat shifting, furniture transport, and office relocation in Ajman — full emirate coverage with transparent, no-hidden-charge pricing.",
-    href: "#",
+    href: "/movers-in-ajman",
     icon: "Wallet",
   },
   {
