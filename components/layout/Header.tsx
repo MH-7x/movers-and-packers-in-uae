@@ -69,7 +69,7 @@ const locationsMenuItems = [
   { label: "Ajman", href: "/movers-in-ajman" },
   { label: "Al Ain", href: "/movers-in-al-ain" },
   { label: "Ras Al Khaimah", href: "/movers-in-ras-al-khaimah" },
-  { label: "Fujairah", href: "#" },
+  { label: "Fujairah", href: "/movers-in-fujairah" },
   { label: "Umm Al Quwain", href: "#" },
   { label: "Al Ruwais", href: "#" },
   { label: "Khor Fakkan", href: "#" },

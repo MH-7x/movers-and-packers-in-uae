@@ -355,9 +355,9 @@ const MoversInAlAin = () => {
             <div className="w-14 h-14 bg-red-100 rounded-2xl flex items-center justify-center mb-6 shadow-sm">
               <ShieldCheck className="w-7 h-7 text-primary" />
             </div>
-            <h2 className="text-2xl font-bold text-slate-900 mb-4">
+            <h3 className="text-2xl font-bold text-slate-900 mb-4">
               Enclosed Box Trucks
-            </h2>
+            </h3>
             <div className="space-y-4 text-slate-600 leading-relaxed">
               <p>
                 <strong className="text-slate-900 font-semibold">

@@ -358,7 +358,7 @@ export const locations = [
     title: "Movers and Packers Fujairah",
     description:
       "House moving, villa shifting, and office relocation across Fujairah and the east coast. Packing services and enclosed truck transport included.",
-    href: "#",
+    href: "/movers-in-fujairah",
     icon: "Mountain",
   },
   {

@@ -2227,3 +2227,116 @@ export const AlAinMovingFAQs = [
     ),
   },
 ];
+
+export const FujairahMovingFAQs = [
+  {
+    question: "How much do movers and packers charge in Fujairah?",
+    answer: (
+      <>
+        <p>
+          Pricing depends on the volume of items, distance, floor level, and
+          which services you add such as packing, storage, or truck type.
+        </p>
+        <p>
+          We provide a free, accurate quote after a short survey. There are no
+          hidden charges — the price we give you is the price you pay. Contact
+          us for your personalised estimate.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "Are you a licensed moving company in Fujairah?",
+    answer: (
+      <>
+        <p>
+          Yes. We are officially registered since 1998 and operate with a
+          verified Google Business Profile.
+        </p>
+        <p>
+          Unlike informal freelance movers, we are a fully insured, legally
+          registered company. You can verify our details, meet the owner, and
+          check our track record before booking.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "Do you offer same-day moving in Fujairah?",
+    answer: (
+      <>
+        <p>
+          Yes. We offer same-day and urgent moving services across Fujairah and
+          the UAE.
+        </p>
+        <p>
+          Send us a WhatsApp message or call us with your situation and we will
+          arrange the fastest available option for your move.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "What packing materials do you use?",
+    answer: (
+      <>
+        <p>
+          We use bubble wrap, stretch film, carton boxes, fabric blankets, and
+          corrugated rolls.
+        </p>
+        <p>
+          All items are packed and labelled by trained professionals. Fragile
+          items receive extra layers of protection, so nothing is left to
+          chance.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "Can you move industrial machinery or specialist equipment?",
+    answer: (
+      <>
+        <p>
+          Yes. We move industrial machinery, hospital equipment, heavy safes,
+          restaurant furniture, school furniture, and bank furniture across
+          Fujairah and the UAE.
+        </p>
+        <p>
+          Contact us with the details and we will provide a tailored plan and
+          quote.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "Do I pay before or after the move?",
+    answer: (
+      <>
+        <p>
+          You pay after the job is done and you are satisfied. This is our Pay
+          Upon Satisfaction policy.
+        </p>
+        <p>
+          No deposits. No upfront payments. We accept cash, online bank
+          transfer, and bank cheque once you are happy with the completed move.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "Do you move from Dubai to Fujairah?",
+    answer: (
+      <>
+        <p>
+          Yes. We regularly handle inter-emirate moves between Dubai and
+          Fujairah, as well as Fujairah to Abu Dhabi, Sharjah, and all other UAE
+          emirates.
+        </p>
+        <p>
+          Give us your details and we will arrange the right truck and team for
+          the distance.
+        </p>
+      </>
+    ),
+  },
+];
