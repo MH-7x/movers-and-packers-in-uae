@@ -492,12 +492,12 @@ const page = () => {
       <section className="max-w-7xl mx-auto mt-20 md:px-10 px-4">
         {/* Main Header Section */}
         <div className="text-center mb-10 max-w-4xl mx-auto">
-          <h1 className="md:text-4xl text-3xl font-bold mb-6">
+          <h2 className="md:text-4xl text-3xl font-bold mb-6">
             <span className="font-normal md:block">
               Movers and Packers in Ras Al Khaimah{" "}
             </span>{" "}
             Service Coverage
-          </h1>
+          </h2>
           <p className="text-muted-foreground">
             We serve every part of RAK under one team. Below is a quick
             reference of our coverage by area and service type.

@@ -2129,3 +2129,101 @@ export const RasAlKhaimahMovingFAQs = [
     ),
   },
 ];
+
+export const AlAinMovingFAQs = [
+  {
+    question: "How much does it cost to hire movers in Al Ain?",
+    answer: (
+      <>
+        <p>
+          Moving costs depend on the number of rooms, the distance, and the
+          services you need.
+        </p>
+        <p>
+          As a general guide, residential moves in Al Ain range from AED 800 for
+          a studio to AED 7,000+ for a large villa. Commercial moves are quoted
+          after a free on-site survey.
+        </p>
+        <p>
+          Your quote is your final price — no extra charges are added later.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "Do movers and packers in Al Ain provide packing materials?",
+    answer: (
+      <>
+        <p>
+          Yes. We bring everything with us, including bubble wrap, stretch film,
+          fabric blankets, carton boxes, packing tape, and corrugated rolls.
+        </p>
+        <p>
+          All packing materials are included in your quote, so you do not need
+          to source anything yourself.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "How far in advance should I book movers in Al Ain?",
+    answer: (
+      <>
+        <p>
+          For standard residential moves, 3 to 7 days&apos; notice is usually
+          enough.
+        </p>
+        <p>
+          For larger commercial or premium moves, 2 to 4 weeks gives us time for
+          a full survey and proper scheduling.
+        </p>
+        <p>
+          If you need to move urgently — same day or next day — contact us
+          directly and we will work out the best option for your situation.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "Are your moving trucks covered or enclosed?",
+    answer: (
+      <>
+        <p>
+          Yes. Our RTA-approved fleet includes fully enclosed 3-ton and 4-ton
+          box trucks.
+        </p>
+        <p>
+          They protect your belongings from Al Ain&apos;s extreme summer heat
+          and from sandstorms during transit. Open pickup trucks are also
+          available for small single-item moves when climate protection is less
+          of a concern.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "Is there insurance coverage for my items during the move?",
+    answer: (
+      <>
+        <p>Yes. Every move includes 100% insurance coverage as standard.</p>
+        <p>
+          If anything is damaged in transit, you are fully covered. We will go
+          through the details with you when confirming your booking.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "Can I pay after the move is completed?",
+    answer: (
+      <>
+        <p>Yes. We operate on a Pay Upon Satisfaction basis.</p>
+        <p>
+          Once we have finished unloading and reassembling everything at your
+          new property, you inspect it and confirm you are happy — then you pay.
+        </p>
+        <p>We accept cash, online bank transfer, and bank cheque.</p>
+      </>
+    ),
+  },
+];

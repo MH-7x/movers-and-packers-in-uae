@@ -1,4 +1,4 @@
-import { JSX } from "react";
+import { JSX, ReactNode } from "react";
 import { Button } from "./ui/button";
 import { MailCheck, MessageCircleCheck, PhoneCall, Send } from "lucide-react";
 
@@ -6,12 +6,14 @@ const QuotationSection = ({
   invert = false,
   title,
   desc,
+  extra,
   btnText,
   h1,
 }: {
   invert?: boolean;
   title?: JSX.Element;
   desc?: string;
+  extra?: ReactNode;
   btnText?: string;
   h1?: boolean;
 }) => {
@@ -60,6 +62,9 @@ const QuotationSection = ({
             </>
           )}
         </p>
+        {extra && (
+          <p className="mt-5 leading-tight text-muted-foreground">{extra}</p>
+        )}
         <p className="mt-2 leading-tight text-muted-foreground">
           We usually respond within an hour.
         </p>

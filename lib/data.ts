@@ -309,7 +309,7 @@ export const locations = [
     title: "Movers and Packers Dubai",
     description:
       "Our home base in Al Mankhool. House moving, villa relocation, apartment shifting, office moving, and furniture delivery — all Dubai districts covered.",
-    href: "#",
+    href: "/",
     icon: "MapPin",
   },
   {
@@ -344,7 +344,7 @@ export const locations = [
     title: "Movers and Packers Al Ain",
     description:
       "House shifting, apartment moving, and office relocation across Al Ain city and surrounding districts — including cross-emirate moves to Abu Dhabi or Dubai.",
-    href: "#",
+    href: "/movers-in-al-ain",
     icon: "Compass",
   },
   {

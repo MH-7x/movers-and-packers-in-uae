@@ -8,7 +8,7 @@ const CTA = ({ title, desc }: { title: string; desc: string }) => {
       <div>
         <h2 className="md:text-4xl text-3xl font-bold text-white">{title}</h2>
         <p className=" mt-4 text-white/80">{desc}</p>
-        <div className="mt-6 flex gap-x-3">
+        <div className="mt-6 flex gap-x-3"> 
           <Button quoteBtn size={"lg"}>
             <ListTodoIcon />
             Get A Quote
