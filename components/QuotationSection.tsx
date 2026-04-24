@@ -1,6 +1,7 @@
 import { JSX, ReactNode } from "react";
 import { Button } from "./ui/button";
 import { MailCheck, MessageCircleCheck, PhoneCall, Send } from "lucide-react";
+import QuoteForm from "./QuoteForm";
 
 const QuotationSection = ({
   invert = false,
@@ -105,48 +106,7 @@ const QuotationSection = ({
         <h3 className="md:text-4xl text-3xl text-white mt-0">
           Free Moving Quote.
         </h3>
-        <form
-          id="quote-form"
-          className="mt-10 grid md:grid-cols-2 grid-cols-1 gap-5 text-muted text-[14.5px]"
-        >
-          <input
-            type="text"
-            id="name"
-            name="name"
-            placeholder="Your Name"
-            className="py-3 px-2 border-b border-b-white focus:border-b-primary outline-none"
-          />
-          <input
-            type="number"
-            id="phone"
-            name="phone"
-            placeholder="Phone No"
-            className="py-3 px-2 border-b border-b-white focus:border-b-primary outline-none"
-          />
-          <input
-            type="text"
-            name="movingFrom"
-            id="movingFrom"
-            placeholder="Moving From"
-            className="py-3 px-2 border-b border-b-white focus:border-b-primary outline-none"
-          />
-          <input
-            type="text"
-            name="movingTo"
-            id="MovingTo"
-            placeholder="Moving To"
-            className="py-3 px-2 border-b border-b-white focus:border-b-primary outline-none"
-          />
-          <textarea
-            name="message"
-            id="message"
-            placeholder="More Details About Your Move.."
-            className="py-3 px-2 border-b border-b-white focus:border-b-primary outline-none col-span-full min-h-28"
-          ></textarea>
-          <Button size={"lg"} className="mt-5 col-span-full">
-            {btnText || "Get A Quote"} <Send strokeWidth={1} />
-          </Button>
-        </form>
+        <QuoteForm btnText={btnText} />
       </div>
     </section>
   );

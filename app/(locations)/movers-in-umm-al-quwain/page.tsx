@@ -2,6 +2,7 @@ import CTA from "@/components/CTA";
 import { FAQSection } from "@/components/FaqsSection";
 import { LocHeroSection } from "@/components/LocHeroSection";
 import MovingProcess from "@/components/MovingProcess";
+import QuotationSection from "@/components/QuotationSection";
 import { Button } from "@/components/ui/button";
 import { UmmAlQuwainMovingFAQs } from "@/lib/FaqsData";
 import heroImage from "@/public/loc/movers-umm-al-quwain-professional-moving-service-khor-al-beidah-lagoon.jpg";
@@ -55,6 +56,16 @@ const MoversInUmmAlQuwain = () => {
           Same-day response · No hidden charges · No commitment
         </p>
       </section>
+      <QuotationSection
+        title={
+          <>
+            <span className="font-bold md:block">Get A Moving Quote</span> From
+            Movers and Packers in Umm Al Quwain
+          </>
+        }
+        btnText="Get A Quote From Movers in umm al quwain"
+        desc="Call us or send a WhatsApp message for a free quote — our movers and packers in umm al quwain will get back to you quickly with a clear, fixed price. We handle everything, from packing and loading to transport and installation. "
+      />
 
       <section
         id="movers-and-packers-services-in-umm-al-quwain"

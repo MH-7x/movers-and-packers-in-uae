@@ -3,6 +3,7 @@ import { Familjen_Grotesk } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import { Toaster } from "@/components/ui/sonner";
 
 const familjenGrotesk = Familjen_Grotesk({
   variable: "--font-familjen-grotesk",
@@ -28,15 +29,16 @@ export default function RootLayout({
       lang="en"
       className={`${familjenGrotesk.className} h-full antialiased`}
     >
-      <body className="max-w-[1400px] mx-auto relative overflow-hidden">
-        <div className="-z-10 fixed top-[-10%] left-1/2 -translate-x-1/2 w-[800px] h-[600px] bg-purple-50/50 rounded-full blur-[120px] pointer-events-none" />
-        <div className="-z-10 fixed top-[20%] left-[-10%] w-[500px] h-[500px] bg-red-50/50 rounded-full blur-[100px] pointer-events-none" />
-        <div className="-z-10 fixed top-[20%] right-[-10%] w-[500px] h-[500px] bg-red-50/50 rounded-full blur-[100px] pointer-events-none" />
+      <body className="max-w-350 mx-auto relative overflow-hidden">
+        <div className="-z-10 fixed top-[-10%] left-1/2 -translate-x-1/2 w-200 h-150 bg-purple-50/50 rounded-full blur-[120px] pointer-events-none" />
+        <div className="-z-10 fixed top-[20%] left-[-10%] w-125 h-125 bg-red-50/50 rounded-full blur-[100px] pointer-events-none" />
+        <div className="-z-10 fixed top-[20%] right-[-10%] w-125 h-125 bg-red-50/50 rounded-full blur-[100px] pointer-events-none" />
 
         <Navbar />
         {children}
 
         <Footer />
+        <Toaster position="top-center" />
       </body>
     </html>
   );
