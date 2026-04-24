@@ -77,8 +77,8 @@ const locationsMenuItems = [
 
 const otherPagesMenuItems = [
   { label: "Our Moving Prices", href: "#" },
-  { label: "How To Hire", href: "#" },
-  { label: "How To Pay", href: "#" },
+  { label: "How To Hire", href: "/how-to-hire" },
+  { label: "How To Pay", href: "/how-to-pay" },
 ];
 
 interface MenuItem {

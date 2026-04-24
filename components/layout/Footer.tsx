@@ -164,7 +164,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <a
-                    href="#"
+                    href="/how-to-hire"
                     className="text-[#a5abb1] hover:text-white text-[13.5px] transition-colors"
                   >
                     How To Hire
@@ -180,7 +180,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <a
-                    href="#"
+                    href="/how-to-pay"
                     className="text-[#a5abb1] hover:text-white text-[13.5px] transition-colors"
                   >
                     How To Pay

@@ -2465,3 +2465,55 @@ export const UmmAlQuwainMovingFAQs = [
     ),
   },
 ];
+
+export const QuickFAQs = [
+  {
+    question: "Can I book a same-day move?",
+    answer: (
+      <>
+        <p>
+          Yes. Contact us and explain your situation, and we will arrange the
+          best available option for your move.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "Do you move to all emirates?",
+    answer: (
+      <>
+        <p>
+          Yes. We cover all UAE emirates including Dubai, Abu Dhabi, Sharjah,
+          Ajman, Ras Al Khaimah, Fujairah, Al Ain, Umm Al Quwain, and
+          surrounding areas.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "Is your company legally registered?",
+    answer: (
+      <>
+        <p>
+          Yes. We have been officially registered since 1998 and have been
+          operating transparently since then.
+        </p>
+        <p>
+          You can verify our details through our Google Business Profile before
+          booking.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "Can I just move a single piece of furniture?",
+    answer: (
+      <>
+        <p>
+          Absolutely. We handle single furniture moves with the same level of
+          professionalism as full home relocations.
+        </p>
+      </>
+    ),
+  },
+];
