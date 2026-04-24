@@ -2517,3 +2517,67 @@ export const QuickFAQs = [
     ),
   },
 ];
+
+export const PaymentFAQs = [
+  {
+    question: "Do I need to pay a deposit before the move?",
+    answer: (
+      <>
+        <p>
+          Usually, no. Most moves are handled on a pay-after-completion basis.
+        </p>
+        <p>
+          If there is any exception for a specific type of move, we will inform
+          you clearly before confirming the booking.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "Can I pay by credit card?",
+    answer: (
+      <>
+        <p>Currently, we accept cash, online bank transfer, and bank cheque.</p>
+        <p>
+          We will explain the best available payment option for your case during
+          the booking process.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "What if I'm not satisfied with the move?",
+    answer: (
+      <>
+        <p>
+          We stand behind our work. If something is not right, we want to know
+          before you make any payment.
+        </p>
+        <p>
+          Our pay-upon-satisfaction policy ensures we remain fully accountable
+          and resolve any issues first.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "Is it safe to pay cash?",
+    answer: (
+      <>
+        <p>
+          Yes. Our team is trained and trusted, and payments are handled
+          professionally.
+        </p>
+        <p>A receipt or confirmation can be provided upon request.</p>
+      </>
+    ),
+  },
+  {
+    question: "What currencies do you accept?",
+    answer: (
+      <>
+        <p>We operate in UAE Dirhams (AED) for all payments and quotes.</p>
+      </>
+    ),
+  },
+];
