@@ -320,11 +320,11 @@ const MoversInFujairah = () => {
         <div className="text-center mb-10 max-w-4xl mx-auto">
           <h1 className="md:text-4xl text-3xl font-bold mb-6">
             <span className="font-normal block">Why Choose </span> Movers and
-            Packers UAE in Ras Al Khaimah
+            Packers UAE in Fujairah
           </h1>
           <p className="text-muted-foreground">
-            There are a number of moving companies in RAK. Here is what makes a
-            real difference.
+            There are a number of moving companies in fujairah. Here is what
+            makes a real difference.
           </p>
         </div>
 

@@ -277,11 +277,14 @@ const SchoolFurnitureMoving = () => {
               relocation. Contact us now!
             </p>
             <div className="flex flex-col gap-2 pt-3">
-              <Button className="bg-primary hover:bg-primary/90 w-full gap-2">
+              <Button
+                callBtn
+                className="bg-primary hover:bg-primary/90 w-full gap-2"
+              >
                 <PhoneCall size={18} />
                 Call Now
               </Button>
-              <Button variant="secondary" className="w-full gap-2">
+              <Button whatsappBtn variant="secondary" className="w-full gap-2">
                 <MessageCircle size={18} />
                 WhatsApp
               </Button>

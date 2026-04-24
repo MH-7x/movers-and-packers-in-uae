@@ -46,17 +46,69 @@ function Button({
   size = "default",
   asChild = false,
   quoteBtn = false,
+  callBtn = false,
+  whatsappBtn = false,
+  link = "",
   ...props
 }: React.ComponentProps<"button"> &
   VariantProps<typeof buttonVariants> & {
     asChild?: boolean;
     quoteBtn?: boolean;
+    callBtn?: boolean;
+    whatsappBtn?: boolean;
+    link?: string;
   }) {
   const Comp = asChild ? Slot.Root : "button";
 
   if (quoteBtn) {
     return (
       <Link href={"/get-quote"} aria-label="Get A Moving Quote">
+        <Comp
+          data-slot="button"
+          data-variant={variant}
+          data-size={size}
+          className={cn(buttonVariants({ variant, size, className }))}
+          {...props}
+        />
+      </Link>
+    );
+  }
+
+  if (link) {
+    return (
+      <Link href={link || "/"} aria-label="Get A Moving Quote">
+        <Comp
+          data-slot="button"
+          data-variant={variant}
+          data-size={size}
+          className={cn(buttonVariants({ variant, size, className }))}
+          {...props}
+        />
+      </Link>
+    );
+  }
+
+  if (whatsappBtn) {
+    return (
+      <Link
+        href={
+          "https://wa.me/+971507745691?text=I%20Come%20From%20Your%20Website%20and%20I%20Need%20Moving%20Services"
+        }
+        aria-label="Get A Quote On WhatsApp"
+      >
+        <Comp
+          data-slot="button"
+          data-variant={variant}
+          data-size={size}
+          className={cn(buttonVariants({ variant, size, className }))}
+          {...props}
+        />
+      </Link>
+    );
+  }
+  if (callBtn) {
+    return (
+      <Link href={"tel:+971507745691"} aria-label="Call To Movers">
         <Comp
           data-slot="button"
           data-variant={variant}

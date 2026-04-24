@@ -101,7 +101,7 @@ const QuotationSection = ({
       <div
         className={`bg-foreground md:p-10 p-8 rounded-2xl ${invert ? "md:order-1 order-2" : ""}`}
       >
-        <p className="text-primary uppercase">request a </p>
+        <p className="text-red-400 uppercase">request a </p>
         <h3 className="md:text-4xl text-3xl text-white mt-0">
           Free Moving Quote.
         </h3>

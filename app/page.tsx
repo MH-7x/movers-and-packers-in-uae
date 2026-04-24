@@ -43,7 +43,7 @@ export default function Home() {
     <main>
       <section
         id="hero-section"
-        className="md:h-[500px] h-[550px] relative overflow-hidden"
+        className="md:h-125 h-137.5 relative overflow-hidden"
       >
         <Image
           src={imgSrc}
@@ -68,10 +68,10 @@ export default function Home() {
               shifting, furniture moving, and storage — all emirates covered.
             </p>
             <div className="md:mt-5 mt-8 flex gap-3 text-shadow-none md:flex-row flex-col ">
-              <Button size={"lg"}>
+              <Button link="/get-quote" size={"lg"}>
                 <ListTodoIcon /> Get a Free Moving Quote
               </Button>
-              <Button size={"lg"} variant={"secondary"}>
+              <Button whatsappBtn size={"lg"} variant={"secondary"}>
                 <MessageCircleCheck /> WhatsApp Us Now
               </Button>
             </div>
@@ -146,18 +146,25 @@ export default function Home() {
         </div>
         <div className="md:pt-10 text-muted-foreground md:text-lg">
           <p className="font-medium ">
-            Looking for movers and packers in UAE you can actually trust?
+            Looking for <Link href={"/"}>movers and packers in UAE</Link> you
+            can actually trust?
           </p>
           <p className=" mt-2">
-            We are a licensed moving company based in Al Mankhool, Dubai —
+            We are a licensed moving company based in Ras Al Khor , Dubai —
             officially registered since 1998. For over 25 years, we have been
             helping families, individuals, and businesses move across every
             emirate in the UAE.
           </p>
           <p className=" mt-2">
-            Whether you are shifting a one-bedroom apartment, relocating a full
-            villa, or moving an entire office, our trained team handles
-            everything from professional packing to safe delivery.
+            Whether you are{" "}
+            <Link href="/apartment-movers-dubai">
+              shifting a one-bedroom apartment{" "}
+            </Link>{" "}
+            , <Link href="/villa-movers-in-dubai">relocating a full villa</Link>
+            , or{" "}
+            <Link href="/office-movers-in-dubai">moving an entire office</Link>,
+            our trained team handles everything from professional packing to
+            safe delivery.
           </p>
           <p className=" mt-2">
             No hidden charges. No surprises. And you only pay once the job is
@@ -188,7 +195,11 @@ export default function Home() {
               Moving needs vary. Below is everything we cover — from a single
               piece of furniture to a full commercial relocation.
             </p>
-            <Button variant={"secondary"} className="mt-5">
+            <Button
+              link="/moving-services"
+              variant={"secondary"}
+              className="mt-5"
+            >
               View All Services <ChevronRight />
             </Button>
           </div>
@@ -218,11 +229,19 @@ export default function Home() {
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     />
                   </div>
-                  <h3 className="mt-5 text-xl font-medium">{item.name}</h3>
+                  <Link href={item.href}>
+                    <h3 className="mt-5 text-xl font-medium">{item.name}</h3>
+                  </Link>
                   <p className="mt-3 text-muted-foreground">
                     {item.description}
                   </p>
-                  <Button variant={"link"} className="mt-3 ">
+                  <Button
+                    link={item.href}
+                    aria-label={"Contact Us For " + item.name}
+                    title={"Contact Us For " + item.name}
+                    variant={"link"}
+                    className="mt-3 "
+                  >
                     Contact Now <ChevronRight />
                   </Button>
                 </div>
@@ -233,7 +252,7 @@ export default function Home() {
         <p className="md:text-2xl text-lg font-medium max-w-2xl text-center mx-auto mt-10">
           We Provide All Type Of Moving Services You Need in UAE, Check Out Our{" "}
           <Link
-            href={"#"}
+            href={"/moving-services"}
             className="text-primary underline underline-offset-4"
           >
             Services Page
@@ -417,7 +436,7 @@ export default function Home() {
             or anything with a screen or wood finish — choose the enclosed
             truck.
           </p>
-          <Button size={"lg"} className="mt-6">
+          <Button quoteBtn size={"lg"} className="mt-6">
             <ListTodoIcon /> Get a Free Moving Quote
           </Button>
         </div>
@@ -443,7 +462,7 @@ export default function Home() {
               the same team, with the same pricing policy and the same
               standards.
             </p>
-            <Button variant={"secondary"} className="mt-5">
+            <Button whatsappBtn variant={"secondary"} className="mt-5">
               <MessageCircleCheck /> Get A Quote on WhatsApp
             </Button>
           </div>
@@ -590,7 +609,7 @@ export default function Home() {
             Same-day service is available. Contact us, describe your situation,
             and we will tell you what we can arrange.
           </p>
-          <Button size={"lg"} className="mt-5">
+          <Button callBtn size={"lg"} className="mt-5">
             <PhoneCall /> Contact Us Now
           </Button>
         </div>

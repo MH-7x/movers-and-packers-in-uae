@@ -31,7 +31,7 @@ const BankFurnitureMovers = () => {
         btnText="Get a Confidential Bank Moving Quote"
       />
       <section className="mt-16 max-w-4xl mx-auto md:px-0 px-4">
-        <div className="md:text-lg text-muted-foreground text-center mt-10 md:px-20 space-y-4">
+        <div className="md:text-lg text-muted-foreground text-center md:px-20 space-y-4">
           <p>
             At Movers and Packers in UAE, we offer a specialist bank furniture
             moving service built on the pillars of Protection and Privacy — the
@@ -342,11 +342,14 @@ const BankFurnitureMovers = () => {
               quote. We specialize in healthcare facility relocations.
             </p>
             <div className="flex flex-col gap-2 pt-3">
-              <Button className="bg-primary hover:bg-primary/90 w-full gap-2">
+              <Button
+                callBtn
+                className="bg-primary hover:bg-primary/90 w-full gap-2"
+              >
                 <PhoneCall size={18} />
                 Call Now
               </Button>
-              <Button variant="secondary" className="w-full gap-2">
+              <Button whatsappBtn variant="secondary" className="w-full gap-2">
                 <MessageCircle size={18} />
                 WhatsApp
               </Button>

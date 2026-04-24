@@ -351,7 +351,7 @@ export const locations = [
     title: "Movers and Packers Umm Al Quwain",
     description:
       "Home moving, furniture transport, and flat shifting in Umm Al Quwain. Cross-emirate relocations to Dubai, Sharjah, or Ajman also handled.",
-    href: "#",
+    href: "/movers-in-umm-al-quwain",
     icon: "Anchor",
   },
   {

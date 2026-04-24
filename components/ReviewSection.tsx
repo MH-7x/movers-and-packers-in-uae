@@ -93,7 +93,7 @@ export function ReviewSection() {
                 <Star key={i} className="text-yellow-400 fill-yellow-400" />
               ))}
           </div>
-          <p className="font-medium">1000+ Google Reviews</p>
+          <p className="font-medium">5 Starts Google Reviews</p>
         </div>
       </div>
 

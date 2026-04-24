@@ -2340,3 +2340,128 @@ export const FujairahMovingFAQs = [
     ),
   },
 ];
+
+export const UmmAlQuwainMovingFAQs = [
+  {
+    question: "How do I book movers in Umm Al Quwain?",
+    answer: (
+      <>
+        <p>
+          Call or WhatsApp us and describe your move, including property type,
+          size, and location in UAQ.
+        </p>
+        <p>
+          We will send you a full quote the same day. There is no booking fee
+          and no commitment until you confirm.
+        </p>
+      </>
+    ),
+  },
+  {
+    question:
+      "What does your movers and packers service in Umm Al Quwain include?",
+    answer: (
+      <>
+        <p>
+          Our full service includes furniture dismantling, professional packing
+          with premium materials, labelled boxes, loading into an RTA-approved
+          truck, transport, unloading, and furniture reassembly.
+        </p>
+        <p>
+          Optional services such as curtain installation are also available, and
+          storage can be arranged separately if your new place is not ready.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "Do you offer same-day moving in Umm Al Quwain?",
+    answer: (
+      <>
+        <p>
+          Yes. For urgent or same-day moves in UAQ, contact us and we will
+          arrange the best available option.
+        </p>
+        <p>
+          We regularly handle last-minute relocations as part of our 24/7
+          availability.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "Are you a licensed and registered moving company?",
+    answer: (
+      <>
+        <p>
+          Yes. We have been registered and legally operating in the UAE since
+          1998.
+        </p>
+        <p>
+          You can verify our Business Profile, address, and registration details
+          on Google Maps before booking.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "What happens if something gets damaged during the move?",
+    answer: (
+      <>
+        <p>
+          We take every precaution to prevent damage through professional
+          packing and handling.
+        </p>
+        <p>
+          In the unlikely event that something is damaged, we address it
+          directly. As a registered company, we are fully accountable and
+          insured.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "Do you charge extra for inter-emirate moves from Umm Al Quwain?",
+    answer: (
+      <>
+        <p>
+          Distance is factored into the quote upfront. For example, a move from
+          UAQ to Dubai will cost more than a local move.
+        </p>
+        <p>
+          However, all costs are clearly stated in your written quote before the
+          job begins — nothing is added afterward.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "What payment methods do you accept?",
+    answer: (
+      <>
+        <p>We accept cash, online bank transfer, and bank cheque.</p>
+        <p>
+          Payment is collected only after the job is completed and you confirm
+          that you are satisfied with the service.
+        </p>
+      </>
+    ),
+  },
+  {
+    question:
+      "Can you move industrial equipment, hospital machinery, or restaurant fixtures in UAQ?",
+    answer: (
+      <>
+        <p>
+          Yes. In addition to residential and office moves, we handle industrial
+          machinery, hospital equipment, heavy safes, and restaurant kitchen
+          fixtures.
+        </p>
+        <p>
+          Contact us with your requirements and we will provide a clear plan and
+          quote for your move.
+        </p>
+      </>
+    ),
+  },
+];

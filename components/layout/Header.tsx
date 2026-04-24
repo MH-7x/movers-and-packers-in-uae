@@ -70,7 +70,7 @@ const locationsMenuItems = [
   { label: "Al Ain", href: "/movers-in-al-ain" },
   { label: "Ras Al Khaimah", href: "/movers-in-ras-al-khaimah" },
   { label: "Fujairah", href: "/movers-in-fujairah" },
-  { label: "Umm Al Quwain", href: "#" },
+  { label: "Umm Al Quwain", href: "/movers-in-umm-al-quwain" },
   { label: "Al Ruwais", href: "#" },
   { label: "Khor Fakkan", href: "#" },
 ];
@@ -418,7 +418,7 @@ export default function Navbar() {
                     service.submenu ? (
                       <li key={index} className="relative group/nested">
                         <button className="w-full flex items-center justify-between px-6 py-2.5 text-sm font-medium hover:bg-gray-50 hover:text-primary transition-colors">
-                          {service.label}{" "}
+                          <Link href={service.href}>{service.label}</Link>{" "}
                           <ChevronRight className="w-4 h-4 text-gray-400" />
                         </button>
                         <DesktopSubMenu items={service.submenu} />

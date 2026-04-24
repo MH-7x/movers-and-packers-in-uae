@@ -8,7 +8,7 @@ const locationsMenuItems = [
   { label: "Al Ain", href: "/movers-in-al-ain" },
   { label: "Ras Al Khaimah", href: "/movers-in-ras-al-khaimah" },
   { label: "Fujairah", href: "/movers-in-fujairah" },
-  { label: "Umm Al Quwain", href: "#" },
+  { label: "Umm Al Quwain", href: "/movers-in-umm-al-quwain" },
   { label: "Al Ruwais", href: "#" },
   { label: "Khor Fakkan", href: "#" },
 ];
@@ -24,7 +24,9 @@ const Footer = () => {
             </div>
             <div className="flex flex-col text-white tracking-wide">
               <span className="font-bold text-[15px] mb-1">Phone:</span>
-              <span className="text-[15px] opacity-85">(719) 445-2808</span>
+              <a className="text-[15px] opacity-85" href="tel:0507745691">
+                (050) 7745691
+              </a>
             </div>
           </div>
 
@@ -39,7 +41,7 @@ const Footer = () => {
                 className="text-[15px] opacity-85"
                 style={{ fontStyle: "normal" }}
               >
-                12 29th St - Al Mankhool – Dubai
+                16 13 St, Ras Al Khor Industrial Area 1 - Dubai
               </address>
             </div>
           </div>
