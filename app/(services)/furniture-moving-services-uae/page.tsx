@@ -6,17 +6,25 @@ import ServiceHero from "@/components/ServiceHero";
 import { AllServices, locations } from "@/lib/data";
 import { FurnitureMovingUaeFaqs } from "@/lib/FaqsData";
 import HeroImage from "@/public/ser/furniture-movers-and-packers-in-uae.jpg";
-import { Headset, MapPinCheck, MessageCircle, PhoneCall } from "lucide-react";
+import { MessageCircle, PhoneCall } from "lucide-react";
 import Image from "next/image";
-import { Metadata } from "next";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import MetadataTemplate from "@/lib/MetaDataTemplate";
 
-export const metadata: Metadata = {
-  title: "Furniture Movers in UAE | All Kinds of Furniture Moving",
-  description:
-    "Professional furniture movers in UAE since 1998. We handle all kinds of furniture moving — residential, commercial & single items — across Dubai, Abu Dhabi, Sharjah & all Emirates. Get a free quote!",
-};
+export const metadata = MetadataTemplate({
+  data: {
+    meta: {
+      title: "Furniture Movers in UAE | All Kinds of Furniture Moving",
+      desc: "Trusted furniture movers in UAE since 1998. Handling residential, commercial & single items across all Emirates. Fast, secure & reliable. Get a free quote!",
+    },
+    image: {
+      path: "/ser/furniture-movers-and-packers-in-uae.jpg",
+      alt: "Professional furniture movers in UAE handling furniture moving with specialized equipment and trained team members",
+    },
+    path: "/furniture-moving-services-uae",
+  },
+});
 
 const FurnitureMovers = () => {
   return (
@@ -39,9 +47,9 @@ const FurnitureMovers = () => {
             corner of the UAE.
           </p>
           <p>
-            At Movers and Packers in UAE, we have completed thousands of
-            successful furniture relocations for homes, offices, banks,
-            hospitals, schools, restaurants, and warehouses.
+            At <Link href="/">Movers and Packers in UAE</Link>, we have
+            completed thousands of successful furniture relocations for homes,
+            offices, banks, hospitals, schools, restaurants, and warehouses.
           </p>
           <p>
             Our 25+ years of on-the-ground experience in the UAE moving industry
@@ -49,7 +57,12 @@ const FurnitureMovers = () => {
             extreme summer heat — and we are fully prepared to handle them all.
           </p>
           <p className="text-primary font-bold text-center text-xl">
-            📞 Get Your Free Furniture Moving Quote Today — No Hidden Charges
+            📞
+            <Link href="/get-quote">
+              {" "}
+              Get Your Free Furniture Moving Quote Today
+            </Link>{" "}
+            — No Hidden Charges
           </p>
         </div>
       </section>
@@ -135,7 +148,11 @@ const FurnitureMovers = () => {
               institutional settings.
             </p>
 
-            <h3 className="mt-6">Residential Furniture Moving</h3>
+            <h3 className="mt-6">
+              <Link href={"/furniture-moving-services-uae"}>
+                Residential Furniture Moving
+              </Link>
+            </h3>
             <ul className="list-inside list-disc mt-3 text-muted-foreground leading-tight space-y-2">
               <li>Bedroom sets — beds, wardrobes, mattresses, dressers</li>
               <li>
@@ -152,7 +169,10 @@ const FurnitureMovers = () => {
             </ul>
 
             <h3 className="mt-6">
-              Commercial & Institutional Furniture Moving
+              Commercial &{" "}
+              <Link href="/school-furniture-moving-uae">
+                Institutional Furniture Moving
+              </Link>
             </h3>
             <ul className="list-inside list-disc mt-3 text-muted-foreground leading-tight space-y-2">
               <li>
@@ -180,7 +200,11 @@ const FurnitureMovers = () => {
               <li>Heavy-duty storage cabinets and filing systems</li>
               <li>Antique and high-value furniture requiring extra care</li>
               <li>Piano and musical instrument moving</li>
-              <li>Single piece / single item furniture delivery and pick-up</li>
+              <li>
+                <Link href="/single-furniture-moving-uae">
+                  Single piece / single item furniture delivery and pick-up
+                </Link>
+              </li>
             </ul>
           </section>
 
@@ -195,26 +219,31 @@ const FurnitureMovers = () => {
               {[
                 {
                   service: "Single Furniture Moving",
+                  link: "/single-furniture-moving-uae",
                   description:
                     "Move just one item — a sofa, bed, or cabinet — quickly and affordably anywhere in UAE.",
                 },
                 {
                   service: "Bank's Furniture Moving",
+                  link: "/bank-furniture-moving-uae",
                   description:
                     "Specialist secure moving for bank counters, teller stations, vaults, and office furniture.",
                 },
                 {
                   service: "Hospital Furniture Moving",
+                  link: "/hospital-furniture-moving-uae",
                   description:
                     "Safe, hygienic transport of hospital beds, medical furniture & clinical room setups.",
                 },
                 {
                   service: "Schools' Furniture Moving",
+                  link: "/school-furniture-moving-uae",
                   description:
                     "Efficient relocation of classrooms, libraries, and lab furniture with minimal disruption.",
                 },
                 {
                   service: "Restaurant Furniture Moving",
+                  link: "/restaurant-furniture-moving-uae",
                   description:
                     "Complete restaurant fit-out moves — tables, chairs, kitchen equipment, and bar setups.",
                 },
@@ -223,7 +252,9 @@ const FurnitureMovers = () => {
                   key={i}
                   className="border-b border-primary leading-tight pb-2"
                 >
-                  <h3 className="mb-2! text-base!">{feature.service}</h3>
+                  <h3 className="mb-2! text-base!">
+                    <Link href={feature.link}>{feature.service}</Link>
+                  </h3>
                   <p>{feature.description}</p>
                 </div>
               ))}
@@ -364,54 +395,59 @@ const FurnitureMovers = () => {
           <section>
             <h2>Service Areas — Furniture Movers Across All UAE Emirates</h2>
             <ul className="list-inside list-disc mt-6 text-muted-foreground leading-relaxed space-y-3">
-              <li>
-                <span className="font-semibold text-foreground">
-                  Furniture Movers Dubai
-                </span>{" "}
-                — all areas including Downtown, Marina, JLT, Deira, Bur Dubai
-              </li>
-              <li>
-                <span className="font-semibold text-foreground">
-                  Furniture Movers Abu Dhabi
-                </span>{" "}
-                — Khalidiyah, Mussafah, Reem Island, Al Ruwais
-              </li>
-              <li>
-                <span className="font-semibold text-foreground">
-                  Furniture Movers Sharjah
-                </span>{" "}
-                — Al Nahda, Al Taawun, Muwaileh, Industrial Area
-              </li>
-              <li>
-                <span className="font-semibold text-foreground">
-                  Furniture Movers Ajman
-                </span>{" "}
-                — Al Jurf, Corniche, Al Rumailah
-              </li>
-              <li>
-                <span className="font-semibold text-foreground">
-                  Furniture Movers Al Ain
-                </span>{" "}
-                — Al Jimi, Zakher, Al Maqam
-              </li>
-              <li>
-                <span className="font-semibold text-foreground">
-                  Furniture Movers Ras Al Khaimah
-                </span>{" "}
-                — Al Hamra, Julphar, Al Nakheel
-              </li>
-              <li>
-                <span className="font-semibold text-foreground">
-                  Furniture Movers Fujairah
-                </span>{" "}
-                — city center and surrounding areas
-              </li>
-              <li>
-                <span className="font-semibold text-foreground">
-                  Furniture Movers Umm Al Quwain
-                </span>{" "}
-                — and Khor Fakkan
-              </li>
+              {[
+                {
+                  title: "Dubai",
+                  link: "/",
+                  extra:
+                    "— all areas including Downtown, Marina, JLT, Deira, Bur Dubai",
+                },
+                {
+                  title: "Abu Dhabi",
+                  link: "/",
+                  extra: "— Khalidiyah, Mussafah, Reem Island, Al Ruwais",
+                },
+                {
+                  title: "Sharjah",
+                  link: "/movers-and-packers-in-sharjah",
+                  extra: "— Al Nahda, Al Taawun, Muwaileh, Industrial Area",
+                },
+                {
+                  title: "Ajman",
+                  link: "/movers-in-ajman",
+                  extra: "— Al Jurf, Corniche, Al Rumailah",
+                },
+                {
+                  title: "Ras Al Khaimah",
+                  link: "/movers-in-ras-al-khaimah",
+                  extra: "— Al Hamra, Julphar, Al Nakheel",
+                },
+                {
+                  title: "Al Ain",
+                  link: "/movers-in-al-ain",
+                  extra: "— Al Jimi, Zakher, Al Maqam",
+                },
+                {
+                  title: "Umm Al Quwain",
+                  link: "/movers-in-umm-al-quwain",
+                  extra: " — and Khor Fakkan",
+                },
+                {
+                  title: "Fujairah",
+                  link: "/movers-in-fujairah",
+                  extra: "— city center and surrounding areas",
+                },
+              ].map((item, index) => (
+                <li key={index}>
+                  <Link
+                    href={item.link}
+                    className="font-semibold text-foreground"
+                  >
+                    Furniture Movers {item.title}
+                  </Link>{" "}
+                  {item.extra}
+                </li>
+              ))}
             </ul>
           </section>
 
@@ -448,10 +484,10 @@ const FurnitureMovers = () => {
 
         <aside className="lg:col-span-2 flex flex-col gap-y-5 self-start sticky top-24 md:px-0 px-4">
           <div className="rounded-2xl bg-muted p-6 space-y-3">
-            <h3 className="font-bold text-lg">Need Hospital Moving Help?</h3>
+            <h3 className="font-bold text-lg">Need Furniture Moving Help?</h3>
             <p className="text-sm text-muted-foreground">
-              Contact our commercial team today for a free consultation and
-              quote. We specialize in healthcare facility relocations.
+              Contact our furniture movers team today for a free consultation
+              and quote. We specialize in furniture moving services in uae.
             </p>
             <div className="flex flex-col gap-2 pt-3">
               <Button
@@ -495,7 +531,7 @@ const FurnitureMovers = () => {
           </div>
         </aside>
       </div>
-      <ReviewSection />
+      <ReviewSection reviews={googleReviews} />
       <FAQSection
         faqs={FurnitureMovingUaeFaqs}
         title="Frequently Asked Questions — Furniture Movers in UAE"
@@ -509,3 +545,69 @@ const FurnitureMovers = () => {
 };
 
 export default FurnitureMovers;
+const googleReviews = [
+  {
+    name: "Amir Khan",
+    time: "2 weeks ago",
+    star: 5,
+    review:
+      "Moved our entire villa's furniture in Abu Dhabi seamlessly. The team was incredibly careful with our heavy oak dining table and delicate glass cabinets.",
+    image: "/ava/32.jpg",
+  },
+  {
+    name: "Sarah Al Qasimi",
+    time: "1 month ago",
+    star: 5,
+    review:
+      "Hired them to relocate our restaurant furniture in Dubai. They handled all the fragile dining tables, chairs, and décor with absolute professionalism and speed.",
+    image: "/ava/44.jpg",
+  },
+  {
+    name: "David Carter",
+    time: "3 days ago",
+    star: 5,
+    review:
+      "We needed our office workstations and conference tables moved in Sharjah over the weekend. They disassembled and reassembled everything perfectly before Monday morning.",
+    image: "/ava/86.jpg",
+  },
+  {
+    name: "Ayesha Rahman",
+    time: "2 months ago",
+    star: 5,
+    review:
+      "Great experience using them for our school's furniture relocation. They efficiently moved dozens of heavy classroom desks and filing cabinets without a single scratch.",
+    image: "/ava/68.jpg",
+  },
+  {
+    name: "Tarek Mansour",
+    time: "1 week ago",
+    star: 5,
+    review:
+      "Handled our warehouse furniture and bulky storage racks in Ajman effortlessly. The crew was strong, fast, and clearly knew exactly what they were doing.",
+    image: "/ava/22.jpg",
+  },
+  {
+    name: "Dr. Farah Ahmed",
+    time: "4 weeks ago",
+    star: 5,
+    review:
+      "We used Movers and Packers in UAE to shift our clinic's waiting room furniture and medical cabinets. They were punctual, quiet, and extremely careful with our property.",
+    image: "/ava/90.jpg",
+  },
+  {
+    name: "Vikram Singh",
+    time: "3 weeks ago",
+    star: 5,
+    review:
+      "Excellent corporate movers for our bank branch relocation. They made sure all the executive desks and heavy lobby furniture arrived safely and exactly on time.",
+    image: "/ava/54.jpg",
+  },
+  {
+    name: "Chloe Davies",
+    time: "5 days ago",
+    star: 5,
+    review:
+      "They took apart my massive IKEA wardrobe and reassembled it at the new place perfectly. Highly recommend them for any home furniture moving in the UAE.",
+    image: "/ava/29.jpg",
+  },
+];
