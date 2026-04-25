@@ -3,25 +3,35 @@ import HeroImage from "@/public/house-shifting-services-in-dubai-uae.jpg";
 import QuotationSection from "@/components/QuotationSection";
 import { AllServices, locations } from "@/lib/data";
 import Image from "next/image";
-import {
-  ChevronRight,
-  Headset,
-  MapPinCheck,
-  MessageCircle,
-  PhoneCall,
-} from "lucide-react";
+import { ChevronRight, MessageCircle, PhoneCall } from "lucide-react";
 import { ReviewSection } from "@/components/ReviewSection";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { FAQSection } from "@/components/FaqsSection";
 import { HouseShiftingDubaiFaqs } from "@/lib/FaqsData";
 import CTA from "@/components/CTA";
+import MetadataTemplate from "@/lib/MetaDataTemplate";
+
+export const metadata = MetadataTemplate({
+  data: {
+    meta: {
+      title: "House Shifting Dubai | Home Movers and Packers Dubai ",
+      desc: "Need house shifting in Dubai? Our trained movers have 25+ years experience. Zero hidden fees, same-day service & pay-after-completion guarantee. Get a quote!",
+    },
+    image: {
+      path: "/house-shifting-services-in-dubai-uae.jpg",
+      alt: "House Shifting Services in Dubai, UAE",
+    },
+    path: "/house-shifting-dubai",
+  },
+});
+
 const HouseShiftingServices = () => {
   return (
     <main>
       <ServiceHero
         title="House Shifting Dubai — Home Movers and Packers in Dubai"
-        desc="Planning a house shifting in Dubai? Movers and Packers in UAE is your licensed, experienced partner for a smooth, stress-free relocation. Registered since 1998 and based in Al Mankhool, Dubai, we have completed thousands of residential moves across all UAE emirates."
+        desc="Planning a house shifting in Dubai? Movers and Packers in UAE is your licensed, experienced partner for a smooth, stress-free relocation. Registered since 1998 and based in Ras Al Khor Industrial Area 1, Dubai, we have completed thousands of residential moves across all UAE emirates."
         image={{
           src: HeroImage,
           alt: "House Shifting Services in Dubai, UAE",
@@ -133,45 +143,46 @@ const HouseShiftingServices = () => {
               {[
                 {
                   name: "Apartment Moving & Packing Services in Dubai",
+
                   description:
                     "Moving a 1BHK to 4BHK apartment in Dubai? We handle everything from coordinating elevator access and building permits to packing electronics with anti-static bubble wrap. Our apartment movers in Dubai work efficiently so your move does not drag into the evening.",
-                  href: "#",
+                  href: "/apartment-movers-dubai",
                 },
                 {
                   name: "Villa Moving Services Dubai",
                   description:
                     "Villas come with their own challenges: garden furniture, oversized wardrobes, chandeliers, and wide stairways that require careful planning. Our villa movers in Dubai have the experience and equipment to handle all of it without damage to your property or belongings.",
-                  href: "#",
+                  href: "/villa-movers-dubai",
                 },
                 {
                   name: "Flat & Studio Shifting in Dubai",
                   description:
                     "Smaller space, faster move — but still done properly. Our flat and studio shifting service is efficient and budget-friendly, with the same care and professionalism as any full villa job. We pack and move everything, from your bed and sofa to your kitchenware and wardrobe.",
-                  href: "#",
+                  href: "/apartment-movers-dubai",
                 },
                 {
                   name: "House Furniture Moving in Dubai",
                   description:
                     "Moving furniture in a house takes more than muscle. We dismantle wardrobes, beds, modular shelving, and glass-top tables carefully, wrap every piece properly, and reassemble everything at your new home. Nothing gets dragged. Nothing gets scratched.",
-                  href: "#",
+                  href: "/furniture-moving-services-uae",
                 },
                 {
                   name: "Packing Services For House Shifting",
                   description:
                     "We use high-quality boxes, stretch plastic, bubble wrap, and fabric moving blankets. Everything is labelled with a clear system so unpacking at the other end is fast and organised. Packing materials are included in your quote — no extra charges.",
-                  href: "#",
+                  href: "/packing-services-in-dubai",
                 },
                 {
                   name: "Curtain Fixing & Installation",
                   description:
                     "Once you have moved in, the last thing you want is to call a separate company for your curtains. We offer post-move curtain fixing and installation as part of our service — a detail most moving companies simply ignore.",
-                  href: "#",
+                  href: "/",
                 },
                 {
                   name: "Storage Services in Dubai",
                   description:
                     "Need somewhere to keep your belongings while you wait for your new place to be ready? We offer short and long-term furniture storage in Dubai, both managed and self-storage options available. Our secure warehouse is monitored 24/7 and fully insured.",
-                  href: "#",
+                  href: "/",
                 },
               ].map((service, i) => (
                 <div
@@ -180,20 +191,27 @@ const HouseShiftingServices = () => {
                   className="rounded-2xl p-5 bg-muted"
                 >
                   <h3 className=" mb-0! text-xl! font-medium">
-                    {service.name}
+                    <Link href={service.href}>{service.name}</Link>
                   </h3>
                   <p className="mt-3 leading-tight text-muted-foreground">
                     {service.description}
                   </p>
-                  <Button variant={"link"} className="mt-3 ">
+                  <Button
+                    link={service.href}
+                    title={`Contact Now ${service.name}`}
+                    variant={"link"}
+                    className="mt-3 "
+                  >
                     Contact Now <ChevronRight />
                   </Button>
                 </div>
               ))}
               <p>
                 We also cover office relocation, warehouse moving, and
-                specialised equipment shifting. See our full services page for
-                details.
+                specialized equipment shifting.{" "}
+                <Link href="/moving-services">
+                  See our full services page for details.
+                </Link>
               </p>
             </div>
           </section>
@@ -346,26 +364,20 @@ const HouseShiftingServices = () => {
             </p>
             <b>Other Emirates:</b>
             <ul className="grid md:grid-cols-2 grid-cols-1 gap-3 mt-3">
-              <li className="hover:underline underline-offset-4">
-                <Link href={"#"}>House Shifting Services in Sharjah</Link>
-              </li>
-              <li className="hover:underline underline-offset-4">
-                <Link href={"#"}>House Shifting Services in Ajman</Link>
-              </li>
-              <li className="hover:underline underline-offset-4">
-                <Link href={"#"}>House Shifting Services in Abu Dhabi</Link>
-              </li>
-              <li className="hover:underline underline-offset-4">
-                <Link href={"#"}>
-                  House Shifting Services in Ras Al Khaimah
-                </Link>
-              </li>
-              <li className="hover:underline underline-offset-4">
-                <Link href={"#"}>House Shifting Services in Fujairah</Link>
-              </li>
-              <li className="hover:underline underline-offset-4">
-                <Link href={"#"}>House Shifting Services in Umm Al Quwain</Link>
-              </li>
+              {[
+                { title: "Abu Dhabi", link: "/" },
+                { title: "Sharjah", link: "/movers-and-packers-in-sharjah" },
+                { title: "Ajman", link: "/movers-in-ajman" },
+                { title: "Ras Al Khaimah", link: "/movers-in-ras-al-khaimah" },
+                { title: "Al Ain", link: "/movers-in-al-ain" },
+                { title: "Umm Al Quwain", link: "/movers-in-umm-al-quwain" },
+              ].map((item, i) => (
+                <li key={i} className="hover:underline underline-offset-4">
+                  <Link href={item.link}>
+                    House Shifting Services in {item.title}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </section>
           <section>
@@ -414,10 +426,11 @@ const HouseShiftingServices = () => {
         </div>
         <aside className="lg:col-span-2 flex flex-col gap-y-5 self-start sticky top-24 md:px-0 px-4">
           <div className="rounded-2xl bg-muted p-6 space-y-3">
-            <h3 className="font-bold text-lg">Need Hospital Moving Help?</h3>
+            <h3 className="font-bold text-lg">Need House Shifting in Dubai?</h3>
             <p className="text-sm text-muted-foreground">
-              Contact our commercial team today for a free consultation and
-              quote. We specialize in healthcare facility relocations.
+              Contact our home movers and packers team today for a free
+              consultation and quote. We specialize in house moving services in
+              dubai.
             </p>
             <div className="flex flex-col gap-2 pt-3">
               <Button
@@ -461,7 +474,7 @@ const HouseShiftingServices = () => {
           </div>
         </aside>
       </div>
-      <ReviewSection />
+      <ReviewSection reviews={googleReviews} />
       <FAQSection
         faqs={HouseShiftingDubaiFaqs}
         title="Frequently Asked Questions About House Shifting in Dubai"
@@ -507,5 +520,72 @@ const pricingData = [
     type: "5+ Bedroom Villa",
     cost: "AED 3,000 – 4,500+",
     truck: "Multiple trucks",
+  },
+];
+
+const googleReviews = [
+  {
+    name: "Mohammed Al Fayed",
+    time: "1 week ago",
+    star: 5,
+    review:
+      "Moved our 3-bedroom villa in Arabian Ranches last week. The house shifting team was efficient, packed everything securely, and even set up the beds for us.",
+    image: "/ava/32.jpg",
+  },
+  {
+    name: "Fatima Saeed",
+    time: "3 weeks ago",
+    star: 5,
+    review:
+      "Highly recommend their house shifting services in Dubai. They managed our entire move from Jumeirah to The Springs without a single broken glass.",
+    image: "/ava/44.jpg",
+  },
+  {
+    name: "John Peterson",
+    time: "2 days ago",
+    star: 5,
+    review:
+      "The best house movers I've used in the UAE! They arrived on time, wrapped all the bulky furniture, and unloaded everything exactly where my wife wanted it.",
+    image: "/ava/86.jpg",
+  },
+  {
+    name: "Anjali Patel",
+    time: "1 month ago",
+    star: 5,
+    review:
+      "Such a smooth house shifting experience. The crew was very polite, handled our heavy kitchen appliances with care, and made the whole process stress-free.",
+    image: "/ava/68.jpg",
+  },
+  {
+    name: "Tariq Abdullah",
+    time: "2 weeks ago",
+    star: 5,
+    review:
+      "We shifted our home from Deira to Mirdif and the team did a fantastic job. Great pricing and genuinely professional packers who know what they are doing.",
+    image: "/ava/22.jpg",
+  },
+  {
+    name: "Lisa Williams",
+    time: "5 days ago",
+    star: 5,
+    review:
+      "Great job on our recent house move in Dubai. They brought all the boxes, packed the entire kitchen in under an hour, and left absolutely no mess behind.",
+    image: "/ava/90.jpg",
+  },
+  {
+    name: "Sanjay Gupta",
+    time: "2 months ago",
+    star: 5,
+    review:
+      "I was really worried about shifting my house with a newborn, but they handled everything quietly and quickly. Truly a top-notch home moving company.",
+    image: "/ava/54.jpg",
+  },
+  {
+    name: "Mariam Youssef",
+    time: "4 weeks ago",
+    star: 5,
+    review:
+      "Fantastic service from start to finish! The house shifting crew carefully moved our large sofa and antique dining set through narrow doors without any damage.",
+    image: "/ava/29.jpg",
   },
 ];

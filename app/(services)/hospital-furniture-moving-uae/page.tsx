@@ -6,16 +6,25 @@ import ServiceHero from "@/components/ServiceHero";
 import { Button } from "@/components/ui/button";
 import { AllServices, locations } from "@/lib/data";
 import { HospitalFurnitureMovingFaqs } from "@/lib/FaqsData";
+import MetadataTemplate from "@/lib/MetaDataTemplate";
 import HeroImage from "@/public/ser/hospital-furniture-moving-uae-professional-movers-medical-equipment.jpg";
 import { PhoneCall, MessageCircle } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
-export const metadata = {
-  title: "Hospital Furniture Moving in UAE | Medical Equipment Movers",
-  description:
-    "Professional hospital furniture movers in UAE. Safe, hygienic relocation of hospital beds, patient room furniture, medical office setups & clinical equipment across Dubai, Abu Dhabi & all UAE. Licensed since 1998.",
-};
+export const metadata = MetadataTemplate({
+  data: {
+    meta: {
+      title: "Hospital Furniture Moving in UAE | Medical Equipment Movers",
+      desc: "Expert hospital furniture movers in UAE. Safe, hygienic relocation of clinical beds & medical equipment across Dubai & Abu Dhabi. Licensed since 1998. Get a quote!",
+    },
+    image: {
+      path: "/ser/hospital-furniture-moving-uae-professional-movers-medical-equipment.jpg",
+      alt: "Professional hospital furniture movers in UAE handling medical equipment and hospital beds with care",
+    },
+    path: "/hospital-furniture-moving-uae",
+  },
+});
 
 const HospitalFurnitureMoving = () => {
   return (
@@ -31,9 +40,10 @@ const HospitalFurnitureMoving = () => {
       />
       <section className="mt-16 max-w-4xl mx-auto md:px-0 px-4">
         <p className="text-center">
-          At Movers and Packers in UAE, we provide a specialist hospital
-          furniture moving service designed for clinics, hospitals, medical
-          centers, and healthcare facilities across all UAE emirates.
+          <Link href="/">At Movers and Packers in UAE</Link>, we provide a
+          specialist hospital furniture moving service designed for clinics,
+          hospitals, medical centers, and healthcare facilities across all UAE
+          emirates.
         </p>
         <p className="md:text-2xl text-lg font-bold text-center mt-3">
           With 25+ years of commercial moving experience and a foundation built
