@@ -2,7 +2,22 @@ import CTA from "@/components/CTA";
 import { FAQSection } from "@/components/FaqsSection";
 import QuotationSection from "@/components/QuotationSection";
 import { MovingQuoteFAQs } from "@/lib/FaqsData";
-import React from "react";
+
+import MetadataTemplate from "@/lib/MetaDataTemplate";
+
+export const metadata = MetadataTemplate({
+  data: {
+    meta: {
+      title: "Get a Quote from UAE's Top Movers and Packers",
+      desc: "Looking for a reliable moving quote in the UAE? Get a free, no-obligation quote from our trusted movers and packers in uae. we response to quotes within 5 to 10 minutes.",
+    },
+    image: {
+      path: "/mover-and-packers-in-uae.jpg",
+      alt: "Movers and Packers in UAE - Professional Moving Company",
+    },
+    path: "/get-quote",
+  },
+});
 
 const GetAQuotePage = () => {
   return (
