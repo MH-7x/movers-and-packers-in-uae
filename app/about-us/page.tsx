@@ -1,12 +1,20 @@
 import { Star, Truck } from "lucide-react";
-import { Metadata } from "next";
 import heroImage from "@/public/about-us-professional-movers-packers-team-dubai-uae.jpg";
 import Image from "next/image";
-export const metadata: Metadata = {
-  title: "About Us | Movers and Packers in UAE | Dubai Moving Company",
-  description:
-    "Learn about Movers and Packers in UAE — a registered moving company in Dubai since 1998. We offer house, villa, office, and furniture moving across all UAE emirates with no hidden charges.",
-};
+
+export const metadata = MetadataTemplate({
+  data: {
+    meta: {
+      title: "About Us | Movers and Packers in UAE Since 1998",
+      desc: "Learn about Movers and Packers in UAE — a registered moving company in Dubai since 1998. We offer house, villa, office, and furniture moving across all UAE emirates with no hidden charges.",
+    },
+    image: {
+      path: "/about-us-professional-movers-packers-team-dubai-uae.jpg",
+      alt: "Movers and Packers in uae professional moving team standing confidently in front of a branded company truck with the Dubai skyline in the background",
+    },
+    path: "/about-us",
+  },
+});
 
 const AboutUsPage = () => {
   return (
@@ -254,7 +262,7 @@ const AboutUsPage = () => {
             and disappear. Once the move is complete and you are satisfied, you
             pay — by cash, bank transfer, or cheque.
           </p>
-          <Button className="mt-5" size={"lg"}>
+          <Button quoteBtn className="mt-5" size={"lg"}>
             <Truck /> Book Your Move Now
           </Button>
         </div>
@@ -285,28 +293,27 @@ const AboutUsPage = () => {
         <div className="mt-5 md:text-lg text-muted-foreground flex flex-col gap-y-2 text-center">
           <p className="">We cover the entire UAE. You can reach us from:</p>
           <ul className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-2 gap-5 my-5 text-base">
-            <li className="bg-red-100 text-primary p-1 rounded-2xl">Dubai</li>
-            <li className="bg-red-100 text-primary p-1 rounded-2xl">
-              Abu Dhabi
-            </li>
-            <li className="bg-red-100 text-primary p-1 rounded-2xl">Sharjah</li>
-            <li className="bg-red-100 text-primary p-1 rounded-2xl">Ajman</li>
-            <li className="bg-red-100 text-primary p-1 rounded-2xl">
-              Ras Al Khaimah
-            </li>
-            <li className="bg-red-100 text-primary p-1 rounded-2xl">Al Ain</li>
-            <li className="bg-red-100 text-primary p-1 rounded-2xl">
-              Umm Al Quwain
-            </li>
-            <li className="bg-red-100 text-primary p-1 rounded-2xl">
-              Fujairah
-            </li>
-            <li className="bg-red-100 text-primary p-1 rounded-2xl">
-              Khor Fakkan
-            </li>
-            <li className="bg-red-100 text-primary p-1 rounded-2xl">
-              Al Ruwais
-            </li>
+            {[
+              { title: "Dubai", link: "/" },
+              { title: "Abu Dhabi", link: "/" },
+              { title: "Sharjah", link: "/movers-and-packers-in-sharjah" },
+              { title: "Ajman", link: "/movers-in-ajman" },
+              { title: "Ras Al Khaimah", link: "/movers-in-ras-al-khaimah" },
+              { title: "Al Ain", link: "/movers-in-al-ain" },
+              { title: "Umm Al Quwain", link: "/movers-in-umm-al-quwain" },
+              { title: "Fujairah", link: "/movers-in-fujairah" },
+              { title: "Khor Fakkan", link: "/" },
+              { title: "Al Ruwais", link: "/" },
+            ].map((item, index) => (
+              <li
+                key={index}
+                className="bg-red-100 text-primary p-1 rounded-2xl"
+              >
+                <Link href={item.link} title={`movers in ${item.title}`}>
+                  {item.title}
+                </Link>
+              </li>
+            ))}
           </ul>
           <p>
             One call or WhatsApp message is all it takes to get started, no
@@ -364,6 +371,8 @@ import { Button } from "@/components/ui/button";
 import CTA from "@/components/CTA";
 import { FAQSection } from "@/components/FaqsSection";
 import { AboutUSFaqs } from "@/lib/FaqsData";
+import MetadataTemplate from "@/lib/MetaDataTemplate";
+import Link from "next/link";
 const servicesData = [
   {
     title: "Residential Moving",
@@ -375,6 +384,13 @@ const servicesData = [
       "Apartment moving",
       "Flat shifting",
       "Single item or furniture-only moves",
+    ],
+    links: [
+      "/house-shifting-dubai",
+      "/villa-movers-in-dubai",
+      "/apartment-movers-dubai",
+      "/apartment-movers-dubai",
+      "/single-furniture-moving-uae",
     ],
   },
   {
@@ -390,6 +406,15 @@ const servicesData = [
       "Warehouse moving",
       "Industrial machinery shifting",
     ],
+    links: [
+      "/office-movers-in-dubai",
+      "/restaurant-furniture-moving-uae",
+      "/bank-furniture-moving-uae",
+      "/hospital-furniture-moving-uae",
+      "/school-furniture-moving-uae",
+      "/",
+      "/",
+    ],
   },
   {
     title: "Specialist and Add-On Services",
@@ -404,6 +429,7 @@ const servicesData = [
       "Heavy safe moving",
       "Cargo handling",
     ],
+    links: ["/packing-services-in-dubai", "/", "/", "/", "/", "/", "/"],
   },
 ];
 
@@ -452,9 +478,12 @@ const ServicesSection = () => {
                       <span className="w-5 h-5 text-foreground/50 mr-3 mt-0.5 shrink-0 transition-transform group-hover:scale-110">
                         ✔
                       </span>
-                      <span className="text-slate-600 font-medium text-sm leading-relaxed">
+                      <Link
+                        href={service.links[itemIndex]}
+                        className="text-slate-600 font-medium text-sm leading-relaxed"
+                      >
                         {item}
-                      </span>
+                      </Link>
                     </li>
                   ))}
                 </ul>
@@ -478,10 +507,15 @@ const ServicesSection = () => {
             </div>
 
             <div className="shrink-0 w-full lg:w-auto">
-              <button className="w-full lg:w-auto inline-flex items-center justify-center bg-white font-bold md:px-8 px-4 md:py-4 py-3 rounded-xl md:text-lg">
-                <PhoneCall className="w-5 h-5 mr-2 group-hover:animate-pulse" />
-                Contact Us Now
-              </button>
+              <Link
+                href="tel:0507745691"
+                title="Contact Movers and Packers in UAE"
+              >
+                <button className="w-full cursor-pointer lg:w-auto inline-flex items-center justify-center bg-white font-bold md:px-8 px-4 md:py-4 py-3 rounded-xl md:text-lg">
+                  <PhoneCall className="w-5 h-5 mr-2 group-hover:animate-pulse" />
+                  Contact Us Now
+                </button>
+              </Link>
             </div>
           </div>
         </div>
