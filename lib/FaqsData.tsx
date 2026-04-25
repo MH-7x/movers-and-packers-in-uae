@@ -1,4 +1,5 @@
 import { FAQData } from "@/components/FaqsSection";
+import Link from "next/link";
 
 export const HomePageFAQs: FAQData[] = [
   {
@@ -46,7 +47,16 @@ export const HomePageFAQs: FAQData[] = [
     answer: (
       <>
         <p>
-          Contact us by phone, WhatsApp, or through the quote form on this site.
+          Contact us by <Link href={"tel:0507745691"}>phone</Link> ,
+          <Link
+            href={
+              "https://wa.me/+971507745691?text=I%20Come%20From%20Your%20Website%20and%20I%20Need%20Moving%20Services"
+            }
+          >
+            WhatsApp
+          </Link>{" "}
+          , or through the{" "}
+          <Link href={"/get-quote"}>quote form on this site.</Link>
         </p>
         <p>
           Share the size of your home, your current location, and your moving

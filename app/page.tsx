@@ -2,6 +2,7 @@ import Image from "next/image";
 import imgSrc from "@/public/mover-and-packers-in-uae.jpg";
 import { Button } from "@/components/ui/button";
 import {
+  AlarmCheck,
   BriefcaseBusiness,
   Building2,
   Check,
@@ -10,7 +11,6 @@ import {
   HotelIcon,
   ListTodoIcon,
   LucideClipboardCheck,
-  LucideShieldCheck,
   Medal,
   MessageCircleCheck,
   PackageCheckIcon,
@@ -37,6 +37,21 @@ import { FAQSection } from "@/components/FaqsSection";
 import { HomePageFAQs } from "@/lib/FaqsData";
 import { ReviewSection } from "@/components/ReviewSection";
 import MovingProcess from "@/components/MovingProcess";
+import MetadataTemplate from "@/lib/MetaDataTemplate";
+
+export const metadata = MetadataTemplate({
+  data: {
+    meta: {
+      title: "Movers and Packers in UAE | Safe Moving Across The UAE",
+      desc: "Trusted movers and packers in UAE since 1998. We move homes, villas, offices & furniture across all emirates — Dubai, Abu Dhabi, Sharjah & more. Free quote. No hidden charges. Pay upon satisfaction.",
+    },
+    image: {
+      path: "/mover-and-packers-in-uae.jpg",
+      alt: "Movers and Packers in UAE - Professional Moving Company",
+    },
+    path: "",
+  },
+});
 
 export default function Home() {
   return (
@@ -68,10 +83,15 @@ export default function Home() {
               shifting, furniture moving, and storage — all emirates covered.
             </p>
             <div className="md:mt-5 mt-8 flex gap-3 text-shadow-none md:flex-row flex-col ">
-              <Button link="/get-quote" size={"lg"}>
+              <Button link="/get-quote" size={"lg"} className="md:w-max w-full">
                 <ListTodoIcon /> Get a Free Moving Quote
               </Button>
-              <Button whatsappBtn size={"lg"} variant={"secondary"}>
+              <Button
+                whatsappBtn
+                size={"lg"}
+                variant={"secondary"}
+                className="md:w-max w-full"
+              >
                 <MessageCircleCheck /> WhatsApp Us Now
               </Button>
             </div>
@@ -83,9 +103,9 @@ export default function Home() {
         className="max-w-6xl mt-10 md:px-0 px-4 mx-auto grid md:grid-cols-2 lg:grid-cols-3 grid-cols-1 gap-10"
       >
         <div className="flex items-center gap-x-3 border-b-2 border-gray-300 pb-3">
-          <LucideShieldCheck className="text-primary" size={25} />
+          <AlarmCheck className="text-primary" size={25} />
           <p className="text-lg text-foreground font-medium">
-            Officially Registered Since 1998
+            5-10 Minutes Response Time
           </p>
         </div>
         <div className="flex items-center gap-x-3 border-b-2 border-gray-300 pb-3">
@@ -475,13 +495,14 @@ export default function Home() {
               className="rounded-2xl p-5 bg-white/5 "
             >
               <h3 className="text-lg font-medium text-white">
-                {location.title}
+                <Link href={location.href}>{location.title}</Link>
               </h3>
               <p className="mt-3 text-white/80 leading-tight text-[15px]">
                 {location.description}
               </p>
               <Button
                 variant={"link"}
+                link={location.href}
                 title={`get a quote from ${location.title}`}
                 className="mt-3 text-muted"
               >
@@ -629,8 +650,8 @@ export default function Home() {
         <div className="text-muted-foreground mt-5 leading-tight flex flex-col gap-y-2">
           <p>
             We started as a moving company in 1998 and have been running legally
-            ever since. Our office is in Al Mankhool, Dubai, and our team covers
-            every emirate in the UAE.
+            ever since. Our office is in Ras Al Khor Industrial Area 1, Dubai,
+            and our team covers every emirate in the UAE.
           </p>
           <p>
             Over 25 years, we have completed thousands of moves — apartments,

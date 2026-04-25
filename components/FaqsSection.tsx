@@ -1,3 +1,8 @@
+/* eslint-disable @next/next/no-before-interactive-script-outside-document */
+import { convertFaqsForSchema } from "@/lib/ConvertFaqsInRaw";
+import { generateFAQSchema } from "@/lib/GenerateFaqSchema";
+import Script from "next/script";
+
 export interface FAQData {
   question: string;
   answer: React.ReactNode;
@@ -51,31 +56,43 @@ export const FAQSection: React.FC<FAQProps> = ({
   subtitle = "Everything you need to know about our moving services and processes.",
   faqs,
 }) => {
+  const FaqsSchema = generateFAQSchema(convertFaqsForSchema(faqs));
   return (
-    <section className="py-20 px-4 sm:px-6 lg:px-8 selection:bg-slate-200">
-      <div className="mx-auto max-w-3xl">
-        {/* Header */}
-        <div className="mb-14">
-          <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-primary">
-            Support & FAQs
-          </p>
-          <h2 className="text-3xl md:text-4xl font-semibold tracking-tight mb-4">
-            {title}
-          </h2>
-          {subtitle && (
-            <p className="text-lg text-muted-foreground max-w-2xl">
-              {subtitle}
+    <>
+      <Script
+        strategy="beforeInteractive"
+        id="FAQSchema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: FaqsSchema }}
+      />
+      <section
+        id="faq"
+        className="py-20 px-4 sm:px-6 lg:px-8 selection:bg-slate-200"
+      >
+        <div className="mx-auto max-w-3xl">
+          {/* Header */}
+          <div className="mb-14">
+            <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-primary">
+              Support & FAQs
             </p>
-          )}
-        </div>
+            <h2 className="text-3xl md:text-4xl font-semibold tracking-tight mb-4">
+              {title}
+            </h2>
+            {subtitle && (
+              <p className="text-lg text-muted-foreground max-w-2xl">
+                {subtitle}
+              </p>
+            )}
+          </div>
 
-        {/* FAQ List */}
-        <div className="border-t border-slate-200">
-          {faqs.map((faq, index) => (
-            <FAQItem key={`faq-${index}`} faq={faq} />
-          ))}
+          {/* FAQ List */}
+          <div className="border-t border-slate-200">
+            {faqs.map((faq, index) => (
+              <FAQItem key={`faq-${index}`} faq={faq} />
+            ))}
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 };

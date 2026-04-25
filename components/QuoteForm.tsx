@@ -32,6 +32,8 @@ const QuoteForm = ({ btnText }: { btnText?: string }) => {
           },
         },
       });
+      setLoading(false);
+      return;
     }
     try {
       const response = await SendMail({ data });

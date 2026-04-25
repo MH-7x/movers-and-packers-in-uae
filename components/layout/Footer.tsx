@@ -59,7 +59,7 @@ const Footer = () => {
         </div>
       </div>
       <footer className="bg-[#222a35] pt-16 pb-8 relative overflow-hidden border-t border-white/50">
-        <div className="max-w-[1200px] mx-auto px-6 lg:px-8">
+        <div className="max-w-[1290px] mx-auto px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-12 gap-y-12">
             {/* Column 1: Logo & About */}
             <div className="flex flex-col">
@@ -74,9 +74,11 @@ const Footer = () => {
               </Link>
 
               <p className="text-[#a5abb1] text-[13.5px] leading-[1.8] mb-8 pr-4 mt-5">
-                Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                labore et dolore.Duis aute irure dolor in reprehenderit in
-                voluptate velit.
+                Movers and Packers in UAE is experienced and reliable moving
+                company in uae. We provide all type moving services in dubai,
+                and all over emirates. our services includes house moving, villa
+                moving, office moving, packing services, furniture moving and
+                more.
               </p>
 
               {/* Social Icons */}
@@ -314,7 +316,12 @@ const Footer = () => {
               <a className="text-[#a5abb1] text-[13.5px]" href="#">
                 Sitemap
               </a>
-              <a className="text-[#a5abb1] text-[13.5px]" href="#">
+              <a
+                href="https://mashalhuraira.vercel.app/"
+                rel="noopener noreferrer"
+                target="_blank"
+                className="text-[#a5abb1] text-[13.5px]"
+              >
                 Develop & Maintained by{" "}
                 <span className="text-white">Mashal Huraira</span>
               </a>
