@@ -19,7 +19,7 @@ export const metadata = MetadataTemplate({
       desc: "Reliable apartment movers in Dubai since 1998. Fully insured with no hidden charges & same-day availability. Relocate stress-free—get your free quote today!",
     },
     image: {
-      path: "/apartment-movers-in-dubai.jpg",
+      path: "/ser/apartment-movers-in-dubai.jpg",
       alt: "Apartment moving service in Dubai with movers packing and loading furniture into a truck",
     },
     path: "/apartment-movers-dubai",

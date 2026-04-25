@@ -6,17 +6,25 @@ import ServiceHero from "@/components/ServiceHero";
 import { AllServices, locations } from "@/lib/data";
 import { BankFurnitureMovingUaeFaqs } from "@/lib/FaqsData";
 import HeroImage from "@/public/ser/bank-furniture-moving-dubai-teller-counter-relocation.jpg";
-import { Headset, MapPinCheck, MessageCircle, PhoneCall } from "lucide-react";
+import { MessageCircle, PhoneCall } from "lucide-react";
 import Image from "next/image";
-import { Metadata } from "next";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import MetadataTemplate from "@/lib/MetaDataTemplate";
 
-export const metadata: Metadata = {
-  title: "Bank Furniture Moving in UAE | Secure Commercial Movers",
-  description:
-    "Trusted bank furniture movers in UAE since 1998. We specialize in secure, confidential relocation of bank counters, teller stations, office furniture & heavy safes across Dubai, Abu Dhabi & all UAE. Get a free quote.",
-};
+export const metadata = MetadataTemplate({
+  data: {
+    meta: {
+      title: "Bank Furniture Moving in UAE | Secure Commercial Movers",
+      desc: "Trusted bank furniture movers in UAE. Secure & confidential relocation of counters, teller stations, and heavy safes across Dubai & the UAE. Get a quote!",
+    },
+    image: {
+      path: "/ser/bank-furniture-moving-dubai-teller-counter-relocation.jpg",
+      alt: "Movers & Packers professional team carefully relocating a bank teller counter inside a modern Dubai bank branch",
+    },
+    path: "/bank-furniture-moving-uae",
+  },
+});
 
 const BankFurnitureMovers = () => {
   return (
@@ -336,10 +344,10 @@ const BankFurnitureMovers = () => {
 
         <aside className="lg:col-span-2 flex flex-col gap-y-5 self-start sticky top-24 md:px-0 px-4">
           <div className="rounded-2xl bg-muted p-6 space-y-3">
-            <h3 className="font-bold text-lg">Need Hospital Moving Help?</h3>
+            <h3 className="font-bold text-lg">Need To Move Bank Furniture?</h3>
             <p className="text-sm text-muted-foreground">
               Contact our commercial team today for a free consultation and
-              quote. We specialize in healthcare facility relocations.
+              quote. We specialize in moving bank furniture in the UAE.
             </p>
             <div className="flex flex-col gap-2 pt-3">
               <Button
