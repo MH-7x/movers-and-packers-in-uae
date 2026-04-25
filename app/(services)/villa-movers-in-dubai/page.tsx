@@ -20,7 +20,7 @@ const VillaMoversInDubai = () => {
           alt: "Villa Movers in Dubai",
         }}
         title="Villa Movers in Dubai — Trusted, Licensed & Available 24/7"
-        desc="Looking for villa movers in Dubai? At Movers and Packers UAE — registered and operating since 1998 — we handle every part of your villa relocation: from the pre-move assessment and professional packing to transport, assembly, and optional unpacking. "
+        desc="Looking for villa movers in Dubai? At Movers and Packers in UAE — registered and operating since 1998 — we handle every part of your villa relocation: from the pre-move assessment and professional packing to transport, assembly, and optional unpacking. "
         btnText="Get A Quote For Villa Moving"
       />
       <p className="max-w-4xl mx-auto mt-16 md:text-lg md:px-0 px-4">

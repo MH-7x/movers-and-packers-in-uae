@@ -36,10 +36,11 @@ const ServiceHero = ({
             <p className="b-text mt-5">{desc}</p>
             <div className="mt-5 flex gap-x-3">
               {" "}
-              <Button className="w-max!" size={"lg"}>
+              <Button quoteBtn className="w-max!" size={"lg"}>
                 {btnText}
               </Button>
               <Button
+                callBtn
                 className="w-max! bg-foreground hover:bg-foreground/90 md:flex hidden "
                 size={"lg"}
               >

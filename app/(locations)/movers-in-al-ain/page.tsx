@@ -40,7 +40,7 @@ const MoversInAlAin = () => {
               exactly what they quoted. That&apos;s what we do.
             </p>
             <p>
-              Movers and Packers UAE has been operating since 1998 — over 25
+              Movers and Packers in UAE has been operating since 1998 — over 25
               years of moving homes, villas, offices, and commercial spaces
               across the UAE. We&apos;re a licensed, registered company with a
               verified Google Business Profile.

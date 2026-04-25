@@ -21,7 +21,7 @@ const OfficeMoversInDubai = () => {
     <main>
       <ServiceHero
         title="Office Movers in Dubai – Trusted Office Relocation in UAE"
-        desc="If you're looking for reliable office movers in Dubai, you've come to the right place. We are Movers and Packers UAE — a registered moving company based in Dubai, serving businesses of all sizes since 1998. Startups, banks, hospitals, schools, restaurants, and large corporate offices — we've moved them all."
+        desc="If you're looking for reliable office movers in Dubai, you've come to the right place. We are Movers and Packers in UAE — a registered moving company based in Dubai, serving businesses of all sizes since 1998. Startups, banks, hospitals, schools, restaurants, and large corporate offices — we've moved them all."
         image={{
           src: HeroImage,
           alt: "Office Movers in Dubai with movers handling IT equipment and workstations carefully",

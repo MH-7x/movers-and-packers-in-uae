@@ -77,7 +77,17 @@ const googleReviews = [
     image: "/ava/29.jpg",
   },
 ];
-export function ReviewSection() {
+export function ReviewSection({
+  reviews,
+}: {
+  reviews?: {
+    name: string;
+    time: string;
+    star: number;
+    review: string;
+    image: string;
+  }[];
+}) {
   return (
     <section className="mt-20 max-w-6xl md:px-0 px-3  mx-auto">
       <div className="flex items-center justify-center text-center flex-col">
@@ -110,14 +120,23 @@ export function ReviewSection() {
         className="max-w-5xl mx-auto mt-10"
       >
         <CarouselContent>
-          {googleReviews.map((review, index) => (
-            <CarouselItem
-              key={index}
-              className="md:basis-1/2 lg:basis-1/3 select-none"
-            >
-              <GoogleReviewCard review={{ ...review }} />
-            </CarouselItem>
-          ))}
+          {reviews
+            ? reviews.map((review, index) => (
+                <CarouselItem
+                  key={index}
+                  className="md:basis-1/2 lg:basis-1/3 select-none"
+                >
+                  <GoogleReviewCard review={{ ...review }} />
+                </CarouselItem>
+              ))
+            : googleReviews.map((review, index) => (
+                <CarouselItem
+                  key={index}
+                  className="md:basis-1/2 lg:basis-1/3 select-none"
+                >
+                  <GoogleReviewCard review={{ ...review }} />
+                </CarouselItem>
+              ))}
         </CarouselContent>
       </Carousel>
     </section>

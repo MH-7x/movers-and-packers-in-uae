@@ -22,7 +22,7 @@ const PackingServicesInDubai = () => {
     <main>
       <ServiceHero
         title="Professional Packing Services in Dubai — Safe, Stress-Free & Fully Insured"
-        desc="If you are looking for reliable packing services in Dubai, you have come to the right place. Movers and Packers UAE is a registered moving company, based in Dubai since 1998, with over 25 years of experience packing and moving thousands of homes, offices, villas, and commercial spaces across the UAE."
+        desc="If you are looking for reliable packing services in Dubai, you have come to the right place. Movers and Packers in UAE is a registered moving company, based in Dubai since 1998, with over 25 years of experience packing and moving thousands of homes, offices, villas, and commercial spaces across the UAE."
         image={{
           src: HeroImage,
           alt: "packing services in Dubai with movers packing and loading furniture into a truck",

@@ -21,7 +21,7 @@ const HouseShiftingServices = () => {
     <main>
       <ServiceHero
         title="House Shifting Dubai — Home Movers and Packers in Dubai"
-        desc="Planning a house shifting in Dubai? Movers and Packers UAE is your licensed, experienced partner for a smooth, stress-free relocation. Registered since 1998 and based in Al Mankhool, Dubai, we have completed thousands of residential moves across all UAE emirates."
+        desc="Planning a house shifting in Dubai? Movers and Packers in UAE is your licensed, experienced partner for a smooth, stress-free relocation. Registered since 1998 and based in Al Mankhool, Dubai, we have completed thousands of residential moves across all UAE emirates."
         image={{
           src: HeroImage,
           alt: "House Shifting Services in Dubai, UAE",
@@ -60,7 +60,7 @@ const HouseShiftingServices = () => {
           <section>
             <h2>Why Choose Our House Shifting Services in Dubai?</h2>
             <p>
-              We are not a freelance operation. Movers and Packers UAE is a
+              We are not a freelance operation. Movers and Packers in UAE is a
               legally registered moving company with a verified License and
               Trade Profile, a permanent office in Al Mankhool, and a team that
               has been doing this since 1998. Here is what sets us apart.
@@ -371,11 +371,11 @@ const HouseShiftingServices = () => {
           <section>
             <h2>Why We Are the Best House Movers and Packers in Dubai</h2>
             <p>
-              With 25+ years in the UAE moving industry, Movers and Packers UAE
-              has built a reputation on one thing: doing the job properly, every
-              time. Since 1998, we have completed thousands of residential moves
-              for families, singles, and corporations across Dubai and the wider
-              UAE.{" "}
+              With 25+ years in the UAE moving industry, Movers and Packers in
+              UAE has built a reputation on one thing: doing the job properly,
+              every time. Since 1998, we have completed thousands of residential
+              moves for families, singles, and corporations across Dubai and the
+              wider UAE.{" "}
             </p>
             <p>
               We are fully insured, available 24/7, and our team speaks both

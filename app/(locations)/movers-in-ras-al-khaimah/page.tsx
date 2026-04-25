@@ -25,10 +25,10 @@ const page = () => {
               operating from a phone number who disappears once the job is done.
             </p>
             <p>
-              Movers and Packers UAE has been registered and running since 1998.
-              We have completed thousands of moves across RAK and all seven
-              emirates: family homes, villas, offices, single-item furniture
-              jobs, and large commercial relocations.
+              Movers and Packers in UAE has been registered and running since
+              1998. We have completed thousands of moves across RAK and all
+              seven emirates: family homes, villas, offices, single-item
+              furniture jobs, and large commercial relocations.
             </p>
           </>
         }
@@ -645,7 +645,7 @@ const page = () => {
       />
       <CTA
         title="Get a Free Quote from Movers and Packers in Ras Al Khaimah"
-        desc="Movers and Packers UAE has been handling moves in Ras Al Khaimah since 1998. Our team will send you an itemised quote on WhatsApp within the hour — no hidden charges, no pressure, no commitment required. You pay only after the job is done.
+        desc="Movers and in Packers UAE has been handling moves in Ras Al Khaimah since 1998. Our team will send you an itemised quote on WhatsApp within the hour — no hidden charges, no pressure, no commitment required. You pay only after the job is done.
 Call or WhatsApp us today to get started.
 "
       />

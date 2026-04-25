@@ -6,22 +6,32 @@ import ServiceHero from "@/components/ServiceHero";
 import { Button } from "@/components/ui/button";
 import { AllServices, locations } from "@/lib/data";
 import { ApartmentMovingDubaiFaqs } from "@/lib/FaqsData";
+import MetadataTemplate from "@/lib/MetaDataTemplate";
 import HeroImage from "@/public/ser/apartment-movers-in-dubai.jpg";
-import {
-  ChevronRight,
-  Headset,
-  MapPinCheck,
-  MessageCircle,
-  PhoneCall,
-} from "lucide-react";
+import { ChevronRight, MessageCircle, PhoneCall } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+
+export const metadata = MetadataTemplate({
+  data: {
+    meta: {
+      title: "Apartment Movers in Dubai | Affordable Apartment Moving",
+      desc: "Reliable apartment movers in Dubai since 1998. Fully insured with no hidden charges & same-day availability. Relocate stress-free—get your free quote today!",
+    },
+    image: {
+      path: "/apartment-movers-in-dubai.jpg",
+      alt: "Apartment moving service in Dubai with movers packing and loading furniture into a truck",
+    },
+    path: "/apartment-movers-dubai",
+  },
+});
+
 const ApartmentMovers = () => {
   return (
     <main>
       <ServiceHero
         title="Apartment Movers in Dubai — Quick & Safe Relocations"
-        desc="Looking for reliable apartment movers in Dubai? Whether you are shifting a studio, a 1BHK, or a large 4-bedroom apartment, our team at Movers and Packers UAE handles everything from start to finish — packing, transport, and full installation."
+        desc="Looking for reliable apartment movers in Dubai? Whether you are shifting a studio, a 1BHK, or a large 4-bedroom apartment, our team at Movers and Packers in UAE handles everything from start to finish — packing, transport, and full installation."
         image={{
           src: HeroImage,
           alt: "Apartment moving service in Dubai with movers packing and loading furniture into a truck",
@@ -31,9 +41,12 @@ const ApartmentMovers = () => {
       <section className="mt-16 max-w-4xl mx-auto md:px-0 px-4">
         <h3 className="md:text-2xl text-lg font-bold text-center">
           Professional{" "}
-          <span className="text-primary underline underline-offset-4">
+          <Link
+            href={"/apartment-movers-dubai"}
+            className="text-primary underline underline-offset-4"
+          >
             apartment moving services
-          </span>{" "}
+          </Link>{" "}
           across all Dubai areas. No hidden charges, fully insured, same-day
           available.
         </h3>
@@ -60,9 +73,12 @@ const ApartmentMovers = () => {
             all seven Emirates.
           </p>
           <p>
-            If you need apartment shifting in Dubai or are planning a house
-            shifting in any part of the UAE, contact us today for a free,
-            no-obligation quote with zero hidden charges.
+            If you need apartment shifting in Dubai or are{" "}
+            <Link href={"/house-shifting-dubai"}>
+              planning a house shifting
+            </Link>{" "}
+            in any part of the UAE, contact us today for a free, no-obligation
+            quote with zero hidden charges.
           </p>
         </div>
         <div className="mt-10 bg-foreground/90 p-10 rounded-3xl grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-5">
@@ -217,9 +233,17 @@ const ApartmentMovers = () => {
                   id={service.name.toLowerCase().replace(/\s+/g, "-")}
                   className="rounded-2xl p-5 bg-muted"
                 >
-                  <h3 className=" mb-0! text-xl! font-medium">
-                    {service.name}
-                  </h3>
+                  {i === 0 ? (
+                    <h3 className=" mb-0! text-xl! font-medium">
+                      <Link href={"/packing-services-in-dubai"}>
+                        {service.name}
+                      </Link>
+                    </h3>
+                  ) : (
+                    <h3 className=" mb-0! text-xl! font-medium">
+                      {service.name}
+                    </h3>
+                  )}
                   <p className="mt-3 leading-tight text-muted-foreground">
                     {service.description}
                   </p>
@@ -355,7 +379,10 @@ const ApartmentMovers = () => {
             </h3>
             {/* Desktop / Tablet View (Table) */}
             <div className="hidden md:block bg-white shadow-sm border border-gray-200 rounded-lg overflow-hidden">
-              <table className="w-full text-left border-collapse">
+              <table
+                id="average-cost-of-apartment-moving-in-dubai"
+                className="w-full text-left border-collapse"
+              >
                 <thead>
                   <tr className="bg-foreground border-b border-gray-200 text-white font-semibold">
                     <th className="py-4 px-6 text-sm">Apartment Size</th>
@@ -457,41 +484,47 @@ const ApartmentMovers = () => {
             </ul>
             <h3 className="mt-5">UAE Emirates</h3>
             <ul className="grid md:grid-cols-3 grid-cols-1 gap-3 mt-3 leading-tight text-sm">
-              <li className="bg-secondary py-2 px-3 rounded-2xl">
-                Apartment Movers in Abu Dhabi
-              </li>
-              <li className="bg-secondary py-2 px-3 rounded-2xl">
-                Apartment Movers in Sharjah
-              </li>
-              <li className="bg-secondary py-2 px-3 rounded-2xl">
-                Apartment Movers in Ajman
-              </li>
-              <li className="bg-secondary py-2 px-3 rounded-2xl">
-                Apartment Movers in Ras Al Khaimah
-              </li>
-              <li className="bg-secondary py-2 px-3 rounded-2xl">
-                Apartment Movers in Fujairah
-              </li>
-              <li className="bg-secondary py-2 px-3 rounded-2xl">
-                Apartment Movers in Umm Al Quwain
-              </li>
-              <li className="bg-secondary py-2 px-3 rounded-2xl">
-                Apartment Movers in Al Ain
-              </li>
-              <li className="bg-secondary py-2 px-3 rounded-2xl">
-                Apartment Movers in Al Ruwais
-              </li>
-              <li className="bg-secondary py-2 px-3 rounded-2xl">
-                Apartment Movers in Al Khor Fakkan
-              </li>
+              {[
+                { title: "Apartment Movers in Abu Dhabi", link: "/" },
+                {
+                  title: "Apartment Movers in Sharjah",
+                  link: "/movers-and-packers-in-sharjah",
+                },
+                {
+                  title: "Apartment Movers in Ajman",
+                  link: "/movers-in-ajman",
+                },
+                {
+                  title: "Apartment Movers in Ras Al Khaimah",
+                  link: "/movers-in-ras-al-khaimah",
+                },
+                {
+                  title: "Apartment Movers in Fujairah",
+                  link: "/movers-in-fujairah",
+                },
+                {
+                  title: "Apartment Movers in Umm Al Quwain",
+                  link: "/movers-in-umm-al-quwain",
+                },
+                {
+                  title: "Apartment Movers in Al Ain",
+                  link: "/movers-in-al-ain",
+                },
+                { title: "Apartment Movers in Al Ruwais", link: "/" },
+                { title: "Apartment Movers in Al Khor Fakkan", link: "/" },
+              ].map((item, i) => (
+                <li key={i} className="bg-secondary py-2 px-3 rounded-2xl">
+                  <Link href={item.link}>{item.title}</Link>
+                </li>
+              ))}
             </ul>
           </section>
           <section>
             <h2>Apartment Moving Company You Can Actually Trust</h2>
             <div className="flex flex-col gap-y-1">
               <p>
-                Movers and Packers UAE was established in 1998 — that is over 25
-                years of legally operating in the UAE, verifiable through our
+                Movers and Packers in UAE was established in 1998 — that is over
+                25 years of legally operating in the UAE, verifiable through our
                 trade registration.
               </p>
               <p>
@@ -529,10 +562,11 @@ const ApartmentMovers = () => {
 
         <aside className="lg:col-span-2 flex flex-col gap-y-5 self-start sticky top-24 md:px-0 px-4">
           <div className="rounded-2xl bg-muted p-6 space-y-3">
-            <h3 className="font-bold text-lg">Need Hospital Moving Help?</h3>
+            <h3 className="font-bold text-lg">Need Apartment Moving Help?</h3>
             <p className="text-sm text-muted-foreground">
-              Contact our commercial team today for a free consultation and
-              quote. We specialize in healthcare facility relocations.
+              Contact our apartment movers team today for a free consultation
+              and quote. We specialize in moving and shafting apartments in
+              dubai, uae.
             </p>
             <div className="flex flex-col gap-2 pt-3">
               <Button
@@ -576,7 +610,7 @@ const ApartmentMovers = () => {
           </div>
         </aside>
       </div>
-      <ReviewSection />
+      <ReviewSection reviews={googleReviews} />
       <FAQSection
         faqs={ApartmentMovingDubaiFaqs}
         title="Frequently Asked Questions — Apartment Movers in Dubai"
@@ -616,5 +650,72 @@ const pricingData = [
     size: "4+ BHK / Large Villa",
     cost: "5,500 – 10,000+",
     duration: "14 – 18 hours",
+  },
+];
+
+const googleReviews = [
+  {
+    name: "Ali Reza",
+    time: "3 days ago",
+    star: 5,
+    review:
+      "Moved from my 1BHK in Marina to JVC without any hassle. The team was super quick and didn't scratch a single piece of furniture.",
+    image: "/ava/32.jpg",
+  },
+  {
+    name: "Neha Sharma",
+    time: "1 week ago",
+    star: 5,
+    review:
+      "Excellent service for my apartment move in Downtown Dubai. They handled all the building permissions and parking approvals perfectly.",
+    image: "/ava/44.jpg",
+  },
+  {
+    name: "Michael Thompson",
+    time: "2 weeks ago",
+    star: 5,
+    review:
+      "Very professional apartment movers. They dismantled my heavy bed and wardrobe, wrapped everything, and set it up perfectly in the new flat.",
+    image: "/ava/86.jpg",
+  },
+  {
+    name: "Noura Al Suwaidi",
+    time: "4 days ago",
+    star: 5,
+    review:
+      "The best moving company I've used in Dubai. Relocated my entire apartment in just a few hours and the price was exactly as quoted.",
+    image: "/ava/68.jpg",
+  },
+  {
+    name: "Usman Tariq",
+    time: "1 month ago",
+    star: 5,
+    review:
+      "Booked them for a studio move in Business Bay. Fast, polite crew and a completely stress-free experience from start to finish.",
+    image: "/ava/22.jpg",
+  },
+  {
+    name: "Elena Volkova",
+    time: "3 weeks ago",
+    star: 5,
+    review:
+      "Highly recommend for apartment shifting in Dubai. They brought all the packing materials and made sure my fragile items and electronics were safe.",
+    image: "/ava/90.jpg",
+  },
+  {
+    name: "Rajeev Kumar",
+    time: "2 months ago",
+    star: 5,
+    review:
+      "Punctual and hardworking team for my 2BHK move. They even helped me unpack and arrange the heavy boxes in the new living room.",
+    image: "/ava/54.jpg",
+  },
+  {
+    name: "Zahra Hashim",
+    time: "5 days ago",
+    star: 5,
+    review:
+      "Shifted my apartment from JLT to Silicon Oasis smoothly. No hidden charges at the end of the day, which is so rare to find with movers here.",
+    image: "/ava/29.jpg",
   },
 ];

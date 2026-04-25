@@ -29,10 +29,10 @@ const OurMovingServices = () => {
           <div>
             <p className="text-gray-200">
               Whether you&apos;re relocating your home, shifting your office, or
-              moving a single piece of furniture, Movers and Packers UAE offers
-              a complete range of professional moving services across Dubai, Abu
-              Dhabi, Sharjah, Ajman, Ras Al Khaimah, Al Ain, Umm Al Quwain,
-              Fujairah, and all surrounding emirates.
+              moving a single piece of furniture, Movers and Packers in UAE
+              offers a complete range of professional moving services across
+              Dubai, Abu Dhabi, Sharjah, Ajman, Ras Al Khaimah, Al Ain, Umm Al
+              Quwain, Fujairah, and all surrounding emirates.
             </p>
             <p className="text-gray-200 mt-2">
               With 25+ years of experience and thousands of successful moves

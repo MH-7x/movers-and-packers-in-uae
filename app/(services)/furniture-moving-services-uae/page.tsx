@@ -419,9 +419,9 @@ const FurnitureMovers = () => {
             <h2>Why Choose Registered, Professional Furniture Movers?</h2>
             <div className="flex flex-col gap-y-3 text-muted-foreground">
               <p>
-                Movers and Packers UAE has been handling furniture relocations
-                since 1998. Unlike newer moving companies with no track record,
-                we have 25+ years of proven experience.
+                Movers and Packers in UAE has been handling furniture
+                relocations since 1998. Unlike newer moving companies with no
+                track record, we have 25+ years of proven experience.
               </p>
               <p>
                 We understand that furniture is more than just objects — it is
