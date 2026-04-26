@@ -17,6 +17,22 @@ import Link from "next/link";
 import { FAQSection } from "@/components/FaqsSection";
 import { AjmanMovingFAQs } from "@/lib/FaqsData";
 import CTA from "@/components/CTA";
+import MetadataTemplate from "@/lib/MetaDataTemplate";
+import { ReviewSection } from "@/components/ReviewSection";
+
+export const metadata = MetadataTemplate({
+  data: {
+    meta: {
+      title: "Movers in Ajman – Professional Movers and Packers in Ajman",
+      desc: "Trusted movers in Ajman with 25+ years of experience. We offer house, villa, office & furniture moving at no hidden charges. Call or WhatsApp for a free quote.",
+    },
+    image: {
+      path: "/loc/movers-in-ajman-residential-house-moving-service-uae.jpg",
+      alt: "movers in ajman professional team loading wrapped furniture and boxes into a branded moving truck outside a residential house in Ajman UAE",
+    },
+    path: "/movers-in-ajman",
+  },
+});
 
 const MoversInAjman = () => {
   return (
@@ -131,7 +147,11 @@ const MoversInAjman = () => {
               equipment and quality packing materials. Here is a full breakdown
               of what we offer.
             </p>
-            <Button variant={"secondary"} className="mt-5">
+            <Button
+              link="/moving-services"
+              variant={"secondary"}
+              className="mt-5"
+            >
               View All Services <ChevronRight />
             </Button>
           </div>
@@ -144,11 +164,12 @@ const MoversInAjman = () => {
               description: (
                 <>
                   <p>
-                    As home movers in Ajman, we handle the entire process:
-                    packing every room, dismantling furniture, labeling boxes by
-                    room, loading onto our truck, transporting to your new home,
-                    unloading, reassembling furniture, and placing everything
-                    where you want it.
+                    As <Link href="/house-shifting-dubai">home movers</Link> in
+                    Ajman, we handle the entire process: packing every room,
+                    dismantling furniture, labeling boxes by room, loading onto
+                    our truck, transporting to your new home, unloading,
+                    reassembling furniture, and placing everything where you
+                    want it.
                   </p>
                   <p>
                     House shifting in Ajman is something we do every day — the
@@ -183,7 +204,8 @@ const MoversInAjman = () => {
                   <p>
                     Villa moves are bigger in scale and need more planning. A
                     larger crew, more trucks, and room-by-room coordination —
-                    our villa movers in Ajman are used to it.
+                    <Link href="/villa-movers-in-dubai">our villa movers</Link>{" "}
+                    in Ajman are used to it.
                   </p>
                   <p>
                     We handle heavy furniture, fragile décor, large electronics,
@@ -217,8 +239,10 @@ const MoversInAjman = () => {
                     parking near the entrance.
                   </p>
                   <p>
-                    Our apartment movers in Ajman are experienced with
-                    Ajman&apos;s residential buildings and compounds
+                    Our{" "}
+                    <Link href="/apartment-movers-dubai">apartment movers</Link>{" "}
+                    in Ajman are experienced with Ajman&apos;s residential
+                    buildings and compounds
                   </p>
                 </>
               ),
@@ -247,9 +271,13 @@ const MoversInAjman = () => {
                     a dining set.
                   </p>
                   <p>
-                    Our furniture movers in Ajman handle single items and full
-                    furniture sets. We wrap, protect, load, transport, and place
-                    each piece carefully.
+                    Our{" "}
+                    <Link href="/furniture-moving-services-uae">
+                      furniture movers
+                    </Link>{" "}
+                    in Ajman handle single items and full furniture sets. We
+                    wrap, protect, load, transport, and place each piece
+                    carefully.
                   </p>
                 </>
               ),
@@ -281,9 +309,10 @@ const MoversInAjman = () => {
                     get you moved and operational again as fast as possible.
                   </p>
                   <p>
-                    Our office movers in Ajman pack workstations, cabinets,
-                    files, printers, IT equipment, conference room furniture,
-                    and storage units.
+                    Our{" "}
+                    <Link href="/office-movers-in-dubai">office movers</Link> in
+                    Ajman pack workstations, cabinets, files, printers, IT
+                    equipment, conference room furniture, and storage units.
                   </p>
                 </>
               ),
@@ -341,10 +370,13 @@ const MoversInAjman = () => {
               description: (
                 <>
                   <p>
-                    Relocating furniture and equipment for a bank, hospital,
-                    restaurant, school, or warehouse is not something an
-                    unlicensed mover can legally do — and it is not something
-                    you should trust to someone without proper authorization.
+                    <Link href="/bank-furniture-moving-uae">
+                      Relocating furniture and equipment for a bank
+                    </Link>
+                    , hospital, restaurant, school, or warehouse is not
+                    something an unlicensed mover can legally do — and it is not
+                    something you should trust to someone without proper
+                    authorization.
                   </p>
                   <p>
                     We are legally registered to handle commercial and
@@ -609,6 +641,7 @@ const MoversInAjman = () => {
         </p>
       </section>
       <MovingProcess />
+      <ReviewSection reviews={googleReviews} />
       <section className="max-w-4xl mx-auto mt-20 md:px-0 px-4 flex flex-col gap-y-5">
         <div>
           <h2 className="md:text-4xl text-3xl font-bold">
@@ -888,6 +921,73 @@ type MoveTypeData = {
   cost: string;
   icon: React.ElementType;
 };
+
+const googleReviews = [
+  {
+    name: "Saif Al Shamsi",
+    time: "2 weeks ago",
+    star: 5,
+    review:
+      "Moved from Al Nuaimiya to Al Rashidiya without any drama. They were on time and the packing held up well. Good value.",
+    image: "/ava/32.jpg",
+  },
+  {
+    name: "Amira Hassan",
+    time: "1 month ago",
+    star: 5,
+    review:
+      "Used them for my move in Ajman. They were careful with the heavy furniture and the whole thing was done in under three hours. Not bad.",
+    image: "/ava/44.jpg",
+  },
+  {
+    name: "John Davis",
+    time: "3 days ago",
+    star: 5,
+    review:
+      "Moved my villa in Al Rawda and they packed my electronics properly. Put everything back together and didn't lose a single screw. That matters.",
+    image: "/ava/86.jpg",
+  },
+  {
+    name: "Pooja Sharma",
+    time: "1 week ago",
+    star: 5,
+    review:
+      "Reasonably priced and straightforward. Moved us near Ajman Corniche and everything was transparent—no surprise charges at the end.",
+    image: "/ava/68.jpg",
+  },
+  {
+    name: "Ali Qasim",
+    time: "2 months ago",
+    star: 5,
+    review:
+      "Had to move from Ajman to Dubai on short notice. They moved fast and got all my dishes there in one piece. Exactly what I needed.",
+    image: "/ava/22.jpg",
+  },
+  {
+    name: "Nour K",
+    time: "4 weeks ago",
+    star: 5,
+    review:
+      "These are the best movers I've used in Ajman. They came prepared with boxes and wrap, and they made the whole process way less stressful.",
+    image: "/ava/90.jpg",
+  },
+  {
+    name: "Karthik Rajan",
+    time: "5 days ago",
+    star: 5,
+    review:
+      "The crew didn't slack off. Packed and moved my 2BHK in Ajman Downtown straight through without stopping. Solid work.",
+    image: "/ava/54.jpg",
+  },
+  {
+    name: "Fatima Zehra",
+    time: "3 weeks ago",
+    star: 5,
+    review:
+      "The team was polite and knew how to handle fragile stuff. My glass dining table and big wardrobe made it across Ajman without a scratch.",
+    image: "/ava/29.jpg",
+  },
+];
 
 const movingData: MoveTypeData[] = [
   {

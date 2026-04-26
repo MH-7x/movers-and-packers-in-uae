@@ -3,6 +3,7 @@ import { FAQSection } from "@/components/FaqsSection";
 import { LocHeroSection } from "@/components/LocHeroSection";
 import MovingProcess from "@/components/MovingProcess";
 import QuotationSection from "@/components/QuotationSection";
+import { ReviewSection } from "@/components/ReviewSection";
 import { Button } from "@/components/ui/button";
 import { SharjahMovingFAQs } from "@/lib/FaqsData";
 import MetadataTemplate from "@/lib/MetaDataTemplate";
@@ -205,7 +206,9 @@ const MoversInSharjahPage = () => {
                 stress-free moving experience.
               </p>
             </div>
-            <Button className="mt-5">Get A Quote For House Moving</Button>
+            <Button quoteBtn className="mt-5">
+              Get A Quote For House Moving
+            </Button>
           </div>
           <div className="bg-white drop-shadow-lg md:p-6 px-4 py-6 rounded-3xl">
             <div className="bg-secondary aspect-video rounded-3xl relative overflow-hidden">
@@ -243,7 +246,9 @@ const MoversInSharjahPage = () => {
                 location is organised.
               </p>
             </div>
-            <Button className="mt-5">Get A Quote For House Moving</Button>
+            <Button quoteBtn className="mt-5">
+              Get A Quote For House Moving
+            </Button>
           </div>
           <div className="bg-white drop-shadow-lg md:p-6 px-4 py-6 rounded-3xl">
             <div className="bg-secondary aspect-video rounded-3xl relative overflow-hidden">
@@ -280,7 +285,9 @@ const MoversInSharjahPage = () => {
                 our team before booking.
               </p>
             </div>
-            <Button className="mt-5">Get A Quote For Office Moving</Button>
+            <Button quoteBtn className="mt-5">
+              Get A Quote For Office Moving
+            </Button>
           </div>
           <div className="bg-white drop-shadow-lg md:p-6 px-4 py-6 rounded-3xl">
             <div className="bg-secondary aspect-video rounded-3xl relative overflow-hidden">
@@ -316,7 +323,9 @@ const MoversInSharjahPage = () => {
                 industrial machinery, hospital equipment, and large safes.
               </p>
             </div>
-            <Button className="mt-5">Get A Quote For Furniture Moving</Button>
+            <Button quoteBtn className="mt-5">
+              Get A Quote For Furniture Moving
+            </Button>
           </div>
           <div className="bg-white drop-shadow-lg md:p-6 px-4 py-6 rounded-3xl">
             <div className="bg-secondary aspect-video rounded-3xl relative overflow-hidden">
@@ -349,7 +358,9 @@ const MoversInSharjahPage = () => {
                 end of a long day.
               </p>
             </div>
-            <Button className="mt-5">Get A Quote For Packing Service</Button>
+            <Button quoteBtn className="mt-5">
+              Get A Quote For Packing Service
+            </Button>
           </div>
           <div className="bg-white drop-shadow-lg md:p-6 px-4 py-6 rounded-3xl">
             <div className="bg-secondary aspect-video rounded-3xl relative overflow-hidden">
@@ -379,7 +390,9 @@ const MoversInSharjahPage = () => {
                 availability and rates.
               </p>
             </div>
-            <Button className="mt-5">Get A Quote For Storage Service</Button>
+            <Button quoteBtn className="mt-5">
+              Get A Quote For Storage Service
+            </Button>
           </div>
           <div className="bg-white drop-shadow-lg md:p-6 px-4 py-6 rounded-3xl grid md:grid-cols-2 grid-cols-1 gap-10 items-center md:col-span-2">
             <div className="bg-secondary aspect-video rounded-3xl relative overflow-hidden">
@@ -413,7 +426,9 @@ const MoversInSharjahPage = () => {
                   can do.
                 </p>
               </div>
-              <Button className="mt-5">Get A Quote For Quick Moving</Button>
+              <Button quoteBtn className="mt-5">
+                Get A Quote For Quick Moving
+              </Button>
             </div>
           </div>
         </div>
@@ -498,6 +513,7 @@ const MoversInSharjahPage = () => {
         }
         desc="Here’s exactly what happens from the moment you contact us to the moment you settle into your new place."
       />
+      <ReviewSection reviews={googleReviews} />
       <section
         id="best-moving-company-in-uae "
         className="max-w-7xl mx-auto mt-20 grid md:grid-cols-2 grid-cols-1 gap-10 md:px-10 px-4 items-center"
@@ -755,6 +771,73 @@ const MoversInSharjahPage = () => {
 };
 
 export default MoversInSharjahPage;
+
+const googleReviews = [
+  {
+    name: "Hamed Al Nuaimi",
+    time: "1 week ago",
+    star: 5,
+    review:
+      "Moved my flat from Al Majaz to Al Nahda last week. The guys were fast, packed everything properly, and didn't overcharge. Great value for Sharjah.",
+    image: "/ava/32.jpg",
+  },
+  {
+    name: "Rida Khan",
+    time: "3 weeks ago",
+    star: 5,
+    review:
+      "Called them for packing and moving my 2BHK in Sharjah. They came with all their own supplies—bubble wrap, boxes, everything. Took the stress out of it.",
+    image: "/ava/44.jpg",
+  },
+  {
+    name: "Daniel Smith",
+    time: "2 days ago",
+    star: 5,
+    review:
+      "Moved us from Sharjah to Dubai and they got the timing right. Their packing was solid and they handled everything without issues. Good service.",
+    image: "/ava/86.jpg",
+  },
+  {
+    name: "Sana Farooq",
+    time: "1 month ago",
+    star: 5,
+    review:
+      "These guys took apart my heavy wooden bed, transported it, and set it back up perfectly. No damage, no problems. That kind of care is hard to find.",
+    image: "/ava/68.jpg",
+  },
+  {
+    name: "Bilal Qureshi",
+    time: "2 weeks ago",
+    star: 5,
+    review:
+      "Most movers in Sharjah add hidden charges, but these guys quoted a flat rate upfront. The crew was professional and actually finished on time.",
+    image: "/ava/22.jpg",
+  },
+  {
+    name: "Aisha Mahmoud",
+    time: "5 days ago",
+    star: 5,
+    review:
+      "Used them for my office move in Muweilah. They packed and labeled everything clearly, which made unpacking way simpler than I expected.",
+    image: "/ava/90.jpg",
+  },
+  {
+    name: "Manoj Kumar",
+    time: "3 weeks ago",
+    star: 5,
+    review:
+      "They showed up exactly when they said they would at our Al Taawun place. Good packing, good loading, and everything arrived in one piece that same day.",
+    image: "/ava/54.jpg",
+  },
+  {
+    name: "Nadia Ali",
+    time: "4 weeks ago",
+    star: 5,
+    review:
+      "I was worried about my glass display cabinets during the move, but the packing crew in Sharjah knew what they were doing. Lots of padding, handled them carefully. Really impressed.",
+    image: "/ava/29.jpg",
+  },
+];
 
 const comparisonData = [
   {

@@ -67,7 +67,7 @@ const QuotationSection = ({
           <p className="mt-5 leading-tight text-muted-foreground">{extra}</p>
         )}
         <p className="mt-2 leading-tight text-muted-foreground">
-          We usually respond within an hour.
+          We usually respond within 10 minutes.
         </p>
         <h3 className="mt-5 text-xl font-medium text-foreground">
           Ways to Contact Us

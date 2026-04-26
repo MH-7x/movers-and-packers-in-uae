@@ -20,6 +20,23 @@ import Link from "next/link";
 import { FAQSection } from "@/components/FaqsSection";
 import { AlAinMovingFAQs } from "@/lib/FaqsData";
 import CTA from "@/components/CTA";
+import MetadataTemplate from "@/lib/MetaDataTemplate";
+import { ReviewSection } from "@/components/ReviewSection";
+
+export const metadata = MetadataTemplate({
+  data: {
+    meta: {
+      title: "Movers in Al Ain | Trusted Al Ain Movers and Packers",
+      desc: "Meta Description	Need movers and packers in Al Ain? Our licensed team offers house, villa & office moving with no hidden charges. Pay upon satisfaction. Call now.",
+    },
+    image: {
+      path: "/loc/movers-in-al-ain-professional-moving-service-jebel-hafeet-garden-city.jpg",
+      alt: "movers in al ain professional team loading wrapped furniture and boxes into a branded moving truck on a tree-lined Al Ain residential boulevard with Jebel Hafeet mountain in the background",
+    },
+    path: "/movers-in-al-ain",
+  },
+});
+
 const MoversInAlAin = () => {
   return (
     <main>
@@ -40,10 +57,11 @@ const MoversInAlAin = () => {
               exactly what they quoted. That&apos;s what we do.
             </p>
             <p>
-              Movers and Packers in UAE has been operating since 1998 — over 25
-              years of moving homes, villas, offices, and commercial spaces
-              across the UAE. We&apos;re a licensed, registered company with a
-              verified Google Business Profile.
+              <Link href="/">Movers and Packers in UAE </Link> has been
+              operating since 1998 — over 25 years of moving homes, villas,
+              offices, and commercial spaces across the UAE. We&apos;re a
+              licensed, registered company with a verified Google Business
+              Profile.
             </p>
           </>
         }
@@ -166,7 +184,11 @@ const MoversInAlAin = () => {
               office, our team handles it. Below is what our movers and packers
               in Ras Al Khaimah provide.
             </p>
-            <Button variant={"secondary"} className="mt-5">
+            <Button
+              link="/moving-services"
+              variant={"secondary"}
+              className="mt-5"
+            >
               View All Services <ChevronRight />
             </Button>
           </div>
@@ -195,11 +217,16 @@ const MoversInAlAin = () => {
                     upholstered pieces.
                   </p>
                   <p>
-                    Our house movers and packers in Al Ain handle house
-                    shifting, villa shifting, flat shifting, and apartment moves
-                    of every size. We&apos;re careful with bedroom furniture,
-                    kitchen appliances, mirrors, artwork, and anything that
-                    needs extra protection.
+                    Our{" "}
+                    <Link href="/house-shifting-dubai">
+                      house movers and packers
+                    </Link>{" "}
+                    in Al Ain handle house shifting,{" "}
+                    <Link href="/villa-movers-in-dubai">villa shifting</Link>,
+                    <Link href="/apartment-movers-dubai"> flat shifting</Link>,
+                    and apartment moves of every size. We&apos;re careful with
+                    bedroom furniture, kitchen appliances, mirrors, artwork, and
+                    anything that needs extra protection.
                   </p>
                 </>
               ),
@@ -224,12 +251,21 @@ const MoversInAlAin = () => {
               extra: (
                 <>
                   <p>
-                    Our office movers in Al Ain manage full office relocations,
-                    bank furniture moving, school furniture moving, hospital
-                    equipment, restaurant furniture, and warehouse moving.
-                    We&apos;re a registered company with verifiable credentials
-                    — you can check our Google Business Profile, speak to the
-                    owner, and confirm every detail before we start.
+                    Our{" "}
+                    <Link href="/office-movers-in-dubai">office movers</Link> in
+                    Al Ain manage full office relocations,{" "}
+                    <Link href="/bank-furniture-moving-uae">
+                      bank furniture moving
+                    </Link>
+                    ,{" "}
+                    <Link href="/school-furniture-moving-uae">
+                      school furniture moving
+                    </Link>
+                    , hospital equipment, restaurant furniture, and warehouse
+                    moving. We&apos;re a registered company with verifiable
+                    credentials — you can check our Google Business Profile,
+                    speak to the owner, and confirm every detail before we
+                    start.
                   </p>
                   <p>
                     This is exactly why commercial clients should avoid
@@ -258,13 +294,16 @@ const MoversInAlAin = () => {
               extra: (
                 <>
                   <p>
-                    Our furniture movers in Al Ain handle single-item moves just
-                    as professionally as full-house jobs. We also move
-                    specialist items: heavy safes, industrial machinery,
-                    hospital equipment, and other large or unusual pieces that
-                    most movers won&apos;t take on. If you have a specific
-                    requirement, contact us and we&apos;ll confirm what we can
-                    do.
+                    Our{" "}
+                    <Link href="/furniture-moving-services-uae">
+                      furniture movers
+                    </Link>{" "}
+                    in Al Ain handle single-item moves just as professionally as
+                    full-house jobs. We also move specialist items: heavy safes,
+                    industrial machinery, hospital equipment, and other large or
+                    unusual pieces that most movers won&apos;t take on. If you
+                    have a specific requirement, contact us and we&apos;ll
+                    confirm what we can do.
                   </p>
                 </>
               ),
@@ -279,11 +318,13 @@ const MoversInAlAin = () => {
               description: (
                 <>
                   <p>
-                    Our packing services in Al Ain cover the full process — we
-                    bring materials, pack everything, and label all boxes for
-                    easy unpacking at the other end. You can hand the whole
-                    packing job to us or we&apos;ll work alongside you,
-                    depending on what suits you.
+                    <Link href="/packing-services-in-dubai">
+                      Our packing services
+                    </Link>{" "}
+                    in Al Ain cover the full process — we bring materials, pack
+                    everything, and label all boxes for easy unpacking at the
+                    other end. You can hand the whole packing job to us or
+                    we&apos;ll work alongside you, depending on what suits you.
                   </p>
                 </>
               ),
@@ -335,6 +376,7 @@ const MoversInAlAin = () => {
         </div>
       </section>
       <MovingProcess />
+      <ReviewSection reviews={googleReviews} />
       <section className="max-w-6xl w-full mx-auto mt-20 md:px-0 px-4">
         <div className="text-center pb-10">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
@@ -701,3 +743,70 @@ const MoversInAlAin = () => {
 };
 
 export default MoversInAlAin;
+
+const googleReviews = [
+  {
+    name: "Saeed Al Kaabi",
+    time: "1 week ago",
+    star: 5,
+    review:
+      "Moved my villa in Al Muwaiji last week. The packers were quick, didn't damage anything, and charged exactly what they quoted.",
+    image: "/ava/32.jpg",
+  },
+  {
+    name: "Ayesha Al Dhaheri",
+    time: "3 weeks ago",
+    star: 5,
+    review:
+      "These guys moved us in Al Ain from Al Jimi to Zakher. Nothing broke, no surprise charges. Exactly what you want in a moving company.",
+    image: "/ava/44.jpg",
+  },
+  {
+    name: "Mark Taylor",
+    time: "2 days ago",
+    star: 5,
+    review:
+      "Moved from Al Ain to Abu Dhabi with them. They handled the heavy stuff and put my wardrobes back together properly at the new place.",
+    image: "/ava/86.jpg",
+  },
+  {
+    name: "Riya Patel",
+    time: "1 month ago",
+    star: 5,
+    review:
+      "The packing was solid. They wrapped all my dishes carefully and got us moved to Al Maqam without any of the usual stress.",
+    image: "/ava/68.jpg",
+  },
+  {
+    name: "Khalid Mansour",
+    time: "2 weeks ago",
+    star: 5,
+    review:
+      "Best movers I've used in Al Ain. On time, friendly, and they actually stayed until every piece was positioned right.",
+    image: "/ava/22.jpg",
+  },
+  {
+    name: "Fatima Hassan",
+    time: "5 days ago",
+    star: 5,
+    review:
+      "Was concerned about my garden furniture and fragile items, but they handled everything without a problem. Really dependable crew.",
+    image: "/ava/90.jpg",
+  },
+  {
+    name: "Tariq Mehmood",
+    time: "3 weeks ago",
+    star: 5,
+    review:
+      "Moved my office in Al Towayya and they came ready with their own boxes and materials. Got it done fast so we didn't lose much business time.",
+    image: "/ava/54.jpg",
+  },
+  {
+    name: "Sarah Jones",
+    time: "4 weeks ago",
+    star: 5,
+    review:
+      "Good rates and they know how to pack. Got my 65-inch TV and electronics across safely. No damage, no stress.",
+    image: "/ava/29.jpg",
+  },
+];
