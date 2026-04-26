@@ -46,13 +46,10 @@ export const LocHeroSection = ({
           <Button quoteBtn size={"lg"}>
             Get A Free Moving Quote
           </Button>
-
-          <Link href="tel:0507745691">
-            <button className="group cursor-pointer flex items-center gap-2.5 text-[#374151] hover:text-[#111827] transition-colors duration-200">
-              <PhoneCall className="w-7 h-7 text-[#4B5563] group-hover:text-[#111827] transition-colors stroke-[1.5]" />
-              <span className="text-sm font-medium">Call Now</span>
-            </button>
-          </Link>
+          <Button quoteBtn variant={"secondary"} size={"lg"}>
+            <PhoneCall />
+            Call Us Now
+          </Button>
         </div>
       </div>
       <div className="mt-16 lg:w-4xl w-full rounded-4xl aspect-video relative overflow-hidden">

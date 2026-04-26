@@ -32,7 +32,7 @@ const Commercial = () => {
           company with proper trucks, trained staff, and the experience to
           handle business assets — safely and on schedule.
         </p>
-        <Button quoteBtn className="mt-5">
+        <Button quoteBtn size={"lg"} className="mt-5">
           Contact For Commercial Moving
         </Button>
       </div>
