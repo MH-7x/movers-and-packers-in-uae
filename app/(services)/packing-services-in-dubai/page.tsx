@@ -6,22 +6,31 @@ import ServiceHero from "@/components/ServiceHero";
 import { Button } from "@/components/ui/button";
 import { AllServices, locations } from "@/lib/data";
 import { PackingServicesDubaiFaqs } from "@/lib/FaqsData";
+import MetadataTemplate from "@/lib/MetaDataTemplate";
 import HeroImage from "@/public/ser/packing-services-in-dubai.jpg";
-import { Headset, MapPinCheck, MessageCircle, PhoneCall } from "lucide-react";
+import { MessageCircle, PhoneCall } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
-export const metadata = {
-  title: "Packing Services in Dubai | Cargo, Storage & for Moving",
-  description:
-    "Looking for trusted packing services in Dubai? We are a registered moving company with 25+ years of experience. Professional packers for homes, offices, villas & cargo. Transparent quotes. Pay upon satisfaction. Call or WhatsApp now.",
-};
+export const metadata = MetadataTemplate({
+  data: {
+    meta: {
+      title: "Packing Services in Dubai | Cargo, Storage & for Moving ",
+      desc: "Trusted packing services in Dubai for homes, offices, villas & cargo. 25+ years experience & transparent quotes. Pay upon satisfaction. Call today!",
+    },
+    image: {
+      path: "/ser/packing-services-in-dubai.jpg",
+      alt: "Professional packing services in Dubai with movers packing and loading furniture into a truck",
+    },
+    path: "/packing-services-in-dubai",
+  },
+});
 
 const PackingServicesInDubai = () => {
   return (
     <main>
       <ServiceHero
-        title="Professional Packing Services in Dubai — Safe, Stress-Free & Fully Insured"
+        title="Professional Packing Services in Dubai — Cargo, Storage & for Moving"
         desc="If you are looking for reliable packing services in Dubai, you have come to the right place. Movers and Packers in UAE is a registered moving company, based in Dubai since 1998, with over 25 years of experience packing and moving thousands of homes, offices, villas, and commercial spaces across the UAE."
         image={{
           src: HeroImage,
@@ -55,10 +64,10 @@ const PackingServicesInDubai = () => {
           ))}
         </div>
         <div className="mt-5 flex items-center justify-center flex-wrap gap-3 border-t-2 pt-5">
-          <Button size={"lg"} className="bg-foreground">
+          <Button whatsappBtn size={"lg"} className="bg-foreground">
             Get a Free Quote on WhatsApp
           </Button>
-          <Button size={"lg"} variant={"secondary"}>
+          <Button callBtn size={"lg"} variant={"secondary"}>
             Call Us Now
           </Button>
         </div>
@@ -152,10 +161,13 @@ const PackingServicesInDubai = () => {
             <h3 className="mt-5">Full Home & Apartment Packing Services</h3>
             <div className="flex flex-col gap-y-1">
               <p>
-                Moving your apartment or house is a big job. There are kitchen
-                items wrapped in layers of grease and memories, fragile décor
-                you&apos;ve collected over the years, electronics, clothing, and
-                furniture — all in one place. Our team handles it all.
+                <Link href="/apartment-movers-dubai">
+                  Moving your apartment
+                </Link>{" "}
+                or house is a big job. There are kitchen items wrapped in layers
+                of grease and memories, fragile décor you&apos;ve collected over
+                the years, electronics, clothing, and furniture — all in one
+                place. Our team handles it all.
               </p>
               <p>
                 We pack room by room, starting with the least-used spaces and
@@ -171,8 +183,12 @@ const PackingServicesInDubai = () => {
               </p>
               <p>
                 This service works well for apartments, flats, and houses across
-                Dubai and all emirates. It covers home shifting and full house
-                moving from start to finish.
+                Dubai and all emirates. It covers{" "}
+                <Link href="/house-shifting-dubai">
+                  {" "}
+                  home shifting and full house moving{" "}
+                </Link>{" "}
+                from start to finish.
               </p>
             </div>
             <h3 className="mt-5">Villa Packing Services</h3>
@@ -195,7 +211,9 @@ const PackingServicesInDubai = () => {
                 sandstorm dust in a way that an open truck simply cannot.
               </p>
             </div>
-            <h3 className="mt-5">Office & Commercial Packing Services</h3>
+            <h3 id="office-and-commercial-packing-services" className="mt-5">
+              Office & Commercial Packing Services
+            </h3>
             <div className="flex flex-col gap-y-1">
               <p>
                 Commercial packing requires a different level of precision.
@@ -533,7 +551,14 @@ const PackingServicesInDubai = () => {
               send you a clear, itemized quote within a short time. No
               obligation.
             </p>
-            <Link href={"#"} className=" font-bold">
+            <Link
+              href={
+                "https://wa.me/+971507745691?text=I%20Come%20From%20Your%20Website%20and%20I%20Need%20Moving%20Services"
+              }
+              rel="noopener noreferrer"
+              target="_blank"
+              className=" font-bold"
+            >
               Get Your Free Packing Quote on WhatsApp — It Takes Less Than 2
               Minutes
             </Link>
@@ -604,46 +629,24 @@ const PackingServicesInDubai = () => {
             </p>
             <h3 className="mt-5">Areas and Emirates We Serve:</h3>
             <ul className="grid md:grid-cols-3 grid-cols-1 gap-3 mt-3 leading-tight text-sm">
-              <li className="bg-secondary py-2 px-3 rounded-2xl">
-                {" "}
-                Packing Services in Dubai
-              </li>
-              <li className="bg-secondary py-2 px-3 rounded-2xl">
-                {" "}
-                Packing Services in Abu Dhabi
-              </li>
-              <li className="bg-secondary py-2 px-3 rounded-2xl">
-                {" "}
-                Packing Services in Sharjah
-              </li>
-              <li className="bg-secondary py-2 px-3 rounded-2xl">
-                {" "}
-                Packing Services in Ajman
-              </li>
-              <li className="bg-secondary py-2 px-3 rounded-2xl">
-                {" "}
-                Packing Services in Ras Al Khaimah
-              </li>
-              <li className="bg-secondary py-2 px-3 rounded-2xl">
-                {" "}
-                Packing Services in Al Ain
-              </li>
-              <li className="bg-secondary py-2 px-3 rounded-2xl">
-                {" "}
-                Packing Services in Fujairah
-              </li>
-              <li className="bg-secondary py-2 px-3 rounded-2xl">
-                {" "}
-                Packing Services in Umm Al Quwain
-              </li>
-              <li className="bg-secondary py-2 px-3 rounded-2xl">
-                {" "}
-                Packing Services in Khor Fakkan
-              </li>
-              <li className="bg-secondary py-2 px-3 rounded-2xl">
-                {" "}
-                Packing Services in Al Ruwais
-              </li>
+              {[
+                { title: "Dubai", link: "/" },
+                { title: "Abu Dhabi", link: "/" },
+                { title: "Sharjah", link: "/movers-and-packers-in-sharjah" },
+                { title: "Ajman", link: "/movers-in-ajman" },
+                { title: "Ras Al Khaimah", link: "/movers-in-ras-al-khaimah" },
+                { title: "Al Ain", link: "/movers-in-al-ain" },
+                { title: "Umm Al Quwain", link: "/movers-in-umm-al-quwain" },
+                { title: "Fujairah", link: "/movers-in-fujairah" },
+                { title: "Khor Fakkan", link: "/" },
+                { title: "Al Ruwais", link: "/" },
+              ].map((location, i) => (
+                <li key={i} className="bg-secondary py-2 px-3 rounded-2xl">
+                  <Link href={location.link}>
+                    Packing Services in {location.title}
+                  </Link>
+                </li>
+              ))}
             </ul>
             <p className="mt-5">
               Whether you are moving across the street or from one emirate to
@@ -713,10 +716,12 @@ const PackingServicesInDubai = () => {
 
         <aside className="lg:col-span-2 flex flex-col gap-y-5 self-start sticky top-24 md:px-0 px-4">
           <div className="rounded-2xl bg-muted p-6 space-y-3">
-            <h3 className="font-bold text-lg">Need Hospital Moving Help?</h3>
+            <h3 className="font-bold text-lg">
+              Need Packing Service in Dubai?
+            </h3>
             <p className="text-sm text-muted-foreground">
-              Contact our commercial team today for a free consultation and
-              quote. We specialize in healthcare facility relocations.
+              Contact our packing team today for a free consultation and quote.
+              We specialize in packing for moving, cargo and for storage.
             </p>
             <div className="flex flex-col gap-2 pt-3">
               <Button
@@ -760,7 +765,7 @@ const PackingServicesInDubai = () => {
           </div>
         </aside>
       </div>
-      <ReviewSection />
+      <ReviewSection reviews={googleReviews} />
       <FAQSection
         title="Frequently Asked Questions About Packing Services in Dubai"
         faqs={PackingServicesDubaiFaqs}
@@ -774,3 +779,70 @@ const PackingServicesInDubai = () => {
 };
 
 export default PackingServicesInDubai;
+
+const googleReviews = [
+  {
+    name: "Omar Khalid",
+    time: "2 weeks ago",
+    star: 5,
+    review:
+      "Hired them just for packing before our international move. They bubble-wrapped all our fine china and fragile living room decor perfectly.",
+    image: "/ava/32.jpg",
+  },
+  {
+    name: "Zoya Ahmed",
+    time: "1 month ago",
+    star: 5,
+    review:
+      "The packing team arrived with high-quality boxes, tapes, and wrapping sheets. They securely packed up my entire 2BHK in Dubai in just a few hours.",
+    image: "/ava/44.jpg",
+  },
+  {
+    name: "Chris Williams",
+    time: "3 days ago",
+    star: 5,
+    review:
+      "Amazing packing service! They used special wardrobe boxes for all our suits and dresses, so absolutely nothing was wrinkled during the transit.",
+    image: "/ava/86.jpg",
+  },
+  {
+    name: "Nida Farooq",
+    time: "1 week ago",
+    star: 5,
+    review:
+      "I hate packing, so I booked their service in Dubai. They organized and clearly labeled every single box by room, making my unpacking process so much easier.",
+    image: "/ava/68.jpg",
+  },
+  {
+    name: "Ali Hassan",
+    time: "2 months ago",
+    star: 5,
+    review:
+      "Highly recommend their professional packers. They custom-crated my expensive artwork and securely wrapped all my delicate studio electronics.",
+    image: "/ava/22.jpg",
+  },
+  {
+    name: "Emma Clark",
+    time: "4 weeks ago",
+    star: 5,
+    review:
+      "We just needed help packing our kitchen appliances and glassware. The crew did an incredible job and made sure not a single glass was damaged.",
+    image: "/ava/90.jpg",
+  },
+  {
+    name: "Karan Menon",
+    time: "5 days ago",
+    star: 5,
+    review:
+      "Called them for a last-minute packing job in Dubai Marina. The crew was exceptionally fast, polite, and handled our personal items with extreme care.",
+    image: "/ava/54.jpg",
+  },
+  {
+    name: "Dana Suleiman",
+    time: "3 weeks ago",
+    star: 5,
+    review:
+      "Booking their packing service was the best decision for our Dubai move. It saved us days of stressful work and the materials they used were top-notch.",
+    image: "/ava/29.jpg",
+  },
+];

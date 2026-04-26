@@ -2,13 +2,7 @@ import HeroImage from "@/public/ser/office-movers-in-dubai.jpg";
 import ServiceHero from "@/components/ServiceHero";
 import QuotationSection from "@/components/QuotationSection";
 import Image from "next/image";
-import {
-  ChevronRight,
-  Headset,
-  MapPinCheck,
-  MessageCircle,
-  PhoneCall,
-} from "lucide-react";
+import { ChevronRight, MessageCircle, PhoneCall } from "lucide-react";
 import { AllServices, locations } from "@/lib/data";
 import { Button } from "@/components/ui/button";
 import { ReviewSection } from "@/components/ReviewSection";
@@ -16,6 +10,22 @@ import { FAQSection } from "@/components/FaqsSection";
 import { OfficeMovingDubaiFaqs } from "@/lib/FaqsData";
 import CTA from "@/components/CTA";
 import Link from "next/link";
+import MetadataTemplate from "@/lib/MetaDataTemplate";
+
+export const metadata = MetadataTemplate({
+  data: {
+    meta: {
+      title: "Office Movers in Dubai – Best Office Relocation Services UAE ",
+      desc: "Expert movers and packers in UAE. Home, office, and furniture relocation across Dubai, Abu Dhabi, Sharjah, and all Emirates. Professional & reliable. Get a quote!",
+    },
+    image: {
+      path: "/ser/office-movers-in-dubai.jpg",
+      alt: "Office Movers in Dubai with movers handling IT equipment and workstations carefully",
+    },
+    path: "/office-movers-in-dubai",
+  },
+});
+
 const OfficeMoversInDubai = () => {
   return (
     <main>
@@ -60,7 +70,7 @@ const OfficeMoversInDubai = () => {
       <QuotationSection
         title={
           <>
-            <span className="font-bold md:block">Get Moving Free Quote</span>{" "}
+            <span className="font-bold md:block">Get A Free Moving Quote</span>{" "}
             From Office Movers in Dubai
           </>
         }
@@ -78,9 +88,10 @@ const OfficeMoversInDubai = () => {
               for Office Relocation Dubai
             </h2>
             <p>
-              There&apos;s no shortage of moving companies in Dubai. But most of
-              them are freelance operators — no legal permit, no accountability,
-              no protection for your valuables. We&apos;re different.
+              There&apos;s no shortage of{" "}
+              <Link href="/">moving companies in Dubai</Link>. But most of them
+              are freelance operators — no legal permit, no accountability, no
+              protection for your valuables. We&apos;re different.
             </p>
             <p className="mt-2">
               We&apos;ve been legally registered and operating since 1998. You
@@ -153,9 +164,12 @@ const OfficeMoversInDubai = () => {
             </h2>
             <p>
               Whether you&apos;re shifting a 5-person startup or a multi-floor
-              corporate office, our office movers and packers in Dubai handle
-              every part of the process. You don&apos;t need to coordinate
-              multiple vendors. We take care of everything.
+              corporate office, our{" "}
+              <Link href="/office-movers-in-dubai">
+                office movers and packers in Dubai
+              </Link>{" "}
+              handle every part of the process. You don&apos;t need to
+              coordinate multiple vendors. We take care of everything.
             </p>
             <div className="mt-10 grid md:grid-cols-2 grid-cols-1 gap-10">
               {[
@@ -173,12 +187,14 @@ const OfficeMoversInDubai = () => {
                 },
                 {
                   name: "Confidential Document & File Handling",
+
                   description:
                     "Your files are packed in sealed, labeled cartons and handled by the same crew from start to finish — no third-party access. For businesses like banks, medical clinics, and law firms, we treat document security as a top priority, not an afterthought.",
                   href: "#",
                 },
                 {
                   name: "Office Packing & Unpacking Services",
+                  link: "/packing-services-in-dubai#office-and-commercial-packing-services",
                   description:
                     "We use high-quality packing materials — sturdy boxes, bubble wrap, stretch plastic, and fabric blankets — for every item that moves. If you need help setting up and unpacking at the new location, we handle that too. Your team walks in ready to work, not ready to unpack.",
                   href: "#",
@@ -208,7 +224,11 @@ const OfficeMoversInDubai = () => {
                   className="rounded-2xl p-5 bg-muted"
                 >
                   <h3 className=" mb-0! text-xl! font-medium">
-                    {service.name}
+                    {service.link ? (
+                      <Link href={service.link}>{service.name}</Link>
+                    ) : (
+                      service.name
+                    )}
                   </h3>
                   <p className="mt-3 leading-tight text-muted-foreground">
                     {service.description}
@@ -286,7 +306,10 @@ const OfficeMoversInDubai = () => {
             <div className="grid md:grid-cols-3 grid-cols-1 gap-3 mt-3 leading-tight text-sm">
               <div className="bg-secondary py-3 px-4 rounded-2xl">
                 <h3 className="text-base! mb-1! font-medium!">
-                  Corporate & Commercial Office
+                  <Link href="/office-movers-in-dubai">
+                    {" "}
+                    Corporate & Commercial Office
+                  </Link>
                 </h3>
                 <p>
                   Full floor relocations, multi-department moves, phased
@@ -295,7 +318,9 @@ const OfficeMoversInDubai = () => {
               </div>
               <div className="bg-secondary py-3 px-4 rounded-2xl">
                 <h3 className="text-base! mb-1! font-medium!">
-                  Banks & Financial Firms
+                  <Link href="bank-furniture-moving-uae">
+                    Banks & Financial Firms
+                  </Link>
                 </h3>
                 <p>
                   Heavy safes, confidential records, secure document
@@ -304,7 +329,9 @@ const OfficeMoversInDubai = () => {
               </div>
               <div className="bg-secondary py-3 px-4 rounded-2xl">
                 <h3 className="text-base! mb-1! font-medium!">
-                  Hospitals & Medical Clinics
+                  <Link href="/hospital-furniture-moving-uae">
+                    Hospitals & Medical Clinics
+                  </Link>
                 </h3>
                 <p>
                   Medical equipment, diagnostic tools, patient record transfers,
@@ -313,7 +340,9 @@ const OfficeMoversInDubai = () => {
               </div>
               <div className="bg-secondary py-3 px-4 rounded-2xl">
                 <h3 className="text-base! mb-1! font-medium!">
-                  Schools & Universities
+                  <Link href="/school-furniture-moving-uae">
+                    Schools & Universities
+                  </Link>
                 </h3>
                 <p>
                   Classroom furniture, labs, libraries, smart boards, faculty
@@ -322,7 +351,9 @@ const OfficeMoversInDubai = () => {
               </div>
               <div className="bg-secondary py-3 px-4 rounded-2xl">
                 <h3 className="text-base! mb-1! font-medium!">
-                  Restaurants & F&B Businesses
+                  <Link href="/restaurant-furniture-moving-uae">
+                    Restaurants & F&B Businesses
+                  </Link>
                 </h3>
                 <p>Kitchen equipment, fit-out furniture, dining setups</p>
               </div>
@@ -441,8 +472,10 @@ const OfficeMoversInDubai = () => {
                 fixed price, no hidden charges, no obligations.
               </p>
               <div className="flex flex-wrap gap-3 mt-5">
-                <Button>WhatsApp Us Now</Button>
-                <Button variant={"secondary"}>Fill the Quote Form</Button>
+                <Button whatsappBtn>WhatsApp Us Now</Button>
+                <Button quoteBtn variant={"secondary"}>
+                  Fill the Quote Form
+                </Button>
               </div>
             </div>
           </section>
@@ -572,10 +605,10 @@ const OfficeMoversInDubai = () => {
 
         <aside className="lg:col-span-2 flex flex-col gap-y-5 self-start sticky top-24 md:px-0 px-4">
           <div className="rounded-2xl bg-muted p-6 space-y-3">
-            <h3 className="font-bold text-lg">Need Hospital Moving Help?</h3>
+            <h3 className="font-bold text-lg">Need Office Moving Service?</h3>
             <p className="text-sm text-muted-foreground">
               Contact our commercial team today for a free consultation and
-              quote. We specialize in healthcare facility relocations.
+              quote. We specialize in relocating offices in dubai.
             </p>
             <div className="flex flex-col gap-2 pt-3">
               <Button
@@ -619,7 +652,7 @@ const OfficeMoversInDubai = () => {
           </div>
         </aside>
       </div>
-      <ReviewSection />
+      <ReviewSection reviews={googleReviews} />
       <FAQSection
         title="H2: Frequently Asked Questions — Office Movers in Dubai"
         faqs={OfficeMovingDubaiFaqs}
@@ -646,5 +679,72 @@ const pricingData = [
   {
     size: "Large Office (30+ staff)",
     cost: "AED 4,000+ (custom quote)",
+  },
+];
+
+const googleReviews = [
+  {
+    name: "Hassan El Masri",
+    time: "1 week ago",
+    star: 5,
+    review:
+      "Relocated our corporate office from Business Bay to DIFC over the weekend. The team was highly organized and ensured zero business downtime.",
+    image: "/ava/32.jpg",
+  },
+  {
+    name: "Sarah Jenkins",
+    time: "3 weeks ago",
+    star: 5,
+    review:
+      "Excellent office movers in Dubai. They safely transported all our sensitive IT equipment, servers, and delicate monitors without a single issue.",
+    image: "/ava/44.jpg",
+  },
+  {
+    name: "Rahul Verma",
+    time: "2 months ago",
+    star: 5,
+    review:
+      "The crew was incredibly professional and handled the dismantling and precise reassembly of all our modular office desks perfectly.",
+    image: "/ava/86.jpg",
+  },
+  {
+    name: "Amina Al Suwaidi",
+    time: "5 days ago",
+    star: 5,
+    review:
+      "Moved our startup's office to JLT smoothly. The packing team labelled every department's boxes, making Monday morning setup a total breeze.",
+    image: "/ava/68.jpg",
+  },
+  {
+    name: "Tarek Haddad",
+    time: "1 month ago",
+    star: 5,
+    review:
+      "They shifted our entire 50-person workspace over the weekend. We were up and running immediately with no disruption to our daily operations.",
+    image: "/ava/22.jpg",
+  },
+  {
+    name: "Elena Rostova",
+    time: "2 weeks ago",
+    star: 5,
+    review:
+      "Very impressed with how they managed to move our heavy filing cabinets and the main office safe. I highly recommend them for any commercial move in Dubai.",
+    image: "/ava/90.jpg",
+  },
+  {
+    name: "Faisal Qureshi",
+    time: "3 weeks ago",
+    star: 5,
+    review:
+      "Transparent pricing and great communication throughout our office relocation. The assigned project manager made sure everything stayed completely on schedule.",
+    image: "/ava/54.jpg",
+  },
+  {
+    name: "Leila Abbas",
+    time: "4 days ago",
+    star: 5,
+    review:
+      "Shifted our design studio effortlessly. They were incredibly careful with our large drafting tables, glass whiteboards, and fragile equipment.",
+    image: "/ava/29.jpg",
   },
 ];

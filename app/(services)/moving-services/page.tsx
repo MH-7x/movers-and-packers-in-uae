@@ -2,9 +2,26 @@ import CTA from "@/components/CTA";
 import QuotationSection from "@/components/QuotationSection";
 import { Button } from "@/components/ui/button";
 import { AllServices } from "@/lib/data";
+import MetadataTemplate from "@/lib/MetaDataTemplate";
 import { CheckCircle, ChevronRight } from "lucide-react";
 import Image from "next/image";
-import React from "react";
+import { ReviewSection } from "../../../components/ReviewSection";
+import MovingProcess from "@/components/MovingProcess";
+import Link from "next/link";
+
+export const metadata = MetadataTemplate({
+  data: {
+    meta: {
+      title: "Our Moving Services in UAE | Movers and Packers Services ",
+      desc: "Expert movers and packers in UAE. Home, office, and furniture relocation across Dubai, Abu Dhabi, Sharjah, and all Emirates. Professional & reliable. Get a quote!",
+    },
+    image: {
+      path: "/house-shifting-services-in-dubai-uae.jpg",
+      alt: "Expert movers and packers in UAE. Home, office, and furniture relocation across Dubai, Abu Dhabi, Sharjah, and all Emirates. Professional & reliable. Get a quote!",
+    },
+    path: "/moving-services",
+  },
+});
 
 const OurMovingServices = () => {
   return (
@@ -22,7 +39,7 @@ const OurMovingServices = () => {
               Our <span className="font-bold">Moving and Packing</span>{" "}
               <span className="md:block">Services in UAE</span>
             </h2>
-            <Button size={"lg"} className="mt-5">
+            <Button quoteBtn size={"lg"} className="mt-5">
               Get A Moving Quote <ChevronRight />
             </Button>
           </div>
@@ -42,7 +59,7 @@ const OurMovingServices = () => {
           </div>
         </div>
         <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-10 mt-10">
-          {AllServices.map((service, i) => (
+          {AllServices.map((service) => (
             <div
               key={service.name}
               id={service.name.toLowerCase().replace(/\s+/g, "-")}
@@ -58,12 +75,17 @@ const OurMovingServices = () => {
                 />
               </div>
               <h3 className="mt-5 text-xl font-medium">
-                {service.name} in Dubai, UAE
+                <Link href={service.href}>{service.name} in Dubai, UAE</Link>
               </h3>
               <p className="mt-3 text-muted-foreground">
                 {service.description}
               </p>
-              <Button variant={"link"} className="mt-3 ">
+              <Button
+                link={service.href}
+                title={`Contact for ${service.name}`}
+                variant={"link"}
+                className="mt-3 "
+              >
                 Contact Now <ChevronRight />
               </Button>
             </div>
@@ -132,6 +154,8 @@ const OurMovingServices = () => {
         </div>
       </section>
       <QuotationSection />
+      <MovingProcess />
+      <ReviewSection />
       <CTA
         title="Get a Free Moving Quote Today"
         desc="Ready to move? Contact us now for a free, no-obligation moving quote via phone, WhatsApp, or our online quote form. We'll respond within minutes with a clear, customized offer tailored to your needs."

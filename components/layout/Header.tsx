@@ -411,7 +411,8 @@ export default function Navbar() {
               {/* All Services Dropdown */}
               <li className="relative group">
                 <button className="flex items-center rounded-2xl text-white hover:bg-white/20 px-6 py-3 font-bold text-sm uppercase tracking-wider h-full">
-                  All Services <ChevronDown className="ml-1.5 w-4 h-4" />
+                  <Link href="/moving-services">All Services</Link>{" "}
+                  <ChevronDown className="ml-1.5 w-4 h-4" />
                 </button>
                 <ul className="absolute left-0 top-full hidden group-hover:block bg-white shadow-xl text-gray-800 min-w-70 border-t-[3px] border-[#e22727] py-2 z-50">
                   {servicesMenuItems.map((service, index) =>
