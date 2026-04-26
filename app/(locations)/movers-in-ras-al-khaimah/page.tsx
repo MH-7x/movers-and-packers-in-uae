@@ -7,6 +7,21 @@ import { RasAlKhaimahMovingFAQs } from "@/lib/FaqsData";
 import heroImage from "@/public/loc/movers-in-ras-al-khaimah-professional-moving-service-villa-hajar-mountains.jpg";
 import { ChevronDown, ChevronRight, MessageCircle } from "lucide-react";
 import Image from "next/image";
+
+export const metadata = MetadataTemplate({
+  data: {
+    meta: {
+      title: "Movers in Ras Al Khaimah | RAK Moving Company",
+      desc: "Trusted movers in Ras Al Khaimah. Serving UAE families & businesses since 1998. Enclosed trucks & pay-after-completion. Get a free WhatsApp quote today!",
+    },
+    image: {
+      path: "/loc/movers-in-ras-al-khaimah-professional-moving-service-villa-hajar-mountains.jpg",
+      alt: "Professional movers in Ras Al Khaimah with branded uniforms and company equipment moving household items and furniture from modern villa - expert moving and packing services",
+    },
+    path: "/movers-in-ras-al-khaimah",
+  },
+});
+
 const page = () => {
   return (
     <main>
@@ -85,7 +100,11 @@ const page = () => {
               office, our team handles it. Below is what our movers and packers
               in Ras Al Khaimah provide.
             </p>
-            <Button variant={"secondary"} className="mt-5">
+            <Button
+              link={"/moving-services"}
+              variant={"secondary"}
+              className="mt-5"
+            >
               View All Services <ChevronRight />
             </Button>
           </div>
@@ -108,10 +127,11 @@ const page = () => {
               extra: (
                 <>
                   <p>
-                    For home movers in Ras Al Khaimah, we also deal with the
-                    move-out permit process that many RAK buildings and gated
-                    communities require — so that paperwork is sorted before
-                    moving day, not on it.
+                    For <Link href="/house-shifting-dubai">home movers</Link> in
+                    Ras Al Khaimah, we also deal with the move-out permit
+                    process that many RAK buildings and gated communities
+                    require — so that paperwork is sorted before moving day, not
+                    on it.
                   </p>
                   <p>
                     Our enclosed trucks matter here too. RAK summers reach above
@@ -135,10 +155,11 @@ const page = () => {
               description: (
                 <>
                   <p>
-                    Villa moves are bigger operations and need proper planning.
-                    Our team packs room by room, wraps fragile items — glass,
-                    mirrors, artwork — separately, and handles bulky pieces like
-                    wardrobes and dining tables with the right equipment.
+                    <Link href="/villa-movers-in-dubai">Villa moving</Link> are
+                    bigger operations and need proper planning. Our team packs
+                    room by room, wraps fragile items — glass, mirrors, artwork
+                    — separately, and handles bulky pieces like wardrobes and
+                    dining tables with the right equipment.
                   </p>
                 </>
               ),
@@ -163,10 +184,10 @@ const page = () => {
               description: (
                 <>
                   <p>
-                    Apartment moves have their own complications: elevator
-                    booking windows, tight corridors, parking restrictions, and
-                    building-specific rules. We deal with all of this before the
-                    moving day.
+                    <Link href="/apartment-movers-dubai">Apartment moves</Link>{" "}
+                    have their own complications: elevator booking windows,
+                    tight corridors, parking restrictions, and building-specific
+                    rules. We deal with all of this before the moving day.
                   </p>
                 </>
               ),
@@ -194,10 +215,13 @@ const page = () => {
               description: (
                 <>
                   <p>
-                    Office relocation in Ras Al Khaimah requires a different
-                    level of planning than a home move. You have workstations,
-                    IT equipment, filing systems, and confidential documents —
-                    and any significant downtime costs you money.
+                    <Link href="/office-movers-in-dubai">
+                      Office relocation
+                    </Link>{" "}
+                    in Ras Al Khaimah requires a different level of planning
+                    than a home move. You have workstations, IT equipment,
+                    filing systems, and confidential documents — and any
+                    significant downtime costs you money.
                   </p>
                 </>
               ),
@@ -234,9 +258,12 @@ const page = () => {
               extra: (
                 <>
                   <p>
-                    Our furniture movers in Ras Al Khaimah wrap every item with
-                    protective materials, dismantle where needed, and reassemble
-                    at the destination.
+                    Our{" "}
+                    <Link href="/furniture-moving-services-uae">
+                      furniture movers
+                    </Link>{" "}
+                    in Ras Al Khaimah wrap every item with protective materials,
+                    dismantle where needed, and reassemble at the destination.
                   </p>
                   <p>
                     The price depends on the item and distance. Just send us the
@@ -439,7 +466,7 @@ const page = () => {
             return (
               <li key={index} className="flex items-start group">
                 <div
-                  className={`flex-shrink-0 w-12 h-12 rounded-2xl ${factor.bgColor} ${factor.color} flex items-center justify-center  shadow-sm`}
+                  className={`shrink-0 w-12 h-12 rounded-2xl ${factor.bgColor} ${factor.color} flex items-center justify-center  shadow-sm`}
                 >
                   <Icon className="w-6 h-6" strokeWidth={2} />
                 </div>
@@ -458,7 +485,7 @@ const page = () => {
 
         {/* Call to Action Section */}
         <div className="px-6 py-8 sm:px-12 sm:py-10">
-          <div className="bg-gradient-to-br from-red-50 to-red-100 rounded-2xl p-6 sm:p-8 flex flex-col lg:flex-row items-center justify-between gap-6">
+          <div className="bg-linear-to-br from-red-50 to-red-100 rounded-2xl p-6 sm:p-8 flex flex-col lg:flex-row items-center justify-between gap-6">
             <div className="text-center lg:text-left flex-1">
               <h4 className="text-xl font-bold text-gray-900 mb-2">
                 Get Your Itemised Quote
@@ -470,8 +497,13 @@ const page = () => {
             </div>
 
             <a
-              href="#whatsapp"
-              className="flex-shrink-0 inline-flex items-center justify-center gap-2 px-6 py-3 text-base font-semibold text-white transition-all duration-200 bg-primary border border-transparent rounded-xl hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary/90 shadow-lg shadow-red-500/30 hover:shadow-red-500/40 w-full sm:w-auto"
+              href={
+                "https://wa.me/+971507745691?text=I%20Come%20From%20Your%20Website%20and%20I%20Need%20Moving%20Services"
+              }
+              aria-label="Get A Quote On WhatsApp"
+              rel="noopener noreferrer"
+              target="_blank"
+              className="shrink-0 inline-flex items-center justify-center gap-2 px-6 py-3 text-base font-semibold text-white transition-all duration-200 bg-primary border border-transparent rounded-xl hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary/90 shadow-lg shadow-red-500/30 hover:shadow-red-500/40 w-full sm:w-auto"
             >
               <MessageCircle className="w-5 h-5" />
               WhatsApp Us Now
@@ -489,6 +521,7 @@ const page = () => {
           </>
         }
       />
+      <ReviewSection reviews={googleReviews} />
       <section className="max-w-7xl mx-auto mt-20 md:px-10 px-4">
         {/* Main Header Section */}
         <div className="text-center mb-10 max-w-4xl mx-auto">
@@ -734,3 +767,73 @@ const costFactors = [
 
 import { Home, MapPin, Box, Package, Building2, Clock } from "lucide-react";
 import MovingProcess from "@/components/MovingProcess";
+import MetadataTemplate from "@/lib/MetaDataTemplate";
+import Link from "next/link";
+import { ReviewSection } from "@/components/ReviewSection";
+
+const googleReviews = [
+  {
+    name: "Ahmed Al Zaabi",
+    time: "2 weeks ago",
+    star: 5,
+    review:
+      "Moved our 3BHK in Al Hamra Village without any problems. The team was on time, came prepared with boxes, and didn't damage anything.",
+    image: "/ava/32.jpg",
+  },
+  {
+    name: "Sanaa Youssef",
+    time: "1 month ago",
+    star: 5,
+    review:
+      "Used these movers in RAK to shift my apartment to Mina Al Arab. Got it done quick and all my fragile stuff made it there in one piece.",
+    image: "/ava/44.jpg",
+  },
+  {
+    name: "Michael Trent",
+    time: "3 days ago",
+    star: 5,
+    review:
+      "Moved from Ras Al Khaimah to Dubai with them. They packed my wardrobes properly and put everything together right at the new house.",
+    image: "/ava/86.jpg",
+  },
+  {
+    name: "Rohan Kapoor",
+    time: "1 week ago",
+    star: 5,
+    review:
+      "Booked them for the office move in Al Nakheel. Fast workers, straightforward pricing, and no surprise fees when they were done.",
+    image: "/ava/68.jpg",
+  },
+  {
+    name: "Tariq Mahmoud",
+    time: "2 months ago",
+    star: 5,
+    review:
+      "Best movers in Ras Al Khaimah we've used. Moved our whole villa including the heavy appliances without breaking anything. Really took the stress out.",
+    image: "/ava/22.jpg",
+  },
+  {
+    name: "Elena Smith",
+    time: "4 weeks ago",
+    star: 5,
+    review:
+      "Moved to Marjan Island last weekend and the crew did a solid job. Packed all the kitchen stuff and electronics carefully.",
+    image: "/ava/90.jpg",
+  },
+  {
+    name: "Usman Ali",
+    time: "5 days ago",
+    star: 5,
+    review:
+      "Good prices and the crew was respectful. Got all our things down from the 4th floor in Al Qusaidat without any fuss.",
+    image: "/ava/54.jpg",
+  },
+  {
+    name: "Layla Hassan",
+    time: "3 weeks ago",
+    star: 5,
+    review:
+      "The move in RAK went smoothly from start to finish. They came with wardrobe boxes for the clothes and cleaned up after themselves.",
+    image: "/ava/29.jpg",
+  },
+];

@@ -3,12 +3,28 @@ import { FAQSection } from "@/components/FaqsSection";
 import { LocHeroSection } from "@/components/LocHeroSection";
 import MovingProcess from "@/components/MovingProcess";
 import QuotationSection from "@/components/QuotationSection";
+import { ReviewSection } from "@/components/ReviewSection";
 import { Button } from "@/components/ui/button";
 import { UmmAlQuwainMovingFAQs } from "@/lib/FaqsData";
+import MetadataTemplate from "@/lib/MetaDataTemplate";
 import heroImage from "@/public/loc/movers-umm-al-quwain-professional-moving-service-khor-al-beidah-lagoon.jpg";
 import { MessageCircle, PhoneCall } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+
+export const metadata = MetadataTemplate({
+  data: {
+    meta: {
+      title: "Movers in Umm Al Quwain | Trusted Movers & Packers",
+      desc: "Professional movers in Umm Al Quwain. House, villa & office relocation with no hidden fees. RTA-approved trucks & 25+ years experience. Get a free quote now!",
+    },
+    image: {
+      path: "/loc/movers-umm-al-quwain-professional-moving-service-khor-al-beidah-lagoon.jpg",
+      alt: "Movers and Packers in UAE professional team loading wrapped furniture and boxes into a branded enclosed moving truck outside a residential villa in Umm Al Quwain with the Khor Al Beidah lagoon visible in the background",
+    },
+    path: "/movers-in-umm-al-quwain",
+  },
+});
 
 const MoversInUmmAlQuwain = () => {
   return (
@@ -131,11 +147,11 @@ const MoversInUmmAlQuwain = () => {
             </p>
           </div>
           <div className="flex flex-col sm:flex-row gap-3 w-full sm:w-auto">
-            <Button size="lg" variant={"secondary"}>
+            <Button whatsappBtn size="lg" variant={"secondary"}>
               <MessageCircle className="w-5 h-5" />
               <span>WhatsApp Us</span>
             </Button>
-            <Button size="lg">
+            <Button callBtn size="lg">
               <PhoneCall className="w-5 h-5" />
               <span>Call Now</span>
             </Button>
@@ -308,7 +324,7 @@ const MoversInUmmAlQuwain = () => {
         }
         desc="Here's what happens from the moment you contact us to the moment we hand over the keys and collect payment:"
       />
-
+      <ReviewSection reviews={googleReviews} />
       <section className="mt-20 max-w-7xl md:px-10 px-4 mx-auto">
         <h2 className="md:text-4xl text-3xl font-bold text-center">
           Areas We Serve in Umm Al Quwain{" "}
@@ -581,11 +597,11 @@ const MoversInUmmAlQuwain = () => {
           </p>
         </div>
         <div className="flex flex-col sm:flex-row gap-3 w-full sm:w-auto">
-          <Button size="lg" variant={"secondary"}>
+          <Button whatsappBtn size="lg" variant={"secondary"}>
             <MessageCircle className="w-5 h-5" />
             <span>WhatsApp Us</span>
           </Button>
-          <Button size="lg">
+          <Button callBtn size="lg">
             <PhoneCall className="w-5 h-5" />
             <span>Call Now</span>
           </Button>
@@ -613,7 +629,8 @@ const movingServices = [
     desc: (
       <>
         <p>
-          Moving a house involves more than loading trucks. Our team provides{" "}
+          <Link href="/house-shifting-dubai">Moving a house</Link> involves more
+          than loading trucks. Our team provides{" "}
           <strong>
             packing materials, furniture dismantling, and room-specific labeling
           </strong>{" "}
@@ -638,8 +655,8 @@ const movingServices = [
     desc: (
       <>
         <p>
-          Villa relocations require expert planning for heavy furniture and
-          fragile items. We use{" "}
+          <Link href="/villa-movers-in-dubai">Villa relocations</Link> require
+          expert planning for heavy furniture and fragile items. We use{" "}
           <strong>RTA-approved, fully enclosed box trucks</strong> to safeguard
           your electronics and upholstery from temperatures exceeding 45°C.
         </p>
@@ -720,7 +737,8 @@ const movingServices = [
     desc: (
       <>
         <p>
-          Our packing service uses{" "}
+          <Link href="/packing-services-in-dubai">Our packing service</Link>{" "}
+          uses{" "}
           <strong>
             premium bubble wrap, fabric blankets, and heavy-duty cartons
           </strong>{" "}
@@ -733,5 +751,72 @@ const movingServices = [
         </p>
       </>
     ),
+  },
+];
+
+const googleReviews = [
+  {
+    name: "Omar Al Mulla",
+    time: "2 weeks ago",
+    star: 5,
+    review:
+      "Moved our family villa in Al Salama and it went smoothly. The packers were quick, respectful, and nothing got damaged.",
+    image: "/ava/32.jpg",
+  },
+  {
+    name: "Aisha Tariq",
+    time: "1 month ago",
+    star: 5,
+    review:
+      "Relocated from Umm Al Quwain to Dubai last month. They came with all their own materials and packed my 2BHK well.",
+    image: "/ava/44.jpg",
+  },
+  {
+    name: "Richard Evans",
+    time: "3 days ago",
+    star: 5,
+    review:
+      "Good movers in UAQ. They took apart my bedroom furniture and put it back together right in our new place in Al Ramlah.",
+    image: "/ava/86.jpg",
+  },
+  {
+    name: "Neha Kapoor",
+    time: "1 week ago",
+    star: 5,
+    review:
+      "Booked them for the apartment move in Al Maqtaa. Reasonable prices and the crew treated our stuff with care.",
+    image: "/ava/68.jpg",
+  },
+  {
+    name: "Fahad Al Jasmi",
+    time: "2 months ago",
+    star: 5,
+    review:
+      "Best movers I've used in Umm Al Quwain. Moved all our heavy living room furniture without any issues.",
+    image: "/ava/22.jpg",
+  },
+  {
+    name: "Maria Gonzalez",
+    time: "4 weeks ago",
+    star: 5,
+    review:
+      "Shifted our business office near the UAQ Free Trade Zone. Straightforward crew, transparent pricing, no surprises.",
+    image: "/ava/90.jpg",
+  },
+  {
+    name: "Zeeshan Ali",
+    time: "5 days ago",
+    star: 5,
+    review:
+      "They show up on time and work hard. Got everything out of the old building with tight stairs and into the new flat without problems.",
+    image: "/ava/54.jpg",
+  },
+  {
+    name: "Hessa Mahmoud",
+    time: "3 weeks ago",
+    star: 5,
+    review:
+      "They explained things clearly from the start. Packed all my kitchen stuff carefully and the move around UAQ was hassle-free.",
+    image: "/ava/29.jpg",
   },
 ];

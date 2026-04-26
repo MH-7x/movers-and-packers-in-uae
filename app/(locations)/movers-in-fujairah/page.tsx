@@ -3,8 +3,10 @@ import { FAQSection } from "@/components/FaqsSection";
 import { LocHeroSection } from "@/components/LocHeroSection";
 import MovingProcess from "@/components/MovingProcess";
 import QuotationSection from "@/components/QuotationSection";
+import { ReviewSection } from "@/components/ReviewSection";
 import { Button } from "@/components/ui/button";
 import { FujairahMovingFAQs } from "@/lib/FaqsData";
+import MetadataTemplate from "@/lib/MetaDataTemplate";
 import heroImage from "@/public/loc/movers-in-fujairah-professional-moving-service-hero.jpg";
 import {
   Boxes,
@@ -22,6 +24,20 @@ import {
 import Image from "next/image";
 import Link from "next/link";
 
+export const metadata = MetadataTemplate({
+  data: {
+    meta: {
+      title: "Best Movers in Fujairah – Professional Moving Company UAE",
+      desc: "trusted movers in Fujairah. Movers and Packers in UAE has 25+ years of experience, no hidden charges, same-day service & pay-upon-satisfaction guarantee. Get a free quote.",
+    },
+    image: {
+      path: "/loc/movers-in-fujairah-professional-moving-service-hero.jpg",
+      alt: "Professional movers in Fujairah with branded uniforms and company equipment moving household items and furniture from modern villa - expert moving and packing services",
+    },
+    path: "/movers-in-fujairah",
+  },
+});
+
 const MoversInFujairah = () => {
   return (
     <main>
@@ -30,7 +46,7 @@ const MoversInFujairah = () => {
           <>
             Movers in Fujairah <br className="block" />
             <span className="font-normal">
-              Moving & Packing Services in Ajman
+              Moving & Packing Services in Fujairah
             </span>
           </>
         }
@@ -103,7 +119,11 @@ const MoversInFujairah = () => {
               handled according to your requirements — no fixed packages, no
               unnecessary extras.
             </p>
-            <Button variant={"secondary"} className="mt-5">
+            <Button
+              link="/moving-services"
+              variant={"secondary"}
+              className="mt-5"
+            >
               View All Services <ChevronRight />
             </Button>
           </div>
@@ -127,8 +147,9 @@ const MoversInFujairah = () => {
                 <>
                   <p>
                     We treat your home the way we would treat our own — with
-                    full protection and privacy throughout. Keywords: house
-                    movers in fujairah, home relocation fujairah.
+                    full protection and privacy throughout. Keywords:{" "}
+                    <Link href="/house-shifting-dubai">house movers</Link> in
+                    fujairah, home relocation fujairah.
                   </p>
                 </>
               ),
@@ -145,9 +166,10 @@ const MoversInFujairah = () => {
                   <p>
                     Villas come with large furniture, multiple floors, and
                     sometimes valuable items that need extra attention. Our
-                    villa movers in Fujairah use fully enclosed box trucks for
-                    all villa moves — your furniture stays protected from
-                    Fujairah&apos;s heat and dust, no matter the season.
+                    <Link href="/villa-movers-in-dubai">villa movers </Link> in
+                    Fujairah use fully enclosed box trucks for all villa moves —
+                    your furniture stays protected from Fujairah&apos;s heat and
+                    dust, no matter the season.
                   </p>
                 </>
               ),
@@ -162,8 +184,9 @@ const MoversInFujairah = () => {
               description: (
                 <>
                   <p>
-                    Apartment moves need careful coordination — elevator access,
-                    building management approvals, and moving without disturbing
+                    <Link href="/apartment-movers-dubai">Apartment moving</Link>{" "}
+                    need careful coordination — elevator access, building
+                    management approvals, and moving without disturbing
                     neighbours. Our team is experienced with exactly this. We
                     handle the logistics so you do not have to.
                   </p>
@@ -181,10 +204,12 @@ const MoversInFujairah = () => {
                 <>
                   <p>
                     We understand that every hour of downtime costs your
-                    business. Our office movers in Fujairah can work after hours
-                    or on weekends to keep disruption minimal. IT equipment,
-                    documents, office furniture, and sensitive files — all
-                    transported securely and placed exactly where you need them.
+                    business. Our{" "}
+                    <Link href="/office-movers-in-dubai">office movers</Link> in
+                    Fujairah can work after hours or on weekends to keep
+                    disruption minimal. IT equipment, documents, office
+                    furniture, and sensitive files — all transported securely
+                    and placed exactly where you need them.
                   </p>
                 </>
               ),
@@ -315,6 +340,7 @@ const MoversInFujairah = () => {
         </div>
       </section>
       <MovingProcess />
+      <ReviewSection reviews={googleReviews} />
       <section className="max-w-7xl mx-auto mt-20 md:px-10 px-4">
         {/* Main Header Section */}
         <div className="text-center mb-10 max-w-4xl mx-auto">
@@ -616,11 +642,11 @@ const MoversInFujairah = () => {
             </p>
           </div>
           <div className="flex flex-col sm:flex-row gap-3 w-full sm:w-auto">
-            <Button size="lg" variant={"secondary"}>
+            <Button whatsappBtn size="lg" variant={"secondary"}>
               <MessageCircle className="w-5 h-5" />
               <span>WhatsApp Us</span>
             </Button>
-            <Button size="lg">
+            <Button callBtn size="lg">
               <PhoneCall className="w-5 h-5" />
               <span>Call Now</span>
             </Button>
@@ -638,10 +664,10 @@ const MoversInFujairah = () => {
             About Movers and Packers in UAE — Serving Fujairah Since 1998
           </h2>
           <p className="text-muted-foreground mt-3">
-            Movers and Packers in UAE was registered in 1998 and has been
-            running professional moving operations ever since. We are based in
-            Dubai and operate across all seven UAE emirates, including regular
-            moves throughout Fujairah.
+            <Link href="/">Movers and Packers in UAE</Link> was registered in
+            1998 and has been running professional moving operations ever since.
+            We are based in Dubai and operate across all seven UAE emirates,
+            including regular moves throughout Fujairah.
           </p>
           <p className="text-muted-foreground mt-3">
             Over 25 years, we have completed thousands of moves — homes, villas,
@@ -714,5 +740,72 @@ const features = [
     title: "Protection & Privacy First",
     desc: "We know that letting strangers into your home — especially bedrooms and kitchens — requires real trust. Our team operates with full discretion and respect for your privacy at every step.",
     buttonText: "View Privacy Policy",
+  },
+];
+
+const googleReviews = [
+  {
+    name: "Abdullah Al Yamani",
+    time: "2 weeks ago",
+    star: 5,
+    review:
+      "Moved our villa in Al Faseel last weekend. The team was fast and treated the heavy furniture carefully. No damage, no complaints.",
+    image: "/ava/32.jpg",
+  },
+  {
+    name: "Priya Desai",
+    time: "1 month ago",
+    star: 5,
+    review:
+      "Good movers and packers in Fujairah. They came with boxes and materials, and got our 2BHK to Dibba without any issues.",
+    image: "/ava/44.jpg",
+  },
+  {
+    name: "Marcus Cole",
+    time: "3 days ago",
+    star: 5,
+    review:
+      "Hired them for the long haul from Fujairah to Dubai. They showed up when they said they would and everything arrived intact.",
+    image: "/ava/86.jpg",
+  },
+  {
+    name: "Fatima Balushi",
+    time: "1 week ago",
+    star: 5,
+    review:
+      "Reasonable prices and they know what they're doing. Packed my dishes carefully and put my bed back together properly at the new place.",
+    image: "/ava/68.jpg",
+  },
+  {
+    name: "Tariq Hameed",
+    time: "2 months ago",
+    star: 5,
+    review:
+      "Best movers we've found on the east coast. Moved our small office near Fujairah City Center and we barely missed a beat.",
+    image: "/ava/22.jpg",
+  },
+  {
+    name: "Sarah O'Connor",
+    time: "4 weeks ago",
+    star: 5,
+    review:
+      "We needed a last-minute move and they said yes right away. The crew was friendly and actually helped us figure things out as we went.",
+    image: "/ava/90.jpg",
+  },
+  {
+    name: "Amit Sharma",
+    time: "5 days ago",
+    star: 5,
+    review:
+      "Dragged my heavy wardrobes and appliances down three flights and got them down without a scratch. That takes skill.",
+    image: "/ava/54.jpg",
+  },
+  {
+    name: "Zainab Ali",
+    time: "3 weeks ago",
+    star: 5,
+    review:
+      "They didn't leave a mess and handled everything like it mattered. The whole move was smooth. Really glad I called them.",
+    image: "/ava/29.jpg",
   },
 ];

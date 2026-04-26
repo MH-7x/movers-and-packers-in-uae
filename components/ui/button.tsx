@@ -95,6 +95,7 @@ function Button({
           "https://wa.me/+971507745691?text=I%20Come%20From%20Your%20Website%20and%20I%20Need%20Moving%20Services"
         }
         aria-label="Get A Quote On WhatsApp"
+        rel="noopener noreferrer"
       >
         <Comp
           data-slot="button"
