@@ -6,10 +6,25 @@ import ServiceHero from "@/components/ServiceHero";
 import { Button } from "@/components/ui/button";
 import { AllServices, locations } from "@/lib/data";
 import { RestaurantFurnitureMovingFaqs } from "@/lib/FaqsData";
+import MetadataTemplate from "@/lib/MetaDataTemplate";
 import HeroImage from "@/public/ser/restaurant-furniture-moving-uae-professional-dining-relocation-dubai.jpg";
 import { MessageCircle, PhoneCall } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+
+export const metadata = MetadataTemplate({
+  data: {
+    meta: {
+      title: "Restaurant Furniture Moving in UAE | F&B Commercial Movers ",
+      desc: "Professional restaurant movers in UAE. We relocate dining furniture, bar setups, kitchen equipment & F&B fit-outs across Dubai & Abu Dhabi. Get a free quote!",
+    },
+    image: {
+      path: "/ser/restaurant-furniture-moving-uae-professional-dining-relocation-dubai.jpg",
+      alt: "Movers & Packers professional team carefully relocating a marble dining table and chairs inside a modern upscale Dubai restaurant",
+    },
+    path: "/restaurant-furniture-moving-uae",
+  },
+});
 
 const RestaurantFurnitureMoving = () => {
   return (

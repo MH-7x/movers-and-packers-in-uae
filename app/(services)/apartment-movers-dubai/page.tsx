@@ -103,7 +103,7 @@ const ApartmentMovers = () => {
       <QuotationSection
         title={
           <>
-            <span className="font-bold md:block">Get Moving Free Quote</span>{" "}
+            <span className="font-bold md:block">Get A Free Moving Quote</span>{" "}
             From Apartment Movers in Dubai
           </>
         }
@@ -443,10 +443,11 @@ const ApartmentMovers = () => {
               <br className="hidden md:block" /> Dubai Areas & UAE Emirates
             </h2>
             <p>
-              We are based in Al Mankhool, Dubai, but our coverage spans the
-              entire UAE. Whether you need inter-emirate apartment moving to
-              Sharjah or Abu Dhabi, or a local move across Dubai neighbourhoods,
-              our trucks reach every corner of the country.
+              We are based in Ras Al Khor Industrial Area 1, Dubai, but our
+              coverage spans the entire UAE. Whether you need inter-emirate
+              apartment moving to Sharjah or Abu Dhabi, or a local move across
+              Dubai neighbourhoods, our trucks reach every corner of the
+              country.
             </p>
 
             <h3 className="mt-5">Dubai Areas</h3>

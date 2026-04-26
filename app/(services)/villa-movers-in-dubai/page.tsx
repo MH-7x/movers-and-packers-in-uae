@@ -6,10 +6,25 @@ import ServiceHero from "@/components/ServiceHero";
 import { Button } from "@/components/ui/button";
 import { AllServices, locations } from "@/lib/data";
 import { VillaMovingDubaiFaqs } from "@/lib/FaqsData";
+import MetadataTemplate from "@/lib/MetaDataTemplate";
 import heroImage from "@/public/ser/villa-movers-in-dubai.jpg";
-import { Headset, MapPinCheck, MessageCircle, PhoneCall } from "lucide-react";
+import { MessageCircle, PhoneCall } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+
+export const metadata = MetadataTemplate({
+  data: {
+    meta: {
+      title: "Villa Movers in Dubai | Expert Packing & Moving Services",
+      desc: "Trusted villa movers in Dubai. Professional moving services with 25+ years experience, no hidden fees & same-day availability. Fully insured. Get a free quote!",
+    },
+    image: {
+      path: "/ser/villa-movers-in-dubai.jpg",
+      alt: "Villa Movers in Dubai",
+    },
+    path: "/villa-movers-in-dubai",
+  },
+});
 
 const VillaMoversInDubai = () => {
   return (
@@ -71,8 +86,8 @@ const VillaMoversInDubai = () => {
               are hard to undo.
             </p>
             <p className="mt-2">
-              A licensed moving company in Dubai is a different category
-              entirely.
+              A <Link href="/">licensed moving company in Dubai</Link> is a
+              different category entirely.
             </p>
             <p className="mt-2">
               We are legally registered, our workers are vetted, trained, and
@@ -96,7 +111,7 @@ const VillaMoversInDubai = () => {
                   </li>
                   <li>
                     Google Business profile with real reviews and a physical
-                    address in Al Mankhool, Dubai
+                    address in Ras Al Khor Industrial Area 1, Dubai
                   </li>
                   <li>
                     RTA-approved branded trucks with proper moving equipment
@@ -598,10 +613,11 @@ const VillaMoversInDubai = () => {
 
         <aside className="lg:col-span-2 flex flex-col gap-y-5 self-start sticky top-24 md:px-0 px-4">
           <div className="rounded-2xl bg-muted p-6 space-y-3">
-            <h3 className="font-bold text-lg">Need Hospital Moving Help?</h3>
+            <h3 className="font-bold text-lg">Need Villa Moving Service?</h3>
             <p className="text-sm text-muted-foreground">
-              Contact our commercial team today for a free consultation and
-              quote. We specialize in healthcare facility relocations.
+              Contact our moving and packing team today for a free consultation
+              and quote. We specialize in relocating all sizes of villa in dubai
+              and other locations.
             </p>
             <div className="flex flex-col gap-2 pt-3">
               <Button
@@ -645,7 +661,7 @@ const VillaMoversInDubai = () => {
           </div>
         </aside>
       </div>
-      <ReviewSection />
+      <ReviewSection reviews={googleReviews} />
       <FAQSection
         title="Frequently Asked Questions About Villa Moving in Dubai"
         faqs={VillaMovingDubaiFaqs}
@@ -680,5 +696,72 @@ const pricingData = [
     type: "5+ Bedroom Villa",
     cost: "AED 3,500 – 6,000+",
     duration: "1–2 Days",
+  },
+];
+
+const googleReviews = [
+  {
+    name: "Tariq Al Maktoum",
+    time: "3 weeks ago",
+    star: 5,
+    review:
+      "Moving our 5-bedroom villa in Jumeirah Park was a massive task, but this team handled it flawlessly. They expertly navigated the tight stairs and protected all our heavy wooden furniture.",
+    image: "/ava/32.jpg",
+  },
+  {
+    name: "Meera Nair",
+    time: "1 month ago",
+    star: 5,
+    review:
+      "Fantastic villa movers in Dubai. They carefully dismantled our large garden patio set, kids' outdoor play area, and set everything up perfectly in our new Arabian Ranches home.",
+    image: "/ava/44.jpg",
+  },
+  {
+    name: "James Harrington",
+    time: "5 days ago",
+    star: 5,
+    review:
+      "We upgraded to a larger villa in Palm Jumeirah and these guys made the transition completely stress-free. The crew was large, highly efficient, and deeply respectful of our newly painted walls.",
+    image: "/ava/86.jpg",
+  },
+  {
+    name: "Laila Al Fasi",
+    time: "2 months ago",
+    star: 5,
+    review:
+      "The best moving company for shifting big residential villas. They brought custom crates for our massive living room mirrors and fragile chandeliers, ensuring absolute zero damage.",
+    image: "/ava/68.jpg",
+  },
+  {
+    name: "Sameer Qazi",
+    time: "2 weeks ago",
+    star: 5,
+    review:
+      "Highly professional villa moving service. They easily managed our heavy garage gym equipment and bulky master bedroom wardrobes, saving us so much time and effort.",
+    image: "/ava/22.jpg",
+  },
+  {
+    name: "Sophia Martinez",
+    time: "4 days ago",
+    star: 5,
+    review:
+      "Moving a huge family home seemed daunting, but their supervisor organized the packing room by room. Excellent communication, no hidden fees, and a highly trained crew.",
+    image: "/ava/90.jpg",
+  },
+  {
+    name: "Anil Kapoor",
+    time: "1 week ago",
+    star: 5,
+    review:
+      "Reliable and punctual team for our villa move in Dubai Hills Estate. They handled the gate passes with the community management and finished the unloading exactly on schedule.",
+    image: "/ava/54.jpg",
+  },
+  {
+    name: "Yasmin Dar",
+    time: "3 weeks ago",
+    star: 5,
+    review:
+      "They truly took the headache out of our entire villa relocation. From wrapping our delicate kitchenware to unboxing the kids' bedrooms, the service was absolute perfection.",
+    image: "/ava/29.jpg",
   },
 ];

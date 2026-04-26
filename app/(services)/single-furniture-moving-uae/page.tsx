@@ -7,17 +7,26 @@ import ServiceHero from "@/components/ServiceHero";
 import { AllServices, locations } from "@/lib/data";
 import { SingleFurnitureMovingUaeFaqs } from "@/lib/FaqsData";
 import HeroImage from "@/public/ser/single-item-moving-dubai-professional-sofa-movers.jpg";
-import { Headset, MapPinCheck, MessageCircle, PhoneCall } from "lucide-react";
+import { MessageCircle, PhoneCall } from "lucide-react";
 import Image from "next/image";
-import { Metadata } from "next";
+
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import MetadataTemplate from "@/lib/MetaDataTemplate";
 
-export const metadata: Metadata = {
-  title: "Single Furniture Moving in UAE | One Item Pick Up & Delivery",
-  description:
-    "Need to move just one piece of furniture in UAE? Our single furniture moving service covers sofas, beds, wardrobes & more across Dubai, Abu Dhabi, Sharjah & all emirates. Fast, safe, affordable. Get a free quote!",
-};
+export const metadata = MetadataTemplate({
+  data: {
+    meta: {
+      title: "Single Furniture Moving in UAE | One Item Pick Up & Delivery",
+      desc: "Move just one piece of furniture in UAE! We handle sofas, beds, wardrobes & more across Dubai, Abu Dhabi & Sharjah. Fast, safe & affordable. Get a free quote now!",
+    },
+    image: {
+      path: "/ser/single-item-moving-dubai-professional-sofa-movers.jpg",
+      alt: "Movers & Packers professional team carefully relocating a large sofa as part of our single furniture moving service in Dubai, UAE",
+    },
+    path: "/single-furniture-moving-uae",
+  },
+});
 
 const SingleFurnitureMovers = () => {
   return (
@@ -34,17 +43,20 @@ const SingleFurnitureMovers = () => {
       <section className="mt-16 max-w-4xl mx-auto md:px-0 px-4">
         <div className="md:text-lg text-muted-foreground text-center mt-10 md:px-20 space-y-4">
           <p>
-            Movers and Packers in UAE has been providing single furniture moving
-            services since 1998. With over 25 years of experience and thousands
-            of single-item moves completed across Dubai, Abu Dhabi, Sharjah,
-            Ajman, Al Ain, Ras Al Khaimah, Fujairah, and Umm Al Quwain, we are
-            the trusted name for furniture pick up and delivery across all
-            emirates.
+            <Link href="/">Movers and Packers in UAE</Link> has been providing
+            single furniture moving services since 1998. With over 25 years of
+            experience and thousands of single-item moves completed across
+            Dubai, Abu Dhabi, Sharjah, Ajman, Al Ain, Ras Al Khaimah, Fujairah,
+            and Umm Al Quwain, we are the trusted name for furniture pick up and
+            delivery across all emirates.
           </p>
-          <p className="text-primary font-bold text-center text-xl">
+          <Link
+            href="tel:+971507745691"
+            className="text-primary font-bold text-center text-xl"
+          >
             📞 Move a Single Piece of Furniture Today — Call or WhatsApp for a
             Free Quote
-          </p>
+          </Link>
         </div>
         <div className="flex flex-wrap items-center justify-center gap-5 mt-8">
           {[
@@ -83,7 +95,7 @@ const SingleFurnitureMovers = () => {
       <QuotationSection
         title={
           <>
-            <span className="font-bold md:block">Get Moving Free Quote</span>{" "}
+            <span className="font-bold md:block">Get A Free Moving Quote</span>{" "}
             From Single Furniture Movers in UAE
           </>
         }
@@ -344,10 +356,12 @@ const SingleFurnitureMovers = () => {
 
         <aside className="lg:col-span-2 flex flex-col gap-y-5 self-start sticky top-24 md:px-0 px-4">
           <div className="rounded-2xl bg-muted p-6 space-y-3">
-            <h3 className="font-bold text-lg">Need Hospital Moving Help?</h3>
+            <h3 className="font-bold text-lg">
+              Need To Move Single Furniture ?
+            </h3>
             <p className="text-sm text-muted-foreground">
-              Contact our commercial team today for a free consultation and
-              quote. We specialize in healthcare facility relocations.
+              Contact our movers team today for a free consultation and quote.
+              We specialize in moving small and single furniture moving in uae.
             </p>
             <div className="flex flex-col gap-2 pt-3">
               <Button

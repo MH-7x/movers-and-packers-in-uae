@@ -6,10 +6,25 @@ import ServiceHero from "@/components/ServiceHero";
 import { Button } from "@/components/ui/button";
 import { AllServices, locations } from "@/lib/data";
 import { SchoolFurnitureMovingFaqs } from "@/lib/FaqsData";
+import MetadataTemplate from "@/lib/MetaDataTemplate";
 import HeroImage from "@/public/ser/school-furniture-moving-uae-professional-educational-institution-relocation.jpg";
 import { MessageCircle, PhoneCall } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+
+export const metadata = MetadataTemplate({
+  data: {
+    meta: {
+      title: "School Furniture Moving in UAE | Educational Institution Movers ",
+      desc: "School furniture movers in UAE. Efficient relocation of classrooms, libraries, labs & offices across Dubai, Abu Dhabi & Sharjah. Trusted movers—get a free quote!",
+    },
+    image: {
+      path: "/ser/school-furniture-moving-uae-professional-educational-institution-relocation.jpg",
+      alt: "Movers & Packers professional team relocating student desks and a whiteboard through a modern UAE school corridor during an educational institution move",
+    },
+    path: "/school-furniture-moving-uae",
+  },
+});
 
 const SchoolFurnitureMoving = () => {
   return (

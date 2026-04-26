@@ -69,7 +69,7 @@ const FurnitureMovers = () => {
       <QuotationSection
         title={
           <>
-            <span className="font-bold md:block">Get Moving Free Quote</span>{" "}
+            <span className="font-bold md:block">Get A Free Moving Quote</span>{" "}
             From Furniture Movers in UAE
           </>
         }
