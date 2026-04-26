@@ -1,5 +1,6 @@
 import { FAQSection } from "@/components/FaqsSection";
 import { PaymentFAQs } from "@/lib/FaqsData";
+import MetadataTemplate from "@/lib/MetaDataTemplate";
 import Image from "next/image";
 
 const paymentMethods = [
@@ -65,6 +66,19 @@ const paymentMethods = [
   },
 ];
 
+export const metadata = MetadataTemplate({
+  data: {
+    meta: {
+      title: "How To Pay | Payment Methods For Paying Movers",
+      desc: "We understand that trust is a big part of hiring a moving company. So we've kept our payment process as straightforward as possible.",
+    },
+    image: {
+      path: "/about-us-professional-movers-packers-team-dubai-uae.jpg",
+      alt: "Movers and Packers in uae professional moving team standing confidently in front of a branded company truck with the Dubai skyline in the background",
+    },
+    path: "/how-to-pay",
+  },
+});
 export default function HowToPay() {
   return (
     <main>

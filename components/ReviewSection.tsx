@@ -10,7 +10,7 @@ const googleReviews = [
     time: "2 weeks ago",
     star: 5,
     review:
-      "They moved our villa in Al Barsha without a single scratch on anything. The team was fast, polite, and the price was exactly what was quoted.",
+      "They moved our villa in Al Barsha and nothing broke. The team was fast, respectful, and the price matched what they quoted.",
     image: "/ava/32.jpg",
   },
   {
@@ -18,8 +18,7 @@ const googleReviews = [
     time: "1 month ago",
     star: 5,
     review:
-      "Booked them for a last-minute apartment move in Sharjah and they sorted everything same day. Honestly did not expect it to go that smoothly.",
-
+      "Called them for a last-minute apartment move in Sharjah and they got it done the same day. Honestly didn't think it would be that smooth.",
     image: "/ava/44.jpg",
   },
   {
@@ -27,8 +26,7 @@ const googleReviews = [
     time: "3 weeks ago",
     star: 5,
     review:
-      "Used them twice now — once for home shifting and once for office relocation. Both times no hidden charges, no drama, just done properly.",
-
+      "Used them twice — once for a home move and once for the office. Both times: no hidden charges, no issues, just handled it right.",
     image: "/ava/86.jpg",
   },
   {
@@ -36,8 +34,7 @@ const googleReviews = [
     time: "5 weeks ago",
     star: 5,
     review:
-      "The packing team wrapped everything carefully and labelled every box by room. Unpacking at the new place took half the time because of it.",
-
+      "The packing crew packed everything carefully and labeled each box by room. Made unpacking at the new place so much faster.",
     image: "/ava/68.jpg",
   },
   {
@@ -45,8 +42,7 @@ const googleReviews = [
     time: "2 months ago",
     star: 5,
     review:
-      "Moved from Dubai to Ras Al Khaimah and was worried about the distance but they handled it without any issues. Everything arrived in perfect condition.",
-
+      "Moved from Dubai to Ras Al Khaimah and was nervous about the distance, but they got everything there safely. No damage at all.",
     image: "/ava/22.jpg",
   },
   {
@@ -54,8 +50,7 @@ const googleReviews = [
     time: "1 month ago",
     star: 5,
     review:
-      "They moved our entire office over a weekend so we were up and running Monday morning. The team knew what they were doing.",
-
+      "They moved our whole office over a weekend and we were running Monday morning. The crew knew exactly what they were doing.",
     image: "/ava/90.jpg",
   },
   {
@@ -63,8 +58,7 @@ const googleReviews = [
     time: "3 weeks ago",
     star: 5,
     review:
-      "Good experience from start to finish. The quote was clear, the crew showed up on time, and I only paid once everything was in place.",
-
+      "Clean process from start to finish. They quoted clearly, showed up when they said, and I paid when everything was in the apartment.",
     image: "/ava/54.jpg",
   },
   {
@@ -72,8 +66,7 @@ const googleReviews = [
     time: "6 weeks ago",
     star: 5,
     review:
-      "Had a few heavy items including a large safe and they managed it without any fuss. Would not use anyone else for moving in Abu Dhabi.",
-
+      "Had some heavy stuff including a big safe and they moved it without any problem. Won't use anyone else for moving in Abu Dhabi.",
     image: "/ava/29.jpg",
   },
 ];

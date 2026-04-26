@@ -14,7 +14,7 @@ import { Button } from "../ui/button";
 
 // Menu Data
 const mainMenuItems = [
-  { label: "Home", href: "#" },
+  { label: "Home", href: "/" },
   { label: "About Us", href: "/about-us" },
   { label: "Get Quote", href: "/get-quote" },
 ];
@@ -91,12 +91,12 @@ const DesktopSubMenu = ({ items }: { items: MenuItem[] }) => (
   <ul className="absolute left-full -top-2 hidden group-hover/nested:block bg-white shadow-xl min-w-62.5 border-l-4 border-gray-100 py-2">
     {items.map((item, idx) => (
       <li key={idx}>
-        <a
+        <Link
           href={item.href}
           className="block px-6 py-2.5 text-sm font-medium hover:bg-gray-50 hover:text-primary"
         >
           {item.label}
-        </a>
+        </Link>
       </li>
     ))}
   </ul>
@@ -179,7 +179,7 @@ export default function Navbar() {
           <div className="absolute top-full left-0 w-full h-[calc(100vh-60px)] bg-white overflow-y-auto shadow-xl z-40 pb-20">
             <div className="px-4 pt-4 pb-10 space-y-2">
               {mainMenuItems.map((item, index) => (
-                <a
+                <Link
                   key={index}
                   href={item.href}
                   className={`block font-bold text-base py-3 border-b border-gray-50 ${
@@ -187,7 +187,7 @@ export default function Navbar() {
                   }`}
                 >
                   {item.label}
-                </a>
+                </Link>
               ))}
 
               {/* Mobile All Services Accordion */}
@@ -196,7 +196,7 @@ export default function Navbar() {
                   onClick={() => toggleMobileMenu("services")}
                   className="w-full flex items-center justify-between text-gray-800 font-bold text-base py-3 border-b border-gray-50"
                 >
-                  All Services
+                  <Link href="/moving-services">All Services</Link>
                   <ChevronDown
                     className={`w-5 h-5 transition-transform ${openMobileMenus["services"] ? "rotate-180" : ""}`}
                   />
@@ -223,25 +223,25 @@ export default function Navbar() {
                           {openMobileMenus[`submenu-${index}`] && (
                             <div className="pl-4 py-1 space-y-1 border-l-2 border-gray-200 ml-2 mb-2">
                               {service.submenu.map((subitem, subindex) => (
-                                <a
+                                <Link
                                   key={subindex}
                                   href={subitem.href}
                                   className="block text-gray-500 text-sm py-1.5"
                                 >
                                   {subitem.label}
-                                </a>
+                                </Link>
                               ))}
                             </div>
                           )}
                         </div>
                       ) : (
-                        <a
+                        <Link
                           key={index}
                           href={service.href}
                           className="block text-gray-600 text-sm py-2"
                         >
                           {service.label}
-                        </a>
+                        </Link>
                       ),
                     )}
                   </div>
@@ -262,13 +262,13 @@ export default function Navbar() {
                 {openMobileMenus["locations"] && (
                   <div className="bg-gray-50 pl-4 pr-2 py-2 space-y-1">
                     {locationsMenuItems.map((location, index) => (
-                      <a
+                      <Link
                         key={index}
                         href={location.href}
                         className="block text-gray-600 text-sm py-2"
                       >
                         {location.label}
-                      </a>
+                      </Link>
                     ))}
                   </div>
                 )}
@@ -288,13 +288,13 @@ export default function Navbar() {
                 {openMobileMenus["other"] && (
                   <div className="bg-gray-50 pl-4 pr-2 py-2 space-y-1">
                     {otherPagesMenuItems.map((page, index) => (
-                      <a
+                      <Link
                         key={index}
                         href={page.href}
                         className="block text-gray-600 text-sm py-2"
                       >
                         {page.label}
-                      </a>
+                      </Link>
                     ))}
                   </div>
                 )}
@@ -314,7 +314,11 @@ export default function Navbar() {
           <div className="flex justify-between items-center">
             {/* Primary Logo */}
             <div className="shrink-0 flex items-center">
-              <Link href="/" className="relative h-12 w-60">
+              <Link
+                href="/"
+                title="Movers and packers in uae logo"
+                className="relative h-12 w-60"
+              >
                 <Image
                   src={"/logo.svg"}
                   alt="Movers and packers in uae logo"
@@ -383,7 +387,11 @@ export default function Navbar() {
                 isScrolled ? "w-auto opacity-100 pr-8 py-1" : "w-0 opacity-0"
               }`}
             >
-              <Link href="/" className="relative h-10 w-60">
+              <Link
+                href="/"
+                title="movers and packers in uae logo"
+                className="relative h-10 w-60"
+              >
                 <Image
                   src={"/logo-white.svg"}
                   alt="Movers and packers in uae logo"
@@ -397,14 +405,14 @@ export default function Navbar() {
             <ul className="flex items-center flex-1 h-full">
               {mainMenuItems.map((item, index) => (
                 <li key={index}>
-                  <a
+                  <Link
                     href={item.href}
                     className={`block rounded-2xl text-white hover:bg-white/20 ${
                       index === 0 ? "px-8" : "px-6"
                     } py-3 font-bold text-sm uppercase tracking-wider h-full`}
                   >
                     {item.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
 
@@ -426,12 +434,12 @@ export default function Navbar() {
                       </li>
                     ) : (
                       <li key={index}>
-                        <a
+                        <Link
                           href={service.href}
                           className="block px-6 py-2.5 text-sm font-medium hover:bg-gray-50 hover:text-primary transition-colors"
                         >
                           {service.label}
-                        </a>
+                        </Link>
                       </li>
                     ),
                   )}
@@ -446,12 +454,12 @@ export default function Navbar() {
                 <ul className="absolute left-0 top-full hidden group-hover:block bg-white shadow-xl text-gray-800 min-w-70 border-t-[3px] border-[#e22727] py-2 z-50">
                   {locationsMenuItems.map((location, index) => (
                     <li key={index}>
-                      <a
+                      <Link
                         href={location.href}
                         className="block px-6 py-2.5 text-sm font-medium hover:bg-gray-50 hover:text-primary transition-colors"
                       >
                         {location.label}
-                      </a>
+                      </Link>
                     </li>
                   ))}
                 </ul>
@@ -465,12 +473,12 @@ export default function Navbar() {
                 <ul className="absolute right-0 top-full hidden group-hover:block bg-white shadow-xl text-gray-800 min-w-55 border-t-[3px] border-[#e22727] py-2 z-50">
                   {otherPagesMenuItems.map((page, index) => (
                     <li key={index}>
-                      <a
+                      <Link
                         href={page.href}
                         className="block px-6 py-2.5 text-sm font-medium hover:bg-gray-50 hover:text-primary transition-colors"
                       >
                         {page.label}
-                      </a>
+                      </Link>
                     </li>
                   ))}
                 </ul>

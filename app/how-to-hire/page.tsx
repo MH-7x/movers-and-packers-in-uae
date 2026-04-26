@@ -1,7 +1,23 @@
 import { FAQSection } from "@/components/FaqsSection";
 import { QuickFAQs } from "@/lib/FaqsData";
+import MetadataTemplate from "@/lib/MetaDataTemplate";
 import heroImage from "@/public/how-to-hire-movers-uae-whatsapp-booking-professional-moving-company.jpg";
 import Image from "next/image";
+
+export const metadata = MetadataTemplate({
+  data: {
+    meta: {
+      title: "How To Hire | Movers and Packers in UAE",
+      desc: " Hiring a moving company in UAE doesn't have to be complicated. Here's exactly how it works with us — step by step, no confusion.",
+    },
+    image: {
+      path: "/about-us-professional-movers-packers-team-dubai-uae.jpg",
+      alt: "Movers and Packers in uae professional moving team standing confidently in front of a branded company truck with the Dubai skyline in the background",
+    },
+    path: "/how-to-hire",
+  },
+});
+
 const steps = [
   {
     number: "01",
