@@ -126,7 +126,7 @@ const page = () => {
               ),
               img: {
                 src: "/loc/home-movers-ras-al-khaimah-full-house-shifting-service.jpg",
-                alt: "Movers & Packers team carrying a wrapped sofa and labeling boxes during a complete home moving service inside a Ras Al Khaimah residential house",
+                alt: "Movers and Packers in UAE team carrying a wrapped sofa and labeling boxes during a complete home moving service inside a Ras Al Khaimah residential house",
               },
             },
             {
@@ -154,7 +154,7 @@ const page = () => {
               ),
               img: {
                 src: "/loc/villa-movers-ras-al-khaimah-gated-community-al-hamra-relocation.jpg",
-                alt: "Movers & Packers team carrying a wrapped wardrobe downstairs and dismantling bedroom furniture during a large villa move in a Ras Al Khaimah gated community",
+                alt: "Movers and Packers in UAE team carrying a wrapped wardrobe downstairs and dismantling bedroom furniture during a large villa move in a Ras Al Khaimah gated community",
               },
             },
             {
@@ -185,7 +185,7 @@ const page = () => {
               ),
               img: {
                 src: "/loc/apartment-movers-ras-al-khaimah-elevator-building-relocation.jpg",
-                alt: "Movers & Packers team efficiently moving wrapped furniture through an elevator corridor inside a Ras Al Khaimah residential apartment building",
+                alt: "Movers and Packers in UAE team efficiently moving wrapped furniture through an elevator corridor inside a Ras Al Khaimah residential apartment building",
               },
             },
             {
@@ -216,7 +216,7 @@ const page = () => {
               ),
               img: {
                 src: "/loc/office-movers-ras-al-khaimah-rakez-commercial-relocation-after-hours.jpg",
-                alt: "Movers & Packers team packing workstations, IT equipment, and office furniture during a professional after-hours office relocation in Ras Al Khaimah",
+                alt: "Movers and Packers in UAE team packing workstations, IT equipment, and office furniture during a professional after-hours office relocation in Ras Al Khaimah",
               },
             },
             {
@@ -247,7 +247,7 @@ const page = () => {
               ),
               img: {
                 src: "/loc/furniture-movers-ras-al-khaimah-single-item-bed-moving-service.jpg",
-                alt: "Movers & Packers team carefully loading a dismantled and wrapped king-size bed into a branded van outside a Ras Al Khaimah residential villa",
+                alt: "Movers and Packers in UAE team carefully loading a dismantled and wrapped king-size bed into a branded van outside a Ras Al Khaimah residential villa",
               },
             },
             {
@@ -278,7 +278,7 @@ const page = () => {
               ),
               img: {
                 src: "/loc/packing-services-ras-al-khaimah-professional-home-packing-fragile.jpg",
-                alt: "Movers & Packers team professionally packing fragile items, glassware, and clothes with bubble wrap and branded materials inside a Ras Al Khaimah home",
+                alt: "Movers and Packers in UAE team professionally packing fragile items, glassware, and clothes with bubble wrap and branded materials inside a Ras Al Khaimah home",
               },
             },
             {
@@ -307,7 +307,7 @@ const page = () => {
               ),
               img: {
                 src: "/loc/storage-services-ras-al-khaimah-secure-furniture-storage-facility.jpg",
-                alt: "Movers & Packers team member carefully organizing labeled boxes and wrapped furniture inside a clean secure storage facility in Ras Al Khaimah",
+                alt: "Movers and Packers in UAE team member carefully organizing labeled boxes and wrapped furniture inside a clean secure storage facility in Ras Al Khaimah",
               },
             },
             {
@@ -337,7 +337,7 @@ const page = () => {
               ),
               img: {
                 src: "/loc/curtain-installation-service-ras-al-khaimah-moving-company-same-day.jpg",
-                alt: "Movers & Packers handyman installing curtain rods and curtains in a freshly moved-into Ras Al Khaimah villa living room with Hajar Mountains visible through the window",
+                alt: "Movers and Packers in UAE handyman installing curtain rods and curtains in a freshly moved-into Ras Al Khaimah villa living room with Hajar Mountains visible through the window",
               },
             },
           ].map((item, i) => (

@@ -20,7 +20,7 @@ export const metadata = MetadataTemplate({
     },
     image: {
       path: "/ser/restaurant-furniture-moving-uae-professional-dining-relocation-dubai.jpg",
-      alt: "Movers & Packers professional team carefully relocating a marble dining table and chairs inside a modern upscale Dubai restaurant",
+      alt: "Movers and Packers in UAE professional team carefully relocating a marble dining table and chairs inside a modern upscale Dubai restaurant",
     },
     path: "/restaurant-furniture-moving-uae",
   },
@@ -34,7 +34,7 @@ const RestaurantFurnitureMoving = () => {
         desc="Professional restaurant furniture movers in UAE. We relocate dining furniture, bar setups, kitchen equipment & complete F&B fit-outs across Dubai, Abu Dhabi, Sharjah & all UAE. Trusted since 1998. Free quote."
         image={{
           src: HeroImage,
-          alt: "Movers & Packers professional team carefully relocating a marble dining table and chairs inside a modern upscale Dubai restaurant",
+          alt: "Movers and Packers in UAE professional team carefully relocating a marble dining table and chairs inside a modern upscale Dubai restaurant",
         }}
         btnText="Plan Your Restaurant Furniture Move"
       />

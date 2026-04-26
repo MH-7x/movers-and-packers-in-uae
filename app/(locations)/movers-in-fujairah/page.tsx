@@ -134,7 +134,7 @@ const MoversInFujairah = () => {
               ),
               img: {
                 src: "/loc/house-movers-fujairah-full-home-shifting-service-residential.jpg",
-                alt: "Movers & Packers team carefully carrying a wrapped sofa and labeling boxes during a complete house moving service inside a Fujairah residential home",
+                alt: "Movers and Packers in UAE team carefully carrying a wrapped sofa and labeling boxes during a complete house moving service inside a Fujairah residential home",
               },
             },
             {
@@ -153,7 +153,7 @@ const MoversInFujairah = () => {
               ),
               img: {
                 src: "/loc/villa-movers-fujairah-enclosed-truck-large-home-relocation.jpg",
-                alt: "Movers & Packers team loading wrapped villa furniture into a fully enclosed branded moving truck outside a Fujairah villa with Hajar Mountains in the background",
+                alt: "Movers and Packers in UAE team loading wrapped villa furniture into a fully enclosed branded moving truck outside a Fujairah villa with Hajar Mountains in the background",
               },
             },
             {
@@ -171,7 +171,7 @@ const MoversInFujairah = () => {
               ),
               img: {
                 src: "/loc/apartment-movers-fujairah-elevator-building-management-relocation.jpg",
-                alt: "Movers & Packers team moving wrapped furniture through an elevator and corridor with building management approval inside a Fujairah apartment building",
+                alt: "Movers and Packers in UAE team moving wrapped furniture through an elevator and corridor with building management approval inside a Fujairah apartment building",
               },
             },
             {
@@ -190,7 +190,7 @@ const MoversInFujairah = () => {
               ),
               img: {
                 src: "/loc/office-movers-fujairah-commercial-relocation-after-hours-it-equipment.jpg",
-                alt: "Movers & Packers team professionally packing IT equipment, documents, and office furniture during an after-hours office relocation in Fujairah",
+                alt: "Movers and Packers in UAE team professionally packing IT equipment, documents, and office furniture during an after-hours office relocation in Fujairah",
               },
             },
             {
@@ -209,7 +209,7 @@ const MoversInFujairah = () => {
               ),
               img: {
                 src: "/loc/furniture-movers-fujairah-single-item-specialist-carpenter-dismantling.jpg",
-                alt: "Movers & Packers specialist carpenter carefully dismantling a modular Italian wall unit for a single-item furniture move in a Fujairah apartment",
+                alt: "Movers and Packers in UAE specialist carpenter carefully dismantling a modular Italian wall unit for a single-item furniture move in a Fujairah apartment",
               },
             },
             {
@@ -234,7 +234,7 @@ const MoversInFujairah = () => {
               ),
               img: {
                 src: "/loc/packing-unpacking-services-fujairah-professional-home-packing-labeling.jpg",
-                alt: "Movers & Packers team professionally packing and labeling fragile kitchen items and clothes using proper packing materials inside a Fujairah home",
+                alt: "Movers and Packers in UAE team professionally packing and labeling fragile kitchen items and clothes using proper packing materials inside a Fujairah home",
               },
             },
             {
@@ -253,7 +253,7 @@ const MoversInFujairah = () => {
 
               img: {
                 src: "/loc/storage-services-fujairah-secure-warehouse-furniture-storage.jpg",
-                alt: "Movers & Packers team member organizing labeled boxes and wrapped furniture inside a secure climate-aware storage warehouse in Fujairah",
+                alt: "Movers and Packers in UAE team member organizing labeled boxes and wrapped furniture inside a secure climate-aware storage warehouse in Fujairah",
               },
             },
             {
@@ -280,7 +280,7 @@ const MoversInFujairah = () => {
               ),
               img: {
                 src: "/loc/industrial-specialist-movers-fujairah-heavy-equipment-safe-relocation.jpg",
-                alt: "Movers & Packers specialist team using hydraulic equipment to safely relocate heavy industrial machinery and a large safe inside a Fujairah industrial facility",
+                alt: "Movers and Packers in UAE specialist team using hydraulic equipment to safely relocate heavy industrial machinery and a large safe inside a Fujairah industrial facility",
               },
             },
           ].map((item, i) => (

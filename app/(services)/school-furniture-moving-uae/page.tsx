@@ -20,7 +20,7 @@ export const metadata = MetadataTemplate({
     },
     image: {
       path: "/ser/school-furniture-moving-uae-professional-educational-institution-relocation.jpg",
-      alt: "Movers & Packers professional team relocating student desks and a whiteboard through a modern UAE school corridor during an educational institution move",
+      alt: "Movers and Packers in UAE professional team relocating student desks and a whiteboard through a modern UAE school corridor during an educational institution move",
     },
     path: "/school-furniture-moving-uae",
   },
@@ -34,7 +34,7 @@ const SchoolFurnitureMoving = () => {
         desc="Professional school and educational institution furniture movers in UAE. Efficient relocation of classrooms, library shelving, lab furniture & admin offices across Dubai, Abu Dhabi, Sharjah & all UAE. Free quote."
         image={{
           src: HeroImage,
-          alt: "Movers & Packers professional team relocating student desks and a whiteboard through a modern UAE school corridor during an educational institution move",
+          alt: "Movers and Packers in UAE professional team relocating student desks and a whiteboard through a modern UAE school corridor during an educational institution move",
         }}
         btnText="Plan Your School Furniture Move"
       />

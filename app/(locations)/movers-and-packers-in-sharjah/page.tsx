@@ -5,11 +5,27 @@ import MovingProcess from "@/components/MovingProcess";
 import QuotationSection from "@/components/QuotationSection";
 import { Button } from "@/components/ui/button";
 import { SharjahMovingFAQs } from "@/lib/FaqsData";
+import MetadataTemplate from "@/lib/MetaDataTemplate";
 import heroImage from "@/public/loc/movers-packers-sharjah-professional-moving-service-uae.jpg";
 
 import { ChevronRight, PhoneCall } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+
+export const metadata = MetadataTemplate({
+  data: {
+    meta: {
+      title: "Movers and Packers in Sharjah | Trusted Since 1998",
+      desc: "Looking for reliable movers and packers in Sharjah? We offer transparent pricing, same-day moves & Pay Upon Satisfaction. Call or WhatsApp for a free quote today. ",
+    },
+    image: {
+      path: "/loc/movers-packers-sharjah-professional-moving-service-uae.jpg",
+      alt: "Movers and Packers in uae professional team loading furniture into a branded moving truck on the Sharjah corniche with Al Noor Mosque visible in the background",
+    },
+    path: "/movers-and-packers-in-sharjah",
+  },
+});
+
 const MoversInSharjahPage = () => {
   return (
     <main>
@@ -40,7 +56,7 @@ const MoversInSharjahPage = () => {
         id="movers-and-packers-in-sharjah"
         img={{
           src: heroImage,
-          alt: "Movers & Packers professional team loading furniture into a branded moving truck on the Sharjah corniche with Al Noor Mosque visible in the background",
+          alt: "Movers and Packers in UAE professional team loading furniture into a branded moving truck on the Sharjah corniche with Al Noor Mosque visible in the background",
         }}
       />
       <QuotationSection
@@ -139,7 +155,11 @@ const MoversInSharjahPage = () => {
               We handle all types of moves — small or large, residential or
               commercial. Here’s a breakdown of what we offer.
             </p>
-            <Button variant={"secondary"} className="mt-5">
+            <Button
+              link="/moving-services"
+              variant={"secondary"}
+              className="mt-5"
+            >
               View All Services <ChevronRight />
             </Button>
           </div>
@@ -157,7 +177,10 @@ const MoversInSharjahPage = () => {
               />
             </div>
             <h3 className="mt-8 text-xl font-bold">
-              House Movers in Sharjah — Full Home Shifting Service
+              House Movers in Sharjah —{" "}
+              <Link href="/house-shifting-dubai">
+                Full Home Shifting Service
+              </Link>
             </h3>
             <div className="mt-3 text-muted-foreground flex gap-y-1.5 leading-tight flex-col">
               <p>
@@ -176,9 +199,10 @@ const MoversInSharjahPage = () => {
                 We serve all residential properties, from apartments to villas.
               </p>
               <p>
-                Whether you need local house shifting in Sharjah or are
-                relocating to another emirate, we guarantee a stress-free moving
-                experience.
+                Whether you need{" "}
+                <Link href="/house-shifting-dubai">local house shifting</Link>{" "}
+                in Sharjah or are relocating to another emirate, we guarantee a
+                stress-free moving experience.
               </p>
             </div>
             <Button className="mt-5">Get A Quote For House Moving</Button>
@@ -195,7 +219,10 @@ const MoversInSharjahPage = () => {
               />
             </div>
             <h3 className="mt-8 text-xl font-bold">
-              Villa Movers in Sharjah - Full Villa Shifting Service
+              Villa Movers in Sharjah -{" "}
+              <Link href="/villa-movers-in-dubai">
+                Full Villa Shifting Service
+              </Link>{" "}
             </h3>
             <div className="mt-3 text-muted-foreground flex gap-y-1.5 leading-tight flex-col">
               <p>
@@ -231,7 +258,8 @@ const MoversInSharjahPage = () => {
               />
             </div>
             <h3 className="mt-8 text-xl font-bold">
-              Office Movers in Sharjah — Minimum Disruption, Full Care
+              <Link href="/house-shifting-dubai">Office Movers </Link> in
+              Sharjah — Minimum Disruption, Full Care
             </h3>
             <div className="mt-3 text-muted-foreground flex gap-y-1.5 leading-tight flex-col">
               <p>
@@ -266,7 +294,10 @@ const MoversInSharjahPage = () => {
               />
             </div>
             <h3 className="mt-8 text-xl font-bold">
-              Furniture Movers in Sharjah — Single Item or Full Load
+              <Link href="/furniture-moving-services-uae">
+                Furniture Movers{" "}
+              </Link>{" "}
+              in Sharjah — Single Item or Full Load
             </h3>
             <div className="mt-3 text-muted-foreground flex gap-y-1.5 leading-tight flex-col">
               <p>
@@ -300,7 +331,8 @@ const MoversInSharjahPage = () => {
               />
             </div>
             <h3 className="mt-8 text-xl font-bold">
-              Packing Services in Sharjah
+              <Link href="/packing-services-in-dubai">Packing Services</Link> in
+              Sharjah
             </h3>
             <div className="mt-3 text-muted-foreground flex gap-y-1.5 leading-tight flex-col">
               <p>
@@ -568,7 +600,7 @@ const MoversInSharjahPage = () => {
                     scope="col"
                     className="p-5 md:p-6 text-sm md:text-base font-bold primary bg-red-50/50 w-5/12 border-b-2 border-primary"
                   >
-                    Movers and Packers in UAE
+                    <Link href="/">Movers and Packers in UAE</Link>
                   </th>
                 </tr>
               </thead>
@@ -687,15 +719,21 @@ const MoversInSharjahPage = () => {
       <div className="max-w-4xl mx-auto md:px-0 px-4 mt-10 md:text-xl text-lg font-medium text-center">
         <p>
           You can: -{" "}
-          <Link href={"#"} className="text-primary">
+          <Link href={"tel:0507745691"} className="text-primary">
             Call us
           </Link>{" "}
           and speak to someone directly -{" "}
-          <Link href={"#"} className="text-primary">
+          <Link
+            href={
+              "https://wa.me/+971507745691?text=I%20Come%20From%20Your%20Website%20and%20I%20Need%20Moving%20Services"
+            }
+            aria-label="Get A Quote On WhatsApp"
+            className="text-primary"
+          >
             Send a WhatsApp message
           </Link>{" "}
           with your move details -{" "}
-          <Link href={"#"} className="text-primary">
+          <Link href={"/get-quote"} className="text-primary">
             Fill in the quote form
           </Link>{" "}
           on our website — it takes two minutes
@@ -705,7 +743,10 @@ const MoversInSharjahPage = () => {
           honest service is what people actually want when they’re moving.
           That’s what we provide.
         </p>
-        <Link href={"#"} className="text-primary underline-offset-8 underline">
+        <Link
+          href={"/get-quote"}
+          className="text-primary underline-offset-8 underline"
+        >
           Contact us today and get your free, fixed moving quote.
         </Link>
       </div>

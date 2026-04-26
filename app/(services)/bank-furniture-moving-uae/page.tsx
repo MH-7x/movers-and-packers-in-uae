@@ -20,7 +20,7 @@ export const metadata = MetadataTemplate({
     },
     image: {
       path: "/ser/bank-furniture-moving-dubai-teller-counter-relocation.jpg",
-      alt: "Movers & Packers professional team carefully relocating a bank teller counter inside a modern Dubai bank branch",
+      alt: "Movers and Packers in UAE professional team carefully relocating a bank teller counter inside a modern Dubai bank branch",
     },
     path: "/bank-furniture-moving-uae",
   },
@@ -34,7 +34,7 @@ const BankFurnitureMovers = () => {
         desc="Moving a bank branch or financial institution in the UAE demands a level of trust, security, and professionalism that ordinary movers simply cannot provide. "
         image={{
           src: HeroImage,
-          alt: "Movers & Packers professional team carefully relocating a bank teller counter inside a modern Dubai bank branch",
+          alt: "Movers and Packers in UAE professional team carefully relocating a bank teller counter inside a modern Dubai bank branch",
         }}
         btnText="Get a Confidential Bank Moving Quote"
       />

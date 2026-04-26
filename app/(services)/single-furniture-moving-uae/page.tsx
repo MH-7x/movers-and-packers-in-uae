@@ -22,7 +22,7 @@ export const metadata = MetadataTemplate({
     },
     image: {
       path: "/ser/single-item-moving-dubai-professional-sofa-movers.jpg",
-      alt: "Movers & Packers professional team carefully relocating a large sofa as part of our single furniture moving service in Dubai, UAE",
+      alt: "Movers and Packers in UAE professional team carefully relocating a large sofa as part of our single furniture moving service in Dubai, UAE",
     },
     path: "/single-furniture-moving-uae",
   },

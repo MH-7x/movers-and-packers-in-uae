@@ -41,7 +41,7 @@ const MoversInUmmAlQuwain = () => {
         id="movers-in-umm-al-quwain"
         img={{
           src: heroImage,
-          alt: "Movers & Packers professional team loading wrapped furniture and boxes into a branded enclosed moving truck outside a residential villa in Umm Al Quwain with the Khor Al Beidah lagoon visible in the background",
+          alt: "Movers and Packers in UAE professional team loading wrapped furniture and boxes into a branded enclosed moving truck outside a residential villa in Umm Al Quwain with the Khor Al Beidah lagoon visible in the background",
         }}
       />
 

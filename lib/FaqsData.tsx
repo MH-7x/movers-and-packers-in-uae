@@ -1775,6 +1775,49 @@ export const SharjahMovingFAQs: FAQData[] = [
           We provide a free quote via WhatsApp or email with a fixed price and
           no hidden charges. The number you agree to is the number you pay.
         </p>
+        <h3>Estimated Price List by Property Size</h3>
+        <ul>
+          <li>
+            <strong>Studio Apartment</strong>
+            <ul>
+              <li>Standard Move: 700 – 1,100 AED</li>
+              <li>Premium Move: 1,100 – 1,400 AED</li>
+              <li>Manpower: 2–3 Workers</li>
+            </ul>
+          </li>
+          <li>
+            <strong>1-Bedroom Apartment</strong>
+            <ul>
+              <li>Standard Move: 1,000 – 1,500 AED</li>
+              <li>Premium Move: 1,500 – 1,800 AED</li>
+              <li>Manpower: 3–4 Workers</li>
+            </ul>
+          </li>
+          <li>
+            <strong>2-Bedroom Apartment</strong>
+            <ul>
+              <li>Standard Move: 1,600 – 2,400 AED</li>
+              <li>Premium Move: 2,500 – 3,200 AED</li>
+              <li>Manpower: 5–6 Workers</li>
+            </ul>
+          </li>
+          <li>
+            <strong>3-Bedroom Apartment</strong>
+            <ul>
+              <li>Standard Move: 2,500 – 3,800 AED</li>
+              <li>Premium Move: 3,800 – 5,000 AED</li>
+              <li>Manpower: 6–8 Workers</li>
+            </ul>
+          </li>
+          <li>
+            <strong>Large Villa (3–5 Bed)</strong>
+            <ul>
+              <li>Standard Move: 4,000 – 6,500 AED</li>
+              <li>Premium Move: 7,000+ AED</li>
+              <li>Manpower: 8–12 Workers</li>
+            </ul>
+          </li>
+        </ul>
       </>
     ),
   },

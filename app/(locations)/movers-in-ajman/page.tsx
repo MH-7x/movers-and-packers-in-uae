@@ -172,7 +172,7 @@ const MoversInAjman = () => {
               ),
               img: {
                 src: "/loc/house-movers-ajman-full-home-shifting-service.jpg",
-                alt: "Movers & Packers team carefully carrying wrapped sofa and labeled boxes during a full house shifting service inside an Ajman home",
+                alt: "Movers and Packers in UAE team carefully carrying wrapped sofa and labeled boxes during a full house shifting service inside an Ajman home",
               },
             },
             {
@@ -203,7 +203,7 @@ const MoversInAjman = () => {
               ),
               img: {
                 src: "/loc/villa-movers-ajman-large-scale-relocation-professional.jpg",
-                alt: "Movers & Packers team carrying a wrapped wardrobe downstairs and dismantling bedroom furniture during a large villa move in Ajman",
+                alt: "Movers and Packers in UAE team carrying a wrapped wardrobe downstairs and dismantling bedroom furniture during a large villa move in Ajman",
               },
             },
             {
@@ -233,7 +233,7 @@ const MoversInAjman = () => {
               ),
               img: {
                 src: "/loc/apartment-movers-ajman-elevator-building-relocation-service.jpg",
-                alt: "Movers & Packers team efficiently moving wrapped furniture through an elevator and corridor inside an Ajman residential apartment building",
+                alt: "Movers and Packers in UAE team efficiently moving wrapped furniture through an elevator and corridor inside an Ajman residential apartment building",
               },
             },
             {
@@ -268,7 +268,7 @@ const MoversInAjman = () => {
               ),
               img: {
                 src: "/loc/furniture-movers-ajman-single-item-dining-set-moving-service.jpg",
-                alt: "Movers & Packers team carefully loading a wrapped dining table and chairs into a branded van outside an Ajman residential building",
+                alt: "Movers and Packers in UAE team carefully loading a wrapped dining table and chairs into a branded van outside an Ajman residential building",
               },
             },
             {
@@ -302,7 +302,7 @@ const MoversInAjman = () => {
               ),
               img: {
                 src: "/loc/office-movers-ajman-commercial-relocation-after-hours.jpg",
-                alt: "Movers & Packers team packing workstations, monitors, and office furniture during a professional after-hours office relocation in Ajman",
+                alt: "Movers and Packers in UAE team packing workstations, monitors, and office furniture during a professional after-hours office relocation in Ajman",
               },
             },
             {
@@ -332,7 +332,7 @@ const MoversInAjman = () => {
               ),
               img: {
                 src: "/loc/storage-services-ajman-secure-furniture-storage-facility.jpg",
-                alt: "Movers & Packers team member organizing labeled boxes and wrapped furniture inside a clean secure storage facility in Ajman",
+                alt: "Movers and Packers in UAE team member organizing labeled boxes and wrapped furniture inside a clean secure storage facility in Ajman",
               },
             },
             {
@@ -401,7 +401,7 @@ const MoversInAjman = () => {
 
               img: {
                 src: "/loc/long-distance-inter-emirate-moving-ajman-dubai-sharjah-abudhabi.jpg",
-                alt: "Movers & Packers branded enclosed moving truck traveling along a UAE inter-emirate highway during a long-distance relocation from Ajman",
+                alt: "Movers and Packers in UAE branded enclosed moving truck traveling along a UAE inter-emirate highway during a long-distance relocation from Ajman",
               },
             },
             {
@@ -433,7 +433,7 @@ const MoversInAjman = () => {
 
               img: {
                 src: "/loc/industrial-equipment-heavy-item-moving-ajman-warehouse-relocation.jpg",
-                alt: "Movers & Packers team using hydraulic equipment to safely relocate heavy industrial machinery and a large safe inside an Ajman warehouse facility",
+                alt: "Movers and Packers in UAE team using hydraulic equipment to safely relocate heavy industrial machinery and a large safe inside an Ajman warehouse facility",
               },
             },
           ].map((item, i) => (

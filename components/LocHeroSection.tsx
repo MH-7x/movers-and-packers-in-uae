@@ -3,6 +3,7 @@ import React from "react";
 import { ReactNode } from "react";
 import { Button } from "./ui/button";
 import { PhoneCall } from "lucide-react";
+import Link from "next/link";
 
 export const LocHeroSection = ({
   id,
@@ -46,10 +47,12 @@ export const LocHeroSection = ({
             Get A Free Moving Quote
           </Button>
 
-          <button className="group flex items-center gap-2.5 text-[#374151] hover:text-[#111827] transition-colors duration-200">
-            <PhoneCall className="w-7 h-7 text-[#4B5563] group-hover:text-[#111827] transition-colors stroke-[1.5]" />
-            <span className="text-sm font-medium">Call Now</span>
-          </button>
+          <Link href="tel:0507745691">
+            <button className="group cursor-pointer flex items-center gap-2.5 text-[#374151] hover:text-[#111827] transition-colors duration-200">
+              <PhoneCall className="w-7 h-7 text-[#4B5563] group-hover:text-[#111827] transition-colors stroke-[1.5]" />
+              <span className="text-sm font-medium">Call Now</span>
+            </button>
+          </Link>
         </div>
       </div>
       <div className="mt-16 lg:w-4xl w-full rounded-4xl aspect-video relative overflow-hidden">
