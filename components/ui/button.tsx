@@ -1,8 +1,10 @@
+"use client";
 import * as React from "react";
 import { cva, type VariantProps } from "class-variance-authority";
 import { Slot } from "radix-ui";
 
 import { cn } from "@/lib/utils";
+import { track } from "@/lib/tracker";
 import Link from "next/link";
 
 const buttonVariants = cva(
@@ -40,6 +42,22 @@ const buttonVariants = cva(
   },
 );
 
+function resolveLabel(
+  ariaLabel: string | undefined,
+  children: React.ReactNode,
+): string {
+  if (ariaLabel) return ariaLabel;
+  if (typeof children === "string") return children;
+
+  if (React.isValidElement(children)) {
+    const child = children as React.ReactElement<{
+      children?: React.ReactNode;
+    }>;
+    if (typeof child.props?.children === "string") return child.props.children;
+  }
+  return "unknown";
+}
+
 function Button({
   className,
   variant = "default",
@@ -49,6 +67,9 @@ function Button({
   callBtn = false,
   whatsappBtn = false,
   link = "",
+  children,
+  "aria-label": ariaLabel,
+  onClick,
   ...props
 }: React.ComponentProps<"button"> &
   VariantProps<typeof buttonVariants> & {
@@ -60,74 +81,99 @@ function Button({
   }) {
   const Comp = asChild ? Slot.Root : "button";
 
+  // Shared inner button element — identical to original, no extra wrappers
+  const inner = (
+    <Comp
+      data-slot="button"
+      data-variant={variant}
+      data-size={size}
+      className={cn(buttonVariants({ variant, size, className }))}
+      aria-label={ariaLabel}
+      onClick={onClick}
+      {...props}
+    >
+      {children}
+    </Comp>
+  );
+
+  const label = resolveLabel(ariaLabel, children);
+
   if (quoteBtn) {
     return (
-      <Link href={"/get-quote"} aria-label="Get A Moving Quote">
-        <Comp
-          data-slot="button"
-          data-variant={variant}
-          data-size={size}
-          className={cn(buttonVariants({ variant, size, className }))}
-          {...props}
-        />
+      <Link
+        href="/get-quote"
+        aria-label="Get A Moving Quote"
+        onClick={() =>
+          track({ type: "quote_click", label, destination: "/get-quote" })
+        }
+      >
+        {inner}
       </Link>
     );
   }
 
   if (link) {
     return (
-      <Link href={link || "/"} aria-label="Get A Moving Quote">
-        <Comp
-          data-slot="button"
-          data-variant={variant}
-          data-size={size}
-          className={cn(buttonVariants({ variant, size, className }))}
-          {...props}
-        />
+      <Link
+        href={link}
+        aria-label={ariaLabel ?? "Navigate"}
+        onClick={() => track({ type: "link_click", label, destination: link })}
+      >
+        {inner}
       </Link>
     );
   }
 
   if (whatsappBtn) {
+    const whatsappHref =
+      "https://wa.me/+971507745691?text=I%20Come%20From%20Your%20Website%20and%20I%20Need%20Moving%20Services";
     return (
       <Link
-        href={
-          "https://wa.me/+971507745691?text=I%20Come%20From%20Your%20Website%20and%20I%20Need%20Moving%20Services"
-        }
+        href={whatsappHref}
         aria-label="Get A Quote On WhatsApp"
         rel="noopener noreferrer"
+        onClick={() =>
+          track({ type: "whatsapp_click", label, destination: whatsappHref })
+        }
       >
-        <Comp
-          data-slot="button"
-          data-variant={variant}
-          data-size={size}
-          className={cn(buttonVariants({ variant, size, className }))}
-          {...props}
-        />
+        {inner}
       </Link>
     );
   }
+
   if (callBtn) {
     return (
-      <Link href={"tel:+971507745691"} aria-label="Call To Movers">
-        <Comp
-          data-slot="button"
-          data-variant={variant}
-          data-size={size}
-          className={cn(buttonVariants({ variant, size, className }))}
-          {...props}
-        />
+      <Link
+        href="tel:+971507745691"
+        aria-label="Call To Movers"
+        onClick={() =>
+          track({
+            type: "call_click",
+            label,
+            destination: "tel:+971507745691",
+          })
+        }
+      >
+        {inner}
       </Link>
     );
   }
+
   return (
     <Comp
       data-slot="button"
       data-variant={variant}
       data-size={size}
       className={cn(buttonVariants({ variant, size, className }))}
+      aria-label={ariaLabel}
+      onClick={(e) => {
+        track({ type: "button_click", label });
+        onClick?.(e);
+      }}
       {...props}
-    />
+    >
+      {children}
+    </Comp>
   );
 }
 
