@@ -53,7 +53,12 @@ const Footer = () => {
             </div>
             <div className="flex flex-col text-white tracking-wide">
               <span className="font-bold text-[15px] mb-1">E-mail:</span>
-              <span className="text-[15px] opacity-85">info@demolink.org</span>
+              <Link
+                href="mailto:movers.and.packers.uae91@gmail.com"
+                className="text-[15px] opacity-85"
+              >
+                movers.and.packers.uae91@gmail.com
+              </Link>
             </div>
           </div>
         </div>
@@ -83,7 +88,9 @@ const Footer = () => {
               {/* Social Icons */}
               <div className="flex gap-3">
                 <a
-                  href="#"
+                  href="https://www.facebook.com/moversandpackersinuae91/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   title="facebook page link"
                   className="w-9 h-9 rounded-full border border-[#4a525a] flex items-center justify-center text-white hover:border-white transition-colors"
                 >
@@ -105,7 +112,9 @@ const Footer = () => {
                   </svg>
                 </a>
                 <a
-                  href="#"
+                  href="https://www.instagram.com/moversandpackersinuae91"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   title="instagram profile link"
                   className="w-9 h-9 rounded-full border border-[#4a525a] flex items-center justify-center text-white hover:border-white transition-colors"
                 >
@@ -128,7 +137,9 @@ const Footer = () => {
                   </svg>
                 </a>
                 <a
-                  href="#"
+                  href="https://www.pinterest.com/moversandpackersuae91"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   title="pinterest page link"
                   className="w-9 h-9 rounded-full border border-[#4a525a] flex items-center justify-center text-white hover:border-white transition-colors"
                 >
@@ -151,7 +162,9 @@ const Footer = () => {
                 </a>
                 <a
                   title="youtube channel link"
-                  href="#"
+                  href="https://www.youtube.com/@moversandpackersinuae91"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-9 h-9 rounded-full border border-[#4a525a] flex items-center justify-center text-white hover:border-white transition-colors"
                 >
                   <svg

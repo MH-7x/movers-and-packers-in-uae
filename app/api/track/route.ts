@@ -1,29 +1,13 @@
 import { NextRequest, NextResponse } from "next/server";
-import fs from "fs";
-import path from "path";
+import { Redis } from "@upstash/redis";
 import type { TrackEvent } from "@/lib/tracker";
 
-const DATA_DIR = path.join(process.cwd(), "data");
-const EVENTS_FILE = path.join(DATA_DIR, "events.json");
+const redis = new Redis({
+  url: process.env.KV_REST_API_URL!,
+  token: process.env.KV_REST_API_TOKEN!,
+});
 
-function ensureFile(): void {
-  if (!fs.existsSync(DATA_DIR)) fs.mkdirSync(DATA_DIR, { recursive: true });
-  if (!fs.existsSync(EVENTS_FILE)) fs.writeFileSync(EVENTS_FILE, "[]", "utf8");
-}
-
-function readEvents(): TrackEvent[] {
-  ensureFile();
-  try {
-    return JSON.parse(fs.readFileSync(EVENTS_FILE, "utf8")) as TrackEvent[];
-  } catch {
-    return [];
-  }
-}
-
-function writeEvents(events: TrackEvent[]): void {
-  ensureFile();
-  fs.writeFileSync(EVENTS_FILE, JSON.stringify(events, null, 2), "utf8");
-}
+const EVENTS_KEY = "click_events";
 
 export async function POST(req: NextRequest) {
   try {
@@ -41,9 +25,7 @@ export async function POST(req: NextRequest) {
       timestamp: new Date().toISOString(),
     };
 
-    const events = readEvents();
-    events.push(event);
-    writeEvents(events);
+    await redis.rpush(EVENTS_KEY, JSON.stringify(event));
 
     return NextResponse.json({ ok: true });
   } catch {
@@ -53,7 +35,19 @@ export async function POST(req: NextRequest) {
 
 export async function GET() {
   try {
-    const events = readEvents();
+    const raw = await redis.lrange<string>(EVENTS_KEY, 0, -1);
+
+    const events: TrackEvent[] = raw.map((item) => {
+      if (typeof item === "string") {
+        try {
+          return JSON.parse(item) as TrackEvent;
+        } catch {
+          return item as unknown as TrackEvent;
+        }
+      }
+      return item as unknown as TrackEvent;
+    });
+
     return NextResponse.json({ events });
   } catch {
     return NextResponse.json({ events: [] });

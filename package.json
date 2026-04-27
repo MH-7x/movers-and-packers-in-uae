@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@react-email/components": "^1.0.12",
+    "@upstash/redis": "^1.37.0",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "embla-carousel-autoplay": "^8.6.0",
