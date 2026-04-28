@@ -9,7 +9,7 @@ export const metadata = MetadataTemplate({
   data: {
     meta: {
       title: "Get a Quote from UAE's Top Movers and Packers",
-      desc: "Looking for a reliable moving quote in the UAE? Get a free, no-obligation quote from our trusted movers and packers in uae. we response to quotes within 5 to 10 minutes.",
+      desc: "Get a free moving quote from trusted UAE movers. No obligation, no hidden charges. We respond within 5-10 minutes. Instant quote available online.",
     },
     image: {
       path: "/mover-and-packers-in-uae.jpg",

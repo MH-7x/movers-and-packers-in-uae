@@ -7,21 +7,21 @@ const pages: MetadataRoute.Sitemap = [
     changeFrequency: "daily",
     priority: 1.0,
     images: ["/mover-and-packers-in-uae.jpg"],
-    lastModified: "2026-04-26",
+    lastModified: "2026-04-28",
   },
   {
     url: "/about-us",
     changeFrequency: "yearly",
     priority: 0.7,
     images: ["/about-us-professional-movers-packers-team-dubai-uae.jpg"],
-    lastModified: "2026-04-26",
+    lastModified: "2026-04-28",
   },
   {
     url: "/get-quote",
     changeFrequency: "yearly",
     priority: 0.9,
     images: ["/about-us-professional-movers-packers-team-dubai-uae.jpg"],
-    lastModified: "2026-04-26",
+    lastModified: "2026-04-28",
   },
   // -------------------------------------------------------
 
@@ -33,7 +33,7 @@ const pages: MetadataRoute.Sitemap = [
     changeFrequency: "monthly",
     priority: 0.8,
     images: ["/loc/movers-packers-sharjah-professional-moving-service-uae.jpg"],
-    lastModified: "2026-04-26",
+    lastModified: "2026-04-28",
   },
   {
     url: "/movers-in-ajman",
@@ -49,14 +49,14 @@ const pages: MetadataRoute.Sitemap = [
     images: [
       "/loc/movers-in-al-ain-professional-moving-service-jebel-hafeet-garden-city.jpg",
     ],
-    lastModified: "2026-04-26",
+    lastModified: "2026-04-28",
   },
   {
     url: "/movers-in-fujairah",
     changeFrequency: "monthly",
     priority: 0.8,
     images: ["/loc/movers-in-fujairah-professional-moving-service-hero.jpg"],
-    lastModified: "2026-04-26",
+    lastModified: "2026-04-28",
   },
   {
     url: "/movers-in-ras-al-khaimah",
@@ -111,7 +111,7 @@ const pages: MetadataRoute.Sitemap = [
     images: [
       "/ser/hospital-furniture-moving-uae-professional-movers-medical-equipment.jpg",
     ],
-    lastModified: "2026-04-26",
+    lastModified: "2026-04-28",
   },
   {
     url: "/house-shifting-dubai",
@@ -125,14 +125,14 @@ const pages: MetadataRoute.Sitemap = [
     changeFrequency: "monthly",
     priority: 0.7,
     images: ["/house-shifting-services-in-dubai-uae.jpg"],
-    lastModified: "2026-04-26",
+    lastModified: "2026-04-28",
   },
   {
     url: "/office-movers-in-dubai",
     changeFrequency: "monthly",
     priority: 0.7,
     images: ["/ser/office-movers-in-dubai.jpg"],
-    lastModified: "2026-04-26",
+    lastModified: "2026-04-28",
   },
   {
     url: "/packing-services-in-dubai",
@@ -157,14 +157,14 @@ const pages: MetadataRoute.Sitemap = [
     images: [
       "/ser/school-furniture-moving-uae-professional-educational-institution-relocation.jpg",
     ],
-    lastModified: "2026-04-26",
+    lastModified: "2026-04-28",
   },
   {
     url: "/single-furniture-moving-uae",
     changeFrequency: "monthly",
     priority: 0.7,
     images: ["/ser/single-item-moving-dubai-professional-sofa-movers.jpg"],
-    lastModified: "2026-04-26",
+    lastModified: "2026-04-28",
   },
   {
     url: "/villa-movers-in-dubai",

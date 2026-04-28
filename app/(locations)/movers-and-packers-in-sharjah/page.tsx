@@ -17,7 +17,7 @@ export const metadata = MetadataTemplate({
   data: {
     meta: {
       title: "Movers and Packers in Sharjah | Trusted Since 1998",
-      desc: "Looking for reliable movers and packers in Sharjah? We offer transparent pricing, same-day moves & Pay Upon Satisfaction. Call or WhatsApp for a free quote today. ",
+      desc: "Movers and packers in Sharjah. Same-day moves, transparent pricing & no hidden charges. Pay upon satisfaction. Licensed since 1998. Free quote Call now.",
     },
     image: {
       path: "/loc/movers-packers-sharjah-professional-moving-service-uae.jpg",

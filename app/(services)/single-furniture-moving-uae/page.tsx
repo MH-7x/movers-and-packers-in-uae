@@ -18,7 +18,7 @@ export const metadata = MetadataTemplate({
   data: {
     meta: {
       title: "Single Furniture Moving in UAE | One Item Pick Up & Delivery",
-      desc: "Move just one piece of furniture in UAE! We handle sofas, beds, wardrobes & more across Dubai, Abu Dhabi & Sharjah. Fast, safe & affordable. Get a free quote now!",
+      desc: "Single furniture moving in UAE. Fast, safe relocation of sofas, beds, wardrobes & more across Dubai, Abu Dhabi & Sharjah. Affordable rates. Free quote.",
     },
     image: {
       path: "/ser/single-item-moving-dubai-professional-sofa-movers.jpg",

@@ -83,10 +83,10 @@ const MoversInAjman = () => {
       <section className="max-w-7xl mx-auto mt-32 md:px-10 px-4">
         {/* Main Header Section */}
         <div className="text-center mb-10 max-w-4xl mx-auto">
-          <h1 className="md:text-4xl text-3xl font-bold mb-6">
+          <h2 className="md:text-4xl text-3xl font-bold mb-6">
             <span className="font-normal md:block">Why Choose Our</span> Movers
             and Packers in Ajman?
-          </h1>
+          </h2>
           <p className="text-muted-foreground">
             There are many moving companies operating in Ajman. Some are
             registered, most are not. We have been a licensed moving company in

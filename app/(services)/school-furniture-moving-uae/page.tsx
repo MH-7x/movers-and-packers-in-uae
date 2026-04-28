@@ -16,7 +16,7 @@ export const metadata = MetadataTemplate({
   data: {
     meta: {
       title: "School Furniture Moving in UAE | Educational Institution Movers ",
-      desc: "School furniture movers in UAE. Efficient relocation of classrooms, libraries, labs & offices across Dubai, Abu Dhabi & Sharjah. Trusted movers—get a free quote!",
+      desc: "School furniture movers in UAE. Professional relocation of classrooms, labs & offices across Dubai, Abu Dhabi & Sharjah. Trusted & experienced. Free quote.",
     },
     image: {
       path: "/ser/school-furniture-moving-uae-professional-educational-institution-relocation.jpg",

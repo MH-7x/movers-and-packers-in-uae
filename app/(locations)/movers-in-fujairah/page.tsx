@@ -28,7 +28,7 @@ export const metadata = MetadataTemplate({
   data: {
     meta: {
       title: "Best Movers in Fujairah – Professional Moving Company UAE",
-      desc: "trusted movers in Fujairah. Movers and Packers in UAE has 25+ years of experience, no hidden charges, same-day service & pay-upon-satisfaction guarantee. Get a free quote.",
+      desc: "Movers in Fujairah with 25+ years experience. Fast, reliable service with no hidden charges. Same-day moves available. Free quote & pay-upon-satisfaction guarantee.",
     },
     image: {
       path: "/loc/movers-in-fujairah-professional-moving-service-hero.jpg",
@@ -344,10 +344,10 @@ const MoversInFujairah = () => {
       <section className="max-w-7xl mx-auto mt-20 md:px-10 px-4">
         {/* Main Header Section */}
         <div className="text-center mb-10 max-w-4xl mx-auto">
-          <h1 className="md:text-4xl text-3xl font-bold mb-6">
+          <h2 className="md:text-4xl text-3xl font-bold mb-6">
             <span className="font-normal block">Why Choose </span> Movers and
             Packers UAE in Fujairah
-          </h1>
+          </h2>
           <p className="text-muted-foreground">
             There are a number of moving companies in fujairah. Here is what
             makes a real difference.

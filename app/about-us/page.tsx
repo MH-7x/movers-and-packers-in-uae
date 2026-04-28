@@ -6,7 +6,7 @@ export const metadata = MetadataTemplate({
   data: {
     meta: {
       title: "About Us | Movers and Packers in UAE Since 1998",
-      desc: "Learn about Movers and Packers in UAE — a registered moving company in Dubai since 1998. We offer house, villa, office, and furniture moving across all UAE emirates with no hidden charges.",
+      desc: "About our moving company in UAE. Licensed since 1998, we provide house, villa, office & furniture moving across all emirates. Transparent pricing, no hidden charges.",
     },
     image: {
       path: "/about-us-professional-movers-packers-team-dubai-uae.jpg",
@@ -47,11 +47,11 @@ const AboutUsPage = () => {
             <hr className="w-full border-t border-gray-200 mb-8" />
 
             {/* Main Heading */}
-            <h2 className="text-4xl md:text-[52px] font-bold text-[#0f172a] leading-[1.15] mb-12 tracking-tight">
+            <h1 className="text-4xl md:text-[52px] font-bold text-[#0f172a] leading-[1.15] mb-12 tracking-tight">
               <span className="font-normal">Movers and Packers in UAE</span>{" "}
               <br className="hidden md:block" />
               You Can Actually Trust
-            </h2>
+            </h1>
 
             {/* Split Content Area */}
             <div className="flex flex-col md:flex-row gap-3">

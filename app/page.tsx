@@ -43,7 +43,7 @@ export const metadata = MetadataTemplate({
   data: {
     meta: {
       title: "Movers and Packers in UAE | Safe Moving Across The UAE",
-      desc: "Trusted movers and packers in UAE since 1998. We move homes, villas, offices & furniture across all emirates — Dubai, Abu Dhabi, Sharjah & more. Free quote. No hidden charges. Pay upon satisfaction.",
+      desc: "Trusted movers and packers in UAE since 1998. We move homes, villas, offices & furniture across dubai and all emirates. get a free quote!",
     },
     image: {
       path: "/mover-and-packers-in-uae.jpg",

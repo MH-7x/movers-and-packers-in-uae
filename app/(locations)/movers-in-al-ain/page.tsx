@@ -27,7 +27,7 @@ export const metadata = MetadataTemplate({
   data: {
     meta: {
       title: "Movers in Al Ain | Trusted Al Ain Movers and Packers",
-      desc: "Meta Description	Need movers and packers in Al Ain? Our licensed team offers house, villa & office moving with no hidden charges. Pay upon satisfaction. Call now.",
+      desc: "Movers in Al Ain with professional house, villa & office moving services. No hidden charges, pay upon satisfaction. Licensed & experienced. Call now.",
     },
     image: {
       path: "/loc/movers-in-al-ain-professional-moving-service-jebel-hafeet-garden-city.jpg",

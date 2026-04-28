@@ -402,10 +402,10 @@ const page = () => {
       <section className="max-w-7xl mx-auto mt-20 md:px-10 px-4">
         {/* Main Header Section */}
         <div className="text-center mb-10 max-w-4xl mx-auto">
-          <h1 className="md:text-4xl text-3xl font-bold mb-6">
+          <h2 className="md:text-4xl text-3xl font-bold mb-6">
             <span className="font-normal block">Why Choose </span> Movers and
             Packers UAE in Ras Al Khaimah
-          </h1>
+          </h2>
           <p className="text-muted-foreground">
             There are a number of moving companies in RAK. Here is what makes a
             real difference.
@@ -587,10 +587,10 @@ const page = () => {
       <section className="max-w-7xl mx-auto mt-20 md:px-10 px-4">
         {/* Main Header Section */}
         <div className="text-center mb-10 max-w-4xl mx-auto">
-          <h1 className="md:text-4xl text-3xl font-bold mb-6">
+          <h2 className="md:text-4xl text-3xl font-bold mb-6">
             <span className="font-normal md:block">Areas We Serve</span> in Ras
             Al Khaimah
-          </h1>
+          </h2>
           <p className="text-muted-foreground">
             We cover all major residential and commercial areas across Ras Al
             Khaimah. If your community is not listed below, contact us — we

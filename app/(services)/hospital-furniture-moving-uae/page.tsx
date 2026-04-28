@@ -16,7 +16,7 @@ export const metadata = MetadataTemplate({
   data: {
     meta: {
       title: "Hospital Furniture Moving in UAE | Medical Equipment Movers",
-      desc: "Expert hospital furniture movers in UAE. Safe, hygienic relocation of clinical beds & medical equipment across Dubai & Abu Dhabi. Licensed since 1998. Get a quote!",
+      desc: "Hospital furniture movers in UAE. Safe, hygienic relocation of medical equipment & clinical beds across Dubai, Abu Dhabi & all emirates. Licensed & insured.",
     },
     image: {
       path: "/ser/hospital-furniture-moving-uae-professional-movers-medical-equipment.jpg",

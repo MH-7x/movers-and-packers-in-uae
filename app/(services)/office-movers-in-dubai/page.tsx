@@ -16,7 +16,7 @@ export const metadata = MetadataTemplate({
   data: {
     meta: {
       title: "Office Movers in Dubai – Best Office Relocation Services UAE ",
-      desc: "Expert movers and packers in UAE. Home, office, and furniture relocation across Dubai, Abu Dhabi, Sharjah, and all Emirates. Professional & reliable. Get a quote!",
+      desc: "Expert office movers in Dubai & UAE. Reliable relocation for businesses across all emirates. Professional service, transparent pricing. Get your free quote.",
     },
     image: {
       path: "/ser/office-movers-in-dubai.jpg",

@@ -89,10 +89,10 @@ const MoversInUmmAlQuwain = () => {
       >
         {/* Main Header Section */}
         <div className="text-center mb-10 max-w-4xl mx-auto">
-          <h1 className="md:text-4xl text-3xl font-bold mb-6">
+          <h2 className="md:text-4xl text-3xl font-bold mb-6">
             <span className="font-normal block">Moving Services We Offer </span>{" "}
             in Umm Al Quwain
-          </h1>
+          </h2>
           <p className="text-muted-foreground">
             We cover all types of residential and commercial moves across UAQ.
             Below is a breakdown of what we handle — but if your situation

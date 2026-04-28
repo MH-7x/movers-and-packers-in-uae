@@ -13,7 +13,7 @@ export const metadata = MetadataTemplate({
   data: {
     meta: {
       title: "Our Moving Services in UAE | Movers and Packers Services ",
-      desc: "Expert movers and packers in UAE. Home, office, and furniture relocation across Dubai, Abu Dhabi, Sharjah, and all Emirates. Professional & reliable. Get a quote!",
+      desc: "Professional moving services in UAE. House, office & furniture relocation across Dubai, Abu Dhabi & all emirates. 25+ years experience. Get a free quote.",
     },
     image: {
       path: "/house-shifting-services-in-dubai-uae.jpg",
@@ -35,10 +35,10 @@ const OurMovingServices = () => {
             <p className="uppercase border-b border-primary text-gray-200 w-max">
               Our Moving Services
             </p>
-            <h2 className="md:text-4xl text-3xl text-white mt-3">
+            <h1 className="md:text-4xl text-3xl text-white mt-3">
               Our <span className="font-bold">Moving and Packing</span>{" "}
               <span className="md:block">Services in UAE</span>
-            </h2>
+            </h1>
             <Button quoteBtn size={"lg"} className="mt-5">
               Get A Moving Quote <ChevronRight />
             </Button>
