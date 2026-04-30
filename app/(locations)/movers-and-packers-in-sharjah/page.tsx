@@ -735,7 +735,7 @@ const MoversInSharjahPage = () => {
       <div className="max-w-4xl mx-auto md:px-0 px-4 mt-10 md:text-xl text-lg font-medium text-center">
         <p>
           You can: -{" "}
-          <Link href={"tel:0507745691"} className="text-primary">
+          <Link href={"tel:+971507745691"} className="text-primary">
             Call us
           </Link>{" "}
           and speak to someone directly -{" "}

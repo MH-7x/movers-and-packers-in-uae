@@ -69,7 +69,7 @@ const MovingProcess = ({
               <div className="w-6 h-6 text-white text-shadow-2xs rounded-md text-sm bg-primary flex items-center justify-center">
                 0{i + 1}
               </div>{" "}
-              <h3 className="font-medium text-xl">{process.title}</h3>
+              <h4 className="font-medium text-xl">{process.title}</h4>
             </div>
             <p className="mt-3 text-muted-foreground">{process.description}</p>
           </div>

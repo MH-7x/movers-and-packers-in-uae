@@ -85,7 +85,7 @@ export function ReviewSection({
     <section className="mt-20 max-w-6xl md:px-0 px-3  mx-auto">
       <div className="flex items-center justify-center text-center flex-col">
         <h2 className="font-bold whitespace-normal md:text-5xl text-3xl wrap-break-word">
-          What Our Customers Says
+          What Our Customers Say
         </h2>
 
         <div className="flex md:flex-row flex-col gap-3 mt-5 items-center justify-center">
@@ -96,7 +96,7 @@ export function ReviewSection({
                 <Star key={i} className="text-yellow-400 fill-yellow-400" />
               ))}
           </div>
-          <p className="font-medium">5 Starts Google Reviews</p>
+          <p className="font-medium">5 Stars Google Reviews</p>
         </div>
       </div>
 

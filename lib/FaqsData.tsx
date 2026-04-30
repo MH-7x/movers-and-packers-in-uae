@@ -47,7 +47,7 @@ export const HomePageFAQs: FAQData[] = [
     answer: (
       <>
         <p>
-          Contact us by <Link href={"tel:0507745691"}>phone</Link> ,
+          Contact us by <Link href={"tel:+971507745691"}>phone</Link> ,
           <Link
             href={
               "https://wa.me/+971507745691?text=I%20Come%20From%20Your%20Website%20and%20I%20Need%20Moving%20Services"
@@ -169,6 +169,30 @@ export const HomePageFAQs: FAQData[] = [
           Ruwais and Khor Fakkan.
         </p>
         <p>Cross-emirate moves are part of our regular work.</p>
+      </>
+    ),
+  },
+  {
+    question: "Do you provide pet moving services in UAE?",
+    answer: (
+      <>
+        <p>
+          Yes. We provide pet moving services across the UAE, including Dubai
+          and others emirates. Our team is trained to handle pets with care and
+          ensure a safe and comfortable move for your furry family members.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "Do you provide piano moving services in UAE?",
+    answer: (
+      <>
+        <p>
+          Yes. We provide piano moving services across the UAE, including Dubai
+          and others emirates. Our team is trained to handle pianos with care
+          and ensure a safe and comfortable move for your musical instrument.
+        </p>
       </>
     ),
   },

@@ -6,6 +6,7 @@ import Footer from "@/components/layout/Footer";
 import { Toaster } from "@/components/ui/sonner";
 import Script from "next/script";
 import { APP, MoversAndPackersSchema } from "@/lib/App";
+import ActionButton from "@/components/ActionButtons";
 
 const familjenGrotesk = Familjen_Grotesk({
   variable: "--font-familjen-grotesk",
@@ -72,6 +73,7 @@ export default function RootLayout({
 
         <Footer />
         <Toaster position="top-center" />
+        <ActionButton />
       </body>
     </html>
   );

@@ -7,6 +7,7 @@ import {
   ChevronDown,
   ChevronRight,
   Menu,
+  Clock,
 } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
@@ -79,6 +80,7 @@ const otherPagesMenuItems = [
   { label: "Our Moving Prices", href: "#" },
   { label: "How To Hire", href: "/how-to-hire" },
   { label: "How To Pay", href: "/how-to-pay" },
+  { label: "Blogs", href: "/blogs" },
 ];
 
 interface MenuItem {
@@ -342,10 +344,10 @@ export default function Navbar() {
                     Telephone
                   </span>
                   <a
-                    href="tel:0507745691"
-                    className="text-gray-800 font-bold text-base hover:text-primary transition-colors"
+                    href="tel:+971507745691"
+                    className="text-gray-800 font-bold text-sm hover:text-primary transition-colors"
                   >
-                    (050) 7745691
+                    050 7745691
                   </a>
                 </div>
               </div>
@@ -361,10 +363,26 @@ export default function Navbar() {
                     style={{
                       fontStyle: "normal",
                     }}
-                    className="text-gray-800 font-bold text-base"
+                    className="text-gray-800 font-bold text-sm"
                   >
                     16 13 St, Ras Al Khor Industrial Area 1 - Dubai
                   </address>
+                </div>
+              </div>
+              <div className="flex items-center space-x-3">
+                <Clock className="w-8 h-8 text-primary" strokeWidth={1.5} />
+                <div className="flex flex-col">
+                  <span className="text-gray-500 text-[11px] font-bold uppercase tracking-widest mb-0.5">
+                    Operating Hours
+                  </span>
+                  <span
+                    style={{
+                      fontStyle: "normal",
+                    }}
+                    className="text-gray-800 font-bold text-sm"
+                  >
+                    Open 24/7
+                  </span>
                 </div>
               </div>
 

@@ -281,7 +281,7 @@ export default function HowToHire() {
           </div>
           <div className="flex gap-3 flex-shrink-0">
             <a
-              href="tel:0507745691"
+              href="tel:+971507745691"
               className="bg-primary hover:bg-primary/90 transition-colors text-white font-medium text-sm px-6 py-3 rounded-xl"
             >
               Call Now

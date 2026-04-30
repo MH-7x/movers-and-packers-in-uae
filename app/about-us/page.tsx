@@ -508,7 +508,7 @@ const ServicesSection = () => {
 
             <div className="shrink-0 w-full lg:w-auto">
               <Link
-                href="tel:0507745691"
+                href="tel:+971507745691"
                 title="Contact Movers and Packers in UAE"
               >
                 <button className="w-full cursor-pointer lg:w-auto inline-flex items-center justify-center bg-white font-bold md:px-8 px-4 md:py-4 py-3 rounded-xl md:text-lg">

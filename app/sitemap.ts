@@ -7,7 +7,7 @@ const pages: MetadataRoute.Sitemap = [
     changeFrequency: "daily",
     priority: 1.0,
     images: ["/mover-and-packers-in-uae.jpg"],
-    lastModified: "2026-04-28",
+    lastModified: "2026-04-30",
   },
   {
     url: "/about-us",
@@ -22,6 +22,13 @@ const pages: MetadataRoute.Sitemap = [
     priority: 0.9,
     images: ["/about-us-professional-movers-packers-team-dubai-uae.jpg"],
     lastModified: "2026-04-28",
+  },
+  {
+    url: "/blogs",
+    changeFrequency: "weekly",
+    priority: 0.7,
+    images: ["/movers-and-packers-in-uae-blogs.jpg"],
+    lastModified: "2026-04-30",
   },
   // -------------------------------------------------------
 

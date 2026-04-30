@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-html-link-for-pages */
 "use client";
 import { MailCheck, HeadphonesIcon, MapPinCheck } from "lucide-react";
 import Image from "next/image";
@@ -24,7 +25,7 @@ const Footer = () => {
             </div>
             <div className="flex flex-col text-white tracking-wide">
               <span className="font-bold text-[15px] mb-1">Phone:</span>
-              <a className="text-[15px] opacity-85" href="tel:0507745691">
+              <a className="text-[15px] opacity-85" href="tel:+971507745691">
                 (050) 7745691
               </a>
             </div>
@@ -215,10 +216,10 @@ const Footer = () => {
                 </li>
                 <li>
                   <a
-                    href="/moving-services"
+                    href="/blogs"
                     className="text-[#a5abb1] hover:text-white text-[13.5px] transition-colors"
                   >
-                    Our Services
+                    Blogs
                   </a>
                 </li>
                 <li>
@@ -372,13 +373,13 @@ const Footer = () => {
           <div className="mt-16 border-t border-[#3a424b] pt-8 flex justify-between items-center md:flex-row flex-col">
             <p className="text-[#a5abb1] text-[13.5px] md:text-start text-center">
               Copyright © 2026{" "}
-              <span className="text-white font-medium">
-                Movers and Packers in UAE
-              </span>
+              <Link href="/" className="text-white font-medium">
+                Movers and Packers in UAE نقل الأثاث في الإمارات
+              </Link>
               . All rights reserved.
             </p>
             <div className="flex gap-3">
-              <a className="text-[#a5abb1] text-[13.5px]" href="#">
+              <a className="text-[#a5abb1] text-[13.5px]" href="/sitemap.xml">
                 Sitemap
               </a>
               <a
