@@ -79,7 +79,7 @@ const QuotationSection = ({
               strokeWidth={1}
               className="shrink-0 text-primary"
             />
-            <p>Call Us — talk to our team directly and get answers quick</p>
+            <p>Call Us — talk to our team and get answers quickly</p>
           </li>
           <li className="flex flex-col items-center gap-y-2 text-muted-foreground leading-tight text-center text-sm">
             <MessageCircleCheck

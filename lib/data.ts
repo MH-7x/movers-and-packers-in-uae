@@ -5,7 +5,7 @@ export const services = [
       {
         name: "House Moving",
         description:
-          "Full home relocations across any emirate. We pack, load, transport, and set up at the other end.",
+          "Full home relocation across any emirate. We handle packing, transport, unloading, and furniture placement — one team from start to finish.",
         href: "/house-shifting-dubai",
         img: {
           src: "/ser/house-moving-dubai-uae-branded-service.jpg",
@@ -15,7 +15,7 @@ export const services = [
       {
         name: "Villa Moving",
         description:
-          "Large-scale moves with full furniture dismantling and reassembly. We handle the size, you handle the keys.",
+          "Large-scale villa moves with furniture dismantling and complete reassembly. We assign the right crew size to ensure nothing is rushed or overlooked.",
         href: "/villa-movers-in-dubai",
         img: {
           src: "/ser/villa-moving-dubai-luxury-relocation-service.jpg",
@@ -25,7 +25,7 @@ export const services = [
       {
         name: "Apartment & Flat Shifting",
         description:
-          "Studio to 5-bedroom moves with same-day service available. We work around your schedule and handle every floor.",
+          "Studio to five-bedroom apartment moves with same-day service available for urgent situations.",
         href: "/apartment-movers-dubai",
         img: {
           src: "/ser/apartment-flat-shifting-dubai-uae.jpg",
@@ -35,7 +35,7 @@ export const services = [
       {
         name: "Home Shifting Services",
         description:
-          "Door-to-door household relocation with packing materials included. Everything placed in the right room.",
+          "Complete door-to-door household relocation with careful packing of all room types, including bedrooms and kitchens.",
         href: "/house-shifting-dubai",
         img: {
           src: "/ser/home-shifting-services-dubai-uae.jpg",
@@ -51,7 +51,7 @@ export const services = [
       {
         name: "Office Relocation",
         description:
-          "Minimal downtime. IT equipment handled carefully, workstations labelled, and everything set up correctly from day one.",
+          "Office moves handled with minimal downtime. IT equipment, workstations, and files are packed securely and delivered in proper order.",
         href: "/office-movers-in-dubai",
         img: {
           src: "/ser/office-relocation-dubai-it-moving.jpg",
@@ -61,7 +61,7 @@ export const services = [
       {
         name: "Warehouse Moving",
         description:
-          "Heavy goods, industrial shelving, and bulk storage handled with the right team and trucks for large-scale jobs.",
+          "Heavy-duty logistics for warehouses and industrial operations with the right vehicles and experienced crew.",
         href: "#",
         img: {
           src: "/ser/warehouse-moving-dubai-industrial-service.jpg",
@@ -71,7 +71,7 @@ export const services = [
       {
         name: "Restaurant Furniture Moving",
         description:
-          "Kitchen equipment, counters, chairs, and fixtures moved safely without disrupting your operations.",
+          "Safe handling of kitchen equipment, counters, fixtures, and seating. We understand the bulky and fragile nature of restaurant setups.",
         href: "/restaurant-furniture-moving-uae",
         img: {
           src: "/ser/restaurant-furniture-moving-dubai.jpg",
@@ -81,7 +81,7 @@ export const services = [
       {
         name: "Bank & Hospital Furniture Moving",
         description:
-          "Heavy safes, medical equipment, and sensitive assets moved securely with full care.",
+          "Secure relocation of heavy safes, confidential documents, and sensitive medical equipment with full professionalism.",
         href: "/bank-furniture-moving-uae",
         img: {
           src: "/ser/bank-hospital-furniture-moving-dubai.jpg",
@@ -97,7 +97,7 @@ export const services = [
       {
         name: "All Kinds of Furniture Moving",
         description:
-          "Single items or full loads including sofas, beds, wardrobes, and dining sets — packed properly and delivered safely.",
+          "Single item or full home furniture moving including sofas, wardrobes, beds, and dining sets handled with care.",
         href: "/furniture-moving-services-uae",
         img: {
           src: "/ser/furniture-moving-dubai-uae-service.jpg",
@@ -107,7 +107,7 @@ export const services = [
       {
         name: "Single Furniture Delivery Service",
         description:
-          "Need just one item moved? We provide fast and reliable single-item delivery anywhere in the UAE.",
+          "Fast and reliable single-item delivery service across the UAE when you don’t need a full moving team.",
         href: "/single-furniture-moving-uae",
         img: {
           src: "/ser/single-furniture-delivery-dubai.jpg",
@@ -117,7 +117,7 @@ export const services = [
       {
         name: "Industrial Machinery & Heavy Safes",
         description:
-          "Specialist rigging team for heavy, awkward, or fragile industrial items. Done safely and professionally.",
+          "Specialist handling for oversized and heavy items with proper equipment and trained professionals.",
         href: "/",
         img: {
           src: "/ser/industrial-machinery-heavy-safe-moving-dubai.jpg",
@@ -127,7 +127,7 @@ export const services = [
       {
         name: "Packing Services",
         description:
-          "Complete packing solutions including bubble wrap, stretch film, blankets, and labeled boxes — no effort required from you.",
+          "High-quality packing using bubble wrap, stretch film, and moving blankets to ensure your items stay fully protected.",
         href: "/packing-services-in-dubai",
         img: {
           src: "/ser/packing-services-dubai-bubble-wrap.jpg",
@@ -137,55 +137,55 @@ export const services = [
     ],
   },
 ];
-
 export const movingFeatures = [
   {
-    title: "25+ Years of Experience",
+    title: "25+ Years of Moving Experience",
     highlight: "Registered Since 1998",
     description:
-      "We have been doing this since 1998. That is more than 25 years of moves — houses, villas, offices, warehouses — across every part of the UAE. We know what can go wrong and how to prevent it.",
+      "Most freelance movers didn't exist in 1998. We did. And we're still here because quality services and honest pricing are the only things that keep customers coming back.",
   },
   {
     title: "No Hidden Charges",
-    highlight: "The Quote Is the Price",
+    highlight: "What You're Quoted Is What You Pay",
     description:
-      "When we send a quote for 1,000 AED, that is exactly what you pay. Nothing added at the end for extra labour, fuel, or materials. What you see is what you pay.",
+      "You get a clear quote on WhatsApp or email. The price you see is the price you pay. 1,000 AED quoted means 1,000 AED charged — nothing more.",
   },
   {
     title: "Pay Upon Satisfaction",
-    highlight: "Job First, Payment After",
+    highlight: "100% Post-Job Payment",
     description:
-      "You do not pay until the work is finished and you are satisfied. We stay until everything is in place. Payment only comes when you are happy.",
+      "You pay after the move is done and you're happy with it. We don't take your money and disappear. This is something most moving companies in UAE don't offer — and it matters.",
   },
   {
-    title: "8 RTA-Approved Enclosed Box Trucks",
+    title: "RTA-Approved Enclosed Box Trucks",
     highlight: "Fleet Quality",
     description:
-      "Our fleet of 3-ton and 4-ton enclosed trucks is registered with the RTA. They are built to protect your belongings in the UAE's conditions — extreme heat, dust, and sandstorms included.",
-  },
-  {
-    title: "100% Insurance Coverage on Every Move",
-    highlight: "Fully Insured",
-    description:
-      "Every move is fully insured. If something goes wrong, you are covered. This is included in the service — not added as an optional extra.",
-  },
-  {
-    title: "English & Arabic Speaking Team",
-    highlight: "Bilingual Support",
-    description:
-      "Our team speaks both English and Arabic. Whether you are describing a complex office layout or just telling us where the sofa goes — there is no communication barrier.",
+      "Our fleet is registered and road-legal in the UAE. Enclosed trucks protect your items from heat and sandstorms — which are real risks in this country.",
   },
   {
     title: "Same-Day Moving Available",
     highlight: "Urgent Service",
     description:
-      "Just arrived in the UAE? Need to move tomorrow? We offer same-day service for urgent situations. Contact us and describe your move — we will tell you what we can arrange.",
+      "Just arrived in the UAE or need to move urgently? Call us. We arrange same-day services for situations that can't wait.",
+  },
+
+  {
+    title: "Multilingual Team",
+    highlight: "English & Arabic Speaking Staff",
+    description:
+      "Our team communicates in both English and Arabic. No language barriers, no miscommunications on moving day.",
   },
   {
-    title: "Free Quote via WhatsApp, Email, or Phone",
+    title: "Free Moving Quotes On WhatsApp or Email",
     highlight: "No Obligation",
     description:
-      "Contact us any way that works for you. Describe your move and we will send back a clear, itemised quote — no obligation, no pressure, no chasing.",
+      "Contact us via WhatsApp, phone, or email. Describe your move. We send you a full, itemised quote at no charge.",
+  },
+  {
+    title: "100% Insurance Coverage on Every Move",
+    highlight: "Fully Insured",
+    description:
+      "Every move is insured. If something goes wrong, you're covered.",
   },
 ];
 
@@ -205,7 +205,7 @@ export const movingProcess = [
     step: 1,
     title: "Site Inspection",
     description:
-      "We visit your current location to assess the volume, access points, and any items that need special handling. This keeps the quote accurate and the move smooth.",
+      "We survey your property first. This lets us assess the volume, access points, and right truck size — no surprises on moving day.",
     icon: Eye,
     arrow: true,
   },
@@ -213,7 +213,7 @@ export const movingProcess = [
     step: 2,
     title: "Dismantling",
     description:
-      "Our carpenters take apart beds, wardrobes, shelving units, and anything else that needs disassembly before it can be safely moved.",
+      "Our carpenters disassemble beds, wardrobes, shelves, and any furniture that needs breaking down before the move.",
     icon: Wrench,
     arrow: true,
   },
@@ -221,7 +221,7 @@ export const movingProcess = [
     step: 3,
     title: "Packing",
     description:
-      "We pack everything using the right materials — bubble wrap for fragile items, stretch film for soft furniture, and fabric blankets for large pieces.",
+      "Everything is packed with proper materials — bubble wrap for fragile items, stretch film for furniture, and fabric blankets for large pieces. ",
     icon: Package,
     arrow: true,
   },
@@ -229,14 +229,14 @@ export const movingProcess = [
     step: 4,
     title: "Labelling",
     description:
-      "Every box is labelled by room. When it arrives at the new place, it goes straight to the right space — no guessing, no sorting through random boxes.",
+      "Every box is labelled by room. When we arrive at your new place, unpacking is faster and nothing ends up in the wrong room.",
     icon: Tag,
   },
   {
     step: 5,
     title: "Loading",
     description:
-      "Our team loads the truck carefully — heavy items first, fragile items secured. Not just stacked and hoped for.",
+      "Our team loads the truck carefully. Heavy items go in first, fragile ones go on top, and nothing gets thrown.",
     icon: Truck,
     arrow: true,
   },
@@ -244,7 +244,7 @@ export const movingProcess = [
     step: 6,
     title: "Transport",
     description:
-      "We use fully enclosed box trucks to protect everything during the journey. No exposure to the UAE heat, dust, or sandstorms on route.",
+      "We move your items in fully enclosed box trucks — ensuring your belongings, furniture, electronics, and valuables are protected from the UAE heat and dust.",
     icon: ShieldCheck,
     arrow: true,
   },
@@ -252,7 +252,7 @@ export const movingProcess = [
     step: 7,
     title: "Unloading & Installation",
     description:
-      "We unload at the new location, reassemble all furniture, and place everything in the room it belongs in.",
+      "At your new place, our moving team unload, reassemble furniture, and place everything exactly where you want it.",
     icon: Home,
     arrow: true,
   },
@@ -260,11 +260,10 @@ export const movingProcess = [
     step: 8,
     title: "Optional Unpacking",
     description:
-      "If you want us to unpack boxes and sort everything out too, we can do that. Just let us know when you book.",
+      "If you want full unpacking service, we can unbox everything and clear the packaging too.",
     icon: PackageOpen,
   },
 ];
-
 export const comparisonData = [
   {
     factor: "Best for",
@@ -308,72 +307,62 @@ export const locations = [
   {
     title: "Movers and Packers Dubai",
     description:
-      "Our home base in Al Mankhool. House moving, villa relocation, apartment shifting, office moving, and furniture delivery — all Dubai districts covered.",
+      "This is where we're based — Ras Al Khor Industrial Area 1, Dubai. We cover every district: house moves, villa relocations, apartment shifting, office moves, and single furniture delivery. If you're in Dubai, you're in our backyard.",
     href: "/",
-    icon: "MapPin",
   },
   {
     title: "Movers and Packers Abu Dhabi",
     description:
-      "Professional home shifting, villa moves, and office relocation across Abu Dhabi — city apartments, villa communities, and new developments all covered.",
+      "Abu Dhabi moves come with their own quirks — big villa communities, newer developments with tight access, and long drives from Dubai. We've handled all of it, including home shifting, office relocation, and villa moves across the capital.",
     href: "#",
-    icon: "Building2",
   },
   {
     title: "Movers and Packers Sharjah",
     description:
-      "House moving, flat shifting, and cross-emirate relocations between Sharjah and Dubai. Packing services and storage available for Sharjah moves.",
+      "A lot of our Sharjah jobs are cross-emirate — people shifting between Sharjah and Dubai. We know both sides well. House moves, flat shifting, packing services, and storage are all available.",
     href: "/movers-and-packers-in-sharjah",
-    icon: "ArrowLeftRight",
   },
   {
     title: "Movers and Packers Ajman",
     description:
-      "Apartment moves, flat shifting, furniture transport, and office relocation in Ajman — full emirate coverage with transparent, no-hidden-charge pricing.",
+      "Ajman is compact but busy. Apartment moves, flat shifting, furniture transport, and office relocation — full emirate coverage with straightforward pricing. What we quote is what you pay.",
     href: "/movers-in-ajman",
-    icon: "Wallet",
   },
   {
     title: "Movers and Packers Ras Al Khaimah",
     description:
-      "Full home moving, villa relocation, and furniture transport in Ras Al Khaimah. Enclosed trucks used for the journey to protect belongings on longer routes.",
+      "RAK is one of the longer drives from Dubai, so we use enclosed trucks for every move. Your furniture and belongings stay protected the whole journey — no dust, no heat damage.",
     href: "/movers-in-ras-al-khaimah",
-    icon: "Shield",
   },
   {
     title: "Movers and Packers Al Ain",
     description:
-      "House shifting, apartment moving, and office relocation across Al Ain city and surrounding districts — including cross-emirate moves to Abu Dhabi or Dubai.",
+      "Al Ain sits on the Abu Dhabi–Dubai border, and many moves here cross emirates. We handle house shifting, apartment moves, and office relocation across the city and surrounding districts.",
     href: "/movers-in-al-ain",
-    icon: "Compass",
   },
   {
     title: "Movers and Packers Umm Al Quwain",
     description:
-      "Home moving, furniture transport, and flat shifting in Umm Al Quwain. Cross-emirate relocations to Dubai, Sharjah, or Ajman also handled.",
+      "Smaller emirate, same service. Home moves, furniture transport, and flat shifting in Umm Al Quwain, plus cross-emirate runs to Dubai, Sharjah, and Ajman.",
     href: "/movers-in-umm-al-quwain",
-    icon: "Anchor",
   },
   {
     title: "Movers and Packers Fujairah",
     description:
-      "House moving, villa shifting, and office relocation across Fujairah and the east coast. Packing services and enclosed truck transport included.",
+      "Fujairah and the east coast require extra planning due to mountain routes. We handle house moves, villa shifting, office relocation, and packing services with enclosed truck transport.",
     href: "/movers-in-fujairah",
-    icon: "Mountain",
   },
   {
     title: "Movers and Packers Al Ruwais",
     description:
-      "Home moving and furniture transport in Al Ruwais and the western region of Abu Dhabi. Cross-emirate moves also arranged from this area.",
+      "Al Ruwais is in the far west of Abu Dhabi — a long-distance route we fully cover. Home moving and furniture transport in the western region, plus cross-emirate relocations.",
     href: "#",
-    icon: "Navigation",
   },
   {
     title: "Movers and Packers Khor Fakkan",
     description:
-      "House shifting, apartment moving, and furniture transport in Khor Fakkan. Covered as part of our Fujairah moving service — same team, same standards.",
+      "Khor Fakkan is covered under our Fujairah operations — same team, same trucks, same pricing. House shifting, apartment moves, and furniture transport across the east coast.",
     href: "#",
-    icon: "Ship",
   },
 ];
 

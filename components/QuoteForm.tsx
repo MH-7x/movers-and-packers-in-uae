@@ -95,6 +95,7 @@ const QuoteForm = ({ btnText }: { btnText?: string }) => {
         type="text"
         id="name"
         name="name"
+        aria-label="your name"
         placeholder="Your Name *"
         className="py-3 px-2 border-b border-b-white focus:border-b-primary outline-none"
       />
@@ -102,6 +103,7 @@ const QuoteForm = ({ btnText }: { btnText?: string }) => {
         type="number"
         id="phone"
         name="phone"
+        aria-label="phone number"
         placeholder="Phone No *"
         className="py-3 px-2 border-b border-b-white focus:border-b-primary outline-none"
       />
@@ -109,6 +111,7 @@ const QuoteForm = ({ btnText }: { btnText?: string }) => {
         type="text"
         name="movingFrom"
         id="movingFrom"
+        aria-label="moving from location"
         placeholder="Moving From *"
         className="py-3 px-2 border-b border-b-white focus:border-b-primary outline-none"
       />
@@ -116,12 +119,14 @@ const QuoteForm = ({ btnText }: { btnText?: string }) => {
         type="text"
         name="movingTo"
         id="MovingTo"
+        aria-label="moving to location"
         placeholder="Moving To *"
         className="py-3 px-2 border-b border-b-white focus:border-b-primary outline-none"
       />
       <textarea
         name="message"
         id="message"
+        aria-label="extra details about the move"
         placeholder="More Details About Your Move.."
         className="py-3 px-2 border-b border-b-white focus:border-b-primary outline-none col-span-full min-h-28"
       ></textarea>

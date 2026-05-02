@@ -164,7 +164,7 @@ export default function Navbar() {
 
           {/* Action Items (Right) */}
           <div className="flex items-center gap-4">
-            <Button variant={"secondary"}>
+            <Button callBtn variant={"secondary"}>
               <PhoneCall /> Call Now
             </Button>
             <button
@@ -188,6 +188,7 @@ export default function Navbar() {
                 <Link
                   key={index}
                   href={item.href}
+                  onClick={() => setIsMobileMenuOpen(false)}
                   className={`block font-bold text-base py-3 border-b border-gray-50 ${
                     index === 0 ? "text-primary" : "text-gray-800"
                   }`}
@@ -231,6 +232,7 @@ export default function Navbar() {
                               {service.submenu.map((subitem, subindex) => (
                                 <Link
                                   key={subindex}
+                                  onClick={() => setIsMobileMenuOpen(false)}
                                   href={subitem.href}
                                   className="block text-gray-500 text-sm py-1.5"
                                 >
@@ -244,6 +246,7 @@ export default function Navbar() {
                         <Link
                           key={index}
                           href={service.href}
+                          onClick={() => setIsMobileMenuOpen(false)}
                           className="block text-gray-600 text-sm py-2"
                         >
                           {service.label}

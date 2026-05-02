@@ -3,6 +3,7 @@ import { Star } from "lucide-react";
 import { Carousel, CarouselContent, CarouselItem } from "./ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
 import GoogleReviewCard from "@/public/GoogleReviewCard";
+import { Button } from "./ui/button";
 
 const googleReviews = [
   {
@@ -96,7 +97,16 @@ export function ReviewSection({
                 <Star key={i} className="text-yellow-400 fill-yellow-400" />
               ))}
           </div>
-          <p className="font-medium">5 Stars Google Reviews</p>
+          <p className="font-medium block">5 Stars Google Reviews</p>
+          <Button
+            variant={"outline"}
+            size={"sm"}
+            link="https://www.google.com/maps/place/Movers+and+Packers+in+UAE+%D9%86%D9%82%D9%84+%D8%A7%D9%84%D8%A3%D8%AB%D8%A7%D8%AB+%D9%81%D9%8A+%D8%A7%D9%84%D8%A5%D9%85%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/@25.1742976,54.7599089,10z/data=!4m12!1m2!2m1!1zbW92ZXJzIGFuZCBwYWNrZXJzIGluIHVhZSDZhtmC2YQg2KfZhNij2KvYp9irINmB2Yog2KfZhNil2YXYp9ix2KfYquKArQ!3m8!1s0x3e5f67f26b9647f1:0x51a249f2372b6e1b!8m2!3d25.1742976!4d55.3366911!9m1!1b1!15sCkZtb3ZlcnMgYW5kIHBhY2tlcnMgaW4gdWFlINmG2YLZhCDYp9mE2KPYq9in2Ksg2YHZiiDYp9mE2KXZhdin2LHYp9iq4oCtkgEObW92aW5nX2NvbXBhbnngAQA!16s%2Fg%2F11n9c7k8qv?entry=ttu&g_ep=EgoyMDI2MDQyOS4wIKXMDSoASAFQAw%3D%3D"
+            className="bg-blue-600 text-white"
+            rel="noopener noreferrer"
+          >
+            Read All Reviews
+          </Button>
         </div>
       </div>
 

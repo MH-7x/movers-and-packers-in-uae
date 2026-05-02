@@ -7,22 +7,14 @@ export const HomePageFAQs: FAQData[] = [
     answer: (
       <>
         <p>
-          Moving costs depend on the size of your home, the distance, and the
-          services you need. A studio apartment move costs less than a full
-          villa relocation.
+          Prices vary depending on the size of your move, the distance, and the
+          services you need. A studio apartment move within Dubai typically
+          costs less than a full villa relocation to another emirate.
         </p>
         <p>
-          We provide a detailed quote after you describe your move. The quoted
-          price is the final price — no hidden charges added at the end.
+          Contact us with your move details and we&apos;ll give you an exact,
+          itemized quote — no guesswork, no vague ranges.
         </p>
-        <h3>Average Moving Costs (Local)</h3>
-        <ul>
-          <li>Studio Apartment: 800 – 1,300 AED</li>
-          <li>1-Bedroom Apartment: 1,100 – 1,800 AED</li>
-          <li>2-Bedroom Apartment: 1,800 – 3,200 AED</li>
-          <li>3-Bedroom Villa: 3,500 – 5,500 AED</li>
-          <li>Large Villa (4+ Bed): 6,000+ AED</li>
-        </ul>
       </>
     ),
   },
@@ -31,13 +23,13 @@ export const HomePageFAQs: FAQData[] = [
     answer: (
       <>
         <p>
-          The best moving company is one that is legally registered, has proper
-          trucks, trained staff, and a clear pricing policy.
+          The best movers in UAE are the ones who show up on time, handle your
+          items carefully, charge what they quoted, and let you pay after
+          you&apos;re satisfied.
         </p>
         <p>
-          We have been operating as a licensed moving company in the UAE since
-          1998, with thousands of completed moves and a verified Google Business
-          profile you can check before you book.
+          We&apos;ve been doing all four since 1998. Check our Google Business
+          Profile for reviews.
         </p>
       </>
     ),
@@ -47,7 +39,7 @@ export const HomePageFAQs: FAQData[] = [
     answer: (
       <>
         <p>
-          Contact us by <Link href={"tel:+971507745691"}>phone</Link> ,
+          Contact us by <Link href={"tel:+971507745691"}>phone</Link>,{" "}
           <Link
             href={
               "https://wa.me/+971507745691?text=I%20Come%20From%20Your%20Website%20and%20I%20Need%20Moving%20Services"
@@ -55,13 +47,13 @@ export const HomePageFAQs: FAQData[] = [
           >
             WhatsApp
           </Link>{" "}
-          , or through the{" "}
+          or through the{" "}
           <Link href={"/get-quote"}>quote form on this site.</Link>
         </p>
         <p>
-          Share the size of your home, your current location, and your moving
-          destination. We will send a full quote and, once confirmed, our team
-          will arrive on the agreed date.
+          Describe your move (location, size, and date), and we&apos;ll send a
+          full quote. Once you confirm, we schedule the move and send our team.
+          It takes about 10 minutes to get a quote.
         </p>
       </>
     ),
@@ -71,12 +63,11 @@ export const HomePageFAQs: FAQData[] = [
     answer: (
       <>
         <p>
-          Yes. We bring everything needed, including boxes, bubble wrap, stretch
-          film, and fabric blankets.
+          Yes, we do. Our team brings bubble wrap, stretch film, moving
+          blankets, and boxes.
         </p>
         <p>
-          Packing services can be added to any moving package or booked as a
-          standalone service if you only need help getting everything ready.
+          You don&apos;t need to source anything yourself unless you prefer to.
         </p>
       </>
     ),
@@ -86,12 +77,12 @@ export const HomePageFAQs: FAQData[] = [
     answer: (
       <>
         <p>
-          For a planned move, booking 1 to 2 weeks ahead gives you good
-          flexibility on date and time.
+          For standard moves, booking 3–7 days ahead is usually enough. For
+          large villa or commercial moves, 2–3 weeks is better.
         </p>
         <p>
-          If you need to move urgently, we offer same-day service depending on
-          availability. Contact us and we will let you know what is possible.
+          If you need same-day moving services in UAE, call us directly and
+          we&apos;ll see what we can arrange.
         </p>
       </>
     ),
@@ -101,12 +92,12 @@ export const HomePageFAQs: FAQData[] = [
     answer: (
       <>
         <p>
-          Our moves include 100% insurance coverage. If anything is damaged
-          during the move, you are covered.
+          Yes. Every move is covered by insurance. If something goes wrong,
+          you&apos;re covered.
         </p>
         <p>
-          This is included in the service and is not added as an optional extra
-          at the end of the quote.
+          If you&apos;re comparing moving companies, always ask about insurance
+          — many freelance movers aren&apos;t covered at all.
         </p>
       </>
     ),
@@ -115,13 +106,10 @@ export const HomePageFAQs: FAQData[] = [
     question: "Can I get same-day moving services in UAE?",
     answer: (
       <>
+        <p>Yes. We offer same-day availability for urgent moves.</p>
         <p>
-          Yes. If you have just arrived in the UAE or need to move at short
-          notice, contact us and we will check same-day availability.
-        </p>
-        <p>
-          Depending on your location and move size, we can usually arrange
-          something quickly.
+          Call us as early as possible and we&apos;ll confirm whether same-day
+          service is possible for your date and location.
         </p>
       </>
     ),
@@ -132,13 +120,14 @@ export const HomePageFAQs: FAQData[] = [
     answer: (
       <>
         <p>
-          An open truck works for short, straightforward furniture shifts. It is
-          easier to load and costs less.
+          An open truck is fine for quick local furniture moves where items
+          aren&apos;t heat-sensitive.
         </p>
         <p>
-          An enclosed box truck is the better option for full home or office
-          moves, especially in the UAE where high temperatures and sandstorms
-          can damage furniture and electronics during transport.
+          An enclosed box truck is the right choice for full home or office
+          moves — especially in UAE summers where temperatures exceed 45°C and
+          sandstorms can hit unexpectedly. Our enclosed trucks keep your items
+          protected the whole journey.
         </p>
       </>
     ),
@@ -148,13 +137,11 @@ export const HomePageFAQs: FAQData[] = [
     answer: (
       <>
         <p>
-          Yes. We offer short-term and long-term storage in a secure facility,
-          self storage with flexible access, and climate-aware furniture
-          storage.
+          Yes. We have short-term and long-term storage options at our facility.
         </p>
         <p>
-          Storage is useful when your new home or office is not ready at the
-          time of the move.
+          It&apos;s useful if your new place isn&apos;t ready yet, or if
+          you&apos;re downsizing and need space for extra furniture.
         </p>
       </>
     ),
@@ -165,10 +152,26 @@ export const HomePageFAQs: FAQData[] = [
       <>
         <p>
           We cover all seven emirates — Dubai, Abu Dhabi, Sharjah, Ajman, Ras Al
-          Khaimah, Al Ain, Umm Al Quwain, and Fujairah — plus areas including Al
-          Ruwais and Khor Fakkan.
+          Khaimah, Fujairah, and Umm Al Quwain — plus areas like Al Ain, Al
+          Ruwais, and Khor Fakkan.
         </p>
-        <p>Cross-emirate moves are part of our regular work.</p>
+        <p>One call covers everything, including cross-emirate moves.</p>
+      </>
+    ),
+  },
+  {
+    question: "Do you handle international moving from UAE?",
+    answer: (
+      <>
+        <p>
+          Our core services cover moves within the UAE — between homes, offices,
+          and emirates.
+        </p>
+        <p>
+          For international moving, we work alongside vetted international
+          movers and can help coordinate the UAE side of the move, including
+          packing, storage, and transport to the port or airport.
+        </p>
       </>
     ),
   },
@@ -2623,7 +2626,7 @@ export const PaymentFAQs = [
     ),
   },
   {
-    question: "What if I'm not satisfied with the move?",
+    question: "What if I&apos;m not satisfied with the move?",
     answer: (
       <>
         <p>

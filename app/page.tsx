@@ -43,7 +43,7 @@ export const metadata = MetadataTemplate({
   data: {
     meta: {
       title: "Movers and Packers in UAE | Safe Moving Across The UAE",
-      desc: "Trusted movers and packers in UAE since 1998. We move homes, villas, offices & furniture across dubai and all emirates. get a free quote!",
+      desc: "Movers and Packers in UAE. We provide moving services for homes, villas, offices & furniture across Dubai and all Emirates. Call / WhatsApp us for a free quote",
     },
     image: {
       path: "/mover-and-packers-in-uae.jpg",
@@ -78,9 +78,10 @@ export default function Home() {
               Trusted Moving Company
             </h1>
             <p className="mt-5 text-lg text-gray-200 max-w-3xl leading-tight md:text-start text-center">
-              Professional moving company in UAE — licensed, insured, and
-              trusted for 25+ years. House moves, villa relocations, office
-              shifting, furniture moving, and storage — all emirates covered.
+              Professional moving company in UAE, we are licensed, experienced,
+              and operating since 1998. Our services include House moving, villa
+              relocations, office shifting, furniture moving, and storage
+              services. All emirates covered.
             </p>
             <div className="md:mt-5 mt-8 flex gap-3 text-shadow-none md:flex-row flex-col ">
               <Button link="/get-quote" size={"lg"} className="md:w-max w-full">
@@ -103,21 +104,25 @@ export default function Home() {
         className="max-w-6xl mt-10 md:px-0 px-4 mx-auto grid md:grid-cols-2 lg:grid-cols-3 grid-cols-1 gap-10"
       >
         <div className="flex items-center gap-x-3 border-b-2 border-gray-300 pb-3">
-          <AlarmCheck className="text-primary" size={25} />
+          <AlarmCheck className="text-primary" size={25} strokeWidth={1.3} />
           <p className="text-lg text-foreground font-medium">
             5-10 Minutes Response Time
           </p>
         </div>
         <div className="flex items-center gap-x-3 border-b-2 border-gray-300 pb-3">
-          <UserCheck2 className="text-primary" size={25} />
+          <UserCheck2 className="text-primary" size={25} strokeWidth={1.3} />
           <p className="text-lg text-foreground font-medium">
             25+ Years of Moving Experience
           </p>
         </div>
         <div className="flex items-center gap-x-3 border-b-2 border-gray-300 pb-3">
-          <PackageCheckIcon className="text-primary" size={25} />
+          <PackageCheckIcon
+            className="text-primary"
+            size={25}
+            strokeWidth={1.3}
+          />
           <p className="text-lg text-foreground font-medium">
-            1000+ of Moves Completed in UAE
+            Thousands of Moves Completed in UAE
           </p>
         </div>
       </div>
@@ -126,13 +131,17 @@ export default function Home() {
         className="max-w-3xl mt-7 md:px-0 px-4 mx-auto grid md:grid-cols-2 grid-cols-1 gap-10"
       >
         <div className="flex items-center gap-x-3 border-b-2 border-gray-300 pb-3">
-          <LucideClipboardCheck className="text-primary" size={25} />
+          <LucideClipboardCheck
+            className="text-primary"
+            size={25}
+            strokeWidth={1.3}
+          />
           <p className="text-lg text-foreground font-medium">
             100% Insurance Coverage Included
           </p>
         </div>
         <div className="flex items-center gap-x-3 border-b-2 border-gray-300 pb-3">
-          <TruckElectric className="text-primary" size={25} />
+          <TruckElectric className="text-primary" size={25} strokeWidth={1.3} />
           <p className="text-lg text-foreground font-medium">
             RTA-Approved Enclosed Box Trucks
           </p>
@@ -166,29 +175,32 @@ export default function Home() {
         </div>
         <div className="md:pt-10 text-muted-foreground md:text-lg">
           <p className="font-medium ">
-            Looking for <Link href={"/"}>movers and packers in UAE</Link> you
-            can actually trust?
-          </p>
-          <p className=" mt-2">
-            We are a licensed moving company based in Ras Al Khor , Dubai —
-            officially registered since 1998. For over 25 years, we have been
-            helping families, individuals, and businesses move across every
-            emirate in the UAE.
-          </p>
-          <p className=" mt-2">
-            Whether you are{" "}
-            <Link href="/apartment-movers-dubai">
-              shifting a one-bedroom apartment{" "}
+            Looking for{" "}
+            <Link href={"/"} className="underline">
+              {" "}
+              movers and packers in uae
             </Link>{" "}
-            , <Link href="/villa-movers-in-dubai">relocating a full villa</Link>
-            , or{" "}
-            <Link href="/office-movers-in-dubai">moving an entire office</Link>,
-            our trained team handles everything from professional packing to
-            safe delivery.
+            you can trust and depend?
           </p>
           <p className=" mt-2">
-            No hidden charges. No surprises. And you only pay once the job is
-            done and you are satisfied.
+            You&apos;ve found the right moving company. We are a licensed and
+            officially registered moving company in Dubai, and we&apos;ve been
+            completing thousands of moves across all seven emirates.
+          </p>
+          <p className=" mt-2">
+            if you&apos;re moving a house, villa, apartment, or office, our team
+            handles it from start to finish — professional packing, careful
+            loading, safe transport, and full reassembly at your new place.
+          </p>
+          <p className=" mt-2">
+            No hidden charges. And you pay only after the job is done to your
+            satisfaction. We work with both residential customers and
+            businesses.
+          </p>
+          <p className=" mt-2">
+            What makes us different from a freelance mover with a phone number
+            isn&apos;t just experience. It&apos;s that we&apos;re registered,
+            insured, and accountable.
           </p>
           <Button className="mt-5" size={"lg"}>
             <Truck /> Book Your Move Now
@@ -238,7 +250,7 @@ export default function Home() {
                 <div
                   key={item.name}
                   id={item.name.toLowerCase().replace(/\s+/g, "-")}
-                  className="rounded-2xl p-5 bg-muted"
+                  className="rounded-2xl p-4 bg-white"
                 >
                   <div className="relative aspect-video bg-white rounded-xl overflow-hidden">
                     <Image
@@ -250,9 +262,11 @@ export default function Home() {
                     />
                   </div>
                   <Link href={item.href}>
-                    <h3 className="mt-5 text-xl font-medium">{item.name}</h3>
+                    <h3 className="mt-5 text-lg leading-tight font-medium">
+                      {item.name}
+                    </h3>
                   </Link>
-                  <p className="mt-3 text-muted-foreground">
+                  <p className="mt-2 text-muted-foreground leading-tight text-[15px]">
                     {item.description}
                   </p>
                   <Button
@@ -260,6 +274,7 @@ export default function Home() {
                     aria-label={"Contact Us For " + item.name}
                     title={"Contact Us For " + item.name}
                     variant={"link"}
+                    size={"sm"}
                     className="mt-3 "
                   >
                     Contact Now <ChevronRight />
@@ -348,8 +363,7 @@ export default function Home() {
             Benefits Of Choosing Us
           </p>
           <h2 className="md:text-3xl text-2xl mt-4 md:px-0 px-3">
-            Moving in the UAE? <br />
-            Here&apos;s What You Need to Know
+            Moving in the UAE? <br /> A Few Things Worth Knowing
           </h2>
           <div className="bg-foreground md:w-[115%] w-full md:h-96 h-auto mt-10 md:p-10 py-7 px-4">
             <h3 className="md:text-4xl text-2xl text-white border-b border-white/80 pb-3">
@@ -357,19 +371,19 @@ export default function Home() {
               Here More Than Anywhere
             </h3>
             <p className="text-white/85 mt-4">
-              The UAE is not a mild climate. Summer temperatures regularly hit
-              45°C (113°F) and sandstorms roll through without warning.{" "}
+              UAE summers regularly exceed 45°C (113°F). Sandstorms happen
+              without much warning, especially in areas like Al Ain, Fujairah,
+              and Ras Al Khaimah.
             </p>
-            <p className="text-white/85 mt-1">
-              An open truck in those conditions puts your furniture,
-              electronics, mattresses, and anything else exposed at real risk —
-              heat warps wood, dust gets into electronics, and plastic wrap does
-              not stop a sandstorm.
+            <p className="text-white/85 mt-2">
+              If you&apos;re moving in an open truck, your furniture,
+              electronics, and upholstery take the hit.
             </p>
-            <p className="text-white/85 mt-1">
-              Our RTA-approved enclosed box trucks keep everything sealed and
-              protected during the entire journey — whether it is mid-July in
-              Dubai or a dusty afternoon on the road to Ras Al Khaimah.
+            <p className="text-white/85 mt-2">
+              Our RTA-approved enclosed box trucks are sealed. Your items ride
+              in a controlled environment — protected from heat, dust, and
+              direct sun — whether it&apos;s June in Dubai or November in Abu
+              Dhabi.
             </p>
           </div>
         </div>
@@ -494,10 +508,10 @@ export default function Home() {
               id={location.title.toLowerCase().replace(/\s+/g, "-")}
               className="rounded-2xl p-5 bg-white/5 "
             >
-              <h3 className="text-lg font-medium text-white">
+              <h3 className="text-lg leading-tight font-medium text-white">
                 <Link href={location.href}>{location.title}</Link>
               </h3>
-              <p className="mt-3 text-white/80 leading-tight text-[15px]">
+              <p className="mt-2 text-white/80 leading-tight text-[15px]">
                 {location.description}
               </p>
               <Button
@@ -525,32 +539,32 @@ export default function Home() {
           {[
             {
               title: "Restaurants & F&B Outlets",
-              desc: "kitchen equipment, counters, walk-in fridges, seating",
+              desc: "Kitchen equipment, commercial counters, refrigeration units, and dining furniture — we know how to pack and move it safely.",
               icon: <HotelIcon strokeWidth={1} size={35} />,
             },
             {
               title: "Hospitals & Medical Clinics",
-              desc: "sensitive medical equipment, patient beds, lab furniture",
+              desc: "Sensitive and expensive medical equipment handled with care. Sterile items packed correctly. No improvisation.",
               icon: <Hospital strokeWidth={1} size={35} />,
             },
             {
               title: "Banks & Financial Offices",
-              desc: "heavy safes, confidential document handling, secure transport",
+              desc: "Heavy safes, document storage, and confidential equipment. We take the security of your items seriously.",
               icon: <Building2 strokeWidth={1} size={35} />,
             },
             {
               title: "Schools & Universities ",
-              desc: "classrooms, science labs, libraries, large-volume furniture",
+              desc: "Classroom furniture, lab benches, library shelves, and IT equipment. Bulk moves handled efficiently.",
               icon: <University strokeWidth={1} size={35} />,
             },
             {
               title: "Warehouses & Industrial Facilities  ",
-              desc: "heavy machinery, racking systems, bulk inventory",
+              desc: "Heavy-duty machinery relocation with the right equipment and trained riggers.",
               icon: <Warehouse strokeWidth={1} size={35} />,
             },
             {
               title: "Corporate Offices ",
-              desc: "IT equipment, workstations, boardrooms, reception furniture",
+              desc: "Workstations, meeting room furniture, reception areas, IT infrastructure — packed and moved without unnecessary downtime.",
               icon: <BriefcaseBusiness strokeWidth={1} size={35} />,
             },
           ].map((ind, i) => (
@@ -559,14 +573,14 @@ export default function Home() {
                 {ind.icon}
               </div>
               <div>
-                <h3 className="text-lg font-medium ">{ind.title}</h3>
-                <p className="text-muted-foreground leading-tight">
+                <h3 className=" font-medium ">{ind.title}</h3>
+                <p className="text-muted-foreground leading-tight text-sm mt-1">
                   {ind.desc}
                 </p>
               </div>
             </div>
           ))}
-          <div className="text-lg text-muted-foreground mt-5 col-span-full">
+          <div className="text-lg text-muted-foreground mt-5 col-span-full leading-tight">
             <p>
               Before you book any commercial mover, check their website, meet
               the owner, and verify their Google Business profile.
@@ -645,49 +659,66 @@ export default function Home() {
         className=" max-w-4xl mx-auto md:px-0 px-4"
       >
         <h2 className="text-3xl font-bold ">
-          About Us — Licensed Moving Company Based in Dubai
+          About Our Moving Company — Registered, Experienced, Locally Trusted
         </h2>
+
         <div className="text-muted-foreground mt-5 leading-tight flex flex-col gap-y-2">
           <p>
-            We started as a moving company in 1998 and have been running legally
-            ever since. Our office is in Ras Al Khor Industrial Area 1, Dubai,
-            and our team covers every emirate in the UAE.
+            We started in 1998. Not as a small side operation — as a registered
+            moving company with a legal trade licence, a proper fleet, and a
+            trained team. That was when most of the freelance movers you see
+            advertising today didn&apos;t exist yet.
           </p>
+
           <p>
-            Over 25 years, we have completed thousands of moves — apartments,
-            villas, offices, warehouses, restaurants, hospitals. Every type of
-            job has taught us something, and that experience shows in the way we
-            work.
+            Our headquarters is in 16 13 St, Ras Al Khor Industrial Area 1 -
+            Dubai, Dubai, and we cover all seven emirates. Over the past 25+
+            years, we&apos;ve completed thousands of moves — houses, villas,
+            apartments, offices, warehouses, hospitals, schools, and
+            restaurants. We know what can go wrong on a move, because we&apos;ve
+            seen it happen, and we&apos;ve built our process around preventing
+            it.
           </p>
+
           <p>
-            We built this company on two principles: Protection and Privacy.
-            When we enter someone&apos;s home to pack up their belongings —
-            especially personal spaces like bedrooms and kitchens — trust is not
-            optional. Our team is trained and professional. We take that
-            seriously.
+            Our philosophy is straightforward: protect your items, respect your
+            privacy, and charge you honestly. Those aren&apos;t marketing lines.
+            They&apos;re the reason people call us back and refer us to others.
           </p>
+
+          <p>
+            You can verify us on Google Maps. Our business profile is listed,
+            our address is real, and our reviews are from actual customers.
+          </p>
+
           <div className="grid md:grid-cols-2 grid-cols-1 gap-x-5">
             <div>
-              {" "}
-              <h3 className="text-lg font-medium mt-2">Our Fleet</h3>
+              <h3 className="text-lg font-medium mt-2">Our Moving Fleet</h3>
               <ul className="list-inside list-disc">
-                <li>RTA-approved vehicles</li>
-                <li>Fully enclosed box trucks — 3-ton and 4-ton capacity</li>
-                <li>Open trucks for local, short-distance furniture shifts</li>
+                <li>
+                  RTA-approved vehicles, road-legal across all UAE emirates
+                </li>
+                <li>Fully enclosed box trucks (3-ton and 4-ton capacity)</li>
+                <li>Open trucks available for local furniture shifts</li>
+                <li>All vehicles maintained and insured</li>
               </ul>
             </div>
+
             <div>
               <h3 className="text-lg font-medium mt-2">Our Team</h3>
               <ul className="list-inside list-disc">
                 <li>
                   Certified carpenters for furniture dismantling and reassembly
                 </li>
-                <li>Trained packing helpers using premium packing materials</li>
                 <li>
-                  Electricians and handymen for curtain installation and home
-                  setup
+                  Trained packing staff using professional-grade materials
                 </li>
-                <li>English and Arabic speaking staff across all teams</li>
+                <li>
+                  Electricians and handymen for post-move installation work
+                </li>
+                <li>
+                  English and Arabic speaking throughout — no communication gaps
+                </li>
               </ul>
             </div>
           </div>

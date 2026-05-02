@@ -30,7 +30,7 @@ const ServiceHero = ({
           quality={90}
         />
         <div className="absolute top-0 left-0 w-full h-full md:bg-[#0000006c] md:mt-0 mt-72 flex items-end">
-          <div className="md:w-[550px] w-full h-2/3  flex flex-col justify-center relative md:p-10 py-10 px-3 bg-white/90 rounded-tr-4xl">
+          <div className="md:w-[550px] w-full h-2/3  flex flex-col justify-center relative md:p-10 py-10 px-3 md:bg-white/90 rounded-tr-4xl">
             <div className="w-full h-5 b-red-bg absolute top-10 -left-10"></div>
             <h1 className="font-bold md:text-4xl text-2xl md:mt-5">{title}</h1>
             <p className="b-text mt-5">{desc}</p>
