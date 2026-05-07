@@ -305,10 +305,10 @@ export const comparisonData = [
 
 export const locations = [
   {
-    title: "Movers and Packers Dubai",
+    title: "Movers and Packers in Dubai",
     description:
       "This is where we're based — Ras Al Khor Industrial Area 1, Dubai. We cover every district: house moves, villa relocations, apartment shifting, office moves, and single furniture delivery. If you're in Dubai, you're in our backyard.",
-    href: "/",
+    href: "/movers-and-packers-in-dubai",
   },
   {
     title: "Movers and Packers Abu Dhabi",

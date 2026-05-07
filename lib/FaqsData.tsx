@@ -1,6 +1,130 @@
 import { FAQData } from "@/components/FaqsSection";
 import Link from "next/link";
 
+export const DubaiMovingFAQs = [
+  {
+    question: "How much do movers and packers in Dubai charge?",
+    answer: (
+      <>
+        <p>
+          Costs depend on property size, distance, floor level, and whether
+          packing is included.
+        </p>
+        <p>
+          As a rough guide, studio moves start around AED 650 and 3-bedroom
+          apartments range from AED 1,950 to AED 2,850. The best way to get an
+          accurate number is to contact us for a free itemised quote via
+          WhatsApp before committing to anything.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "How do I find a reliable moving company in Dubai?",
+    answer: (
+      <>
+        <p>
+          Check for a valid DED trade licence, an active Google Business Profile
+          with real reviews, and a physical address.
+        </p>
+        <p>
+          Avoid movers who only operate via phone with no verifiable
+          registration. Ask for a written quote before agreeing to anything — if
+          a company refuses to give one, that tells you something.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "Do movers in Dubai provide packing materials?",
+    answer: (
+      <>
+        <p>Yes. We supply all packing materials as part of the service.</p>
+        <p>
+          This includes cardboard boxes, bubble wrap, stretch film, and
+          furniture pads. If you have fragile or high-value items, let us know
+          in advance so we bring the right protection for them.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "Can I move on the same day in Dubai?",
+    answer: (
+      <>
+        <p>Same-day moves are possible depending on availability.</p>
+        <p>
+          Contact us by WhatsApp or phone with your requirements. We will
+          confirm whether same-day service is available and give you a quote
+          quickly, usually within the hour.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "Do you move from Dubai to other emirates?",
+    answer: (
+      <>
+        <p>
+          Yes. We serve all seven UAE emirates, including moves from Dubai to
+          Sharjah, Abu Dhabi, Ajman, Ras Al Khaimah, Fujairah, Umm Al Quwain,
+          and Al Ain.
+        </p>
+        <p>
+          All inter-emirate moves are quoted in advance with no hidden
+          cross-border charges.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "Do you offer storage services alongside moving in Dubai?",
+    answer: (
+      <>
+        <p>
+          Yes. If your new property is not ready, or you need temporary storage
+          during a renovation, we offer managed furniture storage and
+          self-storage options.
+        </p>
+        <p>Contact us to discuss availability and pricing.</p>
+      </>
+    ),
+  },
+  {
+    question: "Is it safe to let movers into my home?",
+    answer: (
+      <>
+        <p>
+          We have operated in the UAE since 1998 and hold a DED trade licence,
+          not a freelance setup.
+        </p>
+        <p>
+          All crew members are trained professionals. Our company policy is
+          built around protection and privacy, whether we are packing a studio
+          flat or a family villa.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "Do you use open or enclosed trucks for moving?",
+    answer: (
+      <>
+        <p>
+          We have both types. For most Dubai moves, especially in summer when
+          temperatures regularly exceed 45°C, we use fully enclosed box trucks
+          to protect furniture, electronics, and appliances from heat and
+          sandstorms.
+        </p>
+        <p>
+          Open trucks are available for basic furniture-only jobs where
+          conditions allow and the customer prefers it.
+        </p>
+      </>
+    ),
+  },
+];
+
 export const HomePageFAQs: FAQData[] = [
   {
     question: "How much do movers and packers in UAE charge?",

@@ -67,7 +67,7 @@ export const FAQSection: React.FC<FAQProps> = ({
       />
       <section
         id="faq"
-        className="py-20 px-4 sm:px-6 lg:px-8 selection:bg-slate-200"
+        className="pt-20 pb-10 px-4 sm:px-6 lg:px-8 selection:bg-slate-200"
       >
         <div className="mx-auto max-w-3xl">
           {/* Header */}

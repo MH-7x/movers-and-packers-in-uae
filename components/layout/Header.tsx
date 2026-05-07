@@ -66,6 +66,7 @@ const servicesMenuItems = [
 ];
 
 const locationsMenuItems = [
+  { label: "Dubai", href: "/movers-and-packers-in-dubai" },
   { label: "Sharjah", href: "/movers-and-packers-in-sharjah" },
   { label: "Ajman", href: "/movers-in-ajman" },
   { label: "Al Ain", href: "/movers-in-al-ain" },

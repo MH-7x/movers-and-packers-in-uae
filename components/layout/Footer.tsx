@@ -4,6 +4,7 @@ import { MailCheck, HeadphonesIcon, MapPinCheck } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 const locationsMenuItems = [
+  { label: "Dubai", href: "/movers-and-packers-in-dubai" },
   { label: "Sharjah", href: "/movers-and-packers-in-sharjah" },
   { label: "Ajman", href: "/movers-in-ajman" },
   { label: "Al Ain", href: "/movers-in-al-ain" },
@@ -383,8 +384,8 @@ const Footer = () => {
                 Sitemap
               </a>
               <a
-                href="https://mashalhuraira.vercel.app/"
-                rel="noopener noreferrer"
+                href="https://mashalhuraira.vercel.app"
+                rel="noopener noreferrer nofollow"
                 target="_blank"
                 className="text-[#a5abb1] text-[13.5px]"
               >
