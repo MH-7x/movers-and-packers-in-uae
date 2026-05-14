@@ -7,7 +7,7 @@ const pages: MetadataRoute.Sitemap = [
     changeFrequency: "daily",
     priority: 1.0,
     images: ["/mover-and-packers-in-uae.jpg"],
-    lastModified: "2026-04-30",
+    lastModified: "2026-05-13",
   },
   {
     url: "/about-us",
@@ -41,6 +41,15 @@ const pages: MetadataRoute.Sitemap = [
     priority: 0.8,
     images: ["/loc/movers-packers-sharjah-professional-moving-service-uae.jpg"],
     lastModified: "2026-04-28",
+  },
+  {
+    url: "/movers-and-packers-in-dubai",
+    changeFrequency: "monthly",
+    priority: 0.8,
+    images: [
+      "/loc/movers-and-packers-in-dubai-professional-moving-service-burj-khalifa-golden-hour.jpg",
+    ],
+    lastModified: "2026-05-07",
   },
   {
     url: "/movers-in-ajman",

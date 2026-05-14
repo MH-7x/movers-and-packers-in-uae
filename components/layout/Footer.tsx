@@ -241,7 +241,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <a
-                    href="#"
+                    href="https://moversandpackersinuae.com/blogs/movers-and-packers-cost-in-dubai"
                     className="text-[#a5abb1] hover:text-white text-[13.5px] transition-colors"
                   >
                     Our Moving Prices

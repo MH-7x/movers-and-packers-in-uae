@@ -78,7 +78,10 @@ const locationsMenuItems = [
 ];
 
 const otherPagesMenuItems = [
-  { label: "Our Moving Prices", href: "#" },
+  {
+    label: "Our Moving Prices",
+    href: "https://moversandpackersinuae.com/blogs/movers-and-packers-cost-in-dubai",
+  },
   { label: "How To Hire", href: "/how-to-hire" },
   { label: "How To Pay", href: "/how-to-pay" },
   { label: "Blogs", href: "/blogs" },

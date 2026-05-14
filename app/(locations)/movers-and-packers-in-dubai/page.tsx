@@ -23,7 +23,7 @@ export const metadata = MetadataTemplate({
       desc: "Trusted movers and packers in Dubai since 1998. Villa, apartment, office & furniture moves. RTA-approved trucks, no hidden fees. Pay after completion. Free quote.",
     },
     image: {
-      path: "/loc/movers-packers-sharjah-professional-moving-service-uae.jpg",
+      path: "/loc/movers-and-packers-in-dubai-professional-moving-service-burj-khalifa-golden-hour.jpg",
       alt: "Movers and Packers in Dubai professional team loading wrapped furniture into a branded moving truck outside a luxury Dubai residential tower with the Burj Khalifa visible in the golden hour background",
     },
     path: "/movers-and-packers-in-dubai",
