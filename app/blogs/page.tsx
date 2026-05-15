@@ -11,6 +11,8 @@ import {
   PaginationPrevious,
 } from "@/components/ui/pagination";
 import { MainForCard } from "@/types/blog";
+import Script from "next/script";
+import { generateBreadcrumb } from "@/lib/generateBreadcrumb";
 
 export const metadata = MetadataTemplate({
   data: {
@@ -68,68 +70,85 @@ const BlogsPage = async ({
 
   const blogsData = await getBlogs(page);
   const pagination = blogsData?.pagination;
-
+  const breadcrumb = generateBreadcrumb({
+    list: [
+      {
+        title: "Our Blogs ",
+        url: "/blogs",
+      },
+    ],
+  });
   return (
-    <main>
-      <section className="grid-wrapper w-full flex items-center justify-center flex-col py-16 md:px-0 px-4">
-        <div className="grid-background" />
-        <h1 className="md:text-5xl text-3xl  font-bold text-center">
-          <span className=" border-b-4 border-primary">Our Blogs</span>
-          <br className="md:block" /> Movers and Packers in UAE
-        </h1>
-        <div className="max-w-3xl mx-auto text-center text-muted-foreground mt-5">
-          <p>
-            Read Movers and Packers in UAE&apos;s blog for tips on moving
-            furniture, office relocations, and more. Stay informed with our
-            expert insights and advice.
-          </p>
+    <>
+      <Script
+        strategy="beforeInteractive"
+        id="breadcrumb"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: breadcrumb }}
+      />
+
+      <main>
+        <section className="grid-wrapper w-full flex items-center justify-center flex-col py-16 md:px-0 px-4">
+          <div className="grid-background" />
+          <h1 className="md:text-5xl text-3xl  font-bold text-center">
+            <span className=" border-b-4 border-primary">Our Blogs</span>
+            <br className="md:block" /> Movers and Packers in UAE
+          </h1>
+          <div className="max-w-3xl mx-auto text-center text-muted-foreground mt-5">
+            <p>
+              Read Movers and Packers in UAE&apos;s blog for tips on moving
+              furniture, office relocations, and more. Stay informed with our
+              expert insights and advice.
+            </p>
+          </div>
+        </section>
+
+        <div className="mt-10 max-w-7xl mx-auto px-4 md:px-10 mb-10">
+          <div className="grid md:grid-cols-3 grid-cols-1 gap-10">
+            {blogsData ? (
+              blogsData.data &&
+              blogsData.data.map((blog) => (
+                <BlogCard
+                  key={blog._id}
+                  image={blog.FeaturedImage || "/Background-with-text.jpg"}
+                  category={blog.category.name}
+                  title={blog.title}
+                  date={new Date(blog.createdAt).toLocaleDateString("en-US", {
+                    year: "numeric",
+                    month: "long",
+                    day: "numeric",
+                  })}
+                  author={"Mashal Huraira"}
+                  excerpt={blog.caption}
+                  href={`/blogs${blog.slug}`}
+                />
+              ))
+            ) : (
+              <div className="col-span-3">
+                <p className="text-red-500 text-center max-w-md mx-auto p-5 rounded-2xl border border-red-500 bg-red-50">
+                  Error: {errorMessage}
+                </p>
+              </div>
+            )}
+          </div>
         </div>
-      </section>
 
-      <div className="mt-10 max-w-7xl mx-auto px-4 md:px-10 mb-10">
-        <div className="grid md:grid-cols-3 grid-cols-1 gap-10">
-          {blogsData ? (
-            blogsData.data &&
-            blogsData.data.map((blog) => (
-              <BlogCard
-                key={blog._id}
-                image={blog.FeaturedImage || "/Background-with-text.jpg"}
-                category={blog.category.name}
-                title={blog.title}
-                date={new Date(blog.createdAt).toLocaleDateString("en-US", {
-                  year: "numeric",
-                  month: "long",
-                  day: "numeric",
-                })}
-                author={"Mashal Huraira"}
-                excerpt={blog.caption}
-                href={`/blogs${blog.slug}`}
-              />
-            ))
-          ) : (
-            <div className="col-span-3">
-              <p className="text-red-500 text-center max-w-md mx-auto p-5 rounded-2xl border border-red-500 bg-red-50">
-                Error: {errorMessage}
-              </p>
-            </div>
-          )}
-        </div>
-      </div>
+        {pagination && pagination.totalPages > 1 && (
+          <Pagination className="mb-16">
+            <PaginationContent>
+              {/* Previous Button */}
+              <PaginationItem>
+                <PaginationPrevious
+                  href={`?page=${Math.max(1, pagination.page - 1)}`}
+                  aria-disabled={pagination.page === 1}
+                />
+              </PaginationItem>
 
-      {pagination && pagination.totalPages > 1 && (
-        <Pagination className="mb-16">
-          <PaginationContent>
-            {/* Previous Button */}
-            <PaginationItem>
-              <PaginationPrevious
-                href={`?page=${Math.max(1, pagination.page - 1)}`}
-                aria-disabled={pagination.page === 1}
-              />
-            </PaginationItem>
-
-            {/* Page Numbers */}
-            {Array.from({ length: pagination.totalPages }, (_, i) => i + 1).map(
-              (p) => (
+              {/* Page Numbers */}
+              {Array.from(
+                { length: pagination.totalPages },
+                (_, i) => i + 1,
+              ).map((p) => (
                 <PaginationItem key={p}>
                   <PaginationLink
                     href={`?page=${p}`}
@@ -138,26 +157,26 @@ const BlogsPage = async ({
                     {p}
                   </PaginationLink>
                 </PaginationItem>
-              ),
-            )}
+              ))}
 
-            {/* Ellipsis (if needed) */}
-            {pagination.totalPages > 6 && <PaginationEllipsis />}
+              {/* Ellipsis (if needed) */}
+              {pagination.totalPages > 6 && <PaginationEllipsis />}
 
-            {/* Next Button */}
-            <PaginationItem>
-              <PaginationNext
-                href={`?page=${Math.min(
-                  pagination.totalPages,
-                  pagination.page + 1,
-                )}`}
-                aria-disabled={pagination.page === pagination.totalPages}
-              />
-            </PaginationItem>
-          </PaginationContent>
-        </Pagination>
-      )}
-    </main>
+              {/* Next Button */}
+              <PaginationItem>
+                <PaginationNext
+                  href={`?page=${Math.min(
+                    pagination.totalPages,
+                    pagination.page + 1,
+                  )}`}
+                  aria-disabled={pagination.page === pagination.totalPages}
+                />
+              </PaginationItem>
+            </PaginationContent>
+          </Pagination>
+        )}
+      </main>
+    </>
   );
 };
 

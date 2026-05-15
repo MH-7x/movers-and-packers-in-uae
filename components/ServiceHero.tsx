@@ -27,7 +27,6 @@ const ServiceHero = ({
           placeholder="blur"
           loading="eager"
           className="absolute object-cover object-center"
-          quality={90}
         />
         <div className="absolute top-0 left-0 w-full h-full md:bg-[#0000006c] md:mt-0 mt-72 flex items-end">
           <div className="md:w-[550px] w-full h-2/3  flex flex-col justify-center relative md:p-10 py-10 px-3 md:bg-white/90 rounded-tr-4xl">

@@ -11,8 +11,8 @@ const locationsMenuItems = [
   { label: "Ras Al Khaimah", href: "/movers-in-ras-al-khaimah" },
   { label: "Fujairah", href: "/movers-in-fujairah" },
   { label: "Umm Al Quwain", href: "/movers-in-umm-al-quwain" },
-  { label: "Al Ruwais", href: "#" },
-  { label: "Khor Fakkan", href: "#" },
+  { label: "Al Ruwais", href: "/" },
+  { label: "Khor Fakkan", href: "/" },
 ];
 const Footer = () => {
   return (
@@ -256,20 +256,20 @@ const Footer = () => {
                   </a>
                 </li>
                 <li>
-                  <a
+                  {/* <a
                     href="#"
                     className="text-[#a5abb1] hover:text-white text-[13.5px] transition-colors"
                   >
                     Privacy Policy
-                  </a>
+                  </a> */}
+                  <p className="text-[#a5abb1] hover:text-white text-[13.5px] transition-colors">
+                    Privacy Policy
+                  </p>
                 </li>
                 <li>
-                  <a
-                    href="#"
-                    className="text-[#a5abb1] hover:text-white text-[13.5px] transition-colors"
-                  >
+                  <p className="text-[#a5abb1] hover:text-white text-[13.5px] transition-colors">
                     Terms & Conditions
-                  </a>
+                  </p>
                 </li>
               </ul>
             </div>
@@ -331,7 +331,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <a
-                    href="#"
+                    href="/"
                     className="text-[#a5abb1] hover:text-white text-[13.5px] transition-colors"
                   >
                     Curtain Fixing & Installation
@@ -339,7 +339,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <a
-                    href="#"
+                    href="/"
                     className="text-[#a5abb1] hover:text-white text-[13.5px] transition-colors"
                   >
                     Storage Services

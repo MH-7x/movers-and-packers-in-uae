@@ -1,9 +1,12 @@
 import LatestsNews from "@/components/LatestsNews";
 import { Button } from "@/components/ui/button";
+import { generateBlogSchema } from "@/lib/generateBlogSchema";
+import { generateBreadcrumb } from "@/lib/generateBreadcrumb";
 import { CalendarCheck2, ListTodoIcon, User2Icon } from "lucide-react";
 import { Metadata } from "next";
 import Image from "next/image";
 import { notFound } from "next/navigation";
+import Script from "next/script";
 
 export interface Main {
   message: string;
@@ -76,18 +79,19 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { slug } = await params;
   const blog = await getData(slug);
+  console.log("APP URL : ", process.env.APP_URL);
 
   if (blog) {
     return {
       title: blog.seo?.metaTitle || blog.title,
       description: blog.seo?.metaDescription || blog.caption,
       alternates: {
-        canonical: `${process.env.APP_URI}/blogs/${slug}`,
+        canonical: `${process.env.APP_URL}/blogs/${slug}`,
       },
       openGraph: {
         title: blog.seo?.metaTitle || blog.title,
         description: blog.seo?.metaDescription || blog.caption,
-        url: `${process.env.APP_URI}/blogs/${slug}`,
+        url: `${process.env.APP_URL}/blogs/${slug}`,
         images: blog.FeaturedImage
           ? [
               {
@@ -115,7 +119,6 @@ export async function generateMetadata({
         googleBot: {
           index: true,
           follow: true,
-          noimageindex: true,
           "max-snippet": -1,
           "max-video-preview": -1,
           "max-image-preview": "large",
@@ -136,15 +139,65 @@ const SingleBlogPage = async ({
 
   const blog = await getData(slug);
 
+  const blogSchema = generateBlogSchema({
+    headline: blog?.title ? blog.title : "",
+    datePublished: blog?.createdAt
+      ? new Date(blog.createdAt).toLocaleDateString("en-US", {
+          year: "numeric",
+          month: "long",
+          day: "numeric",
+        })
+      : "",
+    dateModified: blog?.updatedAt
+      ? new Date(blog.updatedAt).toLocaleDateString("en-US", {
+          year: "numeric",
+          month: "long",
+          day: "numeric",
+        })
+      : "",
+  });
+
+  const breadcrumb = generateBreadcrumb({
+    list: [
+      {
+        title: "Blogs",
+        url: "/blogs",
+      },
+      {
+        title: blog?.title ? blog.title : "",
+        url: `/blogs/${slug}`,
+      },
+    ],
+  });
+
+  const heading = blog?.title
+    ? blog.title
+        .split(" ")
+        .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+        .join(" ")
+    : "";
+
   return blog ? (
     <article>
+      <Script
+        strategy="beforeInteractive"
+        id="blog-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: blogSchema }}
+      />
+      <Script
+        strategy="beforeInteractive"
+        id="breadcrumb"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: breadcrumb }}
+      />
       <main>
         <section className="grid-wrapper w-full flex items-center justify-center flex-col py-16 md:px-0 px-3">
           <>
             <div className="grid-background" />
             <div className="max-w-3xl mx-auto text-center">
-              <h1 className="md:text-5xl text-3xl border-b-4 pb-5 border-primary font-bold text-center capitalize">
-                <span className=" ">{blog.title}</span>
+              <h1 className="md:text-5xl text-3xl border-b-4 pb-5 border-primary font-bold text-center ">
+                <span className=" ">{heading}</span>
               </h1>
               <div className="max-w-3xl mx-auto text-muted-foreground text mt-5">
                 <p>{blog.caption}</p>
@@ -160,7 +213,7 @@ const SingleBlogPage = async ({
                 </Button>
                 <Button
                   variant={"ghost"}
-                  title={`Category ${blog.title}`}
+                  title={`Category ${blog.category.name}`}
                   className="text-muted-foreground font-normal"
                   size={"sm"}
                 >

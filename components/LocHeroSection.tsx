@@ -29,7 +29,7 @@ export const LocHeroSection = ({
       {/* Main Content Container */}
       <div className="relative z-10 flex flex-col items-center text-center max-w-6xl mx-auto mt-16 sm:mt-20">
         <p className="bg-red-50 border text-primary text-sm px-4 py-1 rounded-3xl">
-          5 Stars Reviews on Google
+          5 Stars Rated on Google
         </p>
         {/* Heading */}
         <h1 className="text-4xl sm:text-5xl mt-2 font-bold  tracking-[-0.03em] leading-[1.05] mb-6">

@@ -53,14 +53,14 @@ const servicesMenuItems = [
       },
     ],
   },
-  { label: "Warehouse Moving", href: "#" },
-  { label: "Curtain fixing and installation", href: "#" },
+  { label: "Warehouse Moving", href: "/" },
+  { label: "Curtain fixing and installation", href: "/" },
   {
     label: "Storage services",
     href: "#",
     submenu: [
-      { label: "Self storage", href: "#" },
-      { label: "Furniture storage", href: "#" },
+      { label: "Self storage", href: "/" },
+      { label: "Furniture storage", href: "/" },
     ],
   },
 ];
@@ -73,14 +73,14 @@ const locationsMenuItems = [
   { label: "Ras Al Khaimah", href: "/movers-in-ras-al-khaimah" },
   { label: "Fujairah", href: "/movers-in-fujairah" },
   { label: "Umm Al Quwain", href: "/movers-in-umm-al-quwain" },
-  { label: "Al Ruwais", href: "#" },
-  { label: "Khor Fakkan", href: "#" },
+  { label: "Al Ruwais", href: "/" },
+  { label: "Khor Fakkan", href: "/" },
 ];
 
 const otherPagesMenuItems = [
   {
     label: "Our Moving Prices",
-    href: "https://moversandpackersinuae.com/blogs/movers-and-packers-cost-in-dubai",
+    href: "/blogs/movers-and-packers-cost-in-dubai",
   },
   { label: "How To Hire", href: "/how-to-hire" },
   { label: "How To Pay", href: "/how-to-pay" },

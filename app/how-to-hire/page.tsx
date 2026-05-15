@@ -1,8 +1,10 @@
 import { FAQSection } from "@/components/FaqsSection";
 import { QuickFAQs } from "@/lib/FaqsData";
+import { generateBreadcrumb } from "@/lib/generateBreadcrumb";
 import MetadataTemplate from "@/lib/MetaDataTemplate";
 import heroImage from "@/public/how-to-hire-movers-uae-whatsapp-booking-professional-moving-company.jpg";
 import Image from "next/image";
+import Script from "next/script";
 
 export const metadata = MetadataTemplate({
   data: {
@@ -162,139 +164,157 @@ const trustPoints = [
 ];
 
 export default function HowToHire() {
+  const breadcrumb = generateBreadcrumb({
+    list: [
+      {
+        title: "How To Hire ",
+        url: "/how-to-hire",
+      },
+    ],
+  });
   return (
-    <main>
-      {/* Hero */}
-      <section className="bg-foreground text-white px-4 pt-20 pb-24 relative overflow-hidden">
-        <div className="absolute inset-0 opacity-5">
-          <div className="absolute top-0 right-0 w-96 h-96 rounded-full bg-amber-400 blur-3xl -translate-y-1/2 translate-x-1/3" />
-          <div className="absolute bottom-0 left-0 w-64 h-64 rounded-full bg-amber-400 blur-3xl translate-y-1/2 -translate-x-1/3" />
-        </div>
-        <div className="max-w-4xl mx-auto relative z-10">
-          <p className="text-primary text-xs tracking-[0.2em] uppercase mb-6 font-medium">
-            Movers &amp; Packers UAE
-          </p>
-          <h1 className="font-display text-4xl md:text-6xl font-light leading-tight mb-6 text-white">
-            How to Hire Us as Your
-            <br />
-            <em className="not-italic text-primary">Moving Company</em> in UAE
-          </h1>
-          <p className="text-stone-400 text-lg max-w-2xl leading-relaxed">
-            Hiring a moving company in UAE doesn&apos;t have to be complicated.
-            Here&apos;s exactly how it works with us — step by step, no
-            confusion.
-          </p>
-        </div>
-      </section>
-
-      {/* Image Placeholder — Hero */}
-      <div className="max-w-4xl mx-auto px-4 -mt-10 mb-16 relative z-20">
-        <div className="w-full aspect-video rounded-2xl bg-stone-100 border border-stone-200 flex flex-col items-center justify-center gap-3 shadow-sm relative overflow-hidden">
-          <Image
-            src={heroImage}
-            alt="UAE resident booking Movers and packers in uae professional moving service via WhatsApp while the team arrives and begins the move in his apartment"
-            className="object-cover"
-            fill
-            placeholder="blur"
-            loading="eager"
-          />
-        </div>
-      </div>
-
-      {/* Steps */}
-      <section className="max-w-4xl mx-auto px-4 mb-24">
-        <div className="space-y-6">
-          {steps.map((step, index) => (
-            <div
-              key={step.number}
-              className="grid grid-cols-[auto_1fr] gap-6 md:gap-10 group"
-            >
-              {/* Left — number + line */}
-              <div className="flex flex-col items-center">
-                <div className="w-12 h-12 rounded-full border-2 border-stone-200 group-hover:border-primary transition-colors duration-300 flex items-center justify-center flex-shrink-0">
-                  <span className="font-display text-sm font-light text-stone-400 group-hover:text-primary transition-colors duration-300">
-                    {step.number}
-                  </span>
-                </div>
-                {index < steps.length - 1 && (
-                  <div className="w-px flex-1 bg-stone-100 mt-3 min-h-[2rem]" />
-                )}
-              </div>
-
-              {/* Right — content */}
-              <div className="pb-8">
-                <h2 className="font-display text-2xl font-light text-stone-900 mb-4">
-                  {step.title}
-                </h2>
-                {step.content}
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* Why Choose Us */}
-      <section className="bg-stone-50 border-t border-stone-100 py-20 px-4">
-        <div className="max-w-5xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-12 items-start">
-            <div>
-              <p className="text-primary text-xs tracking-[0.2em] uppercase mb-4 font-medium">
-                Why Us
-              </p>
-              <h2 className="font-display text-3xl md:text-4xl font-light text-stone-900 leading-snug mb-6">
-                Why People Choose Us
-              </h2>
-              <ul className="space-y-4">
-                {trustPoints.map((point, i) => (
-                  <li key={i} className="flex gap-3 items-start">
-                    <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0" />
-                    <span className="text-stone-600 text-[15px]">{point}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            {/* Image placeholder */}
-            <div className="w-full aspect-4/3 rounded-2xl bg-stone-200 border border-stone-200 flex flex-col items-center justify-center gap-3 relative overflow-hidden">
-              <Image
-                src="/why-choose-movers-packers-uae-trusted-experienced-moving-company-satisfaction.jpg"
-                alt="Satisfied UAE client receiving job completion receipt from experienced Movers & Packers team member outside a residential building after a successfully completed move"
-                className="object-cover"
-                fill
-              />
-            </div>
+    <>
+      <Script
+        strategy="beforeInteractive"
+        id="breadcrumb"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: breadcrumb }}
+      />
+      <main>
+        {/* Hero */}
+        <section className="bg-foreground text-white px-4 pt-20 pb-24 relative overflow-hidden">
+          <div className="absolute inset-0 opacity-5">
+            <div className="absolute top-0 right-0 w-96 h-96 rounded-full bg-amber-400 blur-3xl -translate-y-1/2 translate-x-1/3" />
+            <div className="absolute bottom-0 left-0 w-64 h-64 rounded-full bg-amber-400 blur-3xl translate-y-1/2 -translate-x-1/3" />
           </div>
-        </div>
-      </section>
-
-      <FAQSection faqs={QuickFAQs} />
-      {/* CTA Banner */}
-      <section className="bg-foreground py-16 px-4">
-        <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
-          <div>
-            <h2 className="font-display text-2xl md:text-3xl font-light text-white mb-2">
-              Ready to book your move?
-            </h2>
-            <p className="text-stone-400 text-sm">
-              One call or WhatsApp is all it takes.
+          <div className="max-w-4xl mx-auto relative z-10">
+            <p className="text-primary text-xs tracking-[0.2em] uppercase mb-6 font-medium">
+              Movers &amp; Packers UAE
+            </p>
+            <h1 className="font-display text-4xl md:text-6xl font-light leading-tight mb-6 text-white">
+              How to Hire Us as Your
+              <br />
+              <em className="not-italic text-primary">Moving Company</em> in UAE
+            </h1>
+            <p className="text-stone-400 text-lg max-w-2xl leading-relaxed">
+              Hiring a moving company in UAE doesn&apos;t have to be
+              complicated. Here&apos;s exactly how it works with us — step by
+              step, no confusion.
             </p>
           </div>
-          <div className="flex gap-3 flex-shrink-0">
-            <a
-              href="tel:+971507745691"
-              className="bg-primary hover:bg-primary/90 transition-colors text-white font-medium text-sm px-6 py-3 rounded-xl"
-            >
-              Call Now
-            </a>
-            <a
-              href="/get-quote"
-              className="border border-white/50 hover:border-white transition-colors text-white text-sm px-6 py-3 rounded-xl"
-            >
-              Get a Quote
-            </a>
+        </section>
+
+        {/* Image Placeholder — Hero */}
+        <div className="max-w-4xl mx-auto px-4 -mt-10 mb-16 relative z-20">
+          <div className="w-full aspect-video rounded-2xl bg-stone-100 border border-stone-200 flex flex-col items-center justify-center gap-3 shadow-sm relative overflow-hidden">
+            <Image
+              src={heroImage}
+              alt="UAE resident booking Movers and packers in uae professional moving service via WhatsApp while the team arrives and begins the move in his apartment"
+              className="object-cover"
+              fill
+              placeholder="blur"
+              loading="eager"
+            />
           </div>
         </div>
-      </section>
-    </main>
+
+        {/* Steps */}
+        <section className="max-w-4xl mx-auto px-4 mb-24">
+          <div className="space-y-6">
+            {steps.map((step, index) => (
+              <div
+                key={step.number}
+                className="grid grid-cols-[auto_1fr] gap-6 md:gap-10 group"
+              >
+                {/* Left — number + line */}
+                <div className="flex flex-col items-center">
+                  <div className="w-12 h-12 rounded-full border-2 border-stone-200 group-hover:border-primary transition-colors duration-300 flex items-center justify-center flex-shrink-0">
+                    <span className="font-display text-sm font-light text-stone-400 group-hover:text-primary transition-colors duration-300">
+                      {step.number}
+                    </span>
+                  </div>
+                  {index < steps.length - 1 && (
+                    <div className="w-px flex-1 bg-stone-100 mt-3 min-h-[2rem]" />
+                  )}
+                </div>
+
+                {/* Right — content */}
+                <div className="pb-8">
+                  <h2 className="font-display text-2xl font-light text-stone-900 mb-4">
+                    {step.title}
+                  </h2>
+                  {step.content}
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* Why Choose Us */}
+        <section className="bg-stone-50 border-t border-stone-100 py-20 px-4">
+          <div className="max-w-5xl mx-auto">
+            <div className="grid md:grid-cols-2 gap-12 items-start">
+              <div>
+                <p className="text-primary text-xs tracking-[0.2em] uppercase mb-4 font-medium">
+                  Why Us
+                </p>
+                <h2 className="font-display text-3xl md:text-4xl font-light text-stone-900 leading-snug mb-6">
+                  Why People Choose Us
+                </h2>
+                <ul className="space-y-4">
+                  {trustPoints.map((point, i) => (
+                    <li key={i} className="flex gap-3 items-start">
+                      <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0" />
+                      <span className="text-stone-600 text-[15px]">
+                        {point}
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              {/* Image placeholder */}
+              <div className="w-full aspect-4/3 rounded-2xl bg-stone-200 border border-stone-200 flex flex-col items-center justify-center gap-3 relative overflow-hidden">
+                <Image
+                  src="/why-choose-movers-packers-uae-trusted-experienced-moving-company-satisfaction.jpg"
+                  alt="Satisfied UAE client receiving job completion receipt from experienced Movers & Packers team member outside a residential building after a successfully completed move"
+                  className="object-cover"
+                  fill
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <FAQSection faqs={QuickFAQs} />
+        {/* CTA Banner */}
+        <section className="bg-foreground py-16 px-4">
+          <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
+            <div>
+              <h2 className="font-display text-2xl md:text-3xl font-light text-white mb-2">
+                Ready to book your move?
+              </h2>
+              <p className="text-stone-400 text-sm">
+                One call or WhatsApp is all it takes.
+              </p>
+            </div>
+            <div className="flex gap-3 flex-shrink-0">
+              <a
+                href="tel:+971507745691"
+                className="bg-primary hover:bg-primary/90 transition-colors text-white font-medium text-sm px-6 py-3 rounded-xl"
+              >
+                Call Now
+              </a>
+              <a
+                href="/get-quote"
+                className="border border-white/50 hover:border-white transition-colors text-white text-sm px-6 py-3 rounded-xl"
+              >
+                Get a Quote
+              </a>
+            </div>
+          </div>
+        </section>
+      </main>
+    </>
   );
 }

@@ -62,7 +62,7 @@ export const services = [
         name: "Warehouse Moving",
         description:
           "Heavy-duty logistics for warehouses and industrial operations with the right vehicles and experienced crew.",
-        href: "#",
+        href: "/",
         img: {
           src: "/ser/warehouse-moving-dubai-industrial-service.jpg",
           alt: "Warehouse moving service in Dubai with movers handling heavy goods and industrial shelving",
@@ -314,7 +314,7 @@ export const locations = [
     title: "Movers and Packers Abu Dhabi",
     description:
       "Abu Dhabi moves come with their own quirks — big villa communities, newer developments with tight access, and long drives from Dubai. We've handled all of it, including home shifting, office relocation, and villa moves across the capital.",
-    href: "#",
+    href: "/",
   },
   {
     title: "Movers and Packers Sharjah",
@@ -356,13 +356,13 @@ export const locations = [
     title: "Movers and Packers Al Ruwais",
     description:
       "Al Ruwais is in the far west of Abu Dhabi — a long-distance route we fully cover. Home moving and furniture transport in the western region, plus cross-emirate relocations.",
-    href: "#",
+    href: "/",
   },
   {
     title: "Movers and Packers Khor Fakkan",
     description:
       "Khor Fakkan is covered under our Fujairah operations — same team, same trucks, same pricing. House shifting, apartment moves, and furniture transport across the east coast.",
-    href: "#",
+    href: "/",
   },
 ];
 
@@ -422,7 +422,7 @@ export const AllServices = [
     name: "Warehouse Moving",
     description:
       "Heavy goods, industrial shelving, and bulk storage handled with the right team and trucks for large-scale jobs.",
-    href: "#",
+    href: "/",
     img: {
       src: "/ser/warehouse-moving-dubai-industrial-service.jpg",
       alt: "Warehouse moving service in Dubai with movers handling heavy goods and industrial shelving",
@@ -483,7 +483,7 @@ export const AllServices = [
     name: "Industrial Machinery & Heavy Safes",
     description:
       "Specialist rigging team for heavy, awkward, or fragile industrial items. Done safely and professionally.",
-    href: "#",
+    href: "/",
     img: {
       src: "/ser/industrial-machinery-heavy-safe-moving-dubai.jpg",
       alt: "Industrial machinery and heavy safe moving service in Dubai with specialist rigging team",
@@ -504,7 +504,7 @@ export const AllServices = [
     name: "Storage Services",
     description:
       "Short-term and long-term storage in secure facilities, ideal when your new space is not ready.",
-    href: "#",
+    href: "/",
     img: {
       src: "/ser/storage-services-in-uae.jpg",
       alt: "Storage services in UAE with secure facilities for short-term and long-term storage needs",
@@ -514,7 +514,7 @@ export const AllServices = [
     name: "Self Storage",
     description:
       "Flexible and accessible storage for items you want nearby but do not have space for.",
-    href: "#",
+    href: "/",
     img: {
       src: "/ser/self-storage-services-in-uae.jpg",
       alt: "Self storage service in UAE with flexible and accessible storage solutions",
@@ -524,7 +524,7 @@ export const AllServices = [
     name: "Furniture Storage",
     description:
       "Climate-aware warehousing to protect furniture from heat and dust until you need it again.",
-    href: "#",
+    href: "/",
     img: {
       src: "/ser/funriture-storage-services-uae.jpg",
       alt: "Furniture storage service in UAE with climate-aware warehousing to protect from heat and dust",
@@ -534,7 +534,7 @@ export const AllServices = [
     name: "Curtain Fixing & Installation",
     description:
       "Post-move setup services including curtain installation to help you settle in quickly.",
-    href: "#",
+    href: "/",
     img: {
       src: "/ser/Curtain-Fixing-Installation-uae.jpg",
       alt: "Curtain fixing and installation service in UAE with professional setup",
