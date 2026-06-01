@@ -6,8 +6,8 @@ const pages: MetadataRoute.Sitemap = [
     url: "",
     changeFrequency: "daily",
     priority: 1.0,
-    images: ["/mover-and-packers-in-uae.jpg"],
-    lastModified: "2026-05-16",
+    images: ["/movers-and-packers-in-uae.jpg"],
+    lastModified: "2026-06-01",
   },
   {
     url: "/about-us",
@@ -209,6 +209,62 @@ const pages: MetadataRoute.Sitemap = [
     priority: 0.6,
     images: ["/about-us-professional-movers-packers-team-dubai-uae.jpg"],
     lastModified: "2026-05-16",
+  },
+
+  // -------------------------------------------------------
+
+  // Arabic Pages
+
+  // -------------------------------------------------------
+
+  {
+    url: "/نقل-اثاث-دبي",
+    changeFrequency: "weekly",
+    priority: 0.9,
+    images: ["/ar/نقل-اثاث-دبي-مارينا-نقل-الأثاث-في-الإمارات.jpg"],
+    lastModified: "2026-06-01",
+  },
+  {
+    url: "/خدمات-تغليف-اثاث",
+    changeFrequency: "weekly",
+    priority: 0.7,
+    images: ["/ar/خدمات-تغليف-اثاث-احترافي-الإمارات-موفرز-باكرز.jpg"],
+    lastModified: "2026-06-01",
+  },
+  {
+    url: "/نقل-اثاث-الشقق",
+    changeFrequency: "weekly",
+    priority: 0.7,
+    images: ["/ar/نقل-اثاث-الشقق-دبي-موفرز-باكرز.jpg"],
+    lastModified: "2026-06-01",
+  },
+  {
+    url: "/نقل-اثاث-الفلل",
+    changeFrequency: "weekly",
+    priority: 0.7,
+    images: ["/ar/نقل-اثاث-الفلل-دبي-موفرز-باكرز.jpg"],
+    lastModified: "2026-06-01",
+  },
+  {
+    url: "/نقل-اثاث-المكاتب",
+    changeFrequency: "weekly",
+    priority: 0.7,
+    images: ["/ar/نقل-اثاث-المكاتب-دبي-موفرز-باكرز.jpg"],
+    lastModified: "2026-06-01",
+  },
+  {
+    url: "/نقل-اثاث-المنزل",
+    changeFrequency: "weekly",
+    priority: 0.7,
+    images: ["/ar/نقل-اثاث-المنزل-دبي-موفرز-باكرز.jpg"],
+    lastModified: "2026-06-01",
+  },
+  {
+    url: "/نقل-عفش-دبي",
+    changeFrequency: "weekly",
+    priority: 0.7,
+    images: ["/ar/نقل-عفش-دبي-شركة-موفرز-باكرز.jpg"],
+    lastModified: "2026-06-01",
   },
 ];
 

@@ -10,6 +10,7 @@ const QuotationSection = ({
   extra,
   btnText,
   h1,
+  ar,
 }: {
   invert?: boolean;
   title?: JSX.Element;
@@ -17,6 +18,7 @@ const QuotationSection = ({
   extra?: ReactNode;
   btnText?: string;
   h1?: boolean;
+  ar?: boolean;
 }) => {
   return (
     <section
@@ -67,10 +69,12 @@ const QuotationSection = ({
           <p className="mt-5 leading-tight text-muted-foreground">{extra}</p>
         )}
         <p className="mt-2 leading-tight text-muted-foreground">
-          We usually respond within 10 minutes.
+          {ar
+            ? "عادةً ما نرد في غضون 10 دقائق."
+            : " We usually respond within 10 minutes."}
         </p>
         <h3 className="mt-5 text-xl font-medium text-foreground">
-          Ways to Contact Us
+          {ar ? "طرق التواصل معنا" : "Ways to Contact Us"}
         </h3>
         <ul className="mt-5 grid md:grid-cols-3 grid-cols-2 gap-5">
           <li className="flex flex-col items-center gap-y-2 text-muted-foreground leading-tight text-center text-sm">
@@ -79,7 +83,11 @@ const QuotationSection = ({
               strokeWidth={1}
               className="shrink-0 text-primary"
             />
-            <p>Call Us — talk to our team and get answers quickly</p>
+            <p>
+              {ar
+                ? "تواصل معنا - تحدث إلى فريقنا واحصل على إجابات سريعة"
+                : "Call Us — talk to our team and get answers quickly"}
+            </p>
           </li>
           <li className="flex flex-col items-center gap-y-2 text-muted-foreground leading-tight text-center text-sm">
             <MessageCircleCheck
@@ -87,7 +95,11 @@ const QuotationSection = ({
               strokeWidth={1}
               className="shrink-0 text-primary"
             />
-            <p>WhatsApp — send your move details and get a quote fast</p>
+            <p>
+              {ar
+                ? "واتساب — أرسل تفاصيل نقلك واحصل على عرض سعر سريع"
+                : "WhatsApp — send your move details and get a quote fast"}
+            </p>
           </li>
           <li className="flex flex-col items-center gap-y-2 text-muted-foreground leading-tight text-center text-sm md:col-span-1 col-span-2 md:px-0 px-16">
             <MailCheck
@@ -95,18 +107,22 @@ const QuotationSection = ({
               strokeWidth={1}
               className="shrink-0 text-primary"
             />
-            <p>Email — request a full written quote at your convenience</p>
+            <p>
+              {ar
+                ? "إيميل — اطلب عرض أسعار مكتوبًا بالكامل في الوقت الذي يناسبك"
+                : "Email — request a full written quote at your convenience"}
+            </p>
           </li>
         </ul>
       </div>
       <div
         className={`bg-foreground md:p-10 p-8 rounded-2xl ${invert ? "md:order-1 order-2" : ""}`}
       >
-        <p className="text-red-400 uppercase">request a </p>
+        <p className="text-red-400 uppercase">{ar ? "طلب أ " : "request a "}</p>
         <h3 className="md:text-4xl text-3xl text-white mt-0">
-          Free Moving Quote.
+          {ar ? "اقتباس متحرك مجاني." : "Free Moving Quote."}
         </h3>
-        <QuoteForm btnText={btnText} />
+        <QuoteForm btnText={ar ? "احصل على عرض أسعار" : btnText} />
       </div>
     </section>
   );

@@ -142,5 +142,12 @@ export const MoversAndPackersSchema = {
     },
   ],
 
-  sameAs: ["https://maps.app.goo.gl/sdeHroy7Aa4t2fYd6"],
+  hasMap:
+    "https://www.google.com/maps/place/?q=place_id:ChIJ8UeWa_JnXz4RG24rN_JJolE",
+  sameAs: [
+    "https://www.facebook.com/moversandpackersinuae91",
+    "https://www.instagram.com/moversandpackersinuae91",
+    "https://www.pinterest.com/moversandpackersuae91",
+    "https://www.youtube.com/@moversandpackersinuae91",
+  ],
 };

@@ -132,6 +132,7 @@ function Button({
         href={whatsappHref}
         aria-label="Get A Quote On WhatsApp"
         rel="noopener noreferrer"
+        dir="ltr"
         onClick={() =>
           track({ type: "whatsapp_click", label, destination: whatsappHref })
         }
@@ -146,6 +147,7 @@ function Button({
       <Link
         href="tel:+971507745691"
         aria-label="Call To Movers"
+        dir="ltr"
         onClick={() =>
           track({
             type: "call_click",

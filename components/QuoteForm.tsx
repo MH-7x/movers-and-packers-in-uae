@@ -87,6 +87,7 @@ const QuoteForm = ({ btnText }: { btnText?: string }) => {
   };
   return (
     <form
+      dir="ltr"
       id="quote-form"
       onSubmit={handleSubmit}
       className="mt-10 grid md:grid-cols-2 grid-cols-1 gap-5 text-muted text-[14.5px]"

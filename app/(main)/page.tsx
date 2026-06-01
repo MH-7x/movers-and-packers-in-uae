@@ -1,8 +1,7 @@
 import Image from "next/image";
-import imgSrc from "@/public/mover-and-packers-in-uae.jpg";
+
 import { Button } from "@/components/ui/button";
 import {
-  AlarmCheck,
   BriefcaseBusiness,
   Building2,
   Check,
@@ -10,17 +9,13 @@ import {
   Hospital,
   HotelIcon,
   ListTodoIcon,
-  LucideClipboardCheck,
   Medal,
   MessageCircleCheck,
-  PackageCheckIcon,
   PhoneCall,
   ShieldCheck,
   ShieldCheckIcon,
   Truck,
-  TruckElectric,
   University,
-  UserCheck2,
   Warehouse,
   X,
 } from "lucide-react";
@@ -40,6 +35,7 @@ import MovingProcess from "@/components/MovingProcess";
 import MetadataTemplate from "@/lib/MetaDataTemplate";
 import { generateBreadcrumb } from "@/lib/generateBreadcrumb";
 import Script from "next/script";
+import MainHeroSection from "@/components/MainHeroSection";
 
 export const metadata = MetadataTemplate({
   data: {
@@ -67,105 +63,7 @@ export default function Home() {
         dangerouslySetInnerHTML={{ __html: breadcrumb }}
       />
       <main>
-        <section
-          id="hero-section"
-          className="md:h-125 h-137.5 relative overflow-hidden"
-        >
-          <Image
-            src={imgSrc}
-            alt="movers and packers in uae"
-            fill
-            loading="eager"
-            placeholder="blur"
-            className="object-cover object-center"
-          />
-          <div
-            id="hero-section"
-            className="absolute inset-0 w-full h-full md:bg-foreground/85 bg-foreground/80 md:px-20 flex md:items-end items-center justify-start md:px-0 px-4"
-          >
-            <div className="text-shadow-2xs md:pb-20">
-              <h1 className="md:text-5xl text-3xl font-bold text-white md:text-start text-center">
-                Movers and Packers in UAE, <br className="md:block hidden" />{" "}
-                Trusted Moving Company
-              </h1>
-              <p className="mt-5 text-lg text-gray-200 max-w-3xl leading-tight md:text-start text-center">
-                Professional moving company in UAE, we are licensed,
-                experienced, and operating since 1998. Our services include
-                House moving, villa relocations, office shifting, furniture
-                moving, and storage services. All emirates covered.
-              </p>
-              <div className="md:mt-5 mt-8 flex gap-3 text-shadow-none md:flex-row flex-col ">
-                <Button
-                  link="/get-quote"
-                  size={"lg"}
-                  className="md:w-max w-full"
-                >
-                  <ListTodoIcon /> Get a Free Moving Quote
-                </Button>
-                <Button
-                  whatsappBtn
-                  size={"lg"}
-                  variant={"secondary"}
-                  className="md:w-max w-full"
-                >
-                  <MessageCircleCheck /> WhatsApp Us Now
-                </Button>
-              </div>
-            </div>
-          </div>
-        </section>
-        <div
-          id="states"
-          className="max-w-6xl mt-10 md:px-0 px-4 mx-auto grid md:grid-cols-2 lg:grid-cols-3 grid-cols-1 gap-10"
-        >
-          <div className="flex items-center gap-x-3 border-b-2 border-gray-300 pb-3">
-            <AlarmCheck className="text-primary" size={25} strokeWidth={1.3} />
-            <p className="text-lg text-foreground font-medium">
-              5-10 Minutes Response Time
-            </p>
-          </div>
-          <div className="flex items-center gap-x-3 border-b-2 border-gray-300 pb-3">
-            <UserCheck2 className="text-primary" size={25} strokeWidth={1.3} />
-            <p className="text-lg text-foreground font-medium">
-              25+ Years of Moving Experience
-            </p>
-          </div>
-          <div className="flex items-center gap-x-3 border-b-2 border-gray-300 pb-3">
-            <PackageCheckIcon
-              className="text-primary"
-              size={25}
-              strokeWidth={1.3}
-            />
-            <p className="text-lg text-foreground font-medium">
-              Thousands of Moves Completed in UAE
-            </p>
-          </div>
-        </div>
-        <div
-          id="states"
-          className="max-w-3xl mt-7 md:px-0 px-4 mx-auto grid md:grid-cols-2 grid-cols-1 gap-10"
-        >
-          <div className="flex items-center gap-x-3 border-b-2 border-gray-300 pb-3">
-            <LucideClipboardCheck
-              className="text-primary"
-              size={25}
-              strokeWidth={1.3}
-            />
-            <p className="text-lg text-foreground font-medium">
-              100% Insurance Coverage Included
-            </p>
-          </div>
-          <div className="flex items-center gap-x-3 border-b-2 border-gray-300 pb-3">
-            <TruckElectric
-              className="text-primary"
-              size={25}
-              strokeWidth={1.3}
-            />
-            <p className="text-lg text-foreground font-medium">
-              RTA-Approved Enclosed Box Trucks
-            </p>
-          </div>
-        </div>
+        <MainHeroSection />
         <QuotationSection invert />
         <section
           id="best-moving-company-in-uae "
@@ -185,7 +83,7 @@ export default function Home() {
             </h2>
             <div className="bg-muted aspect-video mt-8 relative overflow-hidden">
               <Image
-                src={"/moving-company-uae-truck-in-dubai-road.jpg"}
+                src={"/movers-and-packers-in-uae-moving-trucks.jpg"}
                 alt="Moving Company in UAE truck in Dubai Road"
                 fill
                 className="object-cover"
@@ -640,7 +538,6 @@ export default function Home() {
             </div>
           </div>
         </section>
-
         <div className="md:bg-secondary max-w-7xl mx-auto mt-20 rounded-2xl md:p-10 px-6 py-2 grid md:grid-cols-2 grid-cols-1 md:gap-10 gap-8">
           <div>
             <p className="uppercase border-b border-primary text-primary w-max">

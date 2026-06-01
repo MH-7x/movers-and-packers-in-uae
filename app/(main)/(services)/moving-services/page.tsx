@@ -5,7 +5,7 @@ import { AllServices } from "@/lib/data";
 import MetadataTemplate from "@/lib/MetaDataTemplate";
 import { CheckCircle, ChevronRight } from "lucide-react";
 import Image from "next/image";
-import { ReviewSection } from "../../../components/ReviewSection";
+import { ReviewSection } from "../../../../components/ReviewSection";
 import MovingProcess from "@/components/MovingProcess";
 import Link from "next/link";
 import Script from "next/script";

@@ -3,18 +3,38 @@
 import { MailCheck, HeadphonesIcon, MapPinCheck } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-const locationsMenuItems = [
-  { label: "Dubai", href: "/movers-and-packers-in-dubai" },
-  { label: "Sharjah", href: "/movers-and-packers-in-sharjah" },
-  { label: "Ajman", href: "/movers-in-ajman" },
-  { label: "Al Ain", href: "/movers-in-al-ain" },
-  { label: "Ras Al Khaimah", href: "/movers-in-ras-al-khaimah" },
-  { label: "Fujairah", href: "/movers-in-fujairah" },
-  { label: "Umm Al Quwain", href: "/movers-in-umm-al-quwain" },
-  { label: "Al Ruwais", href: "/" },
-  { label: "Khor Fakkan", href: "/" },
+const servicesMenuItems = [
+  { label: "نقل اثاث المنزل", href: "/نقل-اثاث-المنزل" },
+  { label: "نقل اثاث الشقق", href: "/نقل-اثاث-الشقق" },
+  { label: "نقل اثاث الفلل", href: "/نقل-اثاث-الفلل" },
+  { label: "نقل اثاث المكاتب", href: "/نقل-اثاث-المكاتب" },
+  { label: "نقل عفش دبي", href: "/نقل-عفش-دبي" },
+  { label: "خدمات تغليف اثاث", href: "/خدمات-تغليف-اثاث" },
 ];
-const Footer = () => {
+
+const locationsMenuItems = [
+  { label: "نقل اثاث دبي", href: "/نقل-اثاث-دبي" },
+  { label: "نقل اثاث الشارقة", href: "/movers-and-packers-in-sharjah" },
+  { label: "نقل اثاث عجمان", href: "/movers-in-ajman" },
+  { label: "نقل اثاث في ام القيوين", href: "/movers-in-al-ain" },
+  { label: "نقل اثاث راس الخيمة", href: "/movers-in-ras-al-khaimah" },
+  { label: "نقل اثاث الفجيرة", href: "/movers-in-fujairah" },
+  { label: "نقل اثاث في العين", href: "/movers-in-umm-al-quwain" },
+];
+
+const otherPagesMenuItems = [
+  { label: "English ", href: "/" },
+  { label: "معلومات عنا", href: "/about-us" },
+  { label: "اتصل بنا", href: "/get-quote" },
+  {
+    label: "أسعارنا المتحركة",
+    href: "/blogs/movers-and-packers-cost-in-dubai",
+  },
+  { label: "كيفية الاتصال", href: "/how-to-hire" },
+  { label: "كيفية الدفع", href: "/how-to-pay" },
+  { label: "مدونات", href: "/blogs" },
+];
+const ArFooter = () => {
   return (
     <>
       <div className="w-full bg-[#222a35] py-5 px-6 font-sans mt-20">
@@ -25,8 +45,12 @@ const Footer = () => {
               <HeadphonesIcon className="w-7 h-7" />
             </div>
             <div className="flex flex-col text-white tracking-wide">
-              <span className="font-bold text-[15px] mb-1">Phone:</span>
-              <a className="text-[15px] opacity-85" href="tel:+971507745691">
+              <span className="font-bold text-[15px] mb-1">رقم التليفون</span>
+              <a
+                dir="ltr"
+                className="text-[15px] opacity-85"
+                href="tel:+971507745691"
+              >
                 (050) 7745691
               </a>
             </div>
@@ -38,12 +62,12 @@ const Footer = () => {
               <MapPinCheck className="w-7 h-7" />
             </div>
             <div className="flex flex-col text-white tracking-wide">
-              <span className="font-bold text-[15px] mb-1">Address:</span>
+              <span className="font-bold text-[15px] mb-1">عنوان المكتب</span>
               <address
                 className="text-[15px] opacity-85"
                 style={{ fontStyle: "normal" }}
               >
-                16 13 St, Ras Al Khor Industrial Area 1 - Dubai
+                شارع 16 13، المنطقة الصناعية 1 رأس الخور - دبي
               </address>
             </div>
           </div>
@@ -54,7 +78,7 @@ const Footer = () => {
               <MailCheck className="w-7 h-7" />
             </div>
             <div className="flex flex-col text-white tracking-wide">
-              <span className="font-bold text-[15px] mb-1">E-mail:</span>
+              <span className="font-bold text-[15px] mb-1">إيميل:</span>
               <Link
                 href="mailto:movers.and.packers.uae91@gmail.com"
                 className="text-[15px] opacity-85"
@@ -81,10 +105,9 @@ const Footer = () => {
               </Link>
 
               <p className="text-[#a5abb1] text-[13.5px] leading-[1.8] mb-5 pr-4 mt-5">
-                Movers and Packers in UAE – We handle house moves, villa
-                relocations, office shifts, packing, furniture transport, and
-                more across Dubai and the emirates. We&apos;ve built a
-                reputation on getting it right the first time.
+                نقل الأثاث في الإمارات — ننقل البيوت، الفلل، المكاتب، الأثاث،
+                ونغلف كل شي. نشتغل في دبي وكل الإمارات، وسمعتنا قايمة على إن
+                الشغل يطلع صح من أول مرة، بدون ضغط وبدون متاعب.
               </p>
 
               {/* Social Icons */}
@@ -203,163 +226,47 @@ const Footer = () => {
             {/* Column 2: Quick Links */}
             <div>
               <h3 className="text-lg font-bold text-white uppercase tracking-wider mb-2">
-                Quick Links
+                صفحات أخرى
               </h3>
               <div className="w-10 h-[1px] bg-[#c10007] mb-6"></div>
               <ul className="flex flex-col space-y-[14px]">
-                <li>
-                  <a
-                    href="/about-us"
-                    className="text-[#a5abb1] hover:text-white text-[13.5px] transition-colors"
-                  >
-                    About Us
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="/blogs"
-                    className="text-[#a5abb1] hover:text-white text-[13.5px] transition-colors"
-                  >
-                    Blogs
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="/get-quote"
-                    className="text-[#a5abb1] hover:text-white text-[13.5px] transition-colors"
-                  >
-                    Get A Quote
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="/how-to-hire"
-                    className="text-[#a5abb1] hover:text-white text-[13.5px] transition-colors"
-                  >
-                    How To Hire
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://moversandpackersinuae.com/blogs/movers-and-packers-cost-in-dubai"
-                    className="text-[#a5abb1] hover:text-white text-[13.5px] transition-colors"
-                  >
-                    Our Moving Prices
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="/how-to-pay"
-                    className="text-[#a5abb1] hover:text-white text-[13.5px] transition-colors"
-                  >
-                    How To Pay
-                  </a>
-                </li>
-                <li>
-                  {/* <a
-                    href="#"
-                    className="text-[#a5abb1] hover:text-white text-[13.5px] transition-colors"
-                  >
-                    Privacy Policy
-                  </a> */}
-                  <p className="text-[#a5abb1] hover:text-white text-[13.5px] transition-colors">
-                    Privacy Policy
-                  </p>
-                </li>
-                <li>
-                  <p className="text-[#a5abb1] hover:text-white text-[13.5px] transition-colors">
-                    Terms & Conditions
-                  </p>
-                </li>
+                {otherPagesMenuItems.map((item, i) => (
+                  <li key={i}>
+                    <a
+                      href={item.href}
+                      className="text-[#a5abb1] hover:text-white text-[13.5px] transition-colors"
+                    >
+                      {item.label}
+                    </a>
+                  </li>
+                ))}
               </ul>
             </div>
 
-            {/* Column 3: Categories */}
+            {/* Column 3: services */}
             <div>
               <h3 className="text-lg font-bold text-white uppercase tracking-wider mb-2">
-                <Link href="/moving-services"> Main Services</Link>
+                <Link href="/moving-services">خدماتنا</Link>
               </h3>
               <div className="w-10 h-[1px] bg-[#c10007] mb-6"></div>
               <ul className="flex flex-col space-y-[14px]">
-                <li>
-                  <a
-                    href="/house-shifting-dubai"
-                    className="text-[#a5abb1] hover:text-white text-[13.5px] transition-colors"
-                  >
-                    House Moving
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="/villa-movers-in-dubai"
-                    className="text-[#a5abb1] hover:text-white text-[13.5px] transition-colors"
-                  >
-                    Villa Moving
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="/apartment-movers-dubai"
-                    className="text-[#a5abb1] hover:text-white text-[13.5px] transition-colors"
-                  >
-                    Apartment Moving
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="/office-movers-in-dubai"
-                    className="text-[#a5abb1] hover:text-white text-[13.5px] transition-colors"
-                  >
-                    Office Relocations
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="/packing-services-in-dubai"
-                    className="text-[#a5abb1] hover:text-white text-[13.5px] transition-colors"
-                  >
-                    Packing Services
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="/furniture-moving-services-uae"
-                    className="text-[#a5abb1] hover:text-white text-[13.5px] transition-colors"
-                  >
-                    Furniture Moving
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="/"
-                    className="text-[#a5abb1] hover:text-white text-[13.5px] transition-colors"
-                  >
-                    Curtain Fixing & Installation
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="/"
-                    className="text-[#a5abb1] hover:text-white text-[13.5px] transition-colors"
-                  >
-                    Storage Services
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="/نقل-اثاث-دبي"
-                    className="text-[#a5abb1] hover:text-white text-[13.5px] transition-colors"
-                  >
-                    نقل اثاث دبي
-                  </a>
-                </li>
+                {servicesMenuItems.map((item, i) => (
+                  <li key={i}>
+                    <a
+                      href={item.href}
+                      className="text-[#a5abb1] hover:text-white text-[13.5px] transition-colors"
+                    >
+                      {item.label}
+                    </a>
+                  </li>
+                ))}
               </ul>
             </div>
 
-            {/* Column 4: Newsletter */}
+            {/* Column 4: locations */}
             <div>
               <h3 className="text-lg font-bold text-white uppercase tracking-wider mb-2">
-                Locations We Serve
+                المواقع
               </h3>
               <div className="w-10 h-[1px] bg-[#c10007] mb-6"></div>
               <ul className="flex flex-col space-y-[14px]">
@@ -370,7 +277,7 @@ const Footer = () => {
                       href={item.href}
                       className="text-[#a5abb1] hover:text-white text-[13.5px] transition-colors"
                     >
-                      Movers in {item.label}
+                      {item.label}
                     </a>
                   </li>
                 ))}
@@ -408,4 +315,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default ArFooter;

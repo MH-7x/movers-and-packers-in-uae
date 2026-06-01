@@ -1,8 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;900&display=swap");
 @import "tailwindcss";
 @import "tw-animate-css";
 @import "shadcn/tailwind.css";
 
 @custom-variant dark (&:is(.dark *));
+
+html[lang="ar"],
+[lang="ar"],
+[dir="rtl"] {
+  font-family: 'Tajawal', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
 
 @theme inline {
   --color-background: var(--background);

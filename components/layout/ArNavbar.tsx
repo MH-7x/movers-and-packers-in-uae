@@ -1,91 +1,44 @@
 "use client";
 import { useState, useEffect } from "react";
-import {
-  PhoneCall,
-  MapPin,
-  X,
-  ChevronDown,
-  ChevronRight,
-  Menu,
-  Clock,
-} from "lucide-react";
+import { PhoneCall, MapPin, X, ChevronDown, Menu, Clock } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import { Button } from "../ui/button";
 
 // Menu Data
 const mainMenuItems = [
-  { label: "Home", href: "/" },
-  { label: "About Us", href: "/about-us" },
-  { label: "Get Quote", href: "/get-quote" },
+  { label: "English ", href: "/" },
+  { label: "معلومات عنا", href: "/about-us" },
+  { label: "اتصل بنا", href: "/get-quote" },
 ];
 
 const servicesMenuItems = [
-  { label: "House moving", href: "/house-shifting-dubai" },
-  { label: "Villa moving", href: "/villa-movers-in-dubai" },
-  { label: "Apartment Moving", href: "/apartment-movers-dubai" },
-  { label: "Flats shifting", href: "/apartment-movers-dubai" },
-  { label: "Office relocation", href: "/office-movers-in-dubai" },
-  {
-    label: "Packing Services (cargo, storage)",
-    href: "/packing-services-in-dubai",
-  },
-  {
-    label: "All kinds of furniture moving",
-    href: "/furniture-moving-services-uae",
-    submenu: [
-      {
-        label: "Single furniture moving",
-        href: "/single-furniture-moving-uae",
-      },
-      { label: "Bank's furniture moving", href: "/bank-furniture-moving-uae" },
-      {
-        label: "Hospital furniture moving",
-        href: "/hospital-furniture-moving-uae",
-      },
-      {
-        label: "Schools' furniture moving",
-        href: "/school-furniture-moving-uae",
-      },
-      {
-        label: "Restaurant furniture moving",
-        href: "/restaurant-furniture-moving-uae",
-      },
-    ],
-  },
-  { label: "Warehouse Moving", href: "/" },
-  { label: "Curtain fixing and installation", href: "/" },
-  {
-    label: "Storage services",
-    href: "#",
-    submenu: [
-      { label: "Self storage", href: "/" },
-      { label: "Furniture storage", href: "/" },
-    ],
-  },
+  { label: "نقل اثاث المنزل", href: "/نقل-اثاث-المنزل" },
+  { label: "نقل اثاث الشقق", href: "/نقل-اثاث-الشقق" },
+  { label: "نقل اثاث الفلل", href: "/نقل-اثاث-الفلل" },
+  { label: "نقل اثاث المكاتب", href: "/نقل-اثاث-المكاتب" },
+  { label: "نقل عفش دبي", href: "/نقل-عفش-دبي" },
+  { label: "خدمات تغليف اثاث", href: "/خدمات-تغليف-اثاث" },
 ];
 
 const locationsMenuItems = [
-  { label: "Dubai", href: "/movers-and-packers-in-dubai" },
-  { label: "Sharjah", href: "/movers-and-packers-in-sharjah" },
-  { label: "Ajman", href: "/movers-in-ajman" },
-  { label: "Al Ain", href: "/movers-in-al-ain" },
-  { label: "Ras Al Khaimah", href: "/movers-in-ras-al-khaimah" },
-  { label: "Fujairah", href: "/movers-in-fujairah" },
-  { label: "Umm Al Quwain", href: "/movers-in-umm-al-quwain" },
-  { label: "Al Ruwais", href: "/" },
-  { label: "Khor Fakkan", href: "/" },
+  { label: "نقل اثاث دبي", href: "/نقل-اثاث-دبي" },
+  { label: "نقل اثاث الشارقة", href: "/movers-and-packers-in-sharjah" },
+  { label: "نقل اثاث عجمان", href: "/movers-in-ajman" },
+  { label: "نقل اثاث في ام القيوين", href: "/movers-in-al-ain" },
+  { label: "نقل اثاث راس الخيمة", href: "/movers-in-ras-al-khaimah" },
+  { label: "نقل اثاث الفجيرة", href: "/movers-in-fujairah" },
+  { label: "نقل اثاث في العين", href: "/movers-in-umm-al-quwain" },
 ];
 
 const otherPagesMenuItems = [
   {
-    label: "Our Moving Prices",
+    label: "أسعارنا المتحركة",
     href: "/blogs/movers-and-packers-cost-in-dubai",
   },
-  { label: "How To Hire", href: "/how-to-hire" },
-  { label: "How To Pay", href: "/how-to-pay" },
-  { label: "Blogs", href: "/blogs" },
-  { label: "نقل اثاث دبي", href: "/نقل-اثاث-دبي" },
+  { label: "كيفية الاتصال", href: "/how-to-hire" },
+  { label: "كيفية الدفع", href: "/how-to-pay" },
+  { label: "مدونات", href: "/blogs" },
 ];
 
 interface MenuItem {
@@ -109,7 +62,7 @@ const DesktopSubMenu = ({ items }: { items: MenuItem[] }) => (
   </ul>
 );
 
-export default function Navbar() {
+export default function ArNavbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -170,7 +123,7 @@ export default function Navbar() {
           {/* Action Items (Right) */}
           <div className="flex items-center gap-4">
             <Button callBtn variant={"secondary"}>
-              <PhoneCall /> Call Now
+              <PhoneCall /> اتصل الآن
             </Button>
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -208,7 +161,7 @@ export default function Navbar() {
                   onClick={() => toggleMobileMenu("services")}
                   className="w-full flex items-center justify-between text-gray-800 font-bold text-base py-3 border-b border-gray-50"
                 >
-                  <Link href="/moving-services">All Services</Link>
+                  <Link href="/moving-services">خدماتنا</Link>
                   <ChevronDown
                     className={`w-5 h-5 transition-transform ${openMobileMenus["services"] ? "rotate-180" : ""}`}
                   />
@@ -216,48 +169,16 @@ export default function Navbar() {
 
                 {openMobileMenus["services"] && (
                   <div className="bg-gray-50 pl-4 pr-2 py-2 space-y-1">
-                    {servicesMenuItems.map((service, index) =>
-                      service.submenu ? (
-                        <div key={index}>
-                          <button
-                            onClick={() => toggleMobileMenu(`submenu-${index}`)}
-                            className="w-full flex items-center justify-between text-gray-600 font-medium text-sm py-2"
-                          >
-                            {service.label}
-                            <ChevronRight
-                              className={`w-4 h-4 transition-transform ${
-                                openMobileMenus[`submenu-${index}`]
-                                  ? "rotate-180"
-                                  : ""
-                              }`}
-                            />
-                          </button>
-                          {openMobileMenus[`submenu-${index}`] && (
-                            <div className="pl-4 py-1 space-y-1 border-l-2 border-gray-200 ml-2 mb-2">
-                              {service.submenu.map((subitem, subindex) => (
-                                <Link
-                                  key={subindex}
-                                  onClick={() => setIsMobileMenuOpen(false)}
-                                  href={subitem.href}
-                                  className="block text-gray-500 text-sm py-1.5"
-                                >
-                                  {subitem.label}
-                                </Link>
-                              ))}
-                            </div>
-                          )}
-                        </div>
-                      ) : (
-                        <Link
-                          key={index}
-                          href={service.href}
-                          onClick={() => setIsMobileMenuOpen(false)}
-                          className="block text-gray-600 text-sm py-2"
-                        >
-                          {service.label}
-                        </Link>
-                      ),
-                    )}
+                    {servicesMenuItems.map((service, index) => (
+                      <Link
+                        key={index}
+                        href={service.href}
+                        onClick={() => setIsMobileMenuOpen(false)}
+                        className="block text-gray-600 text-sm py-2"
+                      >
+                        {service.label}
+                      </Link>
+                    ))}
                   </div>
                 )}
               </div>
@@ -268,7 +189,7 @@ export default function Navbar() {
                   onClick={() => toggleMobileMenu("locations")}
                   className="w-full flex items-center justify-between text-gray-800 font-bold text-base py-3 border-b border-gray-50"
                 >
-                  Locations
+                  المواقع
                   <ChevronDown
                     className={`w-5 h-5 transition-transform ${openMobileMenus["locations"] ? "rotate-180" : ""}`}
                   />
@@ -294,7 +215,7 @@ export default function Navbar() {
                   onClick={() => toggleMobileMenu("other")}
                   className="w-full flex items-center justify-between text-gray-800 font-bold text-base py-3 border-b border-gray-50"
                 >
-                  Other Pages
+                  صفحات أخرى
                   <ChevronDown
                     className={`w-5 h-5 transition-transform ${openMobileMenus["other"] ? "rotate-180" : ""}`}
                   />
@@ -349,9 +270,10 @@ export default function Navbar() {
                 <PhoneCall className="w-8 h-8 text-primary" strokeWidth={1.5} />
                 <div className="flex flex-col">
                   <span className="text-gray-500 text-[11px] font-bold uppercase tracking-widest mb-0.5">
-                    Telephone
+                    رقم التليفون
                   </span>
                   <a
+                    dir="ltr"
                     href="tel:+971507745691"
                     className="text-gray-800 font-bold text-sm hover:text-primary transition-colors"
                   >
@@ -365,7 +287,7 @@ export default function Navbar() {
                 <MapPin className="w-8 h-8 text-primary" strokeWidth={1.5} />
                 <div className="flex flex-col">
                   <span className="text-gray-500 text-[11px] font-bold uppercase tracking-widest mb-0.5">
-                    Address
+                    عنوان المكتب
                   </span>
                   <address
                     style={{
@@ -373,7 +295,7 @@ export default function Navbar() {
                     }}
                     className="text-gray-800 font-bold text-sm"
                   >
-                    16 13 St, Ras Al Khor Industrial Area 1 - Dubai
+                    شارع 16 13، المنطقة الصناعية 1 رأس الخور - دبي
                   </address>
                 </div>
               </div>
@@ -381,7 +303,7 @@ export default function Navbar() {
                 <Clock className="w-8 h-8 text-primary" strokeWidth={1.5} />
                 <div className="flex flex-col">
                   <span className="text-gray-500 text-[11px] font-bold uppercase tracking-widest mb-0.5">
-                    Operating Hours
+                    ساعات العمل
                   </span>
                   <span
                     style={{
@@ -389,14 +311,14 @@ export default function Navbar() {
                     }}
                     className="text-gray-800 font-bold text-sm"
                   >
-                    Open 24/7
+                    مفتوح 24/7
                   </span>
                 </div>
               </div>
 
               {/* CTA Button */}
               <Button quoteBtn size={"lg"}>
-                Request a Quote
+                طلب عرض أسعار
               </Button>
             </div>
           </div>
@@ -449,39 +371,29 @@ export default function Navbar() {
               {/* All Services Dropdown */}
               <li className="relative group">
                 <button className="flex items-center rounded-2xl text-white hover:bg-white/20 px-6 py-3 font-bold text-sm uppercase tracking-wider h-full">
-                  <Link href="/moving-services">All Services</Link>{" "}
+                  <Link href="/moving-services">خدماتنا</Link>{" "}
                   <ChevronDown className="ml-1.5 w-4 h-4" />
                 </button>
-                <ul className="absolute left-0 top-full hidden group-hover:block bg-white shadow-xl text-gray-800 min-w-70 border-t-[3px] border-[#e22727] py-2 z-50">
-                  {servicesMenuItems.map((service, index) =>
-                    service.submenu ? (
-                      <li key={index} className="relative group/nested">
-                        <button className="w-full flex items-center justify-between px-6 py-2.5 text-sm font-medium hover:bg-gray-50 hover:text-primary transition-colors">
-                          <Link href={service.href}>{service.label}</Link>{" "}
-                          <ChevronRight className="w-4 h-4 text-gray-400" />
-                        </button>
-                        <DesktopSubMenu items={service.submenu} />
-                      </li>
-                    ) : (
-                      <li key={index}>
-                        <Link
-                          href={service.href}
-                          className="block px-6 py-2.5 text-sm font-medium hover:bg-gray-50 hover:text-primary transition-colors"
-                        >
-                          {service.label}
-                        </Link>
-                      </li>
-                    ),
-                  )}
+                <ul className="absolute right-0 top-full hidden group-hover:block bg-white shadow-xl text-gray-800 min-w-70 border-t-[3px] border-[#e22727] py-2 z-50">
+                  {servicesMenuItems.map((service, index) => (
+                    <li key={index}>
+                      <Link
+                        href={service.href}
+                        className="block px-6 py-2.5 text-sm font-medium hover:bg-gray-50 hover:text-primary transition-colors"
+                      >
+                        {service.label}
+                      </Link>
+                    </li>
+                  ))}
                 </ul>
               </li>
 
               {/* Location Dropdown */}
               <li className="relative group">
                 <button className="flex items-center rounded-2xl text-white hover:bg-white/20 px-6 py-3 font-bold text-sm uppercase tracking-wider h-full">
-                  Locations <ChevronDown className="ml-1.5 w-4 h-4" />
+                  المواقع <ChevronDown className="ml-1.5 w-4 h-4" />
                 </button>
-                <ul className="absolute left-0 top-full hidden group-hover:block bg-white shadow-xl text-gray-800 min-w-70 border-t-[3px] border-[#e22727] py-2 z-50">
+                <ul className="absolute right-0 top-full hidden group-hover:block bg-white shadow-xl text-gray-800 min-w-70 border-t-[3px] border-[#e22727] py-2 z-50">
                   {locationsMenuItems.map((location, index) => (
                     <li key={index}>
                       <Link
@@ -498,7 +410,7 @@ export default function Navbar() {
               {/* Other Pages Dropdown */}
               <li className="relative group">
                 <button className="flex rounded-2xl items-center text-white hover:bg-white/20 px-6 py-3 font-bold text-sm uppercase tracking-wider h-full">
-                  Other Pages <ChevronDown className="ml-1.5 w-4 h-4" />
+                  صفحات أخرى <ChevronDown className="ml-1.5 w-4 h-4" />
                 </button>
                 <ul className="absolute right-0 top-full hidden group-hover:block bg-white shadow-xl text-gray-800 min-w-55 border-t-[3px] border-[#e22727] py-2 z-50">
                   {otherPagesMenuItems.map((page, index) => (

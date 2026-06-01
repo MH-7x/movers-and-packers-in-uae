@@ -83,7 +83,7 @@ export function ReviewSection({
   }[];
 }) {
   return (
-    <section className="mt-20 max-w-6xl md:px-0 px-3  mx-auto">
+    <section className="mt-20 max-w-6xl md:px-0 px-3  mx-auto" dir="ltr">
       <div className="flex items-center justify-center text-center flex-col">
         <h2 className="font-bold whitespace-normal md:text-5xl text-3xl wrap-break-word">
           What Our Customers Say
