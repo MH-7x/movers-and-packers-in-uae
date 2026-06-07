@@ -726,7 +726,10 @@ function DubaiPage() {
 
         <section className="mx-auto w-full max-w-7xl md:px-10 px-4 mt-20">
           <h2 className=" text-center font-bold md:text-4xl text-3xl">
-            Movers and Packers Across All Dubai Areas
+            <Link href="/dubai-areas">
+              {" "}
+              Movers and Packers Across All Dubai Areas
+            </Link>
           </h2>
           <p className="mt-3  text-center md:text-lg text-muted-foreground mx-auto max-w-3xl">
             We cover all residential communities, commercial zones, and
@@ -742,15 +745,32 @@ function DubaiPage() {
                 <div className="flex flex-1 basis-1/2 flex-col items-start">
                   {/* <Link href={feature.href}> */}
                   <h3 className="mt-1 mb-2 font-bold text-xl tracking-[-0.02em]">
-                    {feature.title}
+                    {feature.href ? (
+                      <Link href={feature.href}>{feature.title}</Link>
+                    ) : (
+                      feature.title
+                    )}
                   </h3>
                   {/* </Link> */}
                   <div className="mb-3 leading-tight text-muted-foreground flex flex-col gap-y-1">
                     {feature.details}
                   </div>
-                  <Button variant={"secondary"}>
-                    Movers in {feature.cta} <ChevronRight />
-                  </Button>
+                  {feature.href ? (
+                    <Link
+                      href={feature.href}
+                      className="bg-secondary px-3 py-1.5 rounded-2xl text-sm flex gap-x-2 items-center"
+                    >
+                      {" "}
+                      Movers in {feature.cta}{" "}
+                      <ChevronRight className="size-5" />
+                    </Link>
+                  ) : (
+                    <p className="bg-secondary px-3 py-1.5 rounded-2xl text-sm flex gap-x-2 items-center">
+                      {" "}
+                      Movers in {feature.cta}{" "}
+                      <ChevronRight className="size-5" />
+                    </p>
+                  )}
                 </div>
               </div>
             ))}
@@ -1000,7 +1020,7 @@ const locations = [
         </p>
       </>
     ),
-    href: "#",
+
     cta: "Dubai Silicon Oasis",
   },
 
@@ -1022,7 +1042,7 @@ const locations = [
         </p>
       </>
     ),
-    href: "#",
+
     cta: "Business Bay",
   },
   {
@@ -1044,7 +1064,7 @@ const locations = [
         </p>
       </>
     ),
-    href: "#",
+
     cta: "Bur Dubai",
   },
   {
@@ -1066,7 +1086,7 @@ const locations = [
         </p>
       </>
     ),
-    href: "#",
+    href: "/dubai-areas/movers-in-dubai-marina",
     cta: "Dubai Marina",
   },
   {
@@ -1084,7 +1104,7 @@ const locations = [
         </p>
       </>
     ),
-    href: "#",
+
     cta: "JVC",
   },
   {
@@ -1102,7 +1122,7 @@ const locations = [
         </p>
       </>
     ),
-    href: "#",
+
     cta: "JLT",
   },
   {
@@ -1119,7 +1139,7 @@ const locations = [
         </p>
       </>
     ),
-    href: "#",
+
     cta: "Mirdif",
   },
   {
@@ -1138,7 +1158,7 @@ const locations = [
         </p>
       </>
     ),
-    href: "#",
+
     cta: "International City",
   },
   {
@@ -1159,7 +1179,7 @@ const locations = [
         </p>
       </>
     ),
-    href: "#",
+
     cta: "Al Barsha",
   },
 ];

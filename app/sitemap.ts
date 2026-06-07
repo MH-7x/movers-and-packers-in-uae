@@ -7,7 +7,7 @@ const pages: MetadataRoute.Sitemap = [
     changeFrequency: "daily",
     priority: 1.0,
     images: ["/movers-and-packers-in-uae.jpg"],
-    lastModified: "2026-06-01",
+    lastModified: "2026-06-07",
   },
   {
     url: "/about-us",
@@ -49,7 +49,7 @@ const pages: MetadataRoute.Sitemap = [
     images: [
       "/loc/movers-and-packers-in-dubai-professional-moving-service-burj-khalifa-golden-hour.jpg",
     ],
-    lastModified: "2026-05-16",
+    lastModified: "2026-06-07",
   },
   {
     url: "/movers-in-ajman",
@@ -92,6 +92,22 @@ const pages: MetadataRoute.Sitemap = [
     ],
     lastModified: "2026-05-16",
   },
+  {
+    url: "/dubai-areas",
+    changeFrequency: "monthly",
+    priority: 0.8,
+    images: [
+      "/loc/movers-and-packers-in-dubai-professional-moving-service-burj-khalifa-golden-hour.jpg",
+    ],
+    lastModified: "2026-06-07",
+  },
+  {
+    url: "/dubai-areas/movers-in-dubai-marina",
+    changeFrequency: "monthly",
+    priority: 0.7,
+    images: ["/local/movers-packers-dubai-marina-hero-team.jpg"],
+    lastModified: "2026-06-07",
+  },
 
   // -------------------------------------------------------
 
@@ -104,21 +120,21 @@ const pages: MetadataRoute.Sitemap = [
     changeFrequency: "monthly",
     priority: 0.7,
     images: ["/ser/apartment-movers-in-dubai.jpg"],
-    lastModified: "2026-05-16",
+    lastModified: "2026-06-07",
   },
   {
     url: "/bank-furniture-moving-uae",
     changeFrequency: "monthly",
     priority: 0.7,
     images: ["/ser/bank-furniture-moving-dubai-teller-counter-relocation.jpg"],
-    lastModified: "2026-05-16",
+    lastModified: "2026-06-07",
   },
   {
     url: "/furniture-moving-services-uae",
     changeFrequency: "monthly",
     priority: 0.7,
     images: ["/ser/furniture-movers-and-packers-in-uae.jpg"],
-    lastModified: "2026-05-16",
+    lastModified: "2026-06-07",
   },
   {
     url: "/hospital-furniture-moving-uae",
@@ -127,35 +143,35 @@ const pages: MetadataRoute.Sitemap = [
     images: [
       "/ser/hospital-furniture-moving-uae-professional-movers-medical-equipment.jpg",
     ],
-    lastModified: "2026-05-16",
+    lastModified: "2026-06-07",
   },
   {
     url: "/house-shifting-dubai",
     changeFrequency: "monthly",
     priority: 0.7,
     images: ["/house-shifting-services-in-dubai-uae.jpg"],
-    lastModified: "2026-05-16",
+    lastModified: "2026-06-07",
   },
   {
     url: "/moving-services",
     changeFrequency: "monthly",
     priority: 0.7,
     images: ["/house-shifting-services-in-dubai-uae.jpg"],
-    lastModified: "2026-05-16",
+    lastModified: "2026-06-07",
   },
   {
     url: "/office-movers-in-dubai",
     changeFrequency: "monthly",
     priority: 0.7,
     images: ["/ser/office-movers-in-dubai.jpg"],
-    lastModified: "2026-05-16",
+    lastModified: "2026-06-07",
   },
   {
     url: "/packing-services-in-dubai",
     changeFrequency: "monthly",
     priority: 0.7,
     images: ["/ser/packing-services-in-dubai.jpg"],
-    lastModified: "2026-05-16",
+    lastModified: "2026-06-07",
   },
   {
     url: "/restaurant-furniture-moving-uae",
@@ -164,7 +180,7 @@ const pages: MetadataRoute.Sitemap = [
     images: [
       "/ser/restaurant-furniture-moving-uae-professional-dining-relocation-dubai.jpg",
     ],
-    lastModified: "2026-05-16",
+    lastModified: "2026-06-07",
   },
   {
     url: "/school-furniture-moving-uae",
@@ -173,21 +189,21 @@ const pages: MetadataRoute.Sitemap = [
     images: [
       "/ser/school-furniture-moving-uae-professional-educational-institution-relocation.jpg",
     ],
-    lastModified: "2026-05-16",
+    lastModified: "2026-06-07",
   },
   {
     url: "/single-furniture-moving-uae",
     changeFrequency: "monthly",
     priority: 0.7,
     images: ["/ser/single-item-moving-dubai-professional-sofa-movers.jpg"],
-    lastModified: "2026-05-16",
+    lastModified: "2026-06-07",
   },
   {
     url: "/villa-movers-in-dubai",
     changeFrequency: "monthly",
     priority: 0.7,
     images: ["/ser/villa-movers-in-dubai.jpg"],
-    lastModified: "2026-05-16",
+    lastModified: "2026-06-07",
   },
 
   // -------------------------------------------------------

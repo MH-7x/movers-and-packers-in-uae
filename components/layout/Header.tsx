@@ -66,7 +66,16 @@ const servicesMenuItems = [
 ];
 
 const locationsMenuItems = [
-  { label: "Dubai", href: "/movers-and-packers-in-dubai" },
+  {
+    label: "Dubai",
+    href: "/movers-and-packers-in-dubai",
+    submenu: [
+      {
+        label: "Dubai Areas We Serve",
+        href: "/dubai-areas",
+      },
+    ],
+  },
   { label: "Sharjah", href: "/movers-and-packers-in-sharjah" },
   { label: "Ajman", href: "/movers-in-ajman" },
   { label: "Al Ain", href: "/movers-in-al-ain" },
@@ -275,15 +284,48 @@ export default function Navbar() {
                 </button>
                 {openMobileMenus["locations"] && (
                   <div className="bg-gray-50 pl-4 pr-2 py-2 space-y-1">
-                    {locationsMenuItems.map((location, index) => (
-                      <Link
-                        key={index}
-                        href={location.href}
-                        className="block text-gray-600 text-sm py-2"
-                      >
-                        {location.label}
-                      </Link>
-                    ))}
+                    {locationsMenuItems.map((location, index) =>
+                      location.submenu ? (
+                        <div key={index}>
+                          <button
+                            onClick={() => toggleMobileMenu(`submenu-${index}`)}
+                            className="w-full flex items-center justify-between text-gray-600 font-medium text-sm py-2"
+                          >
+                            {location.label}
+                            <ChevronRight
+                              className={`w-4 h-4 transition-transform ${
+                                openMobileMenus[`submenu-${index}`]
+                                  ? "rotate-180"
+                                  : ""
+                              }`}
+                            />
+                          </button>
+                          {openMobileMenus[`submenu-${index}`] && (
+                            <div className="pl-4 py-1 space-y-1 border-l-2 border-gray-200 ml-2 mb-2">
+                              {location.submenu.map((subitem, subindex) => (
+                                <Link
+                                  key={subindex}
+                                  onClick={() => setIsMobileMenuOpen(false)}
+                                  href={subitem.href}
+                                  className="block text-gray-500 text-sm py-1.5"
+                                >
+                                  {subitem.label}
+                                </Link>
+                              ))}
+                            </div>
+                          )}
+                        </div>
+                      ) : (
+                        <Link
+                          key={index}
+                          href={location.href}
+                          onClick={() => setIsMobileMenuOpen(false)}
+                          className="block text-gray-600 text-sm py-2"
+                        >
+                          {location.label}
+                        </Link>
+                      ),
+                    )}
                   </div>
                 )}
               </div>
@@ -482,16 +524,26 @@ export default function Navbar() {
                   Locations <ChevronDown className="ml-1.5 w-4 h-4" />
                 </button>
                 <ul className="absolute left-0 top-full hidden group-hover:block bg-white shadow-xl text-gray-800 min-w-70 border-t-[3px] border-[#e22727] py-2 z-50">
-                  {locationsMenuItems.map((location, index) => (
-                    <li key={index}>
-                      <Link
-                        href={location.href}
-                        className="block px-6 py-2.5 text-sm font-medium hover:bg-gray-50 hover:text-primary transition-colors"
-                      >
-                        {location.label}
-                      </Link>
-                    </li>
-                  ))}
+                  {locationsMenuItems.map((location, index) =>
+                    location.submenu ? (
+                      <li key={index} className="relative group/nested">
+                        <button className="w-full flex items-center justify-between px-6 py-2.5 text-sm font-medium hover:bg-gray-50 hover:text-primary transition-colors">
+                          <Link href={location.href}>{location.label}</Link>{" "}
+                          <ChevronRight className="w-4 h-4 text-gray-400" />
+                        </button>
+                        <DesktopSubMenu items={location.submenu} />
+                      </li>
+                    ) : (
+                      <li key={index}>
+                        <Link
+                          href={location.href}
+                          className="block px-6 py-2.5 text-sm font-medium hover:bg-gray-50 hover:text-primary transition-colors"
+                        >
+                          {location.label}
+                        </Link>
+                      </li>
+                    ),
+                  )}
                 </ul>
               </li>
 

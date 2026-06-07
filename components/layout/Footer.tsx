@@ -271,6 +271,14 @@ const Footer = () => {
                     Terms & Conditions
                   </p>
                 </li>
+                <li>
+                  <a
+                    href="/نقل-اثاث-دبي"
+                    className="text-[#a5abb1] hover:text-white text-[13.5px] transition-colors"
+                  >
+                    نقل اثاث دبي
+                  </a>
+                </li>
               </ul>
             </div>
 
@@ -347,10 +355,10 @@ const Footer = () => {
                 </li>
                 <li>
                   <a
-                    href="/نقل-اثاث-دبي"
+                    href="/dubai-areas"
                     className="text-[#a5abb1] hover:text-white text-[13.5px] transition-colors"
                   >
-                    نقل اثاث دبي
+                    Dubai Service Areas
                   </a>
                 </li>
               </ul>

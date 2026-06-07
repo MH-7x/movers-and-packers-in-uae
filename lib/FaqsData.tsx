@@ -2865,3 +2865,392 @@ export const ArDubaiMoversFaqs: {
     ),
   },
 ];
+
+export const DubaiMarinaFAQs = [
+  {
+    question: "How much do movers and packers in Dubai Marina cost?",
+    answer: (
+      <>
+        <p>
+          Studio and 1BHK moves typically run between AED 800 and AED 1,800. A
+          2BHK apartment usually costs between AED 1,600 and AED 3,000. Larger
+          apartments and villas are quoted individually based on the volume of
+          furniture, packing requirements, and floor level.
+        </p>
+
+        <p>
+          The quote you receive is a fixed price and does not change when the
+          truck arrives. If you want a quick estimate before calling, the movers
+          and packers Dubai Marina cost table earlier on this page provides a
+          realistic starting range based on apartment size.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "Do you handle service lift bookings in Dubai Marina towers?",
+    answer: (
+      <>
+        <p>
+          Yes. Most Dubai Marina towers require the service lift to be reserved
+          between 24 and 72 hours in advance, although some older buildings may
+          require longer notice periods.
+        </p>
+
+        <p>
+          Our team coordinates directly with building management and confirms
+          the booking before finalizing your move date. This means you do not
+          have to deal with building administration or access arrangements
+          yourself.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "Do I have to pay before the move is done?",
+    answer: (
+      <>
+        <p>
+          No. Payment is collected only after the move has been completed and
+          you are satisfied with the service provided.
+        </p>
+
+        <p>We accept multiple payment methods, including:</p>
+
+        <ul>
+          <li>Cash</li>
+          <li>Bank Transfer</li>
+          <li>Bank Cheque</li>
+        </ul>
+
+        <p>
+          There is no upfront deposit required for standard moving services.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "How far in advance should I book movers in Dubai Marina?",
+    answer: (
+      <>
+        <p>
+          For most apartment moves, booking 3 to 5 days in advance is usually
+          enough time to arrange service lift reservations and building access
+          requirements.
+        </p>
+
+        <p>
+          For larger office relocations, we recommend booking at least two weeks
+          ahead to allow sufficient time for scheduling, access permits, and
+          operational planning.
+        </p>
+
+        <p>
+          If you require same-day or next-day moving services, contact us via
+          WhatsApp and we will let you know the earliest available moving slot.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "What type of truck do you use for Dubai Marina moves?",
+    answer: (
+      <>
+        <p>
+          We use fully enclosed box trucks for all residential and commercial
+          moves in Dubai Marina.
+        </p>
+
+        <p>
+          With summer temperatures often exceeding 45°C and occasional
+          sandstorms, open trucks can expose furniture, appliances, and
+          electronics to unnecessary risk. Enclosed vehicles provide better
+          protection throughout the relocation process.
+        </p>
+
+        <p>
+          Our fleet includes RTA-approved 3-tonne and 4-tonne trucks, selected
+          according to the size and volume of your move.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "Are you cheaper than other movers and packers in Dubai Marina?",
+    answer: (
+      <>
+        <p>
+          Our pricing is competitive, transparent, and clearly outlined before
+          the move begins.
+        </p>
+
+        <p>
+          We do not use low initial quotes to secure bookings and then add
+          unexpected charges on moving day. If your written quotation states AED
+          2,200, the final invoice will also be AED 2,200 unless you request
+          additional services.
+        </p>
+
+        <p>
+          Many customers have experienced issues with movers who revise prices
+          at the last minute. That is not how we operate, and it has not been
+          our approach throughout our 25 years of service.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "Do you serve JBR (Jumeirah Beach Residence)?",
+    answer: (
+      <>
+        <p>
+          Yes. We regularly handle moves throughout Jumeirah Beach Residence
+          (JBR).
+        </p>
+
+        <p>
+          JBR operates under separate building management systems from Dubai
+          Marina towers. Communities such as Rimal, Sadaf, Amwaj, and Bahar each
+          have their own access procedures and move-in/move-out requirements.
+        </p>
+
+        <p>
+          We plan JBR relocations as dedicated moving projects rather than
+          treating them as an extension of a Dubai Marina move, ensuring all
+          building regulations and access requirements are properly managed.
+        </p>
+      </>
+    ),
+  },
+];
+
+export const DubaiAreasFAQs = [
+  {
+    question: "Do you cover all areas in Dubai?",
+    answer: (
+      <>
+        <p>
+          Yes. We operate across every district in Dubai, including new master
+          communities, older residential neighborhoods, freehold towers, gated
+          villa compounds, and commercial districts.
+        </p>
+
+        <p>
+          The area guide above covers the most frequently requested locations,
+          but if your community is not listed, simply contact us. Chances are we
+          have already completed moves in your building or nearby area.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "Do I need to pay anything upfront?",
+    answer: (
+      <>
+        <p>
+          No. Payment is only required after your move has been completed and
+          you are satisfied with the service provided.
+        </p>
+
+        <p>
+          We accept cash, bank transfer, and cheque payments. Your preferred
+          payment method is confirmed during the booking process, and there are
+          no deposits or advance payments required.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "How long has your company been operating in Dubai?",
+    answer: (
+      <>
+        <p>
+          We have been serving customers since 1998, giving us more than 25
+          years of moving experience across Dubai and the wider UAE.
+        </p>
+
+        <p>
+          Our team has handled thousands of residential, commercial, and
+          specialist relocations throughout the city. We understand building
+          management requirements, access procedures, moving permits, and
+          service elevator regulations because we have worked with them for
+          decades.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "Are your trucks RTA-approved?",
+    answer: (
+      <>
+        <p>
+          Yes. Our fleet includes fully enclosed, RTA-approved box trucks
+          designed to safely transport furniture, appliances, and personal
+          belongings across Dubai and the UAE.
+        </p>
+
+        <p>
+          Enclosed trucks provide protection from heat, dust, and weather
+          conditions, making them ideal for most residential and office moves.
+          We also offer open trucks for certain short-distance relocations where
+          a more economical option is appropriate.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "Can you handle same-day moves in Dubai?",
+    answer: (
+      <>
+        <p>
+          In many cases, yes. We regularly accommodate same-day and next-day
+          moving requests depending on truck and crew availability.
+        </p>
+
+        <p>
+          Whether your lease situation changed unexpectedly or you need an
+          urgent relocation, contact us directly and we will check availability
+          and provide a clear answer as quickly as possible.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "Are you a licensed company or freelance movers?",
+    answer: (
+      <>
+        <p>
+          We are a fully licensed moving company operating legally in the UAE
+          and have been serving customers since 1998.
+        </p>
+
+        <p>
+          Hiring a licensed company provides greater accountability, proper
+          documentation, and professional standards, especially for commercial
+          relocations involving offices, warehouses, restaurants, hospitals,
+          banks, and other regulated facilities.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "Do you handle building permits and elevator bookings?",
+    answer: (
+      <>
+        <p>
+          Yes. Many buildings in areas such as Dubai Marina, Downtown Dubai,
+          Business Bay, JLT, and other master communities require move permits,
+          service elevator reservations, and supporting company documentation.
+        </p>
+
+        <p>
+          We guide customers through the process and help coordinate the
+          required paperwork and bookings, making the relocation process much
+          simpler and less stressful.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "Are there hidden charges?",
+    answer: (
+      <>
+        <p>
+          No. Our pricing is transparent and clearly outlined before the move
+          begins.
+        </p>
+
+        <p>
+          Every quotation specifies the truck type, moving crew, packing
+          materials (if included), and any special access requirements. The
+          amount stated in your quotation is the amount you pay unless you
+          request additional services after booking.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "Can you move heavy or specialist items?",
+    answer: (
+      <>
+        <p>
+          Yes. In addition to standard household and office relocations, we
+          regularly move heavy and specialist items.
+        </p>
+
+        <ul>
+          <li>Industrial machinery</li>
+          <li>Hospital equipment</li>
+          <li>Heavy safes</li>
+          <li>Gym equipment</li>
+          <li>Pianos</li>
+          <li>Restaurant equipment</li>
+          <li>School furniture</li>
+          <li>Bank equipment</li>
+        </ul>
+
+        <p>
+          Contact us with the details of your item and we will recommend the
+          appropriate crew size, equipment, and transport solution.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "What payment methods do you accept?",
+    answer: (
+      <>
+        <p>
+          We offer multiple payment options to make the process convenient for
+          our customers.
+        </p>
+
+        <ul>
+          <li>Cash</li>
+          <li>Bank Transfer</li>
+          <li>Cheque</li>
+        </ul>
+
+        <p>
+          Payment is collected after the move has been completed. We do not
+          require deposits or advance payments.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "Can you move me to or from another emirate?",
+    answer: (
+      <>
+        <p>
+          Yes. We regularly handle inter-emirate relocations throughout the UAE.
+        </p>
+
+        <p>
+          Common routes include Dubai to Sharjah, Dubai to Ajman, Dubai to Abu
+          Dhabi, and many other city-to-city combinations. Whether you are
+          moving within Dubai or relocating to another emirate, our team can
+          coordinate the entire process.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "Do you provide movers near me anywhere in Dubai?",
+    answer: (
+      <>
+        <p>
+          Yes. We provide moving services across all areas of Dubai and can
+          dispatch crews to residential, commercial, and industrial locations
+          throughout the city.
+        </p>
+
+        <p>
+          If you are searching for movers near you, simply contact us with your
+          location and we will confirm availability, estimated arrival time, and
+          the most suitable moving solution for your requirements.
+        </p>
+      </>
+    ),
+  },
+];

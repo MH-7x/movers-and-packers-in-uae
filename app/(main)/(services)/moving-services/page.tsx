@@ -169,6 +169,15 @@ const OurMovingServices = () => {
                 English & Arabic-speaking team
               </p>
             </div>
+            <div className="flex items-center gap-x-3 border-b-2 border-gray-300 pb-3">
+              <CheckCircle className="text-primary" size={25} />
+              <Link
+                href="/dubai-areas"
+                className="text-lg text-foreground font-medium"
+              >
+                Moving Services All Over Dubai
+              </Link>
+            </div>
           </div>
         </section>
         <QuotationSection />

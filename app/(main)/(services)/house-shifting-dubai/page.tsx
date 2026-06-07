@@ -504,6 +504,15 @@ const HouseShiftingServices = () => {
                     </Link>
                   </li>
                 ))}
+                <li>
+                  <Link
+                    href={"/dubai-areas"}
+                    className="flex items-center gap-2"
+                  >
+                    <span className="text-primary"> 🏳 </span>
+                    Dubai Areas We Serve
+                  </Link>
+                </li>
               </ul>
             </div>
           </aside>
