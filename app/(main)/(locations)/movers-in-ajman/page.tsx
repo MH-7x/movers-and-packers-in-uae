@@ -66,16 +66,16 @@ const MoversInAjman = () => {
           desc={
             <>
               <p>
-                Looking for reliable movers in Ajman? You are in the right
+                Looking for reliable movers in ajman? You are in the right
                 place. We are a fully licensed and registered moving company
-                that has been operating since 1998 — with thousands of completed
-                moves across the UAE.
+                providing quality relocation services since 1998 — with
+                thousands of completed moves across the UAE.
               </p>
               <p>
                 Whether you need to shift a studio apartment, a large villa, or
-                a commercial office, our movers and packers in Ajman handle
-                everything from packing and loading to transport and full
-                installation, safely and on time.
+                a commercial office, our moving and packing services in Ajman
+                cover everything from packing and loading to transport and full
+                installation, safely and quality services on time.
               </p>
             </>
           }

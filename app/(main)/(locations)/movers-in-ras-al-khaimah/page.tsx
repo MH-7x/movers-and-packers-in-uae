@@ -81,7 +81,7 @@ const page = () => {
             As movers and packers in Ras Al Khaimah, we use fully enclosed box
             trucks, send itemised quotes on WhatsApp before anything starts, and
             you pay only after the move is complete and you are satisfied. That
-            is how we have worked for over 25 years.
+            is how we have worked for over 25 years to ensure a stress free relocation.
           </p>
         </section>
         <QuotationSection

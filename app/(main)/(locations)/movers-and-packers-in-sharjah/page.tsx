@@ -60,14 +60,13 @@ const MoversInSharjahPage = () => {
           desc={
             <>
               <p>
-                If you’re looking for movers and packers in Sharjah you can
+                If you’re looking for professional movers and packers in Sharjah you can
                 actually trust, we’ve been doing this since 1998. That’s over 25
                 years of moving homes, villas, offices, and everything in
                 between — across Sharjah and the rest of the UAE.
               </p>
               <p>
-                Our movers in Sharjah are trained, insured, and ready to handle
-                your move from start to finish. No hidden charges. No
+                Our team in Sharjah is trained, insured, and ready to provide reliable moving and packing services from start to finish. No hidden charges. No
                 disappearing after the job. You pay only when you’re satisfied.
               </p>
             </>

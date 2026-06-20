@@ -60,13 +60,13 @@ const MoversInUmmAlQuwain = () => {
               <p>
                 Finding good movers in Umm Al Quwain is harder than it should
                 be. You search online, get a few numbers, and half of them turn
-                out to be freelancers with no license, no real truck, and no
+                out to be freelancers with no license, no proper moving truck, and no
                 accountability. If something breaks or goes missing,
                 there&apos;s nobody to call back.
               </p>
               <p>
                 At Movers and Packers in UAE, we&apos;ve been doing this since
-                1998. We&apos;re a registered moving company in Umm Al Quwain —
+                1998. We&apos;re a registered relocation service and moving company in Umm Al Quwain —
                 not a WhatsApp number that disappears once the job is done.
               </p>
             </>
@@ -81,8 +81,7 @@ const MoversInUmmAlQuwain = () => {
         <section className="mt-20 max-w-4xl mx-auto md:px-0 px-4">
           <p className="md:text-2xl text-xl font-bold text-center">
             Our team handles everything from a single sofa to a full villa move
-            across UAQ, using RTA-approved trucks, professional packing
-            materials, and a price that doesn&apos;t change after we quote it.
+            across UAQ, using RTA-approved trucks, high quality packing materials, and a price that doesn&apos;t change after we quote it.
           </p>
           <p className="text-center mt-5 text-muted-foreground">
             Call or WhatsApp us for a FREE moving quote in Umm Al Quwain ·
@@ -268,7 +267,7 @@ const MoversInUmmAlQuwain = () => {
 
               <p>
                 This is the difference between hiring a registered company and
-                hiring a freelancer with a pickup truck. One has something to
+                hiring a freelancer with a pickup truck. One has dedicated customer services and something to
                 lose if the job goes badly. The other doesn&apos;t.
               </p>
             </div>
@@ -344,7 +343,7 @@ const MoversInUmmAlQuwain = () => {
               </span>
             </>
           }
-          desc="Here's what happens from the moment you contact us to the moment we hand over the keys and collect payment:"
+          desc="To make your moving process as smooth as possible, here is what happens from the moment you contact us to the moment we hand over the keys and collect payment:"
         />
         <ReviewSection reviews={googleReviews} />
         <section className="mt-20 max-w-7xl md:px-10 px-4 mx-auto">
@@ -654,8 +653,7 @@ const movingServices = [
     desc: (
       <>
         <p>
-          <Link href="/house-shifting-dubai">Moving a house</Link> involves more
-          than loading trucks. Our team provides{" "}
+          As experienced <Link href="/house-shifting-dubai">house movers</Link> in Umm Al Quwain, we know that moving a house involves more than loading trucks. Our team provides{" "}
           <strong>
             packing materials, furniture dismantling, and room-specific labeling
           </strong>{" "}

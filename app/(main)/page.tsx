@@ -105,20 +105,18 @@ export default function Home() {
               completing thousands of moves across all seven emirates.
             </p>
             <p className=" mt-2">
-              if you&apos;re moving a house, villa, apartment, or office, our
-              team handles it from start to finish — professional packing,
-              careful loading, safe transport, and full reassembly at your new
-              place.
+              If you&apos;re moving a house, villa, apartment, or office, our
+              team of professional packers handles everything to ensure a stress free move. We manage the entire process, from expert handling during loading to the final moment the team unloads and unpacks your belongings at your new place.
             </p>
             <p className=" mt-2">
-              No hidden charges. And you pay only after the job is done to your
+              No hidden charges, giving you complete peace of mind. And you pay only after the job is done to your
               satisfaction. We work with both residential customers and
               businesses.
             </p>
             <p className=" mt-2">
               What makes us different from a freelance mover with a phone number
               isn&apos;t just experience. It&apos;s that we&apos;re registered,
-              insured, and accountable.
+              insured, and accountable, keeping your belongings safe at every step of the journey.
             </p>
             <Button className="mt-5" size={"lg"}>
               <Truck /> Book Your Move Now
