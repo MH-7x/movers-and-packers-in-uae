@@ -4,10 +4,10 @@ import { MetadataRoute } from "next";
 const pages: MetadataRoute.Sitemap = [
   {
     url: "",
-    changeFrequency: "daily",
+    changeFrequency: "weekly",
     priority: 1.0,
     images: ["/movers-and-packers-in-uae.jpg"],
-    lastModified: "2026-06-07",
+    lastModified: "2026-06-20",
   },
   {
     url: "/about-us",
@@ -40,7 +40,7 @@ const pages: MetadataRoute.Sitemap = [
     changeFrequency: "monthly",
     priority: 0.8,
     images: ["/loc/movers-packers-sharjah-professional-moving-service-uae.jpg"],
-    lastModified: "2026-05-16",
+    lastModified: "2026-06-20",
   },
   {
     url: "/movers-and-packers-in-dubai",
@@ -56,7 +56,7 @@ const pages: MetadataRoute.Sitemap = [
     changeFrequency: "monthly",
     priority: 0.8,
     images: ["/loc/movers-in-ajman-residential-house-moving-service-uae.jpg"],
-    lastModified: "2026-05-16",
+    lastModified: "2026-06-20",
   },
   {
     url: "/movers-in-al-ain",
@@ -65,14 +65,14 @@ const pages: MetadataRoute.Sitemap = [
     images: [
       "/loc/movers-in-al-ain-professional-moving-service-jebel-hafeet-garden-city.jpg",
     ],
-    lastModified: "2026-05-16",
+    lastModified: "2026-06-20",
   },
   {
     url: "/movers-in-fujairah",
     changeFrequency: "monthly",
     priority: 0.8,
     images: ["/loc/movers-in-fujairah-professional-moving-service-hero.jpg"],
-    lastModified: "2026-05-16",
+    lastModified: "2026-06-20",
   },
   {
     url: "/movers-in-ras-al-khaimah",
@@ -81,7 +81,7 @@ const pages: MetadataRoute.Sitemap = [
     images: [
       "/loc/movers-in-ras-al-khaimah-professional-moving-service-villa-hajar-mountains.jpg",
     ],
-    lastModified: "2026-05-16",
+    lastModified: "2026-06-20",
   },
   {
     url: "/movers-in-umm-al-quwain",
@@ -90,7 +90,7 @@ const pages: MetadataRoute.Sitemap = [
     images: [
       "/loc/movers-umm-al-quwain-professional-moving-service-khor-al-beidah-lagoon.jpg",
     ],
-    lastModified: "2026-05-16",
+    lastModified: "2026-06-20",
   },
   {
     url: "/dubai-areas",
