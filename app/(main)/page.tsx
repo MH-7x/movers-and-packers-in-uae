@@ -40,12 +40,12 @@ import MainHeroSection from "@/components/MainHeroSection";
 export const metadata = MetadataTemplate({
   data: {
     meta: {
-      title: "Movers and Packers in UAE | Safe Moving Across The UAE",
-      desc: "Movers and Packers in UAE. We provide moving services for homes, villas, offices & furniture across Dubai and all Emirates. Call / WhatsApp us for a free quote",
+      title: "Movers and Packers in UAE | Dubai Moving Company Since 1998",
+      desc: "Trusted movers and packers in UAE since 1998. House, villa, office & furniture moving across Dubai and all Emirates. Insured moves. Get a free WhatsApp quote.",
     },
     image: {
       path: "/mover-and-packers-in-uae.jpg",
-      alt: "Movers and Packers in UAE - Professional Moving Company",
+      alt: "Movers and Packers in UAE - Professional Dubai Moving Company",
     },
     path: "",
   },
@@ -84,7 +84,7 @@ export default function Home() {
             <div className="bg-muted aspect-video mt-8 relative overflow-hidden">
               <Image
                 src={"/movers-and-packers-in-uae-moving-trucks.jpg"}
-                alt="Moving Company in UAE truck in Dubai Road"
+                alt="Movers and Packers in UAE - Professional Dubai Moving Company"
                 fill
                 className="object-cover"
               />
@@ -106,17 +106,21 @@ export default function Home() {
             </p>
             <p className=" mt-2">
               If you&apos;re moving a house, villa, apartment, or office, our
-              team of professional packers handles everything to ensure a stress free move. We manage the entire process, from expert handling during loading to the final moment the team unloads and unpacks your belongings at your new place.
+              team of professional packers handles everything to ensure a stress
+              free move. We manage the entire process, from expert handling
+              during loading to the final moment the team unloads and unpacks
+              your belongings at your new place.
             </p>
             <p className=" mt-2">
-              No hidden charges, giving you complete peace of mind. And you pay only after the job is done to your
-              satisfaction. We work with both residential customers and
-              businesses.
+              No hidden charges, giving you complete peace of mind. And you pay
+              only after the job is done to your satisfaction. We work with both
+              residential customers and businesses.
             </p>
             <p className=" mt-2">
               What makes us different from a freelance mover with a phone number
               isn&apos;t just experience. It&apos;s that we&apos;re registered,
-              insured, and accountable, keeping your belongings safe at every step of the journey.
+              insured, and accountable, keeping your belongings safe at every
+              step of the journey.
             </p>
             <Button className="mt-5" size={"lg"}>
               <Truck /> Book Your Move Now

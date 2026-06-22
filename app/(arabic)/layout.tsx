@@ -15,6 +15,7 @@ const tajawal = Tajawal({
 
 export const metadata: Metadata = {
   applicationName: "نقل الأثاث في الإمارات",
+
   robots: {
     "max-image-preview": "large",
     follow: true,
