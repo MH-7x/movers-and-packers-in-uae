@@ -8,8 +8,9 @@ import Image from "next/image";
 import { ReviewSection } from "../../../../components/ReviewSection";
 import MovingProcess from "@/components/MovingProcess";
 import Link from "next/link";
-import Script from "next/script";
+
 import { generateBreadcrumb } from "@/lib/generateBreadcrumb";
+import { Breadcrumb } from "@/components/Breadcrumb";
 
 export const metadata = MetadataTemplate({
   data: {
@@ -36,14 +37,20 @@ const OurMovingServices = () => {
   });
   return (
     <>
-      <Script
-        strategy="beforeInteractive"
+      <script
+        
         id="breadcrumb"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: breadcrumb }}
       />
 
       <main>
+        <Breadcrumb list={[
+      {
+        title: "Our Moving Services",
+        url: "/moving-services",
+      },
+    ]} />
         <section
           id="movers-and-packers-in-uae-services"
           className="mt-10 max-w-7xl md:px-10 px-4 mx-auto"

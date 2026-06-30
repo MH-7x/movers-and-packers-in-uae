@@ -33,13 +33,19 @@ const page = () => {
   });
   return (
     <>
-      <Script
-        strategy="beforeInteractive"
+      <script
+        
         id="breadcrumb"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: breadcrumb }}
       />
       <main>
+        <Breadcrumb list={[
+      {
+        title: "Movers in Ras Al Khaimah",
+        url: "/movers-in-ras-al-khaimah",
+      },
+    ]} />
         <LocHeroSection
           h1={
             <>
@@ -804,7 +810,8 @@ import MetadataTemplate from "@/lib/MetaDataTemplate";
 import Link from "next/link";
 import { ReviewSection } from "@/components/ReviewSection";
 import { generateBreadcrumb } from "@/lib/generateBreadcrumb";
-import Script from "next/script";
+import { Breadcrumb } from "@/components/Breadcrumb";
+
 
 const googleReviews = [
   {

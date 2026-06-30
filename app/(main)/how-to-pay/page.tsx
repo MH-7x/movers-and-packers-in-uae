@@ -3,7 +3,8 @@ import { PaymentFAQs } from "@/lib/FaqsData";
 import { generateBreadcrumb } from "@/lib/generateBreadcrumb";
 import MetadataTemplate from "@/lib/MetaDataTemplate";
 import Image from "next/image";
-import Script from "next/script";
+import { Breadcrumb } from "@/components/Breadcrumb";
+
 
 const paymentMethods = [
   {
@@ -92,13 +93,19 @@ export default function HowToPay() {
   });
   return (
     <>
-      <Script
-        strategy="beforeInteractive"
+      <script
+        
         id="breadcrumb"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: breadcrumb }}
       />
       <main>
+        <Breadcrumb list={[
+      {
+        title: "How To Pay ",
+        url: "/how-to-pay",
+      },
+    ]} />
         {/* Hero */}
         <section className="bg-foreground text-white px-4 pt-20 pb-32 relative overflow-hidden">
           <div className="absolute inset-0 opacity-5 pointer-events-none">

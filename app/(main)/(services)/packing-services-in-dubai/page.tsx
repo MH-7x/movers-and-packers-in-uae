@@ -13,6 +13,7 @@ import { MessageCircle, PhoneCall } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import Script from "next/script";
+import { Breadcrumb } from "@/components/Breadcrumb";
 
 export const metadata = MetadataTemplate({
   data: {
@@ -46,6 +47,12 @@ const PackingServicesInDubai = () => {
         dangerouslySetInnerHTML={{ __html: breadcrumb }}
       />
       <main>
+        <Breadcrumb list={[
+      {
+        title: "Packing Services in Dubai",
+        url: "/packing-services-in-dubai",
+      },
+    ]} />
         <ServiceHero
           title="Professional Packing Services in Dubai — Cargo, Storage & for Moving"
           desc="If you are looking for reliable packing services in Dubai, you have come to the right place. Movers and Packers in UAE is a registered moving company, based in Dubai since 1998, with over 25 years of experience packing and moving thousands of homes, offices, villas, and commercial spaces across the UAE."

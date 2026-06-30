@@ -11,8 +11,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import MetadataTemplate from "@/lib/MetaDataTemplate";
-import Script from "next/script";
+
 import { generateBreadcrumb } from "@/lib/generateBreadcrumb";
+import { Breadcrumb } from "@/components/Breadcrumb";
 
 export const metadata = MetadataTemplate({
   data: {
@@ -39,13 +40,19 @@ const BankFurnitureMovers = () => {
   });
   return (
     <>
-      <Script
-        strategy="beforeInteractive"
+      <script
+        
         id="breadcrumb"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: breadcrumb }}
       />
       <main>
+        <Breadcrumb list={[
+      {
+        title: "Bank Furniture Moving in UAE",
+        url: "/bank-furniture-moving-uae",
+      },
+    ]} />
         <ServiceHero
           title="Bank Furniture Moving in UAE — Confidential Commercial Movers"
           desc="Moving a bank branch or financial institution in the UAE demands a level of trust, security, and professionalism that ordinary movers simply cannot provide. "

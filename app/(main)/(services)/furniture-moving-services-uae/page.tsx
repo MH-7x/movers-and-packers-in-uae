@@ -11,8 +11,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import MetadataTemplate from "@/lib/MetaDataTemplate";
-import Script from "next/script";
+
 import { generateBreadcrumb } from "@/lib/generateBreadcrumb";
+import { Breadcrumb } from "@/components/Breadcrumb";
 
 export const metadata = MetadataTemplate({
   data: {
@@ -39,13 +40,19 @@ const FurnitureMovers = () => {
   });
   return (
     <>
-      <Script
-        strategy="beforeInteractive"
+      <script
+        
         id="breadcrumb"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: breadcrumb }}
       />
       <main>
+        <Breadcrumb list={[
+      {
+        title: "Furniture Movers in UAE",
+        url: "/furniture-moving-services-uae",
+      },
+    ]} />
         <ServiceHero
           title="Furniture Movers in UAE — All Kinds of Furniture Moving"
           desc="Looking for trusted furniture movers in UAE? You have found the right place. At Movers and Packers in UAE, we handle all kinds of furniture moving with the care, expertise, and professionalism your belongings deserve. "

@@ -3,7 +3,8 @@ import DubaiMovingDetailsSection from "@/components/DubaiMovingDetailsSection";
 import { Button } from "@/components/ui/button";
 import { generateBreadcrumb } from "@/lib/generateBreadcrumb";
 import MetadataTemplate from "@/lib/MetaDataTemplate";
-import Script from "next/script";
+import { Breadcrumb } from "@/components/Breadcrumb";
+
 
 export const metadata = MetadataTemplate({
   data: {
@@ -31,13 +32,19 @@ function DubaiAreas() {
 
   return (
     <>
-      <Script
-        strategy="beforeInteractive"
+      <script
+        
         id="breadcrumb"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: breadcrumb }}
       />
       <main>
+        <Breadcrumb list={[
+      {
+        title: "Dubai Areas We Serve",
+        url: "/dubai-areas",
+      },
+    ]} />
         <section className="bg-foreground text-white px-4 pt-20 pb-24 relative overflow-hidden">
           <div className="absolute inset-0 opacity-5">
             <div className="absolute top-0 right-0 w-96 h-96 rounded-full bg-amber-400 blur-3xl -translate-y-1/2 translate-x-1/3" />

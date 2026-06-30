@@ -19,7 +19,8 @@ import heroImage from "@/public/local/movers-packers-dubai-marina-hero-team.jpg"
 import Image from "next/image";
 import MetadataTemplate from "@/lib/MetaDataTemplate";
 import { generateBreadcrumb } from "@/lib/generateBreadcrumb";
-import Script from "next/script";
+import { Breadcrumb } from "@/components/Breadcrumb";
+
 
 export const metadata = MetadataTemplate({
   data: {
@@ -51,13 +52,23 @@ export default function MoversDubaiMarinaPage() {
 
   return (
     <>
-      <Script
-        strategy="beforeInteractive"
+      <script
+        
         id="breadcrumb"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: breadcrumb }}
       />
       <main className="text-foreground ">
+        <Breadcrumb list={[
+      {
+        title: "Dubai Areas We Serve",
+        url: "/dubai-areas",
+      },
+      {
+        title: "Movers in Dubai Marina",
+        url: "/dubai-areas/movers-in-dubai-marina",
+      },
+    ]} />
         {/* Hero Section */}
         <section className="relative overflow-hidden pt-12 pb-20 md:pt-20 md:pb-28 border-b border-border">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

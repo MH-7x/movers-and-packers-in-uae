@@ -13,7 +13,8 @@ import heroImage from "@/public/loc/movers-packers-sharjah-professional-moving-s
 import { ChevronRight, PhoneCall } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import Script from "next/script";
+import { Breadcrumb } from "@/components/Breadcrumb";
+
 
 export const metadata = MetadataTemplate({
   data: {
@@ -41,13 +42,19 @@ const MoversInSharjahPage = () => {
 
   return (
     <>
-      <Script
-        strategy="beforeInteractive"
+      <script
+        
         id="breadcrumb"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: breadcrumb }}
       />
       <main>
+        <Breadcrumb list={[
+      {
+        title: "Movers and Packers in Sharjah",
+        url: "/movers-and-packers-in-sharjah",
+      },
+    ]} />
         <LocHeroSection
           h1={
             <>

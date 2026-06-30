@@ -20,7 +20,8 @@ import CTA from "@/components/CTA";
 import MetadataTemplate from "@/lib/MetaDataTemplate";
 import { ReviewSection } from "@/components/ReviewSection";
 import { generateBreadcrumb } from "@/lib/generateBreadcrumb";
-import Script from "next/script";
+import { Breadcrumb } from "@/components/Breadcrumb";
+
 
 export const metadata = MetadataTemplate({
   data: {
@@ -47,13 +48,19 @@ const MoversInAjman = () => {
   });
   return (
     <>
-      <Script
-        strategy="beforeInteractive"
+      <script
+        
         id="breadcrumb"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: breadcrumb }}
       />
       <main>
+        <Breadcrumb list={[
+      {
+        title: "Movers in Ajman",
+        url: "/movers-in-ajman",
+      },
+    ]} />
         <LocHeroSection
           h1={
             <>

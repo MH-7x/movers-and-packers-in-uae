@@ -12,7 +12,8 @@ import HeroImage from "@/public/ser/hospital-furniture-moving-uae-professional-m
 import { PhoneCall, MessageCircle } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import Script from "next/script";
+import { Breadcrumb } from "@/components/Breadcrumb";
+
 
 export const metadata = MetadataTemplate({
   data: {
@@ -39,13 +40,19 @@ const HospitalFurnitureMoving = () => {
   });
   return (
     <>
-      <Script
-        strategy="beforeInteractive"
+      <script
+        
         id="breadcrumb"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: breadcrumb }}
       />
       <main>
+        <Breadcrumb list={[
+      {
+        title: "Hospital Furniture Moving in UAE",
+        url: "/hospital-furniture-moving-uae",
+      },
+    ]} />
         <ServiceHero
           title="Hospital Furniture Moving in UAE — Safe, Hygienic & Professional Medical Movers"
           desc="Hospital and healthcare facility relocations require a uniquely careful approach. Moving hospital beds, patient room furniture, clinical workstations, and medical office setups demands hygiene compliance, careful handling techniques, and a team that understands the sensitivity of healthcare environments."

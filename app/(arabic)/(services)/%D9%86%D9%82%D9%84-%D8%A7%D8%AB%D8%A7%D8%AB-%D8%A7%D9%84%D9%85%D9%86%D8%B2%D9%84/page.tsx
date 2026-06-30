@@ -6,7 +6,8 @@ import MetadataTemplate from "@/lib/MetaDataTemplate";
 import Image from "next/image";
 import { ReviewSection } from "@/components/ReviewSection";
 import { generateBreadcrumb } from "@/lib/generateBreadcrumb";
-import Script from "next/script";
+import { Breadcrumb } from "@/components/Breadcrumb";
+
 
 export const metadata = MetadataTemplate({
   data: {
@@ -34,13 +35,19 @@ const breadcrumb = generateBreadcrumb({
 export default function HouseShiftingPage() {
   return (
     <>
-      <Script
-        strategy="beforeInteractive"
+      <script
+        
         id="breadcrumb"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: breadcrumb }}
       />
       <main>
+        <Breadcrumb list={[
+    {
+      title: "نقل اثاث المنزل في الإمارات",
+      url: "/نقل-اثاث-المنزل",
+    },
+  ]} />
         {/* 1. قسم الهيرو الرئيسي (Hero Section) */}
         <section className="relative overflow-hidden border-b border-border py-16 md:py-24">
           <div className="relative z-10 max-w-7xl mx-auto md:px-10 px-4 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">

@@ -6,7 +6,7 @@ export const metadata = MetadataTemplate({
   data: {
     meta: {
       title: "About Us | Movers and Packers in UAE Since 1998",
-      desc: "About our moving company in UAE. Licensed since 1998, we provide house, villa, office & furniture moving across all emirates. Transparent pricing, no hidden charges.",
+      desc: "About our moving company in UAE. Licensed since 1998, we provide house, villa, office & furniture moving. Transparent pricing, no hidden charges.",
     },
     image: {
       path: "/about-us-professional-movers-packers-team-dubai-uae.jpg",
@@ -27,13 +27,19 @@ const AboutUsPage = () => {
   });
   return (
     <>
-      <Script
-        strategy="beforeInteractive"
+      <script
+        
         id="breadcrumb"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: breadcrumb }}
       />
       <main>
+        <Breadcrumb list={[
+      {
+        title: "About Us ",
+        url: "/about-us",
+      },
+    ]} />
         <section className="max-w-7xl mx-auto md:px-10 px-4 mt-20 w-full">
           <div className="flex flex-col lg:flex-row gap-10 lg:gap-16 items-stretch">
             {/* Left Large Image Placeholder */}
@@ -389,8 +395,9 @@ import { FAQSection } from "@/components/FaqsSection";
 import { AboutUSFaqs } from "@/lib/FaqsData";
 import MetadataTemplate from "@/lib/MetaDataTemplate";
 import Link from "next/link";
-import Script from "next/script";
+
 import { generateBreadcrumb } from "@/lib/generateBreadcrumb";
+import { Breadcrumb } from "@/components/Breadcrumb";
 const servicesData = [
   {
     title: "Residential Moving",

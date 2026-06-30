@@ -4,7 +4,6 @@ import "../globals.css";
 import Navbar from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { Toaster } from "@/components/ui/sonner";
-import Script from "next/script";
 import { APP, MoversAndPackersSchema } from "@/lib/App";
 import ActionButton from "@/components/ActionButtons";
 
@@ -52,13 +51,13 @@ export default function RootLayout({
       className={`${familjenGrotesk.className} h-full antialiased`}
     >
       <head>
-        <Script
+        <script
           id="Business-Schema"
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify(MoversAndPackersSchema),
           }}
-          strategy="beforeInteractive"
+          
           key="Business-Schema"
         />
       </head>

@@ -34,6 +34,8 @@ export default function MetadataTemplate({ data }: { data: Data }): Metadata {
     twitter: {
       card: "summary_large_image",
       creator: APP.name,
+      title: data.meta.title,
+      description: data.meta.desc,
     },
   };
 }

@@ -5,7 +5,8 @@ import { MovingQuoteFAQs } from "@/lib/FaqsData";
 import { generateBreadcrumb } from "@/lib/generateBreadcrumb";
 
 import MetadataTemplate from "@/lib/MetaDataTemplate";
-import Script from "next/script";
+import { Breadcrumb } from "@/components/Breadcrumb";
+
 
 export const metadata = MetadataTemplate({
   data: {
@@ -32,13 +33,19 @@ const GetAQuotePage = () => {
   });
   return (
     <>
-      <Script
-        strategy="beforeInteractive"
+      <script
+        
         id="breadcrumb"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: breadcrumb }}
       />
       <main>
+        <Breadcrumb list={[
+      {
+        title: "Get a Quote",
+        url: "/get-quote",
+      },
+    ]} />
         <QuotationSection invert h1 />
         <section className="mt-20 max-w-4xl mx-auto md:rounded-3xl bg-secondary aspect-video overflow-hidden">
           <iframe

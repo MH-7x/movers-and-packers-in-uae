@@ -12,7 +12,8 @@ import HeroImage from "@/public/ser/restaurant-furniture-moving-uae-professional
 import { MessageCircle, PhoneCall } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import Script from "next/script";
+import { Breadcrumb } from "@/components/Breadcrumb";
+
 
 export const metadata = MetadataTemplate({
   data: {
@@ -39,13 +40,19 @@ const RestaurantFurnitureMoving = () => {
   });
   return (
     <>
-      <Script
-        strategy="beforeInteractive"
+      <script
+        
         id="breadcrumb"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: breadcrumb }}
       />
       <main>
+        <Breadcrumb list={[
+      {
+        title: "Restaurant Furniture Moving",
+        url: "/restaurant-furniture-moving-uae",
+      },
+    ]} />
         <ServiceHero
           title="Restaurant Furniture Moving in UAE — Complete F&B & Hospitality Relocation"
           desc="Professional restaurant furniture movers in UAE. We relocate dining furniture, bar setups, kitchen equipment & complete F&B fit-outs across Dubai, Abu Dhabi, Sharjah & all UAE. Trusted since 1998. Free quote."

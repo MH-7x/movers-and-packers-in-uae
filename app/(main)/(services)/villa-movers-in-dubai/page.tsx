@@ -12,7 +12,8 @@ import heroImage from "@/public/ser/villa-movers-in-dubai.jpg";
 import { MessageCircle, PhoneCall } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import Script from "next/script";
+import { Breadcrumb } from "@/components/Breadcrumb";
+
 
 export const metadata = MetadataTemplate({
   data: {
@@ -39,13 +40,19 @@ const VillaMoversInDubai = () => {
   });
   return (
     <>
-      <Script
-        strategy="beforeInteractive"
+      <script
+        
         id="breadcrumb"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: breadcrumb }}
       />
       <main>
+        <Breadcrumb list={[
+      {
+        title: "Villa Movers in Dubai",
+        url: "/villa-movers-in-dubai",
+      },
+    ]} />
         <ServiceHero
           image={{
             src: heroImage,

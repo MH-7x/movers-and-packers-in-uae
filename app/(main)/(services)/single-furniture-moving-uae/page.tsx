@@ -13,8 +13,9 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import MetadataTemplate from "@/lib/MetaDataTemplate";
-import Script from "next/script";
+
 import { generateBreadcrumb } from "@/lib/generateBreadcrumb";
+import { Breadcrumb } from "@/components/Breadcrumb";
 
 export const metadata = MetadataTemplate({
   data: {
@@ -41,13 +42,19 @@ const SingleFurnitureMovers = () => {
   });
   return (
     <>
-      <Script
-        strategy="beforeInteractive"
+      <script
+        
         id="breadcrumb"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: breadcrumb }}
       />
       <main>
+        <Breadcrumb list={[
+      {
+        title: "Single Furniture Moving",
+        url: "/single-furniture-moving-uae",
+      },
+    ]} />
         <ServiceHero
           title="Single Furniture Moving in UAE — One-Item Pickup & Delivery"
           desc="Need to move just one piece of furniture in the UAE? You do not need a full moving truck or a whole-house team. Our single furniture moving service is the smart, cost-effective solution designed specifically for customers who want to move a single item — a sofa, bed, wardrobe, dining table, or any other piece — quickly and safely anywhere across the UAE."

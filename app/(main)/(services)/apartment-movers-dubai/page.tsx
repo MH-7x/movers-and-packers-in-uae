@@ -12,7 +12,8 @@ import HeroImage from "@/public/ser/apartment-movers-in-dubai.jpg";
 import { ChevronRight, MessageCircle, PhoneCall } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import Script from "next/script";
+import { Breadcrumb } from "@/components/Breadcrumb";
+
 
 export const metadata = MetadataTemplate({
   data: {
@@ -39,13 +40,19 @@ const ApartmentMovers = () => {
   });
   return (
     <>
-      <Script
-        strategy="beforeInteractive"
+      <script
+        
         id="breadcrumb"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: breadcrumb }}
       />
       <main>
+        <Breadcrumb list={[
+      {
+        title: "Apartment Movers in Dubai",
+        url: "/apartment-movers-dubai",
+      },
+    ]} />
         <ServiceHero
           title="Apartment Movers in Dubai — Quick & Safe Relocations"
           desc="Looking for reliable apartment movers in Dubai? Whether you are shifting a studio, a 1BHK, or a large 4-bedroom apartment, our team at Movers and Packers in UAE handles everything from start to finish — packing, transport, and full installation."

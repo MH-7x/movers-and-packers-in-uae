@@ -11,8 +11,9 @@ import { OfficeMovingDubaiFaqs } from "@/lib/FaqsData";
 import CTA from "@/components/CTA";
 import Link from "next/link";
 import MetadataTemplate from "@/lib/MetaDataTemplate";
-import Script from "next/script";
+
 import { generateBreadcrumb } from "@/lib/generateBreadcrumb";
+import { Breadcrumb } from "@/components/Breadcrumb";
 
 export const metadata = MetadataTemplate({
   data: {
@@ -39,13 +40,19 @@ const OfficeMoversInDubai = () => {
   });
   return (
     <>
-      <Script
-        strategy="beforeInteractive"
+      <script
+        
         id="breadcrumb"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: breadcrumb }}
       />
       <main>
+        <Breadcrumb list={[
+      {
+        title: "Office Movers in Dubai",
+        url: "/office-movers-in-dubai",
+      },
+    ]} />
         <ServiceHero
           title="Office Movers in Dubai – Trusted Office Relocation in UAE"
           desc="If you're looking for reliable office movers in Dubai, you've come to the right place. We are Movers and Packers in UAE — a registered moving company based in Dubai, serving businesses of all sizes since 1998. Startups, banks, hospitals, schools, restaurants, and large corporate offices — we've moved them all."

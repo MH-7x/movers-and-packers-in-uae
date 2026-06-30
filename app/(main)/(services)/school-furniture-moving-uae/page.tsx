@@ -12,7 +12,8 @@ import HeroImage from "@/public/ser/school-furniture-moving-uae-professional-edu
 import { MessageCircle, PhoneCall } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import Script from "next/script";
+import { Breadcrumb } from "@/components/Breadcrumb";
+
 
 export const metadata = MetadataTemplate({
   data: {
@@ -39,13 +40,19 @@ const SchoolFurnitureMoving = () => {
   });
   return (
     <>
-      <Script
-        strategy="beforeInteractive"
+      <script
+        
         id="breadcrumb"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: breadcrumb }}
       />
       <main>
+        <Breadcrumb list={[
+      {
+        title: "School Furniture Moving",
+        url: "/school-furniture-moving-uae",
+      },
+    ]} />
         <ServiceHero
           title="School Furniture Moving in UAE — Educational Institution Relocation"
           desc="Professional school and educational institution furniture movers in UAE. Efficient relocation of classrooms, library shelving, lab furniture & admin offices across Dubai, Abu Dhabi, Sharjah & all UAE. Free quote."

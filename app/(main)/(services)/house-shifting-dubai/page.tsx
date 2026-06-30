@@ -11,8 +11,9 @@ import { FAQSection } from "@/components/FaqsSection";
 import { HouseShiftingDubaiFaqs } from "@/lib/FaqsData";
 import CTA from "@/components/CTA";
 import MetadataTemplate from "@/lib/MetaDataTemplate";
-import Script from "next/script";
+
 import { generateBreadcrumb } from "@/lib/generateBreadcrumb";
+import { Breadcrumb } from "@/components/Breadcrumb";
 
 export const metadata = MetadataTemplate({
   data: {
@@ -39,13 +40,19 @@ const HouseShiftingServices = () => {
   });
   return (
     <>
-      <Script
-        strategy="beforeInteractive"
+      <script
+        
         id="breadcrumb"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: breadcrumb }}
       />
       <main>
+        <Breadcrumb list={[
+      {
+        title: "House Shifting Dubai",
+        url: "/house-shifting-dubai",
+      },
+    ]} />
         <ServiceHero
           title="House Shifting Dubai — Home Movers and Packers in Dubai"
           desc="Planning a house shifting in Dubai? Movers and Packers in UAE is your licensed, experienced partner for a smooth, stress-free relocation. Registered since 1998 and based in Ras Al Khor Industrial Area 1, Dubai, we have completed thousands of residential moves across all UAE emirates."

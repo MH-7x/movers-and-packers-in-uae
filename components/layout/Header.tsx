@@ -57,11 +57,7 @@ const servicesMenuItems = [
   { label: "Curtain fixing and installation", href: "/" },
   {
     label: "Storage services",
-    href: "#",
-    submenu: [
-      { label: "Self storage", href: "/" },
-      { label: "Furniture storage", href: "/" },
-    ],
+    href: "/",
   },
 ];
 

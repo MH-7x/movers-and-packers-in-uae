@@ -6,7 +6,8 @@ import { CalendarCheck2, ListTodoIcon, User2Icon } from "lucide-react";
 import { Metadata } from "next";
 import Image from "next/image";
 import { notFound } from "next/navigation";
-import Script from "next/script";
+import { Breadcrumb } from "@/components/Breadcrumb";
+
 
 export interface Main {
   message: string;
@@ -179,19 +180,29 @@ const SingleBlogPage = async ({
 
   return blog ? (
     <article>
-      <Script
-        strategy="beforeInteractive"
+      <script
+        
         id="blog-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: blogSchema }}
       />
-      <Script
-        strategy="beforeInteractive"
+      <script
+        
         id="breadcrumb"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: breadcrumb }}
       />
       <main>
+        <Breadcrumb list={[
+      {
+        title: "Blogs",
+        url: "/blogs",
+      },
+      {
+        title: blog?.title ? blog.title : "",
+        url: `/blogs/${slug}`,
+      },
+    ]} />
         <section className="grid-wrapper w-full flex items-center justify-center flex-col py-16 md:px-0 px-3">
           <>
             <div className="grid-background" />

@@ -4,7 +4,8 @@ import { generateBreadcrumb } from "@/lib/generateBreadcrumb";
 import MetadataTemplate from "@/lib/MetaDataTemplate";
 import heroImage from "@/public/how-to-hire-movers-uae-whatsapp-booking-professional-moving-company.jpg";
 import Image from "next/image";
-import Script from "next/script";
+import { Breadcrumb } from "@/components/Breadcrumb";
+
 
 export const metadata = MetadataTemplate({
   data: {
@@ -174,13 +175,19 @@ export default function HowToHire() {
   });
   return (
     <>
-      <Script
-        strategy="beforeInteractive"
+      <script
+        
         id="breadcrumb"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: breadcrumb }}
       />
       <main>
+        <Breadcrumb list={[
+      {
+        title: "How To Hire ",
+        url: "/how-to-hire",
+      },
+    ]} />
         {/* Hero */}
         <section className="bg-foreground text-white px-4 pt-20 pb-24 relative overflow-hidden">
           <div className="absolute inset-0 opacity-5">

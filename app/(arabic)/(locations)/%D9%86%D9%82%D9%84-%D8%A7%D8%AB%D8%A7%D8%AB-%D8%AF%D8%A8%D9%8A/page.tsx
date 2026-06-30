@@ -8,7 +8,8 @@ import Image from "next/image";
 import MetadataTemplate from "@/lib/MetaDataTemplate";
 import Link from "next/link";
 import { generateBreadcrumb } from "@/lib/generateBreadcrumb";
-import Script from "next/script";
+import { Breadcrumb } from "@/components/Breadcrumb";
+
 
 export const metadata = MetadataTemplate({
   data: {
@@ -35,13 +36,19 @@ const breadcrumb = generateBreadcrumb({
 export default function FurnitureMovingDubaiPage() {
   return (
     <>
-      <Script
-        strategy="beforeInteractive"
+      <script
+        
         id="breadcrumb"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: breadcrumb }}
       />
       <main>
+        <Breadcrumb list={[
+    {
+      title: "نقل اثاث دبي",
+      url: "/نقل-اثاث-دبي",
+    },
+  ]} />
         {/* 2. Hero Section */}
         <section className="relative py-16 lg:py-24 overflow-hidden border-b border-border ">
           <div className="max-w-7xl mx-auto md:px-10 px-4 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10">

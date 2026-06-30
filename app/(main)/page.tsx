@@ -34,8 +34,9 @@ import { ReviewSection } from "@/components/ReviewSection";
 import MovingProcess from "@/components/MovingProcess";
 import MetadataTemplate from "@/lib/MetaDataTemplate";
 import { generateBreadcrumb } from "@/lib/generateBreadcrumb";
-import Script from "next/script";
+
 import MainHeroSection from "@/components/MainHeroSection";
+import { Breadcrumb } from "@/components/Breadcrumb";
 
 export const metadata = MetadataTemplate({
   data: {
@@ -56,13 +57,14 @@ export default function Home() {
 
   return (
     <>
-      <Script
-        strategy="beforeInteractive"
+      <script
+        
         id="breadcrumb"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: breadcrumb }}
       />
       <main>
+        <Breadcrumb list={[]} />
         <MainHeroSection />
         <QuotationSection invert />
         <section

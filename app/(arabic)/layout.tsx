@@ -2,7 +2,7 @@ import ArNavbar from "@/components/layout/ArNavbar";
 import { MoversAndPackersSchema } from "@/lib/App";
 import { Metadata } from "next";
 import { Tajawal } from "next/font/google";
-import Script from "next/script";
+
 import "../globals.css";
 import ArFooter from "@/components/layout/ArFooter";
 import ActionButton from "@/components/ActionButtons";
@@ -50,13 +50,13 @@ export default function RootLayout({
       className={`${tajawal.className} antialiased `}
     >
       <head>
-        <Script
+        <script
           id="Business-Schema"
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify(MoversAndPackersSchema),
           }}
-          strategy="beforeInteractive"
+          
           key="Business-Schema"
         />
       </head>

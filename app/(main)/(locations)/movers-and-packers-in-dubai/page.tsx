@@ -16,13 +16,14 @@ import {
 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import Script from "next/script";
+import { Breadcrumb } from "@/components/Breadcrumb";
+
 
 export const metadata = MetadataTemplate({
   data: {
     meta: {
       title: "Movers and Packers in Dubai | Licensed Since 1998 | Free Quote",
-      desc: "Trusted movers and packers in Dubai since 1998. Villa, apartment, office & furniture moves. RTA-approved trucks, no hidden fees. Pay after completion. Free quote.",
+      desc: "Trusted movers and packers in Dubai since 1998. Villa, apartment, office & furniture moves. RTA-approved trucks, no hidden fees. Free quote.",
     },
     image: {
       path: "/loc/movers-and-packers-in-dubai-professional-moving-service-burj-khalifa-golden-hour.jpg",
@@ -43,13 +44,19 @@ function DubaiPage() {
   });
   return (
     <>
-      <Script
-        strategy="beforeInteractive"
+      <script
+        
         id="breadcrumb"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: breadcrumb }}
       />
       <main>
+        <Breadcrumb list={[
+      {
+        title: "Movers and Packers in Dubai",
+        url: "/movers-and-packers-in-dubai",
+      },
+    ]} />
         <LocHeroSection
           h1={
             <>

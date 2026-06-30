@@ -11,8 +11,9 @@ import {
   PaginationPrevious,
 } from "@/components/ui/pagination";
 import { MainForCard } from "@/types/blog";
-import Script from "next/script";
+
 import { generateBreadcrumb } from "@/lib/generateBreadcrumb";
+import { Breadcrumb } from "@/components/Breadcrumb";
 
 export const metadata = MetadataTemplate({
   data: {
@@ -80,14 +81,20 @@ const BlogsPage = async ({
   });
   return (
     <>
-      <Script
-        strategy="beforeInteractive"
+      <script
+        
         id="breadcrumb"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: breadcrumb }}
       />
 
       <main>
+        <Breadcrumb list={[
+      {
+        title: "Our Blogs ",
+        url: "/blogs",
+      },
+    ]} />
         <section className="grid-wrapper w-full flex items-center justify-center flex-col py-16 md:px-0 px-4">
           <div className="grid-background" />
           <h1 className="md:text-5xl text-3xl  font-bold text-center">

@@ -24,7 +24,8 @@ import {
 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import Script from "next/script";
+import { Breadcrumb } from "@/components/Breadcrumb";
+
 
 export const metadata = MetadataTemplate({
   data: {
@@ -51,14 +52,20 @@ const MoversInFujairah = () => {
   });
   return (
     <>
-      <Script
-        strategy="beforeInteractive"
+      <script
+        
         id="breadcrumb"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: breadcrumb }}
       />
 
       <main>
+        <Breadcrumb list={[
+      {
+        title: "Best Movers in Fujairah",
+        url: "/movers-in-fujairah",
+      },
+    ]} />
         <LocHeroSection
           h1={
             <>

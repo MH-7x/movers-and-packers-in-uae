@@ -7,8 +7,9 @@ import heroImage from "@/public/ar/نقل-اثاث-الشقق-دبي-موفرز-
 import MetadataTemplate from "@/lib/MetaDataTemplate";
 import Image from "next/image";
 import { ReviewSection } from "@/components/ReviewSection";
-import Script from "next/script";
+
 import { generateBreadcrumb } from "@/lib/generateBreadcrumb";
+import { Breadcrumb } from "@/components/Breadcrumb";
 
 export const metadata = MetadataTemplate({
   data: {
@@ -36,13 +37,19 @@ const breadcrumb = generateBreadcrumb({
 export default function ApartmentMoversPage() {
   return (
     <>
-      <Script
-        strategy="beforeInteractive"
+      <script
+        
         id="breadcrumb"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: breadcrumb }}
       />
       <main>
+        <Breadcrumb list={[
+    {
+      title: "نقل اثاث الشقق في الإمارات",
+      url: "/نقل-اثاث-الشقق",
+    },
+  ]} />
         {/* 1. قسم الهيرو الرئيسي (Hero Section) */}
         <section className="relative overflow-hidden border-b border-border py-16 md:py-24">
           <div className="relative z-10 max-w-7xl mx-auto md:px-10 px-4 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">

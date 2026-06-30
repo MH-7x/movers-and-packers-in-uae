@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-before-interactive-script-outside-document */
 import { convertFaqsForSchema } from "@/lib/ConvertFaqsInRaw";
 import { generateFAQSchema } from "@/lib/GenerateFaqSchema";
-import Script from "next/script";
+
 
 export interface FAQData {
   question: string;
@@ -59,8 +59,8 @@ export const FAQSection: React.FC<FAQProps> = ({
   const FaqsSchema = generateFAQSchema(convertFaqsForSchema(faqs));
   return (
     <>
-      <Script
-        strategy="beforeInteractive"
+      <script
+        
         id="FAQSchema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: FaqsSchema }}
