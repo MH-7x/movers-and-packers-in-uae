@@ -710,6 +710,28 @@ const page = () => {
           </div>
         </section>
 
+        <section className="max-w-7xl mx-auto px-4 md:px-10 mt-20 mb-20">
+          <div className="bg-muted rounded-3xl p-6 sm:p-8 lg:px-12 text-center sm:text-left">
+            <h3 className="text-xl sm:text-2xl font-bold mb-3">
+              Inter-Emirate Moves: RAK to Umm Al Quwain and Fujairah
+            </h3>
+            <div className="max-w-4xl">
+              <p className="text-muted-foreground">
+                Relocating out of Ras Al Khaimah? We manage moves to neighboring emirates like Umm Al Quwain and Fujairah, ensuring your furniture and personal items are transported securely across inter-city routes.
+              </p>
+              <p className="text-muted-foreground mt-3">
+                See also:{" "}
+                <Link href="/movers-in-umm-al-quwain" className="underline underline-offset-4 hover:text-primary/80">
+                  Umm Al Quwain moving services
+                </Link>{" "}
+                and{" "}
+                <Link href="/movers-in-fujairah" className="underline underline-offset-4 hover:text-primary/80">
+                  Fujairah movers
+                </Link>.
+              </p>
+            </div>
+          </div>
+        </section>
         <FAQSection
           title="Frequently Asked Questions: Movers in Ras Al Khaimah"
           faqs={RasAlKhaimahMovingFAQs}

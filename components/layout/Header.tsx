@@ -24,7 +24,7 @@ const servicesMenuItems = [
   { label: "House moving", href: "/house-shifting-dubai" },
   { label: "Villa moving", href: "/villa-movers-in-dubai" },
   { label: "Apartment Moving", href: "/apartment-movers-dubai" },
-  { label: "Flats shifting", href: "/apartment-movers-dubai" },
+  { label: "Flats shifting", href: "/flats-shifting-in-uae" },
   { label: "Office relocation", href: "/office-movers-in-dubai" },
   {
     label: "Packing Services (cargo, storage)",
@@ -53,11 +53,11 @@ const servicesMenuItems = [
       },
     ],
   },
-  { label: "Warehouse Moving", href: "/" },
-  { label: "Curtain fixing and installation", href: "/" },
+  { label: "Warehouse Moving", href: "/warehouse-moving-in-uae" },
+  { label: "Curtain fixing and installation", href: "/curtain-fixing-in-uae" },
   {
     label: "Storage services",
-    href: "/",
+    href: "/storage-services-in-uae",
   },
 ];
 

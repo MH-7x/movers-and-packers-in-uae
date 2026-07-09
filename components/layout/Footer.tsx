@@ -338,20 +338,20 @@ const Footer = () => {
                   </a>
                 </li>
                 <li>
-                  <span
-                    // href="/curtain-fixing-dubai"
+                  <a
+                    href="/curtain-fixing-in-uae"
                     className="text-[#a5abb1] hover:text-white text-[13.5px] transition-colors"
                   >
                     Curtain Fixing & Installation
-                  </span>
+                  </a>
                 </li>
                 <li>
-                  <span
-                    // href="/"
+                  <a
+                    href="/storage-services-in-uae"
                     className="text-[#a5abb1] hover:text-white text-[13.5px] transition-colors"
                   >
                     Storage Services
-                  </span>
+                  </a>
                 </li>
                 <li>
                   <a

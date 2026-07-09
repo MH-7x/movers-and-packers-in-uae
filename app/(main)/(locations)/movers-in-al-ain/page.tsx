@@ -720,6 +720,28 @@ const MoversInAlAin = () => {
             Quwain, and all other UAE emirates from a single booking.
           </p>
         </section>
+        <section className="max-w-7xl mx-auto px-4 md:px-10 mt-20 mb-20">
+          <div className="bg-muted rounded-3xl p-6 sm:p-8 lg:px-12 text-center sm:text-left">
+            <h3 className="text-xl sm:text-2xl font-bold mb-3">
+              Inter-City Moves: Relocating from Al Ain
+            </h3>
+            <div className="max-w-4xl">
+              <p className="text-muted-foreground">
+                Moving from Al Ain to other major cities? We regularly handle long-distance relocations across the UAE, ensuring your belongings arrive safely whether you are moving to Dubai or Sharjah.
+              </p>
+              <p className="text-muted-foreground mt-3">
+                See also:{" "}
+                <Link href="/movers-and-packers-in-dubai" className="underline underline-offset-4 hover:text-primary/80">
+                  Dubai moving services
+                </Link>{" "}
+                and{" "}
+                <Link href="/movers-and-packers-in-sharjah" className="underline underline-offset-4 hover:text-primary/80">
+                  Sharjah movers
+                </Link>.
+              </p>
+            </div>
+          </div>
+        </section>
         <FAQSection
           title="Frequently Asked Questions - Movers in Al Ain"
           faqs={AlAinMovingFAQs}

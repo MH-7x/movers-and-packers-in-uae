@@ -638,6 +638,28 @@ const MoversInUmmAlQuwain = () => {
           </div>
         </div>
 
+        <section className="max-w-7xl mx-auto px-4 md:px-10 mt-20 mb-20">
+          <div className="bg-muted rounded-3xl p-6 sm:p-8 lg:px-12 text-center sm:text-left">
+            <h3 className="text-xl sm:text-2xl font-bold mb-3">
+              Inter-Emirate Moves: Umm Al Quwain to Ajman and RAK
+            </h3>
+            <div className="max-w-4xl">
+              <p className="text-muted-foreground">
+                If you are moving from Umm Al Quwain to nearby emirates such as Ajman or Ras Al Khaimah, our experienced team provides a seamless relocation experience without any hidden cross-border fees.
+              </p>
+              <p className="text-muted-foreground mt-3">
+                See also:{" "}
+                <Link href="/movers-in-ajman" className="underline underline-offset-4 hover:text-primary/80">
+                  Ajman moving services
+                </Link>{" "}
+                and{" "}
+                <Link href="/movers-in-ras-al-khaimah" className="underline underline-offset-4 hover:text-primary/80">
+                  Ras Al Khaimah movers
+                </Link>.
+              </p>
+            </div>
+          </div>
+        </section>
         <FAQSection
           faqs={UmmAlQuwainMovingFAQs}
           title="Frequently Asked Questions — Movers in Umm Al Quwain"

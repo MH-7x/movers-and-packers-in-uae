@@ -899,6 +899,28 @@ const MoversInAjman = () => {
             relocation, one team, one contact.
           </p>
         </section>
+        <section className="max-w-7xl mx-auto px-4 md:px-10 mt-20 mb-20">
+          <div className="bg-muted rounded-3xl p-6 sm:p-8 lg:px-12 text-center sm:text-left">
+            <h3 className="text-xl sm:text-2xl font-bold mb-3">
+              Inter-Emirate Moves: Ajman to Sharjah and Umm Al Quwain
+            </h3>
+            <div className="max-w-4xl">
+              <p className="text-muted-foreground">
+                If you are planning to move from Ajman to neighboring emirates like Sharjah or Umm Al Quwain, our team has you covered. We manage the logistics so you don't have to worry about cross-border moving details.
+              </p>
+              <p className="text-muted-foreground mt-3">
+                See also:{" "}
+                <Link href="/movers-and-packers-in-sharjah" className="underline underline-offset-4 hover:text-primary/80">
+                  Sharjah moving services
+                </Link>{" "}
+                and{" "}
+                <Link href="/movers-in-umm-al-quwain" className="underline underline-offset-4 hover:text-primary/80">
+                  Umm Al Quwain movers
+                </Link>.
+              </p>
+            </div>
+          </div>
+        </section>
         <FAQSection
           faqs={AjmanMovingFAQs}
           title="Frequently Asked Questions — Movers in Ajman"

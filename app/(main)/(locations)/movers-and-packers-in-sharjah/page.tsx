@@ -15,7 +15,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { Breadcrumb } from "@/components/Breadcrumb";
 
-
 export const metadata = MetadataTemplate({
   data: {
     meta: {
@@ -43,18 +42,19 @@ const MoversInSharjahPage = () => {
   return (
     <>
       <script
-        
         id="breadcrumb"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: breadcrumb }}
       />
       <main>
-        <Breadcrumb list={[
-      {
-        title: "Movers and Packers in Sharjah",
-        url: "/movers-and-packers-in-sharjah",
-      },
-    ]} />
+        <Breadcrumb
+          list={[
+            {
+              title: "Movers and Packers in Sharjah",
+              url: "/movers-and-packers-in-sharjah",
+            },
+          ]}
+        />
         <LocHeroSection
           h1={
             <>
@@ -67,14 +67,16 @@ const MoversInSharjahPage = () => {
           desc={
             <>
               <p>
-                If you’re looking for professional movers and packers in Sharjah you can
-                actually trust, we’ve been doing this since 1998. That’s over 25
-                years of moving homes, villas, offices, and everything in
-                between — across Sharjah and the rest of the UAE.
+                If you’re looking for professional movers and packers in Sharjah
+                you can actually trust, we’ve been doing this since 1998. That’s
+                over 25 years of moving homes, villas, offices, and everything
+                in between — across Sharjah and the rest of the UAE.
               </p>
               <p>
-                Our team in Sharjah is trained, insured, and ready to provide reliable moving and packing services from start to finish. No hidden charges. No
-                disappearing after the job. You pay only when you’re satisfied.
+                Our team in Sharjah is trained, insured, and ready to provide
+                reliable moving and packing services from start to finish. No
+                hidden charges. No disappearing after the job. You pay only when
+                you’re satisfied.
               </p>
             </>
           }
@@ -752,6 +754,38 @@ const MoversInSharjahPage = () => {
                 <PhoneCall className="w-7 h-7 text-[#4B5563] group-hover:text-[#111827] transition-colors stroke-[1.5]" />
                 <span className="text-sm font-medium">Call Now</span>
               </Button>
+            </div>
+          </div>
+        </section>
+        <section className="max-w-7xl mx-auto px-4 md:px-10 mt-20 mb-20">
+          <div className="bg-muted rounded-3xl p-6 sm:p-8 lg:px-12 text-center sm:text-left">
+            <h3 className="text-xl sm:text-2xl font-bold mb-3">
+              Inter-Emirate Moves: Sharjah to Dubai and Ajman
+            </h3>
+            <div className="max-w-4xl">
+              <p className="text-muted-foreground">
+                Many Sharjah residents eventually move to Dubai or Ajman. The
+                process requires a mover who knows building regulations and
+                access requirements across both sides of the border. We cover
+                all inter-emirate moves with one straightforward quote.
+              </p>
+              <p className="text-muted-foreground mt-3">
+                See also:{" "}
+                <Link
+                  href="/movers-and-packers-in-dubai"
+                  className="underline underline-offset-4 hover:text-primary/80"
+                >
+                  Dubai moving services
+                </Link>{" "}
+                and{" "}
+                <Link
+                  href="/movers-in-ajman"
+                  className="underline underline-offset-4 hover:text-primary/80"
+                >
+                  Ajman movers
+                </Link>
+                .
+              </p>
             </div>
           </div>
         </section>
