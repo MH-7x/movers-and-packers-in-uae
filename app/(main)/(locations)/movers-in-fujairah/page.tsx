@@ -26,12 +26,11 @@ import Image from "next/image";
 import Link from "next/link";
 import { Breadcrumb } from "@/components/Breadcrumb";
 
-
 export const metadata = MetadataTemplate({
   data: {
     meta: {
       title: "Best Movers in Fujairah – Professional Moving Company UAE",
-      desc: "Movers in Fujairah with 25+ years experience. Fast, reliable service with no hidden charges. Same-day moves available. Free quote & pay-upon-satisfaction guarantee.",
+      desc: "Movers in Fujairah with 25+ years experience. Fast, reliable movers and packers, no hidden charges, same-day service & free quotes.",
     },
     image: {
       path: "/loc/movers-in-fujairah-professional-moving-service-hero.jpg",
@@ -53,19 +52,20 @@ const MoversInFujairah = () => {
   return (
     <>
       <script
-        
         id="breadcrumb"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: breadcrumb }}
       />
 
       <main>
-        <Breadcrumb list={[
-      {
-        title: "Best Movers in Fujairah",
-        url: "/movers-in-fujairah",
-      },
-    ]} />
+        <Breadcrumb
+          list={[
+            {
+              title: "Best Movers in Fujairah",
+              url: "/movers-in-fujairah",
+            },
+          ]}
+        />
         <LocHeroSection
           h1={
             <>
@@ -78,10 +78,10 @@ const MoversInFujairah = () => {
           desc={
             <>
               <p>
-                If you need a reliable and trusted mover in Fujairah, you have come to the
-                right place. Movers and Packers in UAE is a licensed moving
-                company that has been handling professional relocation needs across all seven emirates since
-                1998.
+                If you need a reliable and trusted mover in Fujairah, you have
+                come to the right place. Movers and Packers in UAE is a licensed
+                moving company that has been handling professional relocation
+                needs across all seven emirates since 1998.
               </p>
               <p>
                 We are the go-to house movers and packers in Fujairah with over
@@ -104,9 +104,9 @@ const MoversInFujairah = () => {
             process for you.
           </p>
           <p className="text-center mt-5 text-muted-foreground">
-            Packing, loading, transport, and setup — all done properly to ensure complete customer satisfaction. Get a
-            free quote today by calling us or sending a WhatsApp message. We
-            respond within minutes.
+            Packing, loading, transport, and setup — all done properly to ensure
+            complete customer satisfaction. Get a free quote today by calling us
+            or sending a WhatsApp message. We respond within minutes.
           </p>
         </section>
 
@@ -272,10 +272,10 @@ const MoversInFujairah = () => {
                 description: (
                   <>
                     <p>
-                      We use high quality packing materials — bubble wrap, stretch
-                      film, carton boxes, fabric blankets, and corrugated rolls.
-                      Every box is labelled by room, so unpacking is organised
-                      and fast.
+                      We use high quality packing materials — bubble wrap,
+                      stretch film, carton boxes, fabric blankets, and
+                      corrugated rolls. Every box is labelled by room, so
+                      unpacking is organised and fast.
                     </p>
                   </>
                 ),
@@ -698,17 +698,27 @@ const MoversInFujairah = () => {
             </h3>
             <div className="max-w-4xl">
               <p className="text-muted-foreground">
-                Moving from the East Coast to other emirates requires experienced drivers and properly secured enclosed trucks. We routinely handle relocations from Fujairah to Ras Al Khaimah and Sharjah.
+                Moving from the East Coast to other emirates requires
+                experienced drivers and properly secured enclosed trucks. We
+                routinely handle relocations from Fujairah to Ras Al Khaimah and
+                Sharjah.
               </p>
               <p className="text-muted-foreground mt-3">
                 See also:{" "}
-                <Link href="/movers-in-ras-al-khaimah" className="underline underline-offset-4 hover:text-primary/80">
+                <Link
+                  href="/movers-in-ras-al-khaimah"
+                  className="underline underline-offset-4 hover:text-primary/80"
+                >
                   Ras Al Khaimah moving services
                 </Link>{" "}
                 and{" "}
-                <Link href="/movers-and-packers-in-sharjah" className="underline underline-offset-4 hover:text-primary/80">
+                <Link
+                  href="/movers-and-packers-in-sharjah"
+                  className="underline underline-offset-4 hover:text-primary/80"
+                >
                   Sharjah movers
-                </Link>.
+                </Link>
+                .
               </p>
             </div>
           </div>

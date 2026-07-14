@@ -127,7 +127,7 @@ export const services = [
         name: "Industrial Machinery & Heavy Safes",
         description:
           "Specialist handling for oversized and heavy items with proper equipment and trained professionals.",
-        href: "/industrial-machinery-moving",
+        href: "/",
         img: {
           src: "/ser/industrial-machinery-heavy-safe-moving-dubai.jpg",
           alt: "Industrial machinery and heavy safe moving service in Dubai with specialist rigging team",
@@ -365,7 +365,7 @@ export const locations = [
     title: "Movers and Packers Al Ruwais",
     description:
       "Al Ruwais is in the far west of Abu Dhabi — a long-distance route we fully cover. Home moving and furniture transport in the western region, plus cross-emirate relocations.",
-    href: "/industrial-machinery-moving",
+    href: "/",
   },
   {
     title: "Movers and Packers Khor Fakkan",
@@ -378,7 +378,8 @@ export const locations = [
 export const AllServices = [
   {
     name: "Flats Shifting",
-    description: "Professional flats shifting in UAE with zero stress. Packing, furniture disassembly, transport and setup.",
+    description:
+      "Professional flats shifting in UAE with zero stress. Packing, furniture disassembly, transport and setup.",
     href: "/flats-shifting-in-uae",
     img: {
       src: "/ser/apartment-flat-shifting-dubai-uae.jpg",
@@ -501,7 +502,7 @@ export const AllServices = [
     name: "Industrial Machinery & Heavy Safes",
     description:
       "Specialist rigging team for heavy, awkward, or fragile industrial items. Done safely and professionally.",
-    href: "/industrial-machinery-moving",
+    href: "/",
     img: {
       src: "/ser/industrial-machinery-heavy-safe-moving-dubai.jpg",
       alt: "Industrial machinery and heavy safe moving service in Dubai with specialist rigging team",

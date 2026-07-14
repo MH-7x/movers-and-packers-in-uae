@@ -8,7 +8,6 @@ import Image from "next/image";
 import { notFound } from "next/navigation";
 import { Breadcrumb } from "@/components/Breadcrumb";
 
-
 export interface Main {
   message: string;
   success: boolean;
@@ -181,28 +180,28 @@ const SingleBlogPage = async ({
   return blog ? (
     <article>
       <script
-        
         id="blog-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: blogSchema }}
       />
       <script
-        
         id="breadcrumb"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: breadcrumb }}
       />
       <main>
-        <Breadcrumb list={[
-      {
-        title: "Blogs",
-        url: "/blogs",
-      },
-      {
-        title: blog?.title ? blog.title : "",
-        url: `/blogs/${slug}`,
-      },
-    ]} />
+        <Breadcrumb
+          list={[
+            {
+              title: "Blogs",
+              url: "/blogs",
+            },
+            {
+              title: blog?.title ? blog.title : "",
+              url: `/blogs/${slug}`,
+            },
+          ]}
+        />
         <section className="grid-wrapper w-full flex items-center justify-center flex-col py-16 md:px-0 px-3">
           <>
             <div className="grid-background" />
@@ -232,11 +231,24 @@ const SingleBlogPage = async ({
                 </Button>
                 <Button
                   variant={"ghost"}
-                  title={`Published date`}
+                  title={`last updated date`}
                   className="text-muted-foreground font-normal"
                   size={"sm"}
                 >
-                  <CalendarCheck2 />{" "}
+                  <CalendarCheck2 /> Updated at{" "}
+                  {new Date(blog.updatedAt).toLocaleDateString("en-US", {
+                    year: "numeric",
+                    month: "long",
+                    day: "numeric",
+                  })}
+                </Button>
+                <Button
+                  variant={"ghost"}
+                  title={`published date`}
+                  className="text-muted-foreground font-normal"
+                  size={"sm"}
+                >
+                  <CalendarCheck2 /> Created at{" "}
                   {new Date(blog.createdAt).toLocaleDateString("en-US", {
                     year: "numeric",
                     month: "long",

@@ -52,7 +52,7 @@ async function getBlogs(page = 1) {
     if (!data.success) {
       errorMessage = data.message;
     }
-
+    console.log("Blogs Data:", data);
     return data;
   } catch (error) {
     if (error instanceof Error) {
@@ -82,19 +82,20 @@ const BlogsPage = async ({
   return (
     <>
       <script
-        
         id="breadcrumb"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: breadcrumb }}
       />
 
       <main>
-        <Breadcrumb list={[
-      {
-        title: "Our Blogs ",
-        url: "/blogs",
-      },
-    ]} />
+        <Breadcrumb
+          list={[
+            {
+              title: "Our Blogs ",
+              url: "/blogs",
+            },
+          ]}
+        />
         <section className="grid-wrapper w-full flex items-center justify-center flex-col py-16 md:px-0 px-4">
           <div className="grid-background" />
           <h1 className="md:text-5xl text-3xl  font-bold text-center">
