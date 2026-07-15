@@ -121,12 +121,12 @@ const BlogsPage = async ({
                   image={blog.FeaturedImage || "/Background-with-text.jpg"}
                   category={blog.category.name}
                   title={blog.title}
-                  date={new Date(blog.createdAt).toLocaleDateString("en-US", {
+                  date={new Date(blog.updatedAt).toLocaleDateString("en-US", {
                     year: "numeric",
                     month: "long",
                     day: "numeric",
                   })}
-                  author={"Mashal Huraira"}
+                  author={blog.author?.name || "Mashal Huraira"}
                   excerpt={blog.caption}
                   href={`/blogs${blog.slug}`}
                 />

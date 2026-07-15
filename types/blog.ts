@@ -12,6 +12,10 @@ export interface BlogForCard {
   category: Category;
   FeaturedImage: string;
   slug: string;
+  author?: {
+    name: string;
+    avatarUrl: string;
+  };
   createdAt: Date;
   updatedAt: Date;
 }

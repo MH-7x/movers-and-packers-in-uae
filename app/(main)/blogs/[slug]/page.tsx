@@ -102,7 +102,7 @@ export async function generateMetadata({
             ]
           : undefined,
         type: "article",
-        authors: ["Mashal Huraira", blog.author.name],
+        authors: ["Mashal Huraira", blog.author?.name || "Mashal Huraira"],
         countryName: "UAE",
         modifiedTime: blog.updatedAt.toString(),
         siteName: "Movers and Packers in UAE",
@@ -219,7 +219,7 @@ const SingleBlogPage = async ({
                   className="text-muted-foreground font-normal"
                   size={"sm"}
                 >
-                  <User2Icon /> Mashal Huraira
+                  <User2Icon /> {blog.author?.name || "Mashal Huraira"}
                 </Button>
                 <Button
                   variant={"ghost"}
