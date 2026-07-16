@@ -73,7 +73,7 @@ const MoversInUmmAlQuwain = () => {
               </p>
               <p>
                 At Movers and Packers in UAE, we&apos;ve been doing this since
-                1998. We&apos;re a registered relocation service and moving company in Umm Al Quwain —
+                1998 as a trusted moving company in the uae. We&apos;re a registered relocation service and moving company in Umm Al Quwain —
                 not a WhatsApp number that disappears once the job is done.
               </p>
             </>
@@ -190,7 +190,7 @@ const MoversInUmmAlQuwain = () => {
               Why We&apos;re the Best Movers and Packers in Umm Al Quwain
             </h2>
             <p className="text-muted-foreground mt-3">
-              There are plenty of moving options in UAQ. Here&apos;s what
+              There are plenty of companies offering moving options in UAQ. Here&apos;s what
               actually separates us from the rest — and why customers who do
               their research tend to come back to us.
             </p>

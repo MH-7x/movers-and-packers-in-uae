@@ -114,7 +114,7 @@ export default function Home() {
               your belongings at your new place.
             </p>
             <p className=" mt-2">
-              No hidden charges, giving you complete peace of mind. And you pay
+              No hidden charges or hidden fees, giving you complete peace of mind. And you pay
               only after the job is done to your satisfaction. We work with both
               residential customers and businesses.
             </p>

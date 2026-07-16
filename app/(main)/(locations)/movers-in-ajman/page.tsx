@@ -82,7 +82,7 @@ const MoversInAjman = () => {
                 Whether you need to shift a studio apartment, a large villa, or
                 a commercial office, our moving and packing services in Ajman
                 cover everything from packing and loading to transport and full
-                installation, safely and quality services on time.
+                installation, safely and quality services on time for a stress free experience.
               </p>
             </>
           }
@@ -167,7 +167,7 @@ const MoversInAjman = () => {
             <div>
               <p className="text-gray-200">
                 We cover every type of residential and commercial move in Ajman.
-                All services are handled by our trained team using proper
+                All professional moving services are handled by our trained team using proper
                 equipment and quality packing materials. Here is a full
                 breakdown of what we offer.
               </p>

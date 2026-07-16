@@ -101,7 +101,7 @@ const MoversInFujairah = () => {
           <p className="md:text-2xl text-xl font-bold text-center">
             Whether you are relocating your home, office, villa, or moving a
             single piece of furniture, our trained team handles the entire
-            process for you.
+            process for you to ensure a stress free experience.
           </p>
           <p className="text-center mt-5 text-muted-foreground">
             Packing, loading, transport, and setup — all done properly to ensure

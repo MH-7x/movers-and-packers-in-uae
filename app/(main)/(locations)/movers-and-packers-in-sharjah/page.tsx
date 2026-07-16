@@ -94,7 +94,7 @@ const MoversInSharjahPage = () => {
             </>
           }
           btnText="Get A Quote From Movers in Sharjah"
-          desc="Call us or send a WhatsApp message for a free quote — our movers and packers in sharjah will get back to you quickly with a clear, fixed price. We handle everything, from packing and loading to transport and installation. "
+          desc="Call us or send a WhatsApp message for a free quote — our movers and packers in sharjah will get back to you quickly with a clear, fixed price. We handle everything, from packing, loading and unloading to transport and installation. "
         />
 
         <section
@@ -220,9 +220,9 @@ const MoversInSharjahPage = () => {
                   reassembly at your new home.
                 </p>
                 <p>
-                  We value your trust, treating your personal items and fragile
+                  We value your trust, treating your household items and fragile
                   décor with the utmost care. Every move includes a dedicated
-                  supervisor and premium packing materials to ensure your
+                  supervisor and high quality packing materials to ensure your
                   belongings remain fully protected.
                 </p>
                 <p>
@@ -233,7 +233,7 @@ const MoversInSharjahPage = () => {
                   Whether you need{" "}
                   <Link href="/house-shifting-dubai">local house shifting</Link>{" "}
                   in Sharjah or are relocating to another emirate, we guarantee
-                  a stress-free moving experience.
+                  a stress-free and hassle free moving experience.
                 </p>
               </div>
               <Button quoteBtn className="mt-5">
