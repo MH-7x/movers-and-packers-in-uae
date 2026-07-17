@@ -7,7 +7,7 @@ const pages: MetadataRoute.Sitemap = [
     changeFrequency: "weekly",
     priority: 1.0,
     images: ["/movers-and-packers-in-uae.jpg"],
-    lastModified: "2026-07-17",
+    lastModified: "2026-07-18",
   },
   {
     url: "/about-us",
