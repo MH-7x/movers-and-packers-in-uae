@@ -25,7 +25,7 @@ export default function MainHeroSection() {
               <h1 className="text-3xl md:text-left text-center md:text-5xl font-bold leading-[1.1] mb-6 text-foreground md:tracking-tight">
                 Movers and Packers in UAE,{" "}
                 <span className="md:block text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-[#c10007] mt-2">
-                  Trusted Moving Company
+                  Dubai Moving Company
                 </span>
               </h1>
 

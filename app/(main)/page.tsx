@@ -41,7 +41,7 @@ import { Breadcrumb } from "@/components/Breadcrumb";
 export const metadata = MetadataTemplate({
   data: {
     meta: {
-      title: "Movers and Packers in UAE | Dubai Moving Company Since 1998",
+      title: "Movers and Packers in UAE | Moving Company in Dubai",
       desc: "Trusted movers and packers in UAE since 1998. House, villa, office & furniture moving across Dubai and all Emirates. Insured moves. Get a free WhatsApp quote.",
     },
     image: {
@@ -58,7 +58,6 @@ export default function Home() {
   return (
     <>
       <script
-        
         id="breadcrumb"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: breadcrumb }}
@@ -114,9 +113,9 @@ export default function Home() {
               your belongings at your new place.
             </p>
             <p className=" mt-2">
-              No hidden charges or hidden fees, giving you complete peace of mind. And you pay
-              only after the job is done to your satisfaction. We work with both
-              residential customers and businesses.
+              No hidden charges or hidden fees, giving you complete peace of
+              mind. And you pay only after the job is done to your satisfaction.
+              We work with both residential customers and businesses.
             </p>
             <p className=" mt-2">
               What makes us different from a freelance mover with a phone number
