@@ -281,7 +281,7 @@ const pages: MetadataRoute.Sitemap = [
     changeFrequency: "weekly",
     priority: 0.9,
     images: ["/ar/نقل-اثاث-دبي-مارينا-نقل-الأثاث-في-الإمارات.jpg"],
-    lastModified: "2026-07-09",
+    lastModified: "2026-07-21",
   },
   {
     url: "/خدمات-تغليف-اثاث",
