@@ -10,7 +10,6 @@ import Link from "next/link";
 import { generateBreadcrumb } from "@/lib/generateBreadcrumb";
 import { Breadcrumb } from "@/components/Breadcrumb";
 
-
 export const metadata = MetadataTemplate({
   data: {
     meta: {
@@ -37,18 +36,19 @@ export default function FurnitureMovingDubaiPage() {
   return (
     <>
       <script
-        
         id="breadcrumb"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: breadcrumb }}
       />
       <main>
-        <Breadcrumb list={[
-    {
-      title: "نقل اثاث دبي",
-      url: "/نقل-اثاث-دبي",
-    },
-  ]} />
+        <Breadcrumb
+          list={[
+            {
+              title: "نقل اثاث دبي",
+              url: "/نقل-اثاث-دبي",
+            },
+          ]}
+        />
         {/* 2. Hero Section */}
         <section className="relative py-16 lg:py-24 overflow-hidden border-b border-border ">
           <div className="max-w-7xl mx-auto md:px-10 px-4 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10">
@@ -78,10 +78,10 @@ export default function FurnitureMovingDubaiPage() {
                 <strong className="text-foreground font-semibold">
                   <Link href="/نقل-اثاث-دبي"> نقل اثاث في دبي</Link>
                 </strong>{" "}
-                وفي جميع إمارات الدولة. شاحناتنا بوكس مغلقة بالكامل، معتمدة من
-                هيئة الطرق والمواصلات. الأسعار تصلك على واتساب واضحة وبدون
-                إضافات. والدفع يكون بعد انتهاء العمل فقط — بعد ما تتأكد أن كل
-                شيء في مكانه.
+                وفي جميع أنحاء الإمارات العربية المتحدة. شاحناتنا بوكس مغلقة
+                بالكامل، معتمدة من هيئة الطرق والمواصلات. الأسعار تصلك على
+                واتساب واضحة وبدون إضافات. والدفع يكون بعد انتهاء العمل فقط —
+                بعد ما تتأكد أن كل شيء في مكانه.
               </p>
 
               <div className="bg-muted/50 p-4 rounded-xl border border-border/80">
@@ -170,9 +170,9 @@ export default function FurnitureMovingDubaiPage() {
 
                   <p className="text-sm text-muted-foreground leading-relaxed">
                     سواء كانت استوديو أو شقة بثلاث غرف، النهج عندنا متطابق: نصل
-                    في الوقت المحدد ونبدأ مباشرة — تفكيك الأثاث، تغليف كل قطعة،
-                    تحميله في شاحنة مغلقة، ثم إعادة التركيب والترتيب في المكان
-                    الجديد.
+                    في الوقت المحدد ونبدأ مباشرة — تفكيك الأثاث، تغليف كل قطعة
+                    باستخدام أفضل مواد تغليف لحمايتها أثناء النقل، تحميله في
+                    شاحنة مغلقة، ثم إعادة التركيب والترتيب في المكان الجديد.
                   </p>
                   <p className="text-sm text-muted-foreground leading-relaxed">
                     كثير من شقق دبي في مبانٍ شاهقة وتحتاج التنسيق مع إدارة
@@ -352,7 +352,8 @@ export default function FurnitureMovingDubaiPage() {
           <div className="max-w-7xl mx-auto md:px-10 px-4">
             <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
               <h2 className="text-3xl md:text-4xl font-black text-foreground">
-                افضل شركات نقل الاثاث في دبي — ما الذي يمكن التحقق منه فعلاً
+                البحث عن أفضل شركة نقل اثاث في دبي — ما الذي يمكن التحقق منه
+                فعلاً
               </h2>
               <div className="w-16 h-1 bg-primary mx-auto rounded-full" />
               <p className="text-lg text-muted-foreground">
@@ -362,6 +363,17 @@ export default function FurnitureMovingDubaiPage() {
                 </strong>{" "}
                 تقدم وعوداً متشابهة: &quot;محترفون، موثوقون، أسعار
                 تنافسية.&quot; هذه النقاط الأربع لها دليل ملموس، مش مجرد كلام.
+              </p>
+              <p className="text-lg text-muted-foreground mt-4">
+                للاطلاع على معايير السوق الحالية والشركات المتميزة هذا العام،
+                اقرأ دليلنا الشامل حول{" "}
+                <Link
+                  href="https://moversandpackersinuae.com/blogs/افضل-شركات-نقل-الاثاث-في-دبي-2026"
+                  className="text-primary font-semibold hover:underline underline-offset-4"
+                >
+                  افضل شركات نقل الاثاث في دبي 2026
+                </Link>
+                .
               </p>
             </div>
 
