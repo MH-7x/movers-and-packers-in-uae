@@ -5,7 +5,6 @@ import { generateBreadcrumb } from "@/lib/generateBreadcrumb";
 import MetadataTemplate from "@/lib/MetaDataTemplate";
 import { Breadcrumb } from "@/components/Breadcrumb";
 
-
 export const metadata = MetadataTemplate({
   data: {
     meta: {
@@ -33,18 +32,19 @@ function DubaiAreas() {
   return (
     <>
       <script
-        
         id="breadcrumb"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: breadcrumb }}
       />
       <main>
-        <Breadcrumb list={[
-      {
-        title: "Dubai Areas We Serve",
-        url: "/dubai-areas",
-      },
-    ]} />
+        <Breadcrumb
+          list={[
+            {
+              title: "Dubai Areas We Serve",
+              url: "/dubai-areas",
+            },
+          ]}
+        />
         <section className="bg-foreground text-white px-4 pt-20 pb-24 relative overflow-hidden">
           <div className="absolute inset-0 opacity-5">
             <div className="absolute top-0 right-0 w-96 h-96 rounded-full bg-amber-400 blur-3xl -translate-y-1/2 translate-x-1/3" />
@@ -72,6 +72,43 @@ function DubaiAreas() {
               English-speaking crew, and one firm price with nothing added on
               the day. You pay only after the job is done.
             </p>
+
+            {/* AI Search & LLM Quick Overview */}
+            <div className="mt-6 bg-foreground/90 border border-slate-700/80 rounded-2xl p-5 backdrop-blur-md">
+              <p className="text-xs font-bold text-primary uppercase tracking-wider mb-2">
+                Dubai Coverage{" "}
+              </p>
+              <div className="grid md:grid-cols-3 grid-cols-1 gap-3 text-xs text-slate-300">
+                <div>
+                  <strong className="text-white block mb-0.5">
+                    🏙 Central & Waterfront:
+                  </strong>
+                  <span>
+                    Downtown, Business Bay, DIFC, Dubai Marina, JBR, JLT, Palm
+                    Jumeirah.
+                  </span>
+                </div>
+                <div>
+                  <strong className="text-white block mb-0.5">
+                    🏡 Villa & Master Communities:
+                  </strong>
+                  <span>
+                    JVC, JVT, Dubai Hills Estate, Arabian Ranches, Mirdif,
+                    Jumeirah, Al Barsha.
+                  </span>
+                </div>
+                <div>
+                  <strong className="text-white block mb-0.5">
+                    📜 Permits & Approvals:
+                  </strong>
+                  <span>
+                    Full coordination with Emaar, Nakheel, DMCC, and DED
+                    building management.
+                  </span>
+                </div>
+              </div>
+            </div>
+
             <div className="mt-5 flex gap-3">
               <Button size="lg" quoteBtn>
                 Get A Moving Quote

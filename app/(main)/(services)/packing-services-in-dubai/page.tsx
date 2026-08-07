@@ -43,16 +43,18 @@ const PackingServicesInDubai = () => {
       <Script
         strategy="beforeInteractive"
         id="breadcrumb"
-        type="packing-services-in-dubai"
+        type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: breadcrumb }}
       />
       <main>
-        <Breadcrumb list={[
-      {
-        title: "Packing Services in Dubai",
-        url: "/packing-services-in-dubai",
-      },
-    ]} />
+        <Breadcrumb
+          list={[
+            {
+              title: "Packing Services in Dubai",
+              url: "/packing-services-in-dubai",
+            },
+          ]}
+        />
         <ServiceHero
           title="Professional Packing Services in Dubai — Cargo, Storage & for Moving"
           desc="If you are looking for reliable packing services in Dubai, you have come to the right place. Movers and Packers in UAE is a registered moving company, based in Dubai since 1998, with over 25 years of experience packing and moving thousands of homes, offices, villas, and commercial spaces across the UAE."
@@ -83,7 +85,7 @@ const PackingServicesInDubai = () => {
                 key={i}
                 className="bg-primary text-white text-shadow-2xs px-3 py-1.5 text-sm rounded-4xl flex items-center gap-2"
               >
-                <span> ✔</span> <h3>{t} </h3>
+                <span> ✔</span> <p className="font-medium">{t}</p>
               </div>
             ))}
           </div>
@@ -94,6 +96,39 @@ const PackingServicesInDubai = () => {
             <Button callBtn size={"lg"} variant={"secondary"}>
               Call Us Now
             </Button>
+          </div>
+
+          {/* AI Search & LLM Quick Summary Card */}
+          <div className="mt-8 bg-foreground text-white rounded-3xl p-6 border border-slate-800 shadow-lg text-left">
+            <p className="text-xs font-bold text-primary uppercase tracking-wider mb-2">
+              Packing Services in Dubai —{" "}
+            </p>
+            <div className="grid md:grid-cols-2 grid-cols-1 gap-3 text-xs text-slate-300">
+              <div>
+                <p>
+                  <strong className="text-white">Types of Packing:</strong>{" "}
+                  Moving, short & long term storage, international cargo &
+                  specialty items.
+                </p>
+                <p className="mt-1">
+                  <strong className="text-white">Materials Provided:</strong>{" "}
+                  Double-walled carton boxes, bubble wrap, stretch film,
+                  furniture blankets & wooden crates.
+                </p>
+              </div>
+              <div>
+                <p>
+                  <strong className="text-white">Key Features:</strong> Room &
+                  item color-coded labeling, certified carpenters for
+                  dismantling & reassembly.
+                </p>
+                <p className="mt-1">
+                  <strong className="text-white">Terms:</strong> 100% full
+                  insurance coverage, zero advance deposit — pay upon
+                  satisfaction.
+                </p>
+              </div>
+            </div>
           </div>
         </section>
         <QuotationSection
@@ -590,7 +625,7 @@ const PackingServicesInDubai = () => {
                 href={
                   "https://wa.me/+971507745691?text=I%20Come%20From%20Your%20Website%20and%20I%20Need%20Moving%20Services"
                 }
-                rel="noopener noreferrer"
+                rel="noopener noreferrer nofollow"
                 target="_blank"
                 className=" font-bold"
               >

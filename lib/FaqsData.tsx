@@ -165,6 +165,8 @@ export const HomePageFAQs: FAQData[] = [
         <p>
           Contact us by <Link href={"tel:+971507745691"}>phone</Link>,{" "}
           <Link
+            rel="noopener noreferrer nofollow"
+            aria-label="Get A Quote on WhatsApp"
             href={
               "https://wa.me/+971507745691?text=I%20Come%20From%20Your%20Website%20and%20I%20Need%20Moving%20Services"
             }

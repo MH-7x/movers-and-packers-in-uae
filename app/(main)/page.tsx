@@ -66,8 +66,9 @@ export default function Home() {
         <Breadcrumb list={[]} />
         <MainHeroSection />
         <QuotationSection invert />
+
         <section
-          id="best-moving-company-in-uae "
+          id="best-moving-company-in-uae"
           className="max-w-7xl mx-auto mt-20 grid md:grid-cols-2 grid-cols-1 gap-10 md:px-10 px-4 items-center"
         >
           <div>

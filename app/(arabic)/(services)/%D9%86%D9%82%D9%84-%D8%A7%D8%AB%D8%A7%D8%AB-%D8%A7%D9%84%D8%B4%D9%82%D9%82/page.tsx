@@ -38,18 +38,19 @@ export default function ApartmentMoversPage() {
   return (
     <>
       <script
-        
         id="breadcrumb"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: breadcrumb }}
       />
       <main>
-        <Breadcrumb list={[
-    {
-      title: "نقل اثاث الشقق في الإمارات",
-      url: "/نقل-اثاث-الشقق",
-    },
-  ]} />
+        <Breadcrumb
+          list={[
+            {
+              title: "نقل اثاث الشقق في الإمارات",
+              url: "/نقل-اثاث-الشقق",
+            },
+          ]}
+        />
         {/* 1. قسم الهيرو الرئيسي (Hero Section) */}
         <section className="relative overflow-hidden border-b border-border py-16 md:py-24">
           <div className="relative z-10 max-w-7xl mx-auto md:px-10 px-4 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
@@ -197,7 +198,7 @@ export default function ApartmentMoversPage() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {/* البند 1 */}
-              <div className="bg-background p-6 rounded-2xl border border-border shadow-sm">
+              <div className="bg-foreground p-6 rounded-2xl border border-border shadow-sm">
                 <h3 className="text-lg font-bold text-foreground mb-3">
                   تقييم مسبق قبل يوم النقل
                 </h3>
@@ -209,7 +210,7 @@ export default function ApartmentMoversPage() {
               </div>
 
               {/* البند 2 */}
-              <div className="bg-background p-6 rounded-2xl border border-border shadow-sm">
+              <div className="bg-foreground p-6 rounded-2xl border border-border shadow-sm">
                 <h3 className="text-lg font-bold text-foreground mb-3">
                   تغليف احترافي لكل قطعة
                 </h3>
@@ -222,7 +223,7 @@ export default function ApartmentMoversPage() {
               </div>
 
               {/* البند 3 */}
-              <div className="bg-background p-6 rounded-2xl border border-primary/20 shadow-sm">
+              <div className="bg-foreground p-6 rounded-2xl border border-primary/20 shadow-sm">
                 <h3 className="text-lg font-bold text-primary mb-3">
                   فك وتركيب دقيق ومتكامل
                 </h3>
@@ -235,7 +236,7 @@ export default function ApartmentMoversPage() {
               </div>
 
               {/* البند 4 */}
-              <div className="bg-background p-6 rounded-2xl border border-border shadow-sm">
+              <div className="bg-foreground p-6 rounded-2xl border border-border shadow-sm">
                 <h3 className="text-lg font-bold text-foreground mb-3">
                   شاحنات مغلقة تناسب حجم الشقة
                 </h3>
@@ -247,7 +248,7 @@ export default function ApartmentMoversPage() {
               </div>
 
               {/* البند 5 */}
-              <div className="bg-background p-6 rounded-2xl border border-border shadow-sm md:col-span-2 lg:col-span-1">
+              <div className="bg-foreground p-6 rounded-2xl border border-border shadow-sm md:col-span-2 lg:col-span-1">
                 <h3 className="text-lg font-bold text-foreground mb-3">
                   نقل الشقق المفروشة والفارغة
                 </h3>
@@ -390,7 +391,7 @@ export default function ApartmentMoversPage() {
         {/* 6. قسم الأسعار والاتصال الفوري بالشقق */}
         <section className="py-16 border-t border-border">
           <div className="max-w-7xl mx-auto md:px-10 px-4">
-            <div className="bg-background border border-border rounded-3xl p-8 md:p-12 shadow-xl">
+            <div className="bg-foreground border border-border rounded-3xl p-8 md:p-12 shadow-xl">
               <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
                 <div className="lg:col-span-8">
                   <h2 className="text-2xl md:text-3xl font-black text-foreground mb-4">
@@ -460,7 +461,7 @@ export default function ApartmentMoversPage() {
             </h2>
 
             <div className="max-w-3xl mx-auto space-y-6">
-              <div className="bg-slate-50/50 dark:bg-slate-900/30 rounded-2xl border border-border p-6 shadow-sm">
+              <div className="bg-slate-50/50 dark:bg-foreground/30 rounded-2xl border border-border p-6 shadow-sm">
                 <h3 className="text-lg font-bold text-foreground mb-3">
                   هل تحتاجون إلى إذن من إدارة المبنى؟
                 </h3>
@@ -472,7 +473,7 @@ export default function ApartmentMoversPage() {
                 </p>
               </div>
 
-              <div className="bg-slate-50/50 dark:bg-slate-900/30 rounded-2xl border border-border p-6 shadow-sm">
+              <div className="bg-slate-50/50 dark:bg-foreground/30 rounded-2xl border border-border p-6 shadow-sm">
                 <h3 className="text-lg font-bold text-foreground mb-3">
                   وجدت كنبة لا تدخل المصعد — ماذا تفعلون؟
                 </h3>
@@ -484,7 +485,7 @@ export default function ApartmentMoversPage() {
                 </p>
               </div>
 
-              <div className="bg-slate-50/50 dark:bg-slate-900/30 rounded-2xl border border-border p-6 shadow-sm">
+              <div className="bg-slate-50/50 dark:bg-foreground/30 rounded-2xl border border-border p-6 shadow-sm">
                 <h3 className="text-lg font-bold text-foreground mb-3">
                   كم يستغرق نقل شقة من 3 غرف؟
                 </h3>
@@ -495,7 +496,7 @@ export default function ApartmentMoversPage() {
                 </p>
               </div>
 
-              <div className="bg-slate-50/50 dark:bg-slate-900/30 rounded-2xl border border-border p-6 shadow-sm">
+              <div className="bg-slate-50/50 dark:bg-foreground/30 rounded-2xl border border-border p-6 shadow-sm">
                 <h3 className="text-lg font-bold text-foreground mb-3">
                   هل تتوفر خدمة نقل الشقق خارج أوقات الذروة؟
                 </h3>

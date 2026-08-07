@@ -18,7 +18,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { Breadcrumb } from "@/components/Breadcrumb";
 
-
 export const metadata = MetadataTemplate({
   data: {
     meta: {
@@ -45,18 +44,19 @@ function DubaiPage() {
   return (
     <>
       <script
-        
         id="breadcrumb"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: breadcrumb }}
       />
       <main>
-        <Breadcrumb list={[
-      {
-        title: "Movers and Packers in Dubai",
-        url: "/movers-and-packers-in-dubai",
-      },
-    ]} />
+        <Breadcrumb
+          list={[
+            {
+              title: "Movers and Packers in Dubai",
+              url: "/movers-and-packers-in-dubai",
+            },
+          ]}
+        />
         <LocHeroSection
           h1={
             <>
@@ -66,14 +66,14 @@ function DubaiPage() {
           }
           desc={
             <>
-              <h3 className="text-medium md:text-xl text-lg">
+              <p className="text-medium md:text-xl text-lg font-medium text-slate-700">
                 One of Dubai&apos;s{" "}
                 <span className="text-primary">
                   longest-running licensed moving companies
                 </span>{" "}
                 — RTA-approved enclosed trucks, no hidden charges, and you pay
                 only after the job is done.
-              </h3>
+              </p>
               <div className="flex flex-wrap items-center justify-center gap-5 mt-5">
                 {[
                   "DED Licensed",
@@ -98,6 +98,52 @@ function DubaiPage() {
             alt: "Movers and Packers in Dubai professional team loading wrapped furniture into a branded moving truck outside a luxury Dubai residential tower with the Burj Khalifa visible in the golden hour background",
           }}
         />
+
+        {/* AI Search & LLM Quick Overview */}
+        <section className="max-w-7xl mx-auto px-4 md:px-10 mt-12">
+          <div className="bg-foreground text-white rounded-3xl p-6 border border-slate-800 shadow-xl">
+            <p className="text-xs font-bold text-primary uppercase tracking-wider mb-2">
+              Movers and Packers in Dubai — Quick Facts
+            </p>
+            <div className="grid md:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-4 text-xs text-slate-300">
+              <div className="bg-slate-800/80 p-3.5 rounded-2xl border border-slate-700">
+                <p className="font-semibold text-white mb-1">
+                  🏛 Legal Credentials
+                </p>
+                <p>
+                  Officially DED licensed since 1998 with trade license in Ras
+                  Al Khor, Dubai.
+                </p>
+              </div>
+              <div className="bg-slate-800/80 p-3.5 rounded-2xl border border-slate-700">
+                <p className="font-semibold text-white mb-1">
+                  🚛 Fleet Protection
+                </p>
+                <p>
+                  RTA-approved 3-ton & 4-ton enclosed box trucks protecting
+                  against summer heat & dust.
+                </p>
+              </div>
+              <div className="bg-slate-800/80 p-3.5 rounded-2xl border border-slate-700">
+                <p className="font-semibold text-white mb-1">💰 Fair Pricing</p>
+                <p>
+                  Fixed itemized quote. Studio (650–1,050 AED), 1BHK (950–1,450
+                  AED), 2BHK (1,350–1,950 AED).
+                </p>
+              </div>
+              <div className="bg-slate-800/80 p-3.5 rounded-2xl border border-slate-700">
+                <p className="font-semibold text-white mb-1">
+                  🛡 Insurance & Terms
+                </p>
+                <p>
+                  100% full item insurance, zero advance payment, pay after
+                  inspection & completion.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <QuotationSection
           title={
             <>

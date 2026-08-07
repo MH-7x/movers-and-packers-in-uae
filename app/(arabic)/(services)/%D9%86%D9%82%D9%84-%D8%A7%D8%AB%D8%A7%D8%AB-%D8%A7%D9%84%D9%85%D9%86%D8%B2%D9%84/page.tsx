@@ -8,7 +8,6 @@ import { ReviewSection } from "@/components/ReviewSection";
 import { generateBreadcrumb } from "@/lib/generateBreadcrumb";
 import { Breadcrumb } from "@/components/Breadcrumb";
 
-
 export const metadata = MetadataTemplate({
   data: {
     meta: {
@@ -36,18 +35,19 @@ export default function HouseShiftingPage() {
   return (
     <>
       <script
-        
         id="breadcrumb"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: breadcrumb }}
       />
       <main>
-        <Breadcrumb list={[
-    {
-      title: "نقل اثاث المنزل في الإمارات",
-      url: "/نقل-اثاث-المنزل",
-    },
-  ]} />
+        <Breadcrumb
+          list={[
+            {
+              title: "نقل اثاث المنزل في الإمارات",
+              url: "/نقل-اثاث-المنزل",
+            },
+          ]}
+        />
         {/* 1. قسم الهيرو الرئيسي (Hero Section) */}
         <section className="relative overflow-hidden border-b border-border py-16 md:py-24">
           <div className="relative z-10 max-w-7xl mx-auto md:px-10 px-4 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
@@ -217,7 +217,7 @@ export default function HouseShiftingPage() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {/* البند 1 */}
-              <div className="bg-background p-6 rounded-2xl border border-border shadow-sm">
+              <div className="bg-foreground p-6 rounded-2xl border border-border shadow-sm">
                 <h3 className="text-lg font-bold text-foreground mb-3">
                   1. المعاينة المجانية وعرض السعر الشفاف
                 </h3>
@@ -231,7 +231,7 @@ export default function HouseShiftingPage() {
               </div>
 
               {/* البند 2 */}
-              <div className="bg-background p-6 rounded-2xl border border-border shadow-sm">
+              <div className="bg-foreground p-6 rounded-2xl border border-border shadow-sm">
                 <h3 className="text-lg font-bold text-foreground mb-3">
                   2. فك احترافي بفريق يضم نجارين متخصصين
                 </h3>
@@ -244,7 +244,7 @@ export default function HouseShiftingPage() {
               </div>
 
               {/* البند 3 (يشمل مواد التغليف الفرعية بالتفصيل) */}
-              <div className="bg-background p-6 rounded-2xl border border-primary/20 shadow-sm md:col-span-2 lg:col-span-1">
+              <div className="bg-foreground p-6 rounded-2xl border border-primary/20 shadow-sm md:col-span-2 lg:col-span-1">
                 <h3 className="text-lg font-bold text-primary mb-3">
                   3. تغليف محترف بمواد عالية الجودة
                 </h3>
@@ -275,7 +275,7 @@ export default function HouseShiftingPage() {
               </div>
 
               {/* البند 4 */}
-              <div className="bg-background p-6 rounded-2xl border border-border shadow-sm">
+              <div className="bg-foreground p-6 rounded-2xl border border-border shadow-sm">
                 <h3 className="text-lg font-bold text-foreground mb-3">
                   4. نقل آمن بشاحنات مجهزة
                 </h3>
@@ -286,7 +286,7 @@ export default function HouseShiftingPage() {
               </div>
 
               {/* البند 5 */}
-              <div className="bg-background p-6 rounded-2xl border border-border shadow-sm">
+              <div className="bg-foreground p-6 rounded-2xl border border-border shadow-sm">
                 <h3 className="text-lg font-bold text-foreground mb-3">
                   5. تفريغ وتركيب في الموقع الجديد
                 </h3>
@@ -297,7 +297,7 @@ export default function HouseShiftingPage() {
               </div>
 
               {/* البند 6 */}
-              <div className="bg-background p-6 rounded-2xl border border-border shadow-sm">
+              <div className="bg-foreground p-6 rounded-2xl border border-border shadow-sm">
                 <h3 className="text-lg font-bold text-foreground mb-3">
                   6. فك التغليف وترتيب الأغراض (خدمة اختيارية)
                 </h3>
@@ -470,7 +470,7 @@ export default function HouseShiftingPage() {
         {/* 6. قسم التسعير الشفاف */}
         <section className="py-16 border-t border-border">
           <div className="max-w-7xl mx-auto md:px-10 px-4">
-            <div className="bg-background border border-border rounded-3xl p-8 md:p-12 shadow-xl">
+            <div className="bg-foreground border border-border rounded-3xl p-8 md:p-12 shadow-xl">
               <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
                 <div className="lg:col-span-8">
                   <h2 className="text-2xl md:text-3xl font-black text-foreground mb-4">
@@ -544,7 +544,7 @@ export default function HouseShiftingPage() {
             </h2>
 
             <div className="max-w-3xl mx-auto space-y-6">
-              <div className="bg-slate-50/50 dark:bg-slate-900/30 rounded-2xl border border-border p-6 shadow-sm">
+              <div className="bg-slate-50/50 dark:bg-foreground/30 rounded-2xl border border-border p-6 shadow-sm">
                 <h3 className="text-lg font-bold text-foreground mb-3">
                   هل تتعاملون مع نقل اثاث المنزل في نفس اليوم؟
                 </h3>
@@ -555,7 +555,7 @@ export default function HouseShiftingPage() {
                 </p>
               </div>
 
-              <div className="bg-slate-50/50 dark:bg-slate-900/30 rounded-2xl border border-border p-6 shadow-sm">
+              <div className="bg-slate-50/50 dark:bg-foreground/30 rounded-2xl border border-border p-6 shadow-sm">
                 <h3 className="text-lg font-bold text-foreground mb-3">
                   ماذا تستخدمون من مواد تغليف؟
                 </h3>
@@ -566,7 +566,7 @@ export default function HouseShiftingPage() {
                 </p>
               </div>
 
-              <div className="bg-slate-50/50 dark:bg-slate-900/30 rounded-2xl border border-border p-6 shadow-sm">
+              <div className="bg-slate-50/50 dark:bg-foreground/30 rounded-2xl border border-border p-6 shadow-sm">
                 <h3 className="text-lg font-bold text-foreground mb-3">
                   هل تتعاملون مع الخزائن الحديدية والأثاث الثقيل جداً؟
                 </h3>
@@ -576,7 +576,7 @@ export default function HouseShiftingPage() {
                 </p>
               </div>
 
-              <div className="bg-slate-50/50 dark:bg-slate-900/30 rounded-2xl border border-border p-6 shadow-sm">
+              <div className="bg-slate-50/50 dark:bg-foreground/30 rounded-2xl border border-border p-6 shadow-sm">
                 <h3 className="text-lg font-bold text-foreground mb-3">
                   هل يمكنني تتبع موقع الشاحنة أثناء النقل؟
                 </h3>

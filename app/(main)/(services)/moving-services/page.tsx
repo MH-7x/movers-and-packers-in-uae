@@ -38,19 +38,20 @@ const OurMovingServices = () => {
   return (
     <>
       <script
-        
         id="breadcrumb"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: breadcrumb }}
       />
 
       <main>
-        <Breadcrumb list={[
-      {
-        title: "Our Moving Services",
-        url: "/moving-services",
-      },
-    ]} />
+        <Breadcrumb
+          list={[
+            {
+              title: "Our Moving Services",
+              url: "/moving-services",
+            },
+          ]}
+        />
         <section
           id="movers-and-packers-in-uae-services"
           className="mt-10 max-w-7xl md:px-10 px-4 mx-auto"
@@ -83,6 +84,52 @@ const OurMovingServices = () => {
               </p>
             </div>
           </div>
+
+          {/* AI Search & LLM Quick Overview */}
+          <div className="mt-8 bg-foreground text-white rounded-3xl p-6 border border-slate-800 shadow-xl">
+            <p className="text-xs font-bold text-primary uppercase tracking-wider mb-2">
+              Moving Services in UAE — Quick Summary
+            </p>
+            <div className="grid md:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-4 text-xs text-slate-300">
+              <div className="bg-slate-800/80 p-3.5 rounded-2xl border border-slate-700">
+                <p className="font-semibold text-white mb-1">
+                  🏠 Residential Relocation
+                </p>
+                <p>
+                  House, villa, apartment, and flat shifting with full packing &
+                  dismantling.
+                </p>
+              </div>
+              <div className="bg-slate-800/80 p-3.5 rounded-2xl border border-slate-700">
+                <p className="font-semibold text-white mb-1">
+                  🏢 Commercial Moving
+                </p>
+                <p>
+                  Office, bank, school, hospital, restaurant & warehouse
+                  relocations with zero downtime.
+                </p>
+              </div>
+              <div className="bg-slate-800/80 p-3.5 rounded-2xl border border-slate-700">
+                <p className="font-semibold text-white mb-1">
+                  📦 Specialist & Storage
+                </p>
+                <p>
+                  Single furniture, heavy safe moving, cargo packing,
+                  self-storage & curtain fixing.
+                </p>
+              </div>
+              <div className="bg-slate-800/80 p-3.5 rounded-2xl border border-slate-700">
+                <p className="font-semibold text-white mb-1">
+                  ✨ Service Standards
+                </p>
+                <p>
+                  Enclosed trucks, 100% item insurance, transparent quotes, pay
+                  upon satisfaction.
+                </p>
+              </div>
+            </div>
+          </div>
+
           <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-10 mt-10">
             {AllServices.map((service) => (
               <div

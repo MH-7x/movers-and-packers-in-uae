@@ -6,6 +6,7 @@ import { Tajawal } from "next/font/google";
 import "../globals.css";
 import ArFooter from "@/components/layout/ArFooter";
 import ActionButton from "@/components/ActionButtons";
+import GTM from "@/components/GTM";
 const tajawal = Tajawal({
   subsets: ["arabic"],
   weight: ["400", "500", "700", "800"],
@@ -56,9 +57,9 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{
             __html: JSON.stringify(MoversAndPackersSchema),
           }}
-          
           key="Business-Schema"
         />
+        <GTM />
       </head>
 
       <body className="max-w-350 mx-auto relative overflow-hidden">

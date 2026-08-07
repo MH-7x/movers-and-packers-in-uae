@@ -6,6 +6,7 @@ import Footer from "@/components/layout/Footer";
 import { Toaster } from "@/components/ui/sonner";
 import { APP, MoversAndPackersSchema } from "@/lib/App";
 import ActionButton from "@/components/ActionButtons";
+import GTM from "@/components/GTM";
 
 const familjenGrotesk = Familjen_Grotesk({
   variable: "--font-familjen-grotesk",
@@ -57,9 +58,9 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{
             __html: JSON.stringify(MoversAndPackersSchema),
           }}
-          
           key="Business-Schema"
         />
+        <GTM />
       </head>
 
       <body className="max-w-350 mx-auto relative overflow-hidden">

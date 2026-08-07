@@ -7,14 +7,14 @@ const pages: MetadataRoute.Sitemap = [
     changeFrequency: "weekly",
     priority: 1.0,
     images: ["/movers-and-packers-in-uae.jpg"],
-    lastModified: "2026-07-18",
+    lastModified: "2026-08-07",
   },
   {
     url: "/about-us",
     changeFrequency: "yearly",
     priority: 0.7,
     images: ["/about-us-professional-movers-packers-team-dubai-uae.jpg"],
-    lastModified: "2026-07-09",
+    lastModified: "2026-08-07",
   },
   {
     url: "/get-quote",
@@ -49,7 +49,7 @@ const pages: MetadataRoute.Sitemap = [
     images: [
       "/loc/movers-and-packers-in-dubai-professional-moving-service-burj-khalifa-golden-hour.jpg",
     ],
-    lastModified: "2026-07-09",
+    lastModified: "2026-08-07",
   },
   {
     url: "/movers-in-ajman",
@@ -65,7 +65,7 @@ const pages: MetadataRoute.Sitemap = [
     images: [
       "/loc/movers-in-al-ain-professional-moving-service-jebel-hafeet-garden-city.jpg",
     ],
-    lastModified: "2026-07-17",
+    lastModified: "2026-08-07",
   },
   {
     url: "/movers-in-fujairah",
@@ -81,7 +81,7 @@ const pages: MetadataRoute.Sitemap = [
     images: [
       "/loc/movers-in-ras-al-khaimah-professional-moving-service-villa-hajar-mountains.jpg",
     ],
-    lastModified: "2026-07-09",
+    lastModified: "2026-08-07",
   },
   {
     url: "/movers-in-umm-al-quwain",
@@ -99,7 +99,7 @@ const pages: MetadataRoute.Sitemap = [
     images: [
       "/loc/movers-and-packers-in-dubai-professional-moving-service-burj-khalifa-golden-hour.jpg",
     ],
-    lastModified: "2026-07-09",
+    lastModified: "2026-08-07",
   },
   {
     url: "/dubai-areas/movers-in-dubai-marina",
@@ -120,7 +120,7 @@ const pages: MetadataRoute.Sitemap = [
     changeFrequency: "monthly",
     priority: 0.7,
     images: ["/ser/apartment-movers-in-dubai.jpg"],
-    lastModified: "2026-07-09",
+    lastModified: "2026-08-07",
   },
   {
     url: "/bank-furniture-moving-uae",
@@ -157,7 +157,7 @@ const pages: MetadataRoute.Sitemap = [
     changeFrequency: "monthly",
     priority: 0.7,
     images: ["/house-shifting-services-in-dubai-uae.jpg"],
-    lastModified: "2026-07-09",
+    lastModified: "2026-08-07",
   },
   {
     url: "/office-movers-in-dubai",
@@ -171,7 +171,7 @@ const pages: MetadataRoute.Sitemap = [
     changeFrequency: "monthly",
     priority: 0.7,
     images: ["/ser/packing-services-in-dubai.jpg"],
-    lastModified: "2026-07-09",
+    lastModified: "2026-08-07",
   },
   {
     url: "/restaurant-furniture-moving-uae",

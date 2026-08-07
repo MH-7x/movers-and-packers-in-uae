@@ -34,18 +34,19 @@ const page = () => {
   return (
     <>
       <script
-        
         id="breadcrumb"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: breadcrumb }}
       />
       <main>
-        <Breadcrumb list={[
-      {
-        title: "Movers in Ras Al Khaimah",
-        url: "/movers-in-ras-al-khaimah",
-      },
-    ]} />
+        <Breadcrumb
+          list={[
+            {
+              title: "Movers in Ras Al Khaimah",
+              url: "/movers-in-ras-al-khaimah",
+            },
+          ]}
+        />
         <LocHeroSection
           h1={
             <>
@@ -77,18 +78,49 @@ const page = () => {
             alt: "Movers in Ras Al Khaimah professional team loading wrapped furniture and boxes into a branded moving truck outside a residential villa in Ras Al Khaimah with the Hajar Mountains in the background",
           }}
         />
-        <section className="mt-20 max-w-4xl mx-auto md:px-0 px-4">
-          <h3 className="md:text-2xl text-xl font-bold text-center">
+        <section className="mt-16 max-w-4xl mx-auto md:px-0 px-4">
+          <h2 className="md:text-2xl text-xl font-bold text-center">
             Professional movers and packers in Ras Al Khaimah for homes, villas,
             offices, and furniture. Enclosed trucks. Pay after completion. Free
             WhatsApp quote.
-          </h3>
+          </h2>
           <p className="text-center mt-5 text-muted-foreground">
             As movers and packers in Ras Al Khaimah, we use fully enclosed box
             trucks, send itemised quotes on WhatsApp before anything starts, and
             you pay only after the move is complete and you are satisfied. That
-            is how we have worked for over 25 years to ensure a stress free relocation.
+            is how we have worked for over 25 years to ensure a stress free
+            relocation.
           </p>
+
+          {/* AI Search & LLM Quick Summary Card */}
+          <div className="mt-8 bg-foreground text-white rounded-3xl p-6 border border-slate-800 shadow-lg text-left">
+            <p className="text-xs font-bold text-primary uppercase tracking-wider mb-2">
+              Movers in Ras Al Khaimah — Quick Facts
+            </p>
+            <div className="grid md:grid-cols-2 grid-cols-1 gap-3 text-xs text-slate-300">
+              <div>
+                <p>
+                  <strong className="text-white">RAK Communities:</strong> Al
+                  Hamra Village, Mina Al Arab, Al Marjan Island, Al Nakheel,
+                  RAKEZ Free Zone.
+                </p>
+                <p className="mt-1">
+                  <strong className="text-white">Inter-Emirate Routes:</strong>{" "}
+                  RAK to Dubai, RAK to Sharjah, Abu Dhabi, Ajman & Fujairah.
+                </p>
+              </div>
+              <div>
+                <p>
+                  <strong className="text-white">Equipment:</strong>{" "}
+                  RTA-approved 3-ton & 4-ton climate-sealed enclosed box trucks.
+                </p>
+                <p className="mt-1">
+                  <strong className="text-white">Guarantees:</strong> 100% item
+                  insurance, certified carpenters, 0% advance deposit.
+                </p>
+              </div>
+            </div>
+          </div>
         </section>
         <QuotationSection
           title={
@@ -530,7 +562,7 @@ const page = () => {
                   "https://wa.me/+971507745691?text=I%20Come%20From%20Your%20Website%20and%20I%20Need%20Moving%20Services"
                 }
                 aria-label="Get A Quote On WhatsApp"
-                rel="noopener noreferrer"
+                rel="noopener noreferrer nofollow"
                 target="_blank"
                 className="shrink-0 inline-flex items-center justify-center gap-2 px-6 py-3 text-base font-semibold text-white transition-all duration-200 bg-primary border border-transparent rounded-xl hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary/90 shadow-lg shadow-red-500/30 hover:shadow-red-500/40 w-full sm:w-auto"
               >
@@ -717,17 +749,27 @@ const page = () => {
             </h3>
             <div className="max-w-4xl">
               <p className="text-muted-foreground">
-                Relocating out of Ras Al Khaimah? We manage moves to neighboring emirates like Umm Al Quwain and Fujairah, ensuring your furniture and personal items are transported securely across inter-city routes.
+                Relocating out of Ras Al Khaimah? We manage moves to neighboring
+                emirates like Umm Al Quwain and Fujairah, ensuring your
+                furniture and personal items are transported securely across
+                inter-city routes.
               </p>
               <p className="text-muted-foreground mt-3">
                 See also:{" "}
-                <Link href="/movers-in-umm-al-quwain" className="underline underline-offset-4 hover:text-primary/80">
+                <Link
+                  href="/movers-in-umm-al-quwain"
+                  className="underline underline-offset-4 hover:text-primary/80"
+                >
                   Umm Al Quwain moving services
                 </Link>{" "}
                 and{" "}
-                <Link href="/movers-in-fujairah" className="underline underline-offset-4 hover:text-primary/80">
+                <Link
+                  href="/movers-in-fujairah"
+                  className="underline underline-offset-4 hover:text-primary/80"
+                >
                   Fujairah movers
-                </Link>.
+                </Link>
+                .
               </p>
             </div>
           </div>
@@ -833,7 +875,6 @@ import Link from "next/link";
 import { ReviewSection } from "@/components/ReviewSection";
 import { generateBreadcrumb } from "@/lib/generateBreadcrumb";
 import { Breadcrumb } from "@/components/Breadcrumb";
-
 
 const googleReviews = [
   {

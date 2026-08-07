@@ -9,7 +9,6 @@ import { ReviewSection } from "@/components/ReviewSection";
 import { generateBreadcrumb } from "@/lib/generateBreadcrumb";
 import { Breadcrumb } from "@/components/Breadcrumb";
 
-
 export const metadata = MetadataTemplate({
   data: {
     meta: {
@@ -37,18 +36,19 @@ export default function DubaiMoversPage() {
   return (
     <>
       <script
-        
         id="breadcrumb"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: breadcrumb }}
       />
       <main>
-        <Breadcrumb list={[
-    {
-      title: "نقل عفش دبي",
-      url: "/نقل-عفش-دبي",
-    },
-  ]} />
+        <Breadcrumb
+          list={[
+            {
+              title: "نقل عفش دبي",
+              url: "/نقل-عفش-دبي",
+            },
+          ]}
+        />
         {/* 1. قسم الهيرو الرئيسي (Hero Section) */}
         <section className="relative overflow-hidden border-b border-border py-16 md:py-24">
           <div className="relative z-10 max-w-7xl mx-auto md:px-10 px-4 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
@@ -221,7 +221,7 @@ export default function DubaiMoversPage() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               {/* البند 1 */}
-              <div className="bg-background p-6 rounded-2xl border border-border shadow-sm">
+              <div className="bg-foreground p-6 rounded-2xl border border-border shadow-sm">
                 <h3 className="text-lg font-bold text-foreground mb-3">
                   نقل عفش المنازل والشقق
                 </h3>
@@ -238,7 +238,7 @@ export default function DubaiMoversPage() {
               </div>
 
               {/* البند 2 */}
-              <div className="bg-background p-6 rounded-2xl border border-border shadow-sm">
+              <div className="bg-foreground p-6 rounded-2xl border border-border shadow-sm">
                 <h3 className="text-lg font-bold text-foreground mb-3">
                   نقل عفش الفلل في دبي
                 </h3>
@@ -255,7 +255,7 @@ export default function DubaiMoversPage() {
               </div>
 
               {/* البند 3 */}
-              <div className="bg-background p-6 rounded-2xl border border-primary/20 shadow-sm">
+              <div className="bg-foreground p-6 rounded-2xl border border-primary/20 shadow-sm">
                 <h3 className="text-lg font-bold text-primary mb-3">
                   نقل عفش المكاتب في دبي
                 </h3>
@@ -272,7 +272,7 @@ export default function DubaiMoversPage() {
               </div>
 
               {/* البند 4 */}
-              <div className="bg-background p-6 rounded-2xl border border-border shadow-sm">
+              <div className="bg-foreground p-6 rounded-2xl border border-border shadow-sm">
                 <h3 className="text-lg font-bold text-foreground mb-3">
                   نقل القطعة الواحدة من الأثاث
                 </h3>
@@ -369,7 +369,7 @@ export default function DubaiMoversPage() {
                 </p>
 
                 {/* شبكة المناطق المغطاة */}
-                <div className="bg-slate-50 dark:bg-slate-900/40 p-6 rounded-2xl border border-border text-xs md:text-sm text-muted-foreground leading-relaxed">
+                <div className="bg-slate-50 dark:bg-foreground/40 p-6 rounded-2xl border border-border text-xs md:text-sm text-muted-foreground leading-relaxed">
                   ديرة | بر دبي | الجانب الإماراتي | القوز | البرشاء | مردف |
                   القصيص | الجداف | جميرا | جميرا بيتش ريزيدنس | دبي مارينا |
                   داون تاون دبي | Business Bay | DIFC | الخوانيج | عود ميثاء |
@@ -393,7 +393,7 @@ export default function DubaiMoversPage() {
         {/* 6. قسم أسعار نقل عفش دبي */}
         <section className="py-16 border-t border-border">
           <div className="max-w-7xl mx-auto md:px-10 px-4">
-            <div className="bg-background border border-border rounded-3xl p-8 md:p-12 shadow-xl">
+            <div className="bg-foreground border border-border rounded-3xl p-8 md:p-12 shadow-xl">
               <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
                 <div className="lg:col-span-8">
                   <h2 className="text-2xl md:text-3xl font-black text-foreground mb-4">
@@ -464,7 +464,7 @@ export default function DubaiMoversPage() {
             </h2>
 
             <div className="max-w-3xl mx-auto space-y-6">
-              <div className="bg-slate-50/50 dark:bg-slate-900/30 rounded-2xl border border-border p-6 shadow-sm">
+              <div className="bg-slate-50/50 dark:bg-foreground/30 rounded-2xl border border-border p-6 shadow-sm">
                 <h3 className="text-lg font-bold text-foreground mb-3">
                   ما هو أرخص وقت لنقل العفش في دبي؟
                 </h3>
@@ -476,7 +476,7 @@ export default function DubaiMoversPage() {
                 </p>
               </div>
 
-              <div className="bg-slate-50/50 dark:bg-slate-900/30 rounded-2xl border border-border p-6 shadow-sm">
+              <div className="bg-slate-50/50 dark:bg-foreground/30 rounded-2xl border border-border p-6 shadow-sm">
                 <h3 className="text-lg font-bold text-foreground mb-3">
                   هل نقل العفش في دبي يحتاج تصاريح؟
                 </h3>
@@ -488,7 +488,7 @@ export default function DubaiMoversPage() {
                 </p>
               </div>
 
-              <div className="bg-slate-50/50 dark:bg-slate-900/30 rounded-2xl border border-border p-6 shadow-sm">
+              <div className="bg-slate-50/50 dark:bg-foreground/30 rounded-2xl border border-border p-6 shadow-sm">
                 <h3 className="text-lg font-bold text-foreground mb-3">
                   كم يستغرق نقل عفش شقة 2 غرفة داخل دبي؟
                 </h3>
@@ -499,7 +499,7 @@ export default function DubaiMoversPage() {
                 </p>
               </div>
 
-              <div className="bg-slate-50/50 dark:bg-slate-900/30 rounded-2xl border border-border p-6 shadow-sm">
+              <div className="bg-slate-50/50 dark:bg-foreground/30 rounded-2xl border border-border p-6 shadow-sm">
                 <h3 className="text-lg font-bold text-foreground mb-3">
                   هل تتعاملون مع العفش الثمين والأنتيك؟
                 </h3>

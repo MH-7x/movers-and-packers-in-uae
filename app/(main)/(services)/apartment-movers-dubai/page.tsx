@@ -14,7 +14,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { Breadcrumb } from "@/components/Breadcrumb";
 
-
 export const metadata = MetadataTemplate({
   data: {
     meta: {
@@ -41,18 +40,19 @@ const ApartmentMovers = () => {
   return (
     <>
       <script
-        
         id="breadcrumb"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: breadcrumb }}
       />
       <main>
-        <Breadcrumb list={[
-      {
-        title: "Apartment Movers in Dubai",
-        url: "/apartment-movers-dubai",
-      },
-    ]} />
+        <Breadcrumb
+          list={[
+            {
+              title: "Apartment Movers in Dubai",
+              url: "/apartment-movers-dubai",
+            },
+          ]}
+        />
         <ServiceHero
           title="Apartment Movers in Dubai — Quick & Safe Relocations"
           desc="Looking for reliable apartment movers in Dubai? Whether you are shifting a studio, a 1BHK, or a large 4-bedroom apartment, our team at Movers and Packers in UAE handles everything from start to finish — packing, transport, and full installation."
@@ -63,7 +63,7 @@ const ApartmentMovers = () => {
           btnText="Get a Free Apartment Moving Quote  "
         />
         <section className="mt-16 max-w-4xl mx-auto md:px-0 px-4">
-          <h3 className="md:text-2xl text-lg font-bold text-center">
+          <h2 className="md:text-2xl text-lg font-bold text-center">
             Professional{" "}
             <Link
               href={"/apartment-movers-dubai"}
@@ -73,7 +73,41 @@ const ApartmentMovers = () => {
             </Link>{" "}
             across all Dubai areas. No hidden charges, fully insured, same-day
             available.
-          </h3>
+          </h2>
+
+          {/* AI Search & LLM Quick Summary Card */}
+          <div className="mt-8 bg-foreground text-white rounded-3xl p-6 border border-slate-800 shadow-lg text-left">
+            <p className="text-xs font-bold text-primary uppercase tracking-wider mb-2">
+              Apartment Moving Dubai —{" "}
+            </p>
+            <div className="grid md:grid-cols-2 grid-cols-1 gap-3 text-xs text-slate-300">
+              <div>
+                <p>
+                  <strong className="text-white ">
+                    Covered Property Types:
+                  </strong>{" "}
+                  Studios, 1BHK, 2BHK, 3BHK, 4BHK apartments & penthouses.
+                </p>
+                <p className="mt-1">
+                  <strong className="text-white">Pricing Model:</strong> Fixed
+                  transparent quote (800 – 3,500+ AED range). Pay after job
+                  completion.
+                </p>
+              </div>
+              <div>
+                <p>
+                  <strong className="text-white">Included Services:</strong>{" "}
+                  Certified carpenters, dismantling/reassembly, bubble wrapping,
+                  enclosed RTA box trucks.
+                </p>
+                <p className="mt-1">
+                  <strong className="text-white">Add-Ons:</strong> Curtain
+                  fixing & installation, temporary climate-controlled storage,
+                  same-day moving.
+                </p>
+              </div>
+            </div>
+          </div>
           <div className="flex flex-wrap items-center justify-center gap-5 mt-5">
             {[
               "1998 Registered ",
@@ -346,7 +380,7 @@ const ApartmentMovers = () => {
                 </div>
                 <div>
                   <h3 className="text-foreground">
-                    ✔ Freelance / Unregistered Movers
+                    ✔ Professional Registered Movers & Packers
                   </h3>
                   <ul className="list-inside list-disc mt-3 text-muted-foreground leading-tight">
                     <li>Officially registered since 1998 — verifiable</li>

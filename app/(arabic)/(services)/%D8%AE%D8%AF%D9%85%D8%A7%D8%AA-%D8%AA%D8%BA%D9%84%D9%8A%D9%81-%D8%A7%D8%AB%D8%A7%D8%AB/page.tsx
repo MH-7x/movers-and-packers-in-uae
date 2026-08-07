@@ -36,18 +36,19 @@ export default function PackingServicesPage() {
   return (
     <>
       <script
-        
         id="breadcrumb"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: breadcrumb }}
       />
       <main>
-        <Breadcrumb list={[
-    {
-      title: "خدمات تغليف اثاث في الإمارات",
-      url: "/خدمات-تغليف-اثاث",
-    },
-  ]} />
+        <Breadcrumb
+          list={[
+            {
+              title: "خدمات تغليف اثاث في الإمارات",
+              url: "/خدمات-تغليف-اثاث",
+            },
+          ]}
+        />
         {/* 1. قسم الهيرو الرئيسي (Hero Section) */}
         <section className="relative overflow-hidden border-b border-border py-16 md:py-24">
           <div className="relative z-10 max-w-7xl mx-auto md:px-10 px-4 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
@@ -125,7 +126,7 @@ export default function PackingServicesPage() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
               {/* القائمة الفرعية الأولى: الأضرار الأكثر شيوعاً */}
-              <div className="bg-slate-50 dark:bg-slate-900/40 p-8 rounded-3xl border border-border">
+              <div className="bg-slate-50 dark:bg-foreground/40 p-8 rounded-3xl border border-border">
                 <h3 className="text-xl font-bold text-foreground mb-6 flex items-center gap-2 text-primary">
                   <span>⚠️</span> الأضرار الأكثر شيوعاً في النقل بدون تغليف كافٍ
                 </h3>
@@ -210,7 +211,7 @@ export default function PackingServicesPage() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {/* البند 1 */}
-              <div className="bg-background p-6 rounded-2xl border border-border shadow-sm">
+              <div className="bg-foreground p-6 rounded-2xl border border-border shadow-sm">
                 <h3 className="text-lg font-bold text-foreground mb-3">
                   تغليف كامل (Full Packing Service)
                 </h3>
@@ -222,7 +223,7 @@ export default function PackingServicesPage() {
               </div>
 
               {/* البند 2 */}
-              <div className="bg-background p-6 rounded-2xl border border-border shadow-sm">
+              <div className="bg-foreground p-6 rounded-2xl border border-border shadow-sm">
                 <h3 className="text-lg font-bold text-foreground mb-3">
                   تغليف جزئي (Partial Packing)
                 </h3>
@@ -234,7 +235,7 @@ export default function PackingServicesPage() {
               </div>
 
               {/* البند 3 */}
-              <div className="bg-background p-6 rounded-2xl border border-primary/20 shadow-sm">
+              <div className="bg-foreground p-6 rounded-2xl border border-primary/20 shadow-sm">
                 <h3 className="text-lg font-bold text-primary mb-3">
                   تغليف القطع الخاصة والحساسة
                 </h3>
@@ -246,7 +247,7 @@ export default function PackingServicesPage() {
               </div>
 
               {/* البند 4 */}
-              <div className="bg-background p-6 rounded-2xl border border-border shadow-sm">
+              <div className="bg-foreground p-6 rounded-2xl border border-border shadow-sm">
                 <h3 className="text-lg font-bold text-foreground mb-3">
                   تغليف الأجهزة الكهربائية الكبيرة
                 </h3>
@@ -259,7 +260,7 @@ export default function PackingServicesPage() {
               </div>
 
               {/* البند 5 */}
-              <div className="bg-background p-6 rounded-2xl border border-border shadow-sm md:col-span-2 lg:col-span-1">
+              <div className="bg-foreground p-6 rounded-2xl border border-border shadow-sm md:col-span-2 lg:col-span-1">
                 <h3 className="text-lg font-bold text-foreground mb-3">
                   تغليف العفش المخصص للتخزين
                 </h3>
@@ -440,7 +441,7 @@ export default function PackingServicesPage() {
         {/* 6. قسم الأسعار وطريقة حجز الخدمة */}
         <section className="py-16 border-t border-border">
           <div className="max-w-7xl mx-auto md:px-10 px-4">
-            <div className="bg-background border border-border rounded-3xl p-8 md:p-12 shadow-xl">
+            <div className="bg-foreground border border-border rounded-3xl p-8 md:p-12 shadow-xl">
               <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
                 <div className="lg:col-span-8">
                   <h2 className="text-2xl md:text-3xl font-black text-foreground mb-4">
@@ -511,7 +512,7 @@ export default function PackingServicesPage() {
             </h2>
 
             <div className="max-w-3xl mx-auto space-y-6">
-              <div className="bg-slate-50/50 dark:bg-slate-900/30 rounded-2xl border border-border p-6 shadow-sm">
+              <div className="bg-slate-50/50 dark:bg-foreground/30 rounded-2xl border border-border p-6 shadow-sm">
                 <h3 className="text-lg font-bold text-foreground mb-3">
                   هل يمكنني الحصول على خدمة التغليف فقط بدون نقل؟
                 </h3>
@@ -523,7 +524,7 @@ export default function PackingServicesPage() {
                 </p>
               </div>
 
-              <div className="bg-slate-50/50 dark:bg-slate-900/30 rounded-2xl border border-border p-6 shadow-sm">
+              <div className="bg-slate-50/50 dark:bg-foreground/30 rounded-2xl border border-border p-6 shadow-sm">
                 <h3 className="text-lg font-bold text-foreground mb-3">
                   هل تُوفّرون الكراتين والمواد منفصلةً للبيع؟
                 </h3>
@@ -535,7 +536,7 @@ export default function PackingServicesPage() {
                 </p>
               </div>
 
-              <div className="bg-slate-50/50 dark:bg-slate-900/30 rounded-2xl border border-border p-6 shadow-sm">
+              <div className="bg-slate-50/50 dark:bg-foreground/30 rounded-2xl border border-border p-6 shadow-sm">
                 <h3 className="text-lg font-bold text-foreground mb-3">
                   كيف تتعاملون مع تغليف التحف والقطع الثمينة جداً؟
                 </h3>
@@ -547,7 +548,7 @@ export default function PackingServicesPage() {
                 </p>
               </div>
 
-              <div className="bg-slate-50/50 dark:bg-slate-900/30 rounded-2xl border border-border p-6 shadow-sm">
+              <div className="bg-slate-50/50 dark:bg-foreground/30 rounded-2xl border border-border p-6 shadow-sm">
                 <h3 className="text-lg font-bold text-foreground mb-3">
                   هل التغليف مشمول تلقائياً في سعر النقل؟
                 </h3>

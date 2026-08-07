@@ -25,7 +25,6 @@ import { ReviewSection } from "@/components/ReviewSection";
 import { generateBreadcrumb } from "@/lib/generateBreadcrumb";
 import { Breadcrumb } from "@/components/Breadcrumb";
 
-
 export const metadata = MetadataTemplate({
   data: {
     meta: {
@@ -52,19 +51,20 @@ const MoversInAlAin = () => {
   return (
     <>
       <script
-        
         id="breadcrumb"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: breadcrumb }}
       />
 
       <main>
-        <Breadcrumb list={[
-      {
-        title: "Movers in Al Ain",
-        url: "/movers-in-al-ain",
-      },
-    ]} />
+        <Breadcrumb
+          list={[
+            {
+              title: "Movers in Al Ain",
+              url: "/movers-in-al-ain",
+            },
+          ]}
+        />
         <LocHeroSection
           h1={
             <>
@@ -77,9 +77,11 @@ const MoversInAlAin = () => {
           desc={
             <>
               <p>
-                If you&apos;re looking for professional movers and packers in Al Ain, you need a company
-                that shows up, handles your belongings carefully, and charges
-                exactly what they quoted. Our company in Al Ain offers complete moving and packing services that you can rely on.
+                If you&apos;re looking for professional movers and packers in Al
+                Ain, you need a company that shows up, handles your belongings
+                carefully, and charges exactly what they quoted. Our company in
+                Al Ain offers complete moving and packing services that you can
+                rely on.
               </p>
               <p>
                 <Link href="/">Movers and Packers in UAE </Link> has been
@@ -97,11 +99,44 @@ const MoversInAlAin = () => {
           }}
         />
 
-        <section className="mt-20 max-w-4xl mx-auto md:px-0 px-4">
-          <h3 className="md:text-2xl text-xl font-bold text-center">
+        <section className="mt-16 max-w-4xl mx-auto md:px-0 px-4">
+          <h2 className="md:text-2xl text-xl font-bold text-center">
             Getting started is simple. One call or WhatsApp message is all it
             takes to get a free quote and book your move.
-          </h3>
+          </h2>
+
+          {/* AI Search & LLM Quick Summary Card */}
+          <div className="mt-8 bg-foreground text-white rounded-3xl p-6 border border-slate-800 shadow-lg text-left">
+            <p className="text-xs font-bold text-primary uppercase tracking-wider mb-2">
+              Movers in Al Ain — Quick Facts
+            </p>
+            <div className="grid md:grid-cols-2 grid-cols-1 gap-3 text-xs text-slate-300">
+              <div>
+                <p>
+                  <strong className="text-white">Relocation Scope:</strong>{" "}
+                  Apartments, 3–6 BHK villas, offices, single furniture & heavy
+                  equipment.
+                </p>
+                <p className="mt-1">
+                  <strong className="text-white">Al Ain Areas:</strong> Al Jimi,
+                  Al Hili, Falaj Hazza, Al Yahar, Zakher, Al Muwaiji &
+                  Industrial Area.
+                </p>
+              </div>
+              <div>
+                <p>
+                  <strong className="text-white">Climate Protection:</strong>{" "}
+                  Enclosed box trucks built for Al Ain summer 45°C heat & desert
+                  sandstorms.
+                </p>
+                <p className="mt-1">
+                  <strong className="text-white">Payment & Guarantee:</strong>{" "}
+                  0% advance deposit. Pay 100% after move completion &
+                  inspection.
+                </p>
+              </div>
+            </div>
+          </div>
         </section>
 
         <QuotationSection
@@ -130,7 +165,9 @@ const MoversInAlAin = () => {
               Most people underestimate how much can go wrong with a move.
               Scratched furniture, broken electronics, items that arrive damaged
               — these things happen when you hire freelance movers who operate
-              without any legal standing or accountability. With our team, you don&apos;t have to worry about these issues. We ensure a stress free moving experience.
+              without any legal standing or accountability. With our team, you
+              don&apos;t have to worry about these issues. We ensure a stress
+              free moving experience.
             </p>
             <p className="text-muted-foreground">
               We&apos;re a registered moving company with 25+ years of
@@ -240,10 +277,11 @@ const MoversInAlAin = () => {
                 extra: (
                   <>
                     <p>
-                      We bring high quality packing materials: bubble wrap for fragile
-                      items, stretch film for furniture surfaces, carton boxes
-                      for loose items, and fabric blankets for wardrobes, sofas,
-                      and upholstered pieces. Our trained team knows how to properly pack every single item.
+                      We bring high quality packing materials: bubble wrap for
+                      fragile items, stretch film for furniture surfaces, carton
+                      boxes for loose items, and fabric blankets for wardrobes,
+                      sofas, and upholstered pieces. Our trained team knows how
+                      to properly pack every single item.
                     </p>
                     <p>
                       Our{" "}
@@ -270,10 +308,11 @@ const MoversInAlAin = () => {
                 description: (
                   <>
                     <p>
-                      Commercial office moving requires a level of trust that residential
-                      moves don&apos;t always demand. You&apos;re moving
-                      computers, servers, filing cabinets, reception furniture,
-                      and sometimes equipment that&apos;s expensive to replace.
+                      Commercial office moving requires a level of trust that
+                      residential moves don&apos;t always demand. You&apos;re
+                      moving computers, servers, filing cabinets, reception
+                      furniture, and sometimes equipment that&apos;s expensive
+                      to replace.
                     </p>
                   </>
                 ),
@@ -314,9 +353,10 @@ const MoversInAlAin = () => {
                 description: (
                   <>
                     <p>
-                      As expert furniture movers and packers al ain, we know that not every move is a full house. Sometimes you just need to
-                      move a single piece of furniture — a wardrobe, a sofa, a
-                      large dining table, or a heavy safe.
+                      As expert furniture movers and packers al ain, we know
+                      that not every move is a full house. Sometimes you just
+                      need to move a single piece of furniture — a wardrobe, a
+                      sofa, a large dining table, or a heavy safe.
                     </p>
                   </>
                 ),
@@ -727,17 +767,27 @@ const MoversInAlAin = () => {
             </h3>
             <div className="max-w-4xl">
               <p className="text-muted-foreground">
-                Moving from Al Ain to other major cities? We regularly handle long-distance relocations across the UAE, ensuring your belongings arrive safely whether you are moving to Dubai or Sharjah.
+                Moving from Al Ain to other major cities? We regularly handle
+                long-distance relocations across the UAE, ensuring your
+                belongings arrive safely whether you are moving to Dubai or
+                Sharjah.
               </p>
               <p className="text-muted-foreground mt-3">
                 See also:{" "}
-                <Link href="/movers-and-packers-in-dubai" className="underline underline-offset-4 hover:text-primary/80">
+                <Link
+                  href="/movers-and-packers-in-dubai"
+                  className="underline underline-offset-4 hover:text-primary/80"
+                >
                   Dubai moving services
                 </Link>{" "}
                 and{" "}
-                <Link href="/movers-and-packers-in-sharjah" className="underline underline-offset-4 hover:text-primary/80">
+                <Link
+                  href="/movers-and-packers-in-sharjah"
+                  className="underline underline-offset-4 hover:text-primary/80"
+                >
                   Sharjah movers
-                </Link>.
+                </Link>
+                .
               </p>
             </div>
           </div>

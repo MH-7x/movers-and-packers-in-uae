@@ -1,6 +1,14 @@
-import { Star, Truck } from "lucide-react";
+import { Star, Truck, Home, Building2, Wrench, PhoneCall } from "lucide-react";
 import heroImage from "@/public/about-us-professional-movers-packers-team-dubai-uae.jpg";
 import Image from "next/image";
+import MetadataTemplate from "@/lib/MetaDataTemplate";
+import { generateBreadcrumb } from "@/lib/generateBreadcrumb";
+import { Breadcrumb } from "@/components/Breadcrumb";
+import { Button } from "@/components/ui/button";
+import CTA from "@/components/CTA";
+import { FAQSection } from "@/components/FaqsSection";
+import { AboutUSFaqs } from "@/lib/FaqsData";
+import Link from "next/link";
 
 export const metadata = MetadataTemplate({
   data: {
@@ -28,18 +36,19 @@ const AboutUsPage = () => {
   return (
     <>
       <script
-        
         id="breadcrumb"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: breadcrumb }}
       />
       <main>
-        <Breadcrumb list={[
-      {
-        title: "About Us ",
-        url: "/about-us",
-      },
-    ]} />
+        <Breadcrumb
+          list={[
+            {
+              title: "About Us ",
+              url: "/about-us",
+            },
+          ]}
+        />
         <section className="max-w-7xl mx-auto md:px-10 px-4 mt-20 w-full">
           <div className="flex flex-col lg:flex-row gap-10 lg:gap-16 items-stretch">
             {/* Left Large Image Placeholder */}
@@ -68,7 +77,7 @@ const AboutUsPage = () => {
               <hr className="w-full border-t border-gray-200 mb-8" />
 
               {/* Main Heading */}
-              <h1 className="text-4xl md:text-[52px] font-bold text-[#0f172a] leading-[1.15] mb-12 tracking-tight">
+              <h1 className="text-4xl md:text-[52px] font-bold text-[#0f172a] leading-[1.15] mb-6 tracking-tight">
                 <span className="font-normal">Movers and Packers in UAE</span>{" "}
                 <br className="hidden md:block" />
                 You Can Actually Trust
@@ -386,18 +395,6 @@ const AboutUsPage = () => {
   );
 };
 
-export default AboutUsPage;
-
-import { Home, Building2, Wrench, PhoneCall } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import CTA from "@/components/CTA";
-import { FAQSection } from "@/components/FaqsSection";
-import { AboutUSFaqs } from "@/lib/FaqsData";
-import MetadataTemplate from "@/lib/MetaDataTemplate";
-import Link from "next/link";
-
-import { generateBreadcrumb } from "@/lib/generateBreadcrumb";
-import { Breadcrumb } from "@/components/Breadcrumb";
 const servicesData = [
   {
     title: "Residential Moving",
@@ -464,13 +461,13 @@ const ServicesSection = () => {
       <section className="max-w-7xl mx-auto md:px-10 px-4 mt-32">
         {/* Header Section */}
         <div className="text-center max-w-3xl mx-auto mb-16 lg:mb-20">
-          <h2 className="text-sm font-bold tracking-wide text-primary uppercase mb-3">
+          <p className="text-sm font-bold tracking-wide text-primary uppercase mb-3">
             What We Do
-          </h2>
-          <h3 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight mb-6">
+          </p>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight mb-6">
             We handle all types of <br className="hidden md:block" /> moves in
             the UAE.
-          </h3>
+          </h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
             Residential, commercial, and specialist. Here is a full look at what
             we cover:
@@ -491,7 +488,7 @@ const ServicesSection = () => {
                   <Icon className="w-7 h-7 text-primary" strokeWidth={1.5} />
                 </div>
 
-                <h4 className="text-xl font-bold mb-2">{service.title}</h4>
+                <h3 className="text-xl font-bold mb-2">{service.title}</h3>
 
                 {/* Divider Line */}
                 <div className="w-12 h-1 bg-blue-100 rounded-full mb-6"></div>
@@ -521,9 +518,9 @@ const ServicesSection = () => {
         <div className="mt-10 lg:mt-24 bg-primary rounded-3xl">
           <div className="relative p-8 sm:p-12 lg:p-16 flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12">
             <div className="flex-1 text-center lg:text-left">
-              <h4 className="text-2xl sm:text-3xl font-bold text-white mb-4">
+              <h3 className="text-2xl sm:text-3xl font-bold text-white mb-4">
                 Need something specific?
-              </h4>
+              </h3>
               <p className="text-white/90 md:text-lg md:leading-relaxed max-w-2xl">
                 If you have something specific that is not listed here, contact
                 us and describe your need. We offer customized moving plans
@@ -548,3 +545,5 @@ const ServicesSection = () => {
     </>
   );
 };
+
+export default AboutUsPage;
