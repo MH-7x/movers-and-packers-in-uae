@@ -9,6 +9,7 @@ import MetadataTemplate from "@/lib/MetaDataTemplate";
 import Link from "next/link";
 import { generateBreadcrumb } from "@/lib/generateBreadcrumb";
 import { Breadcrumb } from "@/components/Breadcrumb";
+import QuotationSection from "@/components/QuotationSection";
 
 export const metadata = MetadataTemplate({
   data: {
@@ -122,7 +123,16 @@ export default function FurnitureMovingDubaiPage() {
             </div>
           </div>
         </section>
-
+        <QuotationSection
+          ar
+          title={
+            <>
+              <span className="font-bold md:block">احصل على عرض أسعار</span> من
+              نقل اثاث دبي
+            </>
+          }
+          desc="أخبرنا بما ترغب بنقله، ومن أين، وإلى أين. نحن، شركة نقل اثاث دبي، سنرسل إليك عرض سعر مفصل وواضح عبر واتساب أو البريد الإلكتروني. لا نقدم تقديرات مبهمة، فالمبلغ الذي نحدده هو نفسه الموضح في الفاتورة."
+        />
         {/* 3. Services Section */}
         <section className="py-20 border-b border-border bg-muted/20">
           <div className="max-w-7xl mx-auto md:px-10 px-4">

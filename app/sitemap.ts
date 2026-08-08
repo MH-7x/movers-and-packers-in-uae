@@ -284,6 +284,20 @@ const pages: MetadataRoute.Sitemap = [
     lastModified: "2026-07-21",
   },
   {
+    url: "/نقل-اثاث-الشارقة",
+    changeFrequency: "weekly",
+    priority: 0.9,
+    images: ["/ar/نقل-اثاث-دبي-مارينا-نقل-الأثاث-في-الإمارات.jpg"],
+    lastModified: "2026-08-08",
+  },
+  {
+    url: "/نقل-اثاث-عجمان",
+    changeFrequency: "weekly",
+    priority: 0.9,
+    images: ["/ar/نقل-اثاث-دبي-مارينا-نقل-الأثاث-في-الإمارات.jpg"],
+    lastModified: "2026-08-08",
+  },
+  {
     url: "/خدمات-تغليف-اثاث",
     changeFrequency: "weekly",
     priority: 0.7,

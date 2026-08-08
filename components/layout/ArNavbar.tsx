@@ -23,8 +23,8 @@ const servicesMenuItems = [
 
 const locationsMenuItems = [
   { label: "نقل اثاث دبي", href: "/نقل-اثاث-دبي" },
-  { label: "نقل اثاث الشارقة", href: "/movers-and-packers-in-sharjah" },
-  { label: "نقل اثاث عجمان", href: "/movers-in-ajman" },
+  { label: "نقل اثاث الشارقة", href: "/نقل-اثاث-الشارقة" },
+  { label: "نقل اثاث عجمان", href: "/نقل-اثاث-عجمان" },
   { label: "نقل اثاث في ام القيوين", href: "/movers-in-al-ain" },
   { label: "نقل اثاث راس الخيمة", href: "/movers-in-ras-al-khaimah" },
   { label: "نقل اثاث الفجيرة", href: "/movers-in-fujairah" },
@@ -269,7 +269,7 @@ export default function ArNavbar() {
               <div className="flex items-center space-x-3">
                 <PhoneCall className="w-8 h-8 text-primary" strokeWidth={1.5} />
                 <div className="flex flex-col">
-                  <span className="text-gray-500 text-[11px] font-bold uppercase tracking-widest mb-0.5">
+                  <span className="text-gray-700 text-[11px] font-bold uppercase tracking-widest mb-0.5">
                     رقم التليفون
                   </span>
                   <a
@@ -286,7 +286,7 @@ export default function ArNavbar() {
               <div className="flex items-center space-x-3">
                 <MapPin className="w-8 h-8 text-primary" strokeWidth={1.5} />
                 <div className="flex flex-col">
-                  <span className="text-gray-500 text-[11px] font-bold uppercase tracking-widest mb-0.5">
+                  <span className="text-gray-700 text-[11px] font-bold uppercase tracking-widest mb-0.5">
                     عنوان المكتب
                   </span>
                   <address
@@ -302,7 +302,7 @@ export default function ArNavbar() {
               <div className="flex items-center space-x-3">
                 <Clock className="w-8 h-8 text-primary" strokeWidth={1.5} />
                 <div className="flex flex-col">
-                  <span className="text-gray-500 text-[11px] font-bold uppercase tracking-widest mb-0.5">
+                  <span className="text-gray-700 text-[11px] font-bold uppercase tracking-widest mb-0.5">
                     ساعات العمل
                   </span>
                   <span

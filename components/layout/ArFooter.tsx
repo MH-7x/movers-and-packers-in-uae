@@ -14,8 +14,8 @@ const servicesMenuItems = [
 
 const locationsMenuItems = [
   { label: "نقل اثاث دبي", href: "/نقل-اثاث-دبي" },
-  { label: "نقل اثاث الشارقة", href: "/movers-and-packers-in-sharjah" },
-  { label: "نقل اثاث عجمان", href: "/movers-in-ajman" },
+  { label: "نقل اثاث الشارقة", href: "/نقل-اثاث-الشارقة" },
+  { label: "نقل اثاث عجمان", href: "/نقل-اثاث-عجمان" },
   { label: "نقل اثاث في ام القيوين", href: "/movers-in-al-ain" },
   { label: "نقل اثاث راس الخيمة", href: "/movers-in-ras-al-khaimah" },
   { label: "نقل اثاث الفجيرة", href: "/movers-in-fujairah" },

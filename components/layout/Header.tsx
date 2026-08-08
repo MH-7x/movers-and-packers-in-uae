@@ -244,7 +244,7 @@ export default function Navbar() {
                                   key={subindex}
                                   onClick={() => setIsMobileMenuOpen(false)}
                                   href={subitem.href}
-                                  className="block text-gray-500 text-sm py-1.5"
+                                  className="block text-gray-700 text-sm py-1.5"
                                 >
                                   {subitem.label}
                                 </Link>
@@ -303,7 +303,7 @@ export default function Navbar() {
                                   key={subindex}
                                   onClick={() => setIsMobileMenuOpen(false)}
                                   href={subitem.href}
-                                  className="block text-gray-500 text-sm py-1.5"
+                                  className="block text-gray-700 text-sm py-1.5"
                                 >
                                   {subitem.label}
                                 </Link>
@@ -386,7 +386,7 @@ export default function Navbar() {
               <div className="flex items-center space-x-3">
                 <PhoneCall className="w-8 h-8 text-primary" strokeWidth={1.5} />
                 <div className="flex flex-col">
-                  <span className="text-gray-500 text-[11px] font-bold uppercase tracking-widest mb-0.5">
+                  <span className="text-gray-700 text-[11px] font-bold uppercase tracking-widest mb-0.5">
                     Telephone
                   </span>
                   <a
@@ -402,7 +402,7 @@ export default function Navbar() {
               <div className="flex items-center space-x-3">
                 <MapPin className="w-8 h-8 text-primary" strokeWidth={1.5} />
                 <div className="flex flex-col">
-                  <span className="text-gray-500 text-[11px] font-bold uppercase tracking-widest mb-0.5">
+                  <span className="text-gray-700 text-[11px] font-bold uppercase tracking-widest mb-0.5">
                     Address
                   </span>
                   <address
@@ -418,7 +418,7 @@ export default function Navbar() {
               <div className="flex items-center space-x-3">
                 <Clock className="w-8 h-8 text-primary" strokeWidth={1.5} />
                 <div className="flex flex-col">
-                  <span className="text-gray-500 text-[11px] font-bold uppercase tracking-widest mb-0.5">
+                  <span className="text-gray-700 text-[11px] font-bold uppercase tracking-widest mb-0.5">
                     Operating Hours
                   </span>
                   <span
