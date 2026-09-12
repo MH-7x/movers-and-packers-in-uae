@@ -339,6 +339,13 @@ const pages: MetadataRoute.Sitemap = [
     images: ["/ar/نقل-عفش-دبي-شركة-موفرز-باكرز.jpg"],
     lastModified: "2026-07-09",
   },
+  {
+    url: "/dubai-offer",
+    changeFrequency: "daily",
+    priority: 0.9,
+    images: ["/ar/نقل-اثاث-دبي-مارينا-نقل-الأثاث-في-الإمارات.jpg"],
+    lastModified: "2026-09-13",
+  },
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {

@@ -8,6 +8,7 @@ import { Button } from "../ui/button";
 // Menu Data
 const mainMenuItems = [
   { label: "English ", href: "/" },
+  { label: "🔥 عرض دبي (خصم 10٪)", href: "/dubai-offer" },
   { label: "معلومات عنا", href: "/about-us" },
   { label: "اتصل بنا", href: "/get-quote" },
 ];
